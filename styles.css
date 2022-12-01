@@ -146,7 +146,7 @@ body{
     width: 100%;
     height: 100%;
     display: grid;
-    background-color: antiquewhite;
+ 
     grid-row-gap: 40px;
     grid-template-columns: 1fr;
     grid-template-rows: 200px 1fr  1fr 300px;
@@ -154,6 +154,28 @@ body{
                          "HERO"
                          "."
                          "BOTTOM-IMAGE";
+}
+
+
+#TOP-IMAGE {
+    grid-area: TOP-IMAGE;
+    width: 100%;
+    height: 100%;
+    background-color: antiquewhite;
+}
+
+#HERO {
+    grid-area: HERO;
+    width: 100%;
+    height: 100%;
+    background-color: antiquewhite;
+}
+
+#BOTTOM-IMAGE {
+    grid-area: BOTTOM-IMAGE;
+    width: 100%;
+    height: 100%;
+    background-color: antiquewhite;
 }
 
 /* ---------------------------------------------------------------------------------------*/
