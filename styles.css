@@ -1,12 +1,11 @@
 
-
+/* ---------------------------------------------------------------------------------------*/
 /* ---------------------------------------------------------------------------------------*/
 body{
     position: absolute;
     width: 100vw;
     height: 100vw;
-    display: flex;
-    
+    display: flex;    
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     flex-direction: column;
@@ -22,20 +21,53 @@ body{
 }
 
 
+.bc-yellow {
+    width: 100%;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background-color: rgb(255, 239, 66);
+}
+
+
 .grid-0 {
     width: 100%;
-    max-width: 1280px;
-    height: auto;
+    max-width: 1640px;
+    background-color: #2e2e2e;
+    display: grid;
+    grid-column-gap: 40px; 
+    grid-row-gap: 40px;
+    grid-template-rows: 60px auto 20px;
+    grid-template-columns: 150px 1fr 150px;
+    grid-template-areas: ". . ."
+                         "BANNER-1 MAIN-AREA BANNER-2";
+}
+
+
+
+.grid-0-2 {
+    width: 100%;
+    max-width: 1640px;
     background-color: #2e2e2e;
     display: grid;
     grid-column-gap: 40px;
-   
     grid-row-gap: 40px;
-    grid-template-rows: 60px auto 60px;
-    grid-template-columns: 100px 1fr 100px;
+    grid-template-rows: auto;
+    grid-template-columns: 150px 1fr 150px;
     grid-template-areas: ". . ."
-                         ". MAIN-AREA ."   ;
+        "BANNER-1 MAIN-AREA BANNER-2";
 }
+
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+/* ---------------------------------------------------------------------------------------*/
 /* ---------------------------------------------------------------------------------------*/
 
 
@@ -43,6 +75,25 @@ body{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------------------------------*/
 /* ---------------------------------------------------------------------------------------*/
 #GRID-1 {
     grid-area: MAIN-AREA;
@@ -51,27 +102,12 @@ body{
     grid-column-gap: 40px;
     grid-row-gap: 40px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto auto;
     grid-template-areas: "TITLE TITLE TITLE-2 TITLE-2 IMAGE IMAGE IMAGE IMAGE"
                          "TITLE TITLE TITLE-2 TITLE-2 IMAGE-2 IMAGE-2 IMAGE-3 IMAGE-3"
                          "TITLE TITLE TITLE-2 TITLE-2 IMAGE-4 IMAGE-4 IMAGE-4 IMAGE-4";
-
-
 }
-    
-
-
-
-#GRID-2 {
-    width: 100%;
-    display: grid;
-}
-
 /* ---------------------------------------------------------------------------------------*/
-
-
-
-
 
 
 
@@ -80,7 +116,7 @@ body{
 #IMAGE {
     grid-area: IMAGE;
     width: 100%;
-    height: 470px;
+    height: 600px;
     display: grid;
     background-color: antiquewhite;
 }
@@ -93,7 +129,7 @@ body{
 #IMAGE-2 {
     grid-area: IMAGE-2;
     width: 100%;
-    height: 470px;
+    height: 560px;
     display: grid;
     background-color: antiquewhite;
 }
@@ -105,7 +141,7 @@ body{
 #IMAGE-3 {
     grid-area: IMAGE-3;
     width: 100%;
-    height: 470px;
+    height: 560px;
     display: grid;
     background-color: antiquewhite;
 }
@@ -118,7 +154,7 @@ body{
 #IMAGE-4 {
     grid-area: IMAGE-4;
     width: 100%;
-    height: 470px;
+    height: 600px;
     display: grid;
     background-color: antiquewhite;
 }
@@ -130,9 +166,9 @@ body{
 #TITLE {
     grid-area: TITLE;
     position: sticky;
-    top: 100px;
+    top: 50px;
     width: 100%;
-    height: 470px;
+    height: 480px;
     display: grid;
     background-color: antiquewhite;
 }
@@ -149,10 +185,10 @@ body{
  
     grid-row-gap: 40px;
     grid-template-columns: 1fr;
-    grid-template-rows: 200px 1fr  1fr 300px;
+    grid-template-rows: 290px 1.5fr  1fr 290px;
     grid-template-areas: "TOP-IMAGE"
                          "HERO"
-                         "."
+                         "MID-IMAGE"
                          "BOTTOM-IMAGE";
 }
 
@@ -171,6 +207,14 @@ body{
     background-color: antiquewhite;
 }
 
+
+#MID-IMAGE {
+    grid-area: MID-IMAGE;
+    width: 100%;
+    height: 100%;
+    background-color: antiquewhite;
+}
+
 #BOTTOM-IMAGE {
     grid-area: BOTTOM-IMAGE;
     width: 100%;
@@ -178,7 +222,228 @@ body{
     background-color: antiquewhite;
 }
 
+
+#BANNER-1 {
+    position: relative;
+    grid-area: BANNER-1;
+    width: 100%;
+    height: 100%;  
+    background-color: aqua;
+}
+
+
+#BANNER-2 {
+    position: relative;
+    grid-area: BANNER-2;
+    width: 100%;
+    height: 100%;   
+    background-color: aqua;
+}
 /* ---------------------------------------------------------------------------------------*/
+/* ---------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------------------------------*/
+#GRID-2 {
+    grid-area: MAIN-AREA;
+    width: 100%;
+    height: 600px;
+    display: grid;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "VIDEO VIDEO VIDEO VIDEO VIDEO VIDEO DESCRIPTION DESCRIPTION";
+}
+
+
+
+#VIDEO {
+    grid-area: VIDEO;
+    width: 100%;
+    height: auto;
+    display: grid;
+    background-color: antiquewhite;
+}
+
+
+#DESCRIPTION {
+    grid-area: DESCRIPTION;
+    width: 100%;
+    height: 100%;
+    background-color: antiquewhite;
+}
+/* ---------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------------------------------*/
+#GRID-3 {
+    grid-area: MAIN-AREA;
+    width: 100%;
+    display: grid;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "FOLIO FOLIO FOLIO FOLIO FOLIO FOLIO FOLIO FOLIO";
+}
+
+
+
+#VIDEO {
+    grid-area: VIDEO;
+    width: 100%;
+    height: auto;
+    display: grid;
+    background-color: antiquewhite;
+}
+
+
+#DESCRIPTION {
+    grid-area: DESCRIPTION;
+    width: 100%;
+    height: 100%;
+    background-color: antiquewhite;
+}
+
+
+#FOLIO {
+    grid-area: FOLIO;
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-row-gap: 40px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "TITLE"
+                         "FOLIO-GRID";   
+    
+}
+
+
+
+#FOLIO-TITLE {
+    grid-area: TITLE;
+    width: 100%;
+    height: 150px;
+    background-color: antiquewhite;
+}
+
+
+#FOLIO-GRID {
+    display: grid;
+    grid-area: FOLIO-GRID;
+    width: 100%;
+    height: auto;
+    grid-row-gap: 40px;
+    grid-column-gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 400px auto;
+    grid-template-areas: "PROJECT-1  PROJECT-1 PROJECT-2 PROJECT-2 PROJECT-3 PROJECT-3";
+  
+}
+
+
+#PROJECT-1 {
+    grid-area: PROJECT-1;
+    width: 100%;
+    height: 100%;
+    background-color: antiquewhite;
+}
+
+
+#PROJECT-2 {
+    grid-area: PROJECT-2;
+    width: 100%;
+    height: 100%;
+    background-color: antiquewhite;
+}
+
+
+#PROJECT-3 {
+    grid-area: PROJECT-3;
+    width: 100%;
+    height: 100%;
+    background-color: antiquewhite;
+}
+/* ---------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -203,18 +468,383 @@ body{
  * --------------------------------------------
  */
 
-
+ /* ---------------------------------------------------------------------------------------*/
  /* ---------------------------------------------------------------------------------------*/
 @media all and (min-width: 1024px) and (max-width: 1280px) {
     
-    .section-container{
+    body {
+        position: absolute;
+        width: 100vw;
+        height: 100vw;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+    
+        }
+    
+    
+        .center-holder {
         width: 100%;
-        height: 400px;
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        }
+    
+    
+        .bc-yellow {
+        width: 100%;
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        background-color: rgb(255, 239, 66);
+        }
+    
+    
+        .grid-0 {
+        width: 100%;
+        max-width: 1640px;
         background-color: #2e2e2e;
+        display: grid;
+        grid-column-gap: 40px;
+        grid-row-gap: 40px;
+        grid-template-rows: 10px auto 10px;
+        grid-template-columns: 50px 1fr 50px;
+        grid-template-areas: ". . ."
+        "BANNER-1 MAIN-AREA BANNER-2";
+        }
+    
+    
+        .container {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
     }
 
-}
-/* ---------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+        /* ---------------------------------------------------------------------------------------*/
+        /* ---------------------------------------------------------------------------------------*/
+        #GRID-1 {
+            grid-area: MAIN-AREA;
+            width: 100%;
+            display: grid;
+            grid-column-gap: 40px;
+            grid-row-gap: 40px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: auto auto auto;
+            grid-template-areas: "TITLE TITLE TITLE-2 TITLE-2 IMAGE IMAGE IMAGE IMAGE"
+                "TITLE TITLE TITLE-2 TITLE-2 IMAGE-2 IMAGE-2 IMAGE-3 IMAGE-3"
+                "TITLE TITLE TITLE-2 TITLE-2 IMAGE-4 IMAGE-4 IMAGE-4 IMAGE-4";
+        }
+    
+        /* ---------------------------------------------------------------------------------------*/
+    
+    
+    
+    
+        /* ---------------------------------------------------------------------------------------*/
+        #IMAGE {
+            grid-area: IMAGE;
+            width: 100%;
+            height: 600px;
+            display: grid;
+            background-color: antiquewhite;
+        }
+    
+        /* ---------------------------------------------------------------------------------------*/
+    
+    
+    
+    
+        /* ---------------------------------------------------------------------------------------*/
+        #IMAGE-2 {
+            grid-area: IMAGE-2;
+            width: 100%;
+            height: 560px;
+            display: grid;
+            background-color: antiquewhite;
+        }
+    
+        /* ---------------------------------------------------------------------------------------*/
+    
+    
+   
+        
+        /* ---------------------------------------------------------------------------------------*/
+        #IMAGE-3 {
+            grid-area: IMAGE-3;
+            width: 100%;
+            height: 560px;
+            display: grid;
+            background-color: antiquewhite;
+        }
+    
+        /* ---------------------------------------------------------------------------------------*/
+    
+    
+    
+    
+        /* ---------------------------------------------------------------------------------------*/
+        #IMAGE-4 {
+            grid-area: IMAGE-4;
+            width: 100%;
+            height: 600px;
+            display: grid;
+            background-color: antiquewhite;
+        }
+    
+        /* ---------------------------------------------------------------------------------------*/
+    
+    
+    
+        /* ---------------------------------------------------------------------------------------*/
+        #TITLE {
+            grid-area: TITLE;
+            position: sticky;
+            top: 50px;
+            width: 100%;
+            height: 480px;
+            display: grid;
+            background-color: antiquewhite;
+        }
+    
+        /* ---------------------------------------------------------------------------------------*/
+    
+    
+        /* ---------------------------------------------------------------------------------------*/
+        #TITLE-2 {
+            grid-area: TITLE-2;
+            display: grid;
+            width: 100%;
+            height: 100%;
+            display: grid;
+    
+            grid-row-gap: 40px;
+            grid-template-columns: 1fr;
+            grid-template-rows: 290px 1.5fr 1fr 290px;
+            grid-template-areas: "TOP-IMAGE"
+                "HERO"
+                "MID-IMAGE"
+                "BOTTOM-IMAGE";
+        }
+    
+    
+        #TOP-IMAGE {
+            grid-area: TOP-IMAGE;
+            width: 100%;
+            height: 100%;
+            background-color: antiquewhite;
+        }
+    
+        #HERO {
+            grid-area: HERO;
+            width: 100%;
+            height: 100%;
+            background-color: antiquewhite;
+        }
+    
+    
+        #MID-IMAGE {
+            grid-area: MID-IMAGE;
+            width: 100%;
+            height: 100%;
+            background-color: antiquewhite;
+        }
+    
+        #BOTTOM-IMAGE {
+            grid-area: BOTTOM-IMAGE;
+            width: 100%;
+            height: 100%;
+            background-color: antiquewhite;
+        }
+    
+    
+        #BANNER-1 {
+            position: relative;
+            grid-area: BANNER-1;
+            width: 100%;
+            height: 100%;
+            background-color: aqua;
+        }
+    
+    
+        #BANNER-2 {
+            position: relative;
+            grid-area: BANNER-2;
+            width: 100%;
+            height: 100%;
+            background-color: aqua;
+        }
+    
+        /* ---------------------------------------------------------------------------------------*/
+       
+    
+    
+    
+    
+    
+    
+        /* ---------------------------------------------------------------------------------------*/
+        #GRID-2 {
+            grid-area: MAIN-AREA;
+            width: 100%;
+            height: 500px;
+            display: grid;
+            grid-column-gap: 40px;
+            grid-row-gap: 40px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas: "VIDEO VIDEO VIDEO VIDEO VIDEO VIDEO DESCRIPTION DESCRIPTION";
+        }
+    
+    
+    
+        #VIDEO {
+            grid-area: VIDEO;
+            width: 100%;
+            height: auto;
+            display: grid;
+            background-color: antiquewhite;
+        }
+    
+    
+        #DESCRIPTION {
+            grid-area: DESCRIPTION;
+            width: 100%;
+            height: 100%;
+            background-color: antiquewhite;
+        }
+    
+        /* ---------------------------------------------------------------------------------------*/
+    
+    
+    
+    
+    
+    
+    
+        /* ---------------------------------------------------------------------------------------*/
+        #GRID-3 {
+            grid-area: MAIN-AREA;
+            width: 100%;
+            display: grid;
+            grid-column-gap: 40px;
+            grid-row-gap: 40px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: auto auto;
+            grid-template-areas: "FOLIO FOLIO FOLIO FOLIO FOLIO FOLIO FOLIO FOLIO"
+                ". . CAROUSEL CAROUSEL CAROUSEL CAROUSEL CAROUSEL CAROUSEL"
+                ". . CAROUSEL CAROUSEL CAROUSEL CAROUSEL CAROUSEL CAROUSEL";
+        }
+    
+    
+    
+        #VIDEO {
+            grid-area: VIDEO;
+            width: 100%;
+            height: auto;
+            display: grid;
+            background-color: antiquewhite;
+        }
+    
+    
+        #DESCRIPTION {
+            grid-area: DESCRIPTION;
+            width: 100%;
+            height: 100%;
+            background-color: antiquewhite;
+        }
+    
+    
+        #FOLIO {
+            grid-area: FOLIO;
+            width: 100%;
+            height: 150px;
+            background-color: antiquewhite;
+        }
+    
+    
+        #CAROUSEL {
+            grid-area: CAROUSEL;
+            width: 100%;
+            height: 700px;
+            background-color: antiquewhite;
+        }
+    }
+ /* ---------------------------------------------------------------------------------------*/
+ /* ---------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -228,15 +858,393 @@ body{
 
 /* ---------------------------------------------------------------------------------------*/
 @media all and (min-width: 768px) and (max-width: 1024px) {
+    body {
+            position: absolute;
+            width: 100vw;
+            height: 100vw;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            flex-direction: column;
+    
+        }
+    
+    
+        .center-holder {
+            width: 100%;
+            display: flex;
+            -webkit-box-pack: center;
+            justify-content: center;
+        }
+    
+    
+        .bc-yellow {
+            width: 100%;
+            display: flex;
+            -webkit-box-pack: center;
+            justify-content: center;
+            background-color: rgb(255, 239, 66);
+        }
+    
+    
+        .grid-0 {
+            width: 100%;
+            background-color: #2e2e2e;
+            display: grid;
+            grid-column-gap: 40px;
+            grid-row-gap: 40px;
+            grid-template-rows: 10px auto 10px;
+            grid-template-columns: 10px 1fr 10px;
+            grid-template-areas: " . . . "
+                ". MAIN-AREA .";
+        }
+    
+    
+        .container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            display: flex;
+            -webkit-box-pack: center;
+            justify-content: center;
+        }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        /* ---------------------------------------------------------------------------------------*/
+        /* ---------------------------------------------------------------------------------------*/
+        #GRID-1 {
+            grid-area: MAIN-AREA;
+            width: 100%;
+            display: grid;
+            grid-column-gap: 40px;
+            grid-row-gap: 40px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: auto auto auto;
+            grid-template-areas: "TITLE TITLE TITLE-2 TITLE-2 IMAGE IMAGE IMAGE IMAGE"
+                "TITLE TITLE TITLE-2 TITLE-2 IMAGE-2 IMAGE-2 IMAGE-3 IMAGE-3"
+                "TITLE TITLE TITLE-2 TITLE-2 IMAGE-4 IMAGE-4 IMAGE-4 IMAGE-4";
+        }
+    
+        /* ---------------------------------------------------------------------------------------*/
+    
+    
+    
+    
+        /* ---------------------------------------------------------------------------------------*/
+        #IMAGE {
+            grid-area: IMAGE;
+            width: 100%;
+            height: 600px;
+            display: grid;
+            background-color: antiquewhite;
+        }
+    
+        /* ---------------------------------------------------------------------------------------*/
+    
+    
+    
+    
+        /* ---------------------------------------------------------------------------------------*/
+        #IMAGE-2 {
+            grid-area: IMAGE-2;
+            width: 100%;
+            height: 560px;
+            display: grid;
+            background-color: antiquewhite;
+        }
+    
+        /* ---------------------------------------------------------------------------------------*/
+    
+    
+    
+    
+        /* ---------------------------------------------------------------------------------------*/
+        #IMAGE-3 {
+            grid-area: IMAGE-3;
+            width: 100%;
+            height: 560px;
+            display: grid;
+            background-color: antiquewhite;
+        }
+    
+        /* ---------------------------------------------------------------------------------------*/
+    
+    
+    
+    
+        /* ---------------------------------------------------------------------------------------*/
+        #IMAGE-4 {
+            grid-area: IMAGE-4;
+            width: 100%;
+            height: 600px;
+            display: grid;
+            background-color: antiquewhite;
+        }
+    
+        /* ---------------------------------------------------------------------------------------*/
+    
+    
+    
+        /* ---------------------------------------------------------------------------------------*/
+        #TITLE {
+            grid-area: TITLE;
+            position: sticky;
+            top: 50px;
+            width: 100%;
+            height: 480px;
+            display: grid;
+            background-color: antiquewhite;
+        }
+    
+        /* ---------------------------------------------------------------------------------------*/
+    
+    
+        /* ---------------------------------------------------------------------------------------*/
+       
 
-    .section-container {
-        width: 100%;
-        height: 400px;
-        background-color: #2e2e2e;
-    }
 
+        #TITLE-2 {
+            grid-area: TITLE-2;
+            display: grid;
+            width: 100%;
+            height: 100%;
+            display: grid;       
+            grid-row-gap: 40px;
+            grid-template-columns: 1fr;
+            grid-template-rows: 290px 1.5fr 1fr 290px;
+            grid-template-areas: "TOP-IMAGE"
+                                 "HERO"
+                                 "MID-IMAGE"
+                                 "BOTTOM-IMAGE";
+        }
+    
+    
+        #TOP-IMAGE {
+            grid-area: TOP-IMAGE;
+            width: 100%;
+            height:100%;
+            background-color: antiquewhite;
+        }
+    
+        #HERO {
+            grid-area: HERO;
+            width: 100%;
+            height:100%;
+            background-color: antiquewhite;
+        }
+    
+    
+        #MID-IMAGE {
+            grid-area: MID-IMAGE;
+            width: 100%;
+            height:100%;
+            background-color: antiquewhite;
+        }
+    
+        #BOTTOM-IMAGE {
+            grid-area: BOTTOM-IMAGE;
+            width: 100%;
+            height:100%;
+            background-color: antiquewhite;
+        }
+    
+    
+        #BANNER-1 {
+            position: relative;
+            grid-area: BANNER-1;
+            width: 100%;
+            height: 100%;
+            background-color: aqua;
+        }
+    
+    
+        #BANNER-2 {
+            position: relative;
+            grid-area: BANNER-2;
+            width: 100%;
+            height: 100%;
+            background-color: aqua;
+        }
+    
+        /* ---------------------------------------------------------------------------------------*/
+    
+    
+    
+    
+    
+    
+    
+        /* ---------------------------------------------------------------------------------------*/
+        #GRID-2 {
+            grid-area: MAIN-AREA;
+            width: 100%;
+            height: 500px;
+            display: grid;
+            grid-column-gap: 40px;
+            grid-row-gap: 40px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas: "VIDEO VIDEO VIDEO VIDEO VIDEO VIDEO DESCRIPTION DESCRIPTION";
+        }
+    
+    
+    
+        #VIDEO {
+            grid-area: VIDEO;
+            width: 100%;
+            height: auto;
+            display: grid;
+            background-color: antiquewhite;
+        }
+    
+    
+        #DESCRIPTION {
+            grid-area: DESCRIPTION;
+            width: 100%;
+            height: 100%;
+            background-color: antiquewhite;
+        }
+    
+        /* ---------------------------------------------------------------------------------------*/
+    
+    
+    
+    
+    
+    
+    
+        /* ---------------------------------------------------------------------------------------*/
+        #GRID-3 {
+            grid-area: MAIN-AREA;
+            width: 100%;
+            display: grid;
+            grid-column-gap: 40px;
+            grid-row-gap: 40px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: auto auto;
+            grid-template-areas: "FOLIO FOLIO FOLIO FOLIO FOLIO FOLIO FOLIO FOLIO"
+                ". . CAROUSEL CAROUSEL CAROUSEL CAROUSEL CAROUSEL CAROUSEL"
+                ". . CAROUSEL CAROUSEL CAROUSEL CAROUSEL CAROUSEL CAROUSEL";
+        }
+    
+    
+    
+        #VIDEO {
+            grid-area: VIDEO;
+            width: 100%;
+            height: auto;
+            display: grid;
+            background-color: antiquewhite;
+        }
+    
+    
+        #DESCRIPTION {
+            grid-area: DESCRIPTION;
+            width: 100%;
+            height: 100%;
+            background-color: antiquewhite;
+        }
+    
+    
+        #FOLIO {
+            grid-area: FOLIO;
+            width: 100%;
+            height: 150px;
+            background-color: antiquewhite;
+        }
+    
+    
+        #CAROUSEL {
+            grid-area: CAROUSEL;
+            width: 100%;
+            height: 700px;
+            background-color: antiquewhite;
+        }
 }
 /* ---------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -251,14 +1259,416 @@ body{
 /* ---------------------------------------------------------------------------------------*/
 @media all and (min-width: 480px) and (max-width: 768px) {
 
-    .section-container {
-        width: 100%;
-        height: 400px;
-        background-color: #2e2e2e;
-    }
+    body {
+            position: absolute;
+            width: 100vw;
+            height: 100vw;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            flex-direction: column;
+    
+        }
+    
+    
+        .center-holder {
+            width: 100%;
+            display: flex;
+            -webkit-box-pack: center;
+            justify-content: center;
+        }
+    
+    
+        .bc-yellow {
+            width: 100%;
+            display: flex;
+            -webkit-box-pack: center;
+            justify-content: center;
+            background-color: rgb(255, 239, 66);
+        }
+    
+    
+        .grid-0 {
+            width: 100%;
+            background-color: #2e2e2e;
+            display: grid;
+            grid-column-gap: 40px;
+            grid-row-gap: 40px;
+            grid-template-rows: 10px auto 10px;
+            grid-template-columns: 10px 1fr 10px;
+            grid-template-areas: " . . . "
+                                 ". MAIN-AREA .";
+        }
+    
+    
+        .container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            display: flex;
+            -webkit-box-pack: center;
+            justify-content: center;
+        }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        /* ---------------------------------------------------------------------------------------*/
+        /* ---------------------------------------------------------------------------------------*/
+        #GRID-1 {
+            grid-area: MAIN-AREA;
+            width: 100%;
+            display: grid;
+            grid-column-gap: 40px;
+            grid-row-gap: 40px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: auto 
+                                auto
+                                auto 
+                                auto 
+                                auto 
+                                auto 
+                                auto                                 
+                                auto;
+            grid-template-areas: "TITLE TITLE TITLE TITLE TITLE TITLE"
+                                 "IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE"
+                                 "TITLE-2 TITLE-2 TITLE-2 TITLE-2 TITLE-2 TITLE-2" 
+                                 "TITLE-2 TITLE-2 TITLE-2 TITLE-2 TITLE-2 TITLE-2"
+                                 "IMAGE-2 IMAGE-2 IMAGE-2 IMAGE-3 IMAGE-3 IMAGE-3"
+                                 "IMAGE-4 IMAGE-4 IMAGE-4 IMAGE-4 IMAGE-4 IMAGE-4";
+                
+        }
+    
+        /* ---------------------------------------------------------------------------------------*/
+    
+    
+    
+    
+        /* ---------------------------------------------------------------------------------------*/
+        #IMAGE {
+            grid-area: IMAGE;
+            width: 100%;
+            height: 600px;
+            display: grid;
+            background-color: antiquewhite;
+        }
+    
+        /* ---------------------------------------------------------------------------------------*/
+    
+    
+    
+    
+        /* ---------------------------------------------------------------------------------------*/
+        #IMAGE-2 {
+            grid-area: IMAGE-2;
+            width: 100%;
+            height: 560px;
+            display: grid;
+            background-color: antiquewhite;
+        }
+    
+        /* ---------------------------------------------------------------------------------------*/
+    
+    
+    
+    
+        /* ---------------------------------------------------------------------------------------*/
+        #IMAGE-3 {
+            grid-area: IMAGE-3;
+            width: 100%;
+            height: 560px;
+            display: grid;
+            background-color: antiquewhite;
+        }
+    
+        /* ---------------------------------------------------------------------------------------*/
+    
+    
+    
+    
+        /* ---------------------------------------------------------------------------------------*/
+        #IMAGE-4 {
+            grid-area: IMAGE-4;
+            width: 100%;
+            height: 600px;
+            display: grid;
+            background-color: antiquewhite;
+        }
+    
+        /* ---------------------------------------------------------------------------------------*/
+    
+    
+    
+        /* ---------------------------------------------------------------------------------------*/
+        #TITLE {
+            grid-area: TITLE;
+            width: 100%;
+            height: auto;
+            display: grid;
+            background-color: antiquewhite;
+        }
+    
+        /* ---------------------------------------------------------------------------------------*/
+    
+    
+        /* ---------------------------------------------------------------------------------------*/
+        
 
-}
+
+        #TITLE-2 {
+            grid-area: TITLE-2;
+            display: grid;
+            width: 100%;
+            height: 100%;
+            display: grid;
+        
+            grid-row-gap: 40px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto auto;
+            grid-template-areas: "TOP-IMAGE HERO HERO"
+                        "MID-IMAGE MID-IMAGE BOTTOM-IMAGE";
+        }
+    
+    
+        #TOP-IMAGE {
+            grid-area: TOP-IMAGE;
+            width: 100%;
+            height: 300px;
+            background-color: antiquewhite;
+        }
+    
+        #HERO {
+            grid-area: HERO;
+            width: 100%;
+            height: 300px;
+            background-color: antiquewhite;
+        }
+    
+    
+        #MID-IMAGE {
+            grid-area: MID-IMAGE;
+            width: 100%;
+            height: 300px;
+            background-color: antiquewhite;
+        }
+    
+        #BOTTOM-IMAGE {
+            grid-area: BOTTOM-IMAGE;
+            width: 100%;
+            height: 300px;
+            background-color: antiquewhite;
+        }
+    
+    
+        #BANNER-1 {
+            position: relative;
+            grid-area: BANNER-1;
+            width: 100%;
+            height: 100%;
+            background-color: aqua;
+        }
+    
+    
+        #BANNER-2 {
+            position: relative;
+            grid-area: BANNER-2;
+            width: 100%;
+            height: 100%;
+            background-color: aqua;
+        }
+    
+        /* ---------------------------------------------------------------------------------------*/
+    
+    
+    
+    
+    
+    
+    
+        /* ---------------------------------------------------------------------------------------*/
+        #GRID-2 {
+            grid-area: MAIN-AREA;
+            width: 100%;
+            display: grid;
+            grid-column-gap: 40px;
+            grid-row-gap: 40px;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto 
+                                auto;
+            grid-template-areas:"DESCRIPTION"
+                                "VIDEO";
+        }
+    
+    
+    
+        #VIDEO {
+            grid-area: VIDEO;
+            width: 100%;
+            background-color: antiquewhite;
+        }
+    
+    
+        #DESCRIPTION {
+            grid-area: DESCRIPTION;
+            width: 100%;
+            height: 150px;
+            background-color: antiquewhite;
+        }
+    
+        /* ---------------------------------------------------------------------------------------*/
+    
+    
+    
+    
+    
+    
+    
+        /* ---------------------------------------------------------------------------------------*/
+        #GRID-3 {
+            grid-area: MAIN-AREA;
+            width: 100%;
+            display: grid;
+            grid-column-gap: 40px;
+            grid-row-gap: 40px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: auto auto;
+            grid-template-areas: "FOLIO FOLIO FOLIO FOLIO FOLIO FOLIO FOLIO FOLIO"
+                ". . CAROUSEL CAROUSEL CAROUSEL CAROUSEL CAROUSEL CAROUSEL"
+                ". . CAROUSEL CAROUSEL CAROUSEL CAROUSEL CAROUSEL CAROUSEL";
+        }
+    
+    
+    
+        #VIDEO {
+            grid-area: VIDEO;
+            width: 100%;
+            height: auto;
+            display: grid;
+            background-color: antiquewhite;
+        }
+    
+    
+        #DESCRIPTION {
+            grid-area: DESCRIPTION;
+            width: 100%;
+            height: 100%;
+            background-color: antiquewhite;
+        }
+    
+    
+        #FOLIO {
+            grid-area: FOLIO;
+            width: 100%;
+            height: 150px;
+            background-color: antiquewhite;
+        }
+    
+    
+        #CAROUSEL {
+            grid-area: CAROUSEL;
+            width: 100%;
+            height: 700px;
+            background-color: antiquewhite;
+        }
+    }
 /* ---------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -271,12 +1681,7 @@ body{
 /* ---------------------------------------------------------------------------------------*/
 @media all and (max-width: 480px) {
 
-    .section-container {
-        width: 100%;
-        height: 400px;
-        background-color: #2e2e2e;
-    }
-
+  
 }
 /* ---------------------------------------------------------------------------------------*/
 
@@ -295,15 +1700,7 @@ body{
 
 /* ---------------------------------------------------------------------------------------*/
 /* Portrait */
-@media screen and (orientation:portrait) {
-
-    .section-container {
-        width: 100%;
-        height: 400px;
-        background-color: #2e2e2e;
-    }       
-
-}
+@media screen and (orientation:portrait) {   }
 /* ---------------------------------------------------------------------------------------*/
 
 
@@ -319,15 +1716,7 @@ body{
 
 /* ---------------------------------------------------------------------------------------*/
 /* Landscape */
-@media screen and (orientation:landscape) {
-
-    .section-container {
-        width: 100%;
-        height: 400px;
-        background-color: #2e2e2e;
-    }
-    
-}
+@media screen and (orientation:landscape) {   }
 /* ---------------------------------------------------------------------------------------*/
 
 
@@ -338,70 +1727,38 @@ body{
 /* CSS for iPhone, iPad, and Retina Displays */
 
 /* Non-Retina */
-@media screen and (-webkit-max-device-pixel-ratio: 1) {
-
-    .section-container {
-        width: 100%;
-        height: 400px;
-        background-color: #2e2e2e;
-    }
-
-}
+@media screen and (-webkit-max-device-pixel-ratio: 1) {  }
 
 /* Retina */
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
 only screen and (min--moz-device-pixel-ratio: 1.5),
-only screen and (min-device-pixel-ratio: 1.5) {
-
-    .section-container {
-        width: 100%;
-        height: 400px;
-        background-color: #2e2e2e;
-    }
-
-}
+only screen and (min-device-pixel-ratio: 1.5) { }
 
 /* iPhone Portrait */
 @media screen and (max-device-width: 480px) and (orientation:portrait) {
 
-    .section-container {
-        width: 100%;
-        height: 400px;
-        background-color: #2e2e2e;
-    }
+   
 
 }
 
 /* iPhone Landscape */
 @media screen and (max-device-width: 480px) and (orientation:landscape) {
 
-    .section-container {
-        width: 100%;
-        height: 400px;
-        background-color: #2e2e2e;
-    }
+    
 
 }
 
 /* iPad Portrait */
 @media screen and (min-device-width: 481px) and (orientation:portrait) {
 
-    .section-container {
-        width: 100%;
-        height: 400px;
-        background-color: #2e2e2e;
-    }
+   
 
 }
 
 /* iPad Landscape */
 @media screen and (min-device-width: 481px) and (orientation:landscape) {
 
-    .section-container {
-        width: 100%;
-        height: 400px;
-        background-color: #2e2e2e;
-    }
+  
 
 }
