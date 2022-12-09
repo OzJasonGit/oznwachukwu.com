@@ -234,29 +234,15 @@ body {
     width: 100%;
     height: 560px;
     display: grid;
-    background-color: antiquewhite;
-}
-
-/* ---------------------------------------------------------------------------------------*/
-
-
-
-/* ---------------------------------------------------------------------------------------*/
-#IMAGE-3 {
-    grid-area: IMAGE-3;
-    width: 100%;
-    height: 560px;
-    display: grid;
     grid-template-columns: 20px 1fr 20px;
     grid-template-rows: 20px auto 20px;
     grid-template-areas: ". . ."
                          ". CENTER-AREA ."
-                         ". . .";    
+                         ". . .";
 }
 
 
-
-#IMAGE-3-INTERNAL {
+#IMAGE-2-INTERNAL {
     grid-area: CENTER-AREA;
     width: auto;
     height: auto;
@@ -269,6 +255,21 @@ body {
     border-color: #EFEFEF;
 }
 
+    
+
+/* ---------------------------------------------------------------------------------------*/
+
+
+
+/* ---------------------------------------------------------------------------------------*/
+#IMAGE-3 {
+    grid-area: IMAGE-3;
+    width: 100%;
+    height: 560px;
+    display: grid;
+    background-color: antiquewhite;
+     
+}
 /* ---------------------------------------------------------------------------------------*/
 
 
@@ -292,12 +293,12 @@ body {
     position: sticky;
     top: 100px;
     width: 100%;
-    height: 480px;
+    height: 600px;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto;
-    grid-row-gap: 30px;
+    grid-row-gap: 40px;
     display: grid;
-    max-height: 0;
+    max-height: 100%;
     grid-template-areas: "HOME"
                          "TITLE"
                          "HERO"
@@ -310,7 +311,7 @@ body {
 
 #HOME {
     grid-area: HOME;
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 5fr 1fr;
     grid-template-rows: 70px;
     background-color: aliceblue;
     display: grid;
@@ -770,9 +771,28 @@ body {
         width: 100%;
         height: 560px;
         display: grid;
-        background-color: antiquewhite;
+        grid-template-columns: 20px 1fr 20px;
+        grid-template-rows: 20px auto 20px;
+        grid-template-areas: ". . ."
+                             ". CENTER-AREA ."
+                             ". . .";
+        
     }
 
+
+
+    #IMAGE-2-INTERNAL {
+        grid-area: CENTER-AREA;
+        width: auto;
+        height: auto;
+        display: grid;
+        border-style: solid;
+        grid-template-columns: 20px 1fr 20px;
+        grid-template-rows: 20px auto 20px;
+        border-width: 5px;
+        border-radius: 10px;
+        border-color: #EFEFEF;
+    }
     /* ---------------------------------------------------------------------------------------*/
 
 
@@ -797,12 +817,7 @@ body {
         width: auto;
         height: auto;
         display: grid;
-        border-style: solid;
-        grid-template-columns: 20px 1fr 20px;
-        grid-template-rows: 20px auto 20px;
-        border-width: 5px;
-        border-radius: 10px;
-        border-color: #EFEFEF;
+        background-color: antiquewhite;
     }
 
     /* ---------------------------------------------------------------------------------------*/
@@ -832,13 +847,14 @@ body {
         height: 480px;
         display: grid; 
         grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto;
+        grid-template-rows: auto auto auto auto;
         grid-row-gap: 30px;
         display: grid;
-        max-height: 0;
-        grid-template-areas: "TOP-IMAGE"
+        max-height: 100%;
+        grid-template-areas: "HOME"
                              "TITLE"
-                             "HERO";
+                             "HERO"
+                             "DESCRIPTION";
     }
 
 
@@ -853,7 +869,7 @@ body {
 
     #HOME {
         grid-area: "HOME";
-        grid-template-columns: 200px 1fr;
+        grid-template-columns: 3fr 1fr;
         grid-template-rows: 70px;
         background-color: aliceblue;
         display: grid;
@@ -1240,7 +1256,25 @@ body {
         width: 100%;
         height: 560px;
         display: grid;
-        background-color: antiquewhite;
+        grid-template-columns: 20px 1fr 20px;
+        grid-template-rows: 20px auto 20px;
+        grid-template-areas: ". . ."
+                             ". CENTER-AREA ."
+                             ". . .";
+        
+    }
+
+    #IMAGE-2-INTERNAL {
+            grid-area: CENTER-AREA;
+            width: auto;
+            height: auto;
+            display: grid;
+            border-style: solid;
+            grid-template-columns: 20px 1fr 20px;
+            grid-template-rows: 20px auto 20px;
+            border-width: 5px;
+            border-radius: 10px;
+            border-color: #EFEFEF;
     }
 
     /* ---------------------------------------------------------------------------------------*/
@@ -1266,12 +1300,7 @@ body {
         width: auto;
         height: auto;
         display: grid;
-        border-style: solid;
-        grid-template-columns: 20px 1fr 20px;
-        grid-template-rows: 20px auto 20px;
-        border-width: 5px;
-        border-radius: 10px;
-        border-color: #EFEFEF;
+        background-color: antiquewhite;
     }
 
     /* ---------------------------------------------------------------------------------------*/
@@ -1302,15 +1331,20 @@ body {
             grid-area: TITLE;     
             display: grid;              
             width: 100%;
-            height: 220px;
-            background-color: antiquewhite;
+            grid-row-gap: 40px;
+            grid-template-rows: auto auto auto auto;
+            grid-template-columns: 1fr;
+            grid-template-areas: "HOME"
+                                 "TITLE"
+                                 "HERO"
+                                 "DESCRIPTION";         
         }
 
 
 
     #HOME {
             grid-area: "HOME";
-            grid-template-columns: 200px 1fr;
+            grid-template-columns: 5fr 1fr;
             grid-template-rows: 70px;
             background-color: aliceblue;
             display: grid;
@@ -1676,7 +1710,26 @@ body {
             width: 100%;
             height: 560px;
             display: grid;
-            background-color: antiquewhite;
+            grid-template-columns: 20px 1fr 20px;
+            grid-template-rows: 20px auto 20px;
+            grid-template-areas: ". . ."
+                                 ". CENTER-AREA ."
+                                 ". . .";
+            
+        }
+
+
+        #IMAGE-2-INTERNAL {
+            grid-area: CENTER-AREA;
+            width: auto;
+            height: auto;
+            display: grid;
+            border-style: solid;
+            grid-template-columns: 20px 1fr 20px;
+            grid-template-rows: 20px auto 20px;
+            border-width: 5px;
+            border-radius: 10px;
+            border-color: #EFEFEF;
         }
     
         /* ---------------------------------------------------------------------------------------*/
@@ -1738,8 +1791,13 @@ body {
             grid-area: TITLE;
             display: grid;
             width: 100%;
-            height: 220px;
-            background-color: antiquewhite;
+            grid-row-gap: 40px;
+            grid-template-rows: auto auto auto auto;
+            grid-template-columns: 1fr;
+            grid-template-areas: "HOME"
+                                 "TITLE"
+                                 "HERO"
+                                 "DESCRIPTION";
         }
     
         /* ---------------------------------------------------------------------------------------*/
@@ -2105,6 +2163,12 @@ h1 {
 
 #HERO-TEXT {
     grid-area: HERO;   
+    color: #EFEFEF;
+}
+
+
+#DESCRIPTION-TEXT {
+    grid-area: DESCRIPTION;
     color: #EFEFEF;
 }
 
