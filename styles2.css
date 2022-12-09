@@ -135,22 +135,30 @@ body {
 
 
 
-.title-holder {
+.title-holder-desktop {
     grid-area: TITLE;
     width: 100%;
-    height: 100%;
-    
+    height: 100%;   
 }
+
+
+
+
+.title-holder-mobile {
+    display: none;
+}
+
+
+
 
 
 .three-holder {
     position: sticky;
-    top: 100px;
-    
+    top: 100px;   
     width: 100%;
     max-height: 100%;
     display: grid;
-    grid-template-rows: 80px auto 50px;
+    grid-template-rows: 80px auto 30px;
     grid-row-gap: 40px;
     grid-template-areas: "HOME-ICON"
                          "HOME-TEXT"
@@ -325,9 +333,7 @@ body {
     
 }
 
-#TITLE-MOBILE {
-    display: none;
-}
+
 
 #HOME {
     grid-area: HOME-ICON;
@@ -362,6 +368,44 @@ body {
 }
 
 
+#SOCIAL {
+    grid-area: SOCIAL;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-column-gap: 20px;
+    grid-template-columns: 30px 30px 30px 30PX;
+    grid-template-areas: "GITHUB DRIBBLE LINKEDIN YOUTUBE";
+
+}
+
+#GITHUB{
+    grid-area: GITHUB;
+    width: 100%;
+    height: 100%;
+    background-color: aquamarine;
+}
+
+#DRIBBLE {
+    grid-area: DRIBBLE;
+    width: 100%;
+    height: 100%;
+    background-color: aquamarine;
+}
+
+#LINKEDIN {
+    grid-area: LINKEDIN;
+    width: 100%;
+    height: 100%;
+    background-color: aquamarine;
+}
+
+#YOUTUBE {
+    grid-area: YOUTUBE;
+    width: 100%;
+    height: 100%;
+    background-color: aquamarine;
+}
 
 
 
@@ -763,6 +807,18 @@ body {
     }
 
 
+    .title-holder-mobile {
+        display: none;
+    }
+
+
+        
+
+
+
+
+
+
 
 
 
@@ -903,9 +959,7 @@ body {
        
 
 
-    #TITLE-MOBILE {
-        display: none;
-    }
+   
 
 
 
@@ -1244,6 +1298,36 @@ body {
     }
 
 
+    .title-holder-desktop {
+        display: none;
+    }
+
+
+
+
+    .title-holder-mobile {
+        grid-area: TITLE;
+        width: 100%;
+        height: 400px;
+        background-color: antiquewhite;
+    }
+    
+
+
+
+    .three-holder {
+        position: sticky;
+        top: 100px;
+        width: 100%;
+        max-height: 100%;
+        display: grid;
+        grid-template-rows: 80px auto 40px;
+        grid-row-gap: 40px;
+        grid-template-areas: "HOME-ICON"
+                             "HOME-TEXT"
+                             "SOCIAL";
+    }
+
 
 
 
@@ -1369,18 +1453,7 @@ body {
             display: none;
         }
 
-    #TITLE-MOBILE {
-            grid-area: TITLE;     
-            display: grid;              
-            width: 100%;
-            grid-row-gap: 40px;
-            grid-template-rows: auto auto auto auto;
-            grid-template-columns: 1fr;
-            grid-template-areas: "HOME"
-                                 "TITLE"
-                                 "HERO"
-                                 "DESCRIPTION";         
-        }
+    
 
 
 
@@ -1651,6 +1724,10 @@ body {
             justify-content: center;
             background-color: rgb(255, 239, 66);
         }
+
+
+
+       
     
     
         .grid-0 {
@@ -1692,6 +1769,33 @@ body {
             -webkit-box-pack: center;
             justify-content: center;
         }
+
+
+        .title-holder-desktop {
+            display: none;
+        }
+
+
+                .title-holder-mobile {
+                    grid-area: TITLE;
+                    width: 100%;
+                    height: 400px;
+                    background-color: antiquewhite;
+                }
+
+
+        .three-holder {
+            position: sticky;
+            top: 100px;
+            width: 100%;
+            max-height: 100%;
+            display: grid;
+            grid-template-rows: 80px auto 40px;
+            grid-row-gap: 40px;
+            grid-template-areas: "HOME-ICON"
+                                 "HOME-TEXT"
+                                 "SOCIAL";
+ }
 
 
 
@@ -1831,15 +1935,8 @@ body {
     
         #TITLE-MOBILE {
             grid-area: TITLE;
-            display: grid;
             width: 100%;
-            grid-row-gap: 40px;
-            grid-template-rows: auto auto auto auto;
-            grid-template-columns: 1fr;
-            grid-template-areas: "HOME"
-                                 "TITLE"
-                                 "HERO"
-                                 "DESCRIPTION";
+            height: 100%;
         }
     
         /* ---------------------------------------------------------------------------------------*/
