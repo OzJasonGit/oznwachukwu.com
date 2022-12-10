@@ -2018,8 +2018,8 @@ body {
         height: 300px;
         background-repeat: no-repeat;
         background-image: url(assetts/images/tlc-2020.PNG);
-        background-size: cover;
-        background-position: 110% 0px;
+        background-size: cover 150%;
+        background-position: 0px 0px;
     }
 
     #BOTTOM-IMAGE {
