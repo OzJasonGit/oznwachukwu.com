@@ -167,6 +167,15 @@ body {
 
 
 
+.icon{
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center; 
+    align-items: center;  
+}
+
+
+
 #mobile {
     display: none;
 }
@@ -272,8 +281,8 @@ body {
     width: 100%;
     height: 560px;
     display: grid;
-    grid-template-columns: 20px 1fr 20px;
-    grid-template-rows: 20px auto 20px;
+    grid-template-columns: 15px 1fr 15px;
+    grid-template-rows: 15px auto 15px;
     grid-template-areas: ". . ."
                          ". CENTER-AREA ."
                          ". . .";
@@ -288,10 +297,26 @@ body {
     border-style: solid;
     grid-template-columns: 20px 1fr 20px;
     grid-template-rows: 20px auto 20px;
-    border-width: 5px;
-    border-radius: 10px;
+    border-width: 4px;
+    border-radius: 15px;
+    grid-template-areas: ". . ."
+                         ". SKILLS-CENTER ."
+                         ". . .";
     border-color: #EFEFEF;
 }
+
+#SKILLS-GRID {
+    grid-area: SKILLS-CENTER;
+    width: 100%;
+    height: auto;
+    max-height: 0;
+    display: grid;
+    grid-row-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+}
+    
+
 
     
 
@@ -381,7 +406,7 @@ body {
     height: 100%;
     grid-column-gap: 20px;
     grid-template-columns: 30px 30px 30px 30PX;
-    grid-template-areas: "GITHUB DRIBBLE LINKEDIN YOUTUBE";
+    grid-template-areas: "GITHUB DRIBBLE YOUTUBE LINKEDIN";
 
 }
 
@@ -875,8 +900,8 @@ body {
         width: 100%;
         height: 560px;
         display: grid;
-        grid-template-columns: 20px 1fr 20px;
-        grid-template-rows: 20px auto 20px;
+        grid-template-columns: 15px 1fr 15px;
+        grid-template-rows: 15px auto 15px;
         grid-template-areas: ". . ."
                              ". CENTER-AREA ."
                              ". . .";
@@ -1392,8 +1417,8 @@ body {
         width: 100%;
         height: 560px;
         display: grid;
-        grid-template-columns: 20px 1fr 20px;
-        grid-template-rows: 20px auto 20px;
+        grid-template-columns: 15px 1fr 15px;
+        grid-template-rows: 15px auto 15px;
         grid-template-areas: ". . ."
                              ". CENTER-AREA ."
                              ". . .";
@@ -1424,19 +1449,8 @@ body {
         width: 100%;
         height: 560px;
         display: grid;
-        border-style: solid;
         grid-template-columns: 20px 1fr 20px;
         grid-template-rows: 20px auto 20px;   
-    }
-
-
-
-    #IMAGE-3-INTERNAL {
-        grid-area: CENTER-AREA;
-        width: auto;
-        height: auto;
-        display: grid;
-        background-color: antiquewhite;
     }
 
     /* ---------------------------------------------------------------------------------------*/
@@ -1870,8 +1884,8 @@ body {
             width: 100%;
             height: 560px;
             display: grid;
-            grid-template-columns: 20px 1fr 20px;
-            grid-template-rows: 20px auto 20px;
+            grid-template-columns: 15px 1fr 15px;
+            grid-template-rows: 15px auto 15px;
             grid-template-areas: ". . ."
                                  ". CENTER-AREA ."
                                  ". . .";
@@ -1902,25 +1916,9 @@ body {
             grid-area: IMAGE-3;
             width: 100%;
             height: 560px;
-            display: grid;
-            border-style: solid;
+            display: grid;          
             grid-template-columns: 20px 1fr 20px;
             grid-template-rows: 20px auto 20px;
-            border-width: 5px;
-            border-radius: 10px;
-        }
-
-
-        #IMAGE-3-INTERNAL {
-            grid-area: CENTER-AREA;
-            width: auto;
-            height: auto;
-            display: grid;
-            border-style: solid;
-            grid-template-columns: 20px 1fr 20px;
-            grid-template-rows: 20px auto 20px;
-            border-width: 5px;
-            border-radius: 10px;          
         }
     
         /* ---------------------------------------------------------------------------------------*/
