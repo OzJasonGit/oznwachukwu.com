@@ -1305,11 +1305,15 @@ body {
 
 
 
-    .title-holder-mobile {
+    #mobile {
         grid-area: TITLE;
         width: 100%;
-        height: 400px;
-        background-color: antiquewhite;
+        height: auto;
+        display: grid;
+        grid-row-gap: 40px;
+        grid-template-rows: auto auto;
+        grid-template-areas: "HOME-ICON"
+                             "HOME-TEXT";
     }
     
 
@@ -1776,12 +1780,16 @@ body {
         }
 
 
-                .title-holder-mobile {
-                    grid-area: TITLE;
-                    width: 100%;
-                    height: 400px;
-                    background-color: antiquewhite;
-                }
+        #mobile {
+            grid-area: TITLE;
+            width: 100%;
+            height: auto;   
+            display: grid;
+            grid-row-gap: 40px;
+            grid-template-rows: auto auto;
+            grid-template-areas: "HOME-ICON"
+                                 "HOME-TEXT";
+        }
 
 
         .three-holder {
