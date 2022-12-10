@@ -167,6 +167,12 @@ body {
 
 
 
+#mobile {
+    display: none;
+}
+
+
+
 #SHADOW-SECTION {
     width: 100%;
     display: flex;
@@ -807,7 +813,7 @@ body {
     }
 
 
-    .title-holder-mobile {
+    #mobile {
         display: none;
     }
 
