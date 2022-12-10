@@ -338,8 +338,9 @@ body {
     grid-area: IMAGE-4;
     width: 100%;
     height: 670px;
-    display: grid;
+    display: grid; 
     background-color: antiquewhite;
+    
 }
 
 /* ---------------------------------------------------------------------------------------*/
@@ -478,7 +479,11 @@ body {
     grid-area: MID-IMAGE;
     width: 100%;
     height: 100%;
-    background-color: antiquewhite;
+    background-repeat: no-repeat;
+    background-image: url(assetts/images/tlc-2020.PNG);
+    background-size: cover;
+    background-position: -150px 0px;
+    
 }
 
 #BOTTOM-IMAGE {
@@ -1056,7 +1061,10 @@ body {
         grid-area: MID-IMAGE;
         width: 100%;
         height: 100%;
-        background-color: antiquewhite;
+        background-repeat: no-repeat;
+        background-image: url(assetts/images/tlc-2020.PNG);
+        background-size: cover;
+        background-position: -150px 0px;
     }
 
     #BOTTOM-IMAGE {
@@ -1545,7 +1553,10 @@ body {
         grid-area: MID-IMAGE;
         width: 100%;
         height: 300px;
-        background-color: antiquewhite;
+        background-repeat: no-repeat;
+        background-image: url(assetts/images/tlc-2020.PNG);
+        background-size: cover;
+        background-position: 0px 0px;
     }
 
     #BOTTOM-IMAGE {
@@ -2005,7 +2016,10 @@ body {
         grid-area: MID-IMAGE;
         width: 100%;
         height: 300px;
-        background-color: antiquewhite;
+        background-repeat: no-repeat;
+        background-image: url(assetts/images/tlc-2020.PNG);
+        background-size: cover;
+        background-position: 110% 0px;
     }
 
     #BOTTOM-IMAGE {
