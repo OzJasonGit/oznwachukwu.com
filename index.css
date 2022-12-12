@@ -480,7 +480,7 @@ body {
 
     grid-row-gap: 40px;
     grid-template-columns: 1fr;
-    grid-template-rows: 400px 1fr 400px 400px;
+    grid-template-rows: 400px 1fr 540px 400px;
     grid-template-areas: "TOP-IMAGE"
         "HERO"
         "MID-IMAGE"
@@ -529,8 +529,12 @@ body {
 
 #MID-IMAGE {
     grid-area: MID-IMAGE;
+    display: grid;
     width: 100%;
     height: 100%;   
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px auto;
+    grid-row-gap: 40px;
     background-color: antiquewhite;
 
 }
