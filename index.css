@@ -602,8 +602,16 @@ body {
 
 #PFBD {
     grid-area: PFBD;
+    display: grid;
     width: 100%;
-    height: 250px;
+    height: 670px;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "PFBD  TITLE"
+                         "PFBD INSTAGRAM"
+                         "PFBD INSTAGRAM";
     background-color: antiquewhite;
 }
 
@@ -612,7 +620,7 @@ body {
 #PFBD-2 {
     grid-area: PFBD-2;
     width: 100%;
-    height: 250px;
+    height: 670px;
     background-color: antiquewhite;
 }
 
