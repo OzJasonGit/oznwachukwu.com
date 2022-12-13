@@ -272,20 +272,20 @@ body {
     grid-column-gap: 40px;
     grid-row-gap: 40px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto auto;
-    grid-template-areas: "TITLE TITLE TITLE-2 TITLE-2 IMAGE IMAGE IMAGE IMAGE"
-        "TITLE TITLE TITLE-2 TITLE-2 IMAGE-2 IMAGE-2 IMAGE-3 IMAGE-3"
-        "TITLE TITLE TITLE-2 TITLE-2 IMAGE-4 IMAGE-4 IMAGE-4 IMAGE-4";
+    grid-template-rows: auto auto auto auto 100px;
+    grid-template-areas: "TITLE TITLE IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN"                       
+                         "IMAGE-1 IMAGE-1 IMAGE-1 IMAGE-1 IMAGE-1 PLAN PLAN PLAN"            
+                         "DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION . . ."
+                         "IMAGE-2 IMAGE-2 IMAGE-2 IMAGE-2 IMAGE-2 . . .";
 }
-
 /* ---------------------------------------------------------------------------------------*/
 
 
 
 
 /* ---------------------------------------------------------------------------------------*/
-#IMAGE {
-    grid-area: IMAGE;
+#IMAGE-MAIN {
+    grid-area: IMAGE-MAIN;
     width: 100%;
     height: 670px;
     display: grid;
@@ -298,34 +298,49 @@ body {
 
 
 /* ---------------------------------------------------------------------------------------*/
-#IMAGE-2 {
-    grid-area: IMAGE-2;
+#IMAGE-1 {
+    grid-area: IMAGE-1;
     width: 100%;
     height: 560px;
     display: grid;
     grid-template-columns: 15px 1fr 15px;
     grid-template-rows: 15px auto 15px;
     grid-template-areas: ". . ."
-        ". CENTER-AREA ."
-        ". . .";
+                         ". CENTER-AREA ."
+                         ". . .";
+    background-color: antiquewhite;
 }
 
 
-#IMAGE-2-INTERNAL {
-    grid-area: CENTER-AREA;
-    width: auto;
-    height: auto;
+
+#PLAN {
+    grid-area: PLAN;
+    width: 100%;
+    height: 560px;
     display: grid;
-    border-style: solid;
-    grid-template-columns: 20px 1fr 20px;
-    grid-template-rows: 20px auto 20px;
-    border-width: 4px;
-    border-radius: 15px;
-    grid-template-areas: ". . ."
-        ". SKILLS-CENTER ."
-        ". . .";
-    border-color: #EFEFEF;
+    background-color: antiquewhite;
 }
+
+
+
+#TEXT {
+    grid-area: DESCRIPTION;
+    width: 100%;
+}
+
+
+
+#IMAGE-2 {
+    grid-area: IMAGE-2;
+    width: 100%;
+    height: 560px;
+    display: grid;
+    background-color: antiquewhite;
+}
+    
+
+
+
 
 #SKILLS-GRID {
     grid-area: SKILLS-CENTER;
@@ -347,14 +362,7 @@ body {
 
 
 /* ---------------------------------------------------------------------------------------*/
-#IMAGE-3 {
-    grid-area: IMAGE-3;
-    width: 100%;
-    height: 560px;
-    display: grid;
-    background-color: antiquewhite;
 
-}
 
 /* ---------------------------------------------------------------------------------------*/
 
@@ -362,14 +370,7 @@ body {
 
 
 /* ---------------------------------------------------------------------------------------*/
-#IMAGE-4 {
-    grid-area: IMAGE-4;
-    width: 100%;
-    height: 670px;
-    display: grid;
-    background-color: antiquewhite;
 
-}
 
 /* ---------------------------------------------------------------------------------------*/
 
@@ -520,7 +521,7 @@ body {
     background-image: url(assetts/images/uni-project-1/uni-project-1-image1.PNG);
     background-size: cover 100%;
     background-position: -400px -300px;
-    
+
 }
 
 #HERO {
@@ -535,7 +536,7 @@ body {
     grid-area: MID-IMAGE;
     display: grid;
     width: 100%;
-    height: 100%;   
+    height: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: 100px auto;
     grid-row-gap: 40px;
@@ -618,8 +619,8 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto;
     grid-template-areas: "PFBD  TITLE"
-                         "PFBD INSTAGRAM"
-                         "PFBD INSTAGRAM";
+        "PFBD INSTAGRAM"
+        "PFBD INSTAGRAM";
 }
 
 
@@ -1157,13 +1158,13 @@ body {
         height: 100%;
         background-repeat: no-repeat;
         background-color: antiquewhite;
-        
+
     }
 
     #BOTTOM-IMAGE {
         grid-area: BOTTOM-IMAGE;
         width: 100%;
-        height: 100%; 
+        height: 100%;
         background-repeat: no-repeat;
         background-image: url(assetts/images/tlc-2020-3.PNG);
         background-size: cover;
@@ -1658,7 +1659,7 @@ body {
     #BOTTOM-IMAGE {
         grid-area: BOTTOM-IMAGE;
         width: 100%;
-        height: 300px;      
+        height: 300px;
         background-repeat: no-repeat;
         background-image: url(assetts/images/tlc-2020-3.PNG);
         background-size: cover;
@@ -2104,7 +2105,7 @@ body {
         background-image: url(assetts/images/uni-project-1/uni-project-1-image1.PNG);
         background-size: cover 100%;
         background-position: -400px -300px;
-        
+
     }
 
     #HERO {
@@ -2119,7 +2120,7 @@ body {
         grid-area: MID-IMAGE;
         width: 100%;
         height: 300px;
-        background-color: antiquewhite;     
+        background-color: antiquewhite;
     }
 
     #BOTTOM-IMAGE {
@@ -2130,7 +2131,7 @@ body {
         background-image: url(assetts/images/tlc-2020-3.PNG);
         background-size: cover 150%;
         background-position: 0px 0px;
-        
+
     }
 
 
