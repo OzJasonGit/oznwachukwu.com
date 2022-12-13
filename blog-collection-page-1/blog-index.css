@@ -361,19 +361,6 @@ body {
 
 
 
-/* ---------------------------------------------------------------------------------------*/
-
-
-/* ---------------------------------------------------------------------------------------*/
-
-
-
-
-/* ---------------------------------------------------------------------------------------*/
-
-
-/* ---------------------------------------------------------------------------------------*/
-
 
 
 /* ---------------------------------------------------------------------------------------*/
@@ -384,10 +371,6 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: "MAIN";
-
-
-
-
 }
 
 
@@ -419,9 +402,6 @@ body {
     grid-template-areas: "FRONT-TEXT"
         "HERO-TEXT"
         "DESCRIPTION";
-
-
-
 }
 
 
@@ -440,139 +420,25 @@ body {
     grid-area: GITHUB;
     width: 100%;
     height: 100%;
-
 }
 
 #DRIBBLE {
     grid-area: DRIBBLE;
     width: 100%;
     height: 100%;
-
 }
 
 #LINKEDIN {
     grid-area: LINKEDIN;
     width: 100%;
     height: 100%;
-
 }
 
 #YOUTUBE {
     grid-area: YOUTUBE;
     width: 100%;
     height: 100%;
-
 }
-
-
-
-
-
-/* ---------------------------------------------------------------------------------------*/
-
-
-/* ---------------------------------------------------------------------------------------*/
-#TITLE-2 {
-    grid-area: TITLE-2;
-    display: grid;
-    width: 100%;
-    height: 100%;
-    display: grid;
-
-    grid-row-gap: 40px;
-    grid-template-columns: 1fr;
-    grid-template-rows: 400px 1fr 540px 400px;
-    grid-template-areas: "TOP-IMAGE"
-        "HERO"
-        "MID-IMAGE"
-        "BOTTOM-IMAGE";
-}
-
-
-#HERO {
-    position: relative;
-    grid-area: HERO;
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    background-size: cover 150%;
-    background-position: 0px 0px;
-}
-
-
-#HERO-VID {
-    margin: auto;
-    display: block;
-    position: absolute;
-    background-v: url(assetts/videos/pexels-c-technical-6153734.mp4);
-    background-size: cover 150%;
-    background-position: -150px 300px;
-    width: 800%;
-    height: auto;
-}
-
-
-#TOP-IMAGE {
-    grid-area: TOP-IMAGE;
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-image: url(assetts/images/uni-project-1/uni-project-1-image1.PNG);
-    background-size: cover 100%;
-    background-position: -400px -300px;
-
-}
-
-#HERO {
-    grid-area: HERO;
-    width: 100%;
-    height: 100%;
-    background-color: antiquewhite;
-}
-
-
-#MID-IMAGE {
-    grid-area: MID-IMAGE;
-    display: grid;
-    width: 100%;
-    height: 100%;
-    grid-template-columns: 1fr;
-    grid-template-rows: 100px auto;
-    grid-row-gap: 40px;
-    background-color: antiquewhite;
-
-}
-
-#BOTTOM-IMAGE {
-    grid-area: BOTTOM-IMAGE;
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-image: url(assetts/images/tlc-2020-3.PNG);
-    background-size: cover;
-    background-position: -150px 0px;
-}
-
-
-#BANNER-1 {
-    position: relative;
-    grid-area: BANNER-1;
-    width: 100%;
-    height: 100%;
-    background-color: aqua;
-}
-
-
-#BANNER-2 {
-    position: relative;
-    grid-area: BANNER-2;
-    width: 100%;
-    height: 100%;
-    background-color: aqua;
-}
-
-/* ---------------------------------------------------------------------------------------*/
 /* ---------------------------------------------------------------------------------------*/
 
 
@@ -584,190 +450,6 @@ body {
 
 
 
-
-
-/* ---------------------------------------------------------------------------------------*/
-#GRID-2 {
-    grid-area: MAIN-AREA;
-    width: 100%;
-    display: grid;
-    grid-column-gap: 40px;
-    grid-row-gap: 40px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto auto;
-    grid-template-areas: "VIDEO VIDEO VIDEO VIDEO VIDEO VIDEO DESCRIPTION DESCRIPTION"
-        "PFBD PFBD PFBD PFBD PFBD-2 PFBD-2 PFBD-2 PFBD-2";
-}
-
-
-
-#VIDEO {
-    grid-area: VIDEO;
-    width: 100%;
-    height: 600px;
-    background-color: antiquewhite;
-}
-
-
-#PFBD {
-    grid-area: PFBD;
-    display: grid;
-    width: 100%;
-    height: 670px;
-    grid-column-gap: 40px;
-    grid-row-gap: 40px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: "PFBD  TITLE"
-        "PFBD INSTAGRAM"
-        "PFBD INSTAGRAM";
-}
-
-
-#PLACEHOLDER {
-    grid-area: PFBD;
-    width: 100%;
-    height: 100%;
-    background-color: antiquewhite;
-}
-
-
-#TITLE-INSTA {
-    grid-area: TITLE;
-    width: 100%;
-    height: 100%;
-    background-color: antiquewhite;
-}
-
-
-#INSTA {
-    grid-area: INSTAGRAM;
-    width: 100%;
-    height: 100%;
-    background-color: antiquewhite;
-}
-
-
-
-#PFBD-2 {
-    grid-area: PFBD-2;
-    width: 100%;
-    height: 670px;
-    background-color: antiquewhite;
-}
-
-
-#DESCRIPTION {
-    grid-area: DESCRIPTION;
-    width: 100%;
-    height: 100%;
-    background-color: antiquewhite;
-}
-
-/* ---------------------------------------------------------------------------------------*/
-
-
-
-
-
-
-
-/* ---------------------------------------------------------------------------------------*/
-#GRID-3 {
-    grid-area: MAIN-AREA;
-    width: 100%;
-    display: grid;
-    grid-column-gap: 40px;
-    grid-row-gap: 40px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto auto;
-    grid-template-areas: "FOLIO FOLIO FOLIO FOLIO FOLIO FOLIO FOLIO FOLIO";
-}
-
-
-
-
-
-#DESCRIPTION {
-    grid-area: DESCRIPTION;
-    width: 100%;
-    height: 100%;
-    background-color: antiquewhite;
-}
-
-
-#FOLIO {
-    grid-area: FOLIO;
-    display: grid;
-    width: 100%;
-    height: auto;
-    grid-row-gap: 40px;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-    grid-template-areas: "TITLE"
-        "FOLIO-GRID";
-
-}
-
-
-
-#FOLIO-TITLE {
-    grid-area: TITLE;
-    justify-content: left;
-    width: 100%;
-    background-color: antiquewhite;
-}
-
-
-
-
-#FOLIO-GRID {
-    display: grid;
-    grid-area: FOLIO-GRID;
-    width: 100%;
-    height: auto;
-    grid-row-gap: 40px;
-    grid-column-gap: 40px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 400px auto;
-    grid-template-areas: "PROJECT-1  PROJECT-1 PROJECT-2 PROJECT-2 PROJECT-3 PROJECT-3";
-
-}
-
-
-#PROJECT-1 {
-    grid-area: PROJECT-1;
-    width: 100%;
-    height: 100%;
-    background-color: antiquewhite;
-}
-
-
-#PROJECT-2 {
-    grid-area: PROJECT-2;
-    width: 100%;
-    height: 100%;
-    background-color: antiquewhite;
-}
-
-
-#PROJECT-3 {
-    grid-area: PROJECT-3;
-    width: 100%;
-    height: 100%;
-    background-color: antiquewhite;
-}
-
-
-#FOLIO-TITLE {
-    grid-area: MAIN-AREA;
-    overflow: hidden;
-    display: inline;
-
-
-}
-
-/* ---------------------------------------------------------------------------------------*/
 
 
 
