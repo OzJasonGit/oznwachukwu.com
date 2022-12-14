@@ -287,11 +287,11 @@ body {
 #IMAGE-MAIN {
     grid-area: IMAGE-MAIN;
     width: 100%;
-    height: 670px;
+    height: 100%;
+    min-height: 600px;
     display: grid;
     background-color: antiquewhite;
 }
-
 /* ---------------------------------------------------------------------------------------*/
 
 
@@ -352,11 +352,6 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto;
 }
-
-
-
-
-
 /* ---------------------------------------------------------------------------------------*/
 
 
@@ -637,329 +632,187 @@ body {
 
 
 
+        /* SECTION 1--------------------------------------------------------------------------*/
+        /* ---------------------------------------------------------------------------------------*/
+        #GRID-1 {
+            grid-area: MAIN-AREA;
+            width: 100%;
+            display: grid;
+            grid-column-gap: 40px;
+            grid-row-gap: 40px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: auto auto auto auto 100px;
+            grid-template-areas: "TITLE TITLE IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN"
+                "IMAGE-1 IMAGE-1 IMAGE-1 IMAGE-1 IMAGE-1 PLAN PLAN PLAN"
+                "DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION . . ."
+                "IMAGE-2 IMAGE-2 IMAGE-2 IMAGE-2 IMAGE-2 . . .";
+        }
+    
+        /* ---------------------------------------------------------------------------------------*/
+    
+    
+    
+    
+        /* ---------------------------------------------------------------------------------------*/
+        #IMAGE-MAIN {
+            grid-area: IMAGE-MAIN;
+            width: 100%;
+            height: 100%;
+            min-height: 600px;
+            display: grid;
+            background-color: antiquewhite;
+        }
+    
+        /* ---------------------------------------------------------------------------------------*/
+    
+    
+    
+    
+        /* ---------------------------------------------------------------------------------------*/
+        #IMAGE-1 {
+            grid-area: IMAGE-1;
+            width: 100%;
+            height: 560px;
+            display: grid;
+            grid-template-columns: 15px 1fr 15px;
+            grid-template-rows: 15px auto 15px;
+            grid-template-areas: ". . ."
+                ". CENTER-AREA ."
+                ". . .";
+            background-color: antiquewhite;
+        }
+    
+    
+    
+        #PLAN {
+            grid-area: PLAN;
+            width: 100%;
+            height: 560px;
+            display: grid;
+            background-color: antiquewhite;
+        }
+    
+    
+    
+        #TEXT {
+            grid-area: DESCRIPTION;
+            width: 100%;
+        }
+    
+    
+    
+        #IMAGE-2 {
+            grid-area: IMAGE-2;
+            width: 100%;
+            height: 560px;
+            display: grid;
+            background-color: antiquewhite;
+        }
+    
+    
+    
+    
+    
+        #SKILLS-GRID {
+            grid-area: SKILLS-CENTER;
+            width: 100%;
+            height: auto;
+            max-height: 0;
+            display: grid;
+            grid-row-gap: 20px;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto auto;
+        }
+    
+        /* ---------------------------------------------------------------------------------------*/
+    
+    
+    
+    
+    
+        /* ---------------------------------------------------------------------------------------*/
+        #TITLE {
+            grid-area: TEXT;
+            display: grid;
+            width: 100%;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-template-areas: "MAIN";
+        }
+    
+    
+    
+        #HOME {
+            grid-area: HOME-ICON;
+            width: 100%;
+            grid-template-columns: 5fr 1fr;
+            grid-template-rows: 70px;
+            background-color: aliceblue;
+            display: grid;
+        }
+    
+    
+        #HOME-TAG {
+            background-image: url(..\assetts\Artboard 2.svg);
+        }
+    
+    
+    
+        #HOME-TEXT {
+            grid-area: HOME-TEXT;
+            display: grid;
+            width: 100%;
+            height: auto;
+            grid-row-gap: 30px;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto;
+            grid-template-areas: "FRONT-TEXT"
+                "HERO-TEXT"
+                "DESCRIPTION";
+        }
+    
+    
+        #SOCIAL {
+            grid-area: SOCIAL;
+            display: grid;
+            width: 100%;
+            height: 100%;
+            grid-column-gap: 20px;
+            grid-template-columns: 30px 30px 30px 30PX;
+            grid-template-areas: "GITHUB DRIBBLE YOUTUBE LINKEDIN";
+    
+        }
+    
+        #GITHUB {
+            grid-area: GITHUB;
+            width: 100%;
+            height: 100%;
+        }
+    
+        #DRIBBLE {
+            grid-area: DRIBBLE;
+            width: 100%;
+            height: 100%;
+        }
+    
+        #LINKEDIN {
+            grid-area: LINKEDIN;
+            width: 100%;
+            height: 100%;
+        }
+    
+        #YOUTUBE {
+            grid-area: YOUTUBE;
+            width: 100%;
+            height: 100%;
+        }
+    
+        /* ---------------------------------------------------------------------------------------*/
 
 
 
 
 
-
-
-
-
-
-    /* ---------------------------------------------------------------------------------------*/
-    /* ---------------------------------------------------------------------------------------*/
-    #GRID-1 {
-        grid-area: MAIN-AREA;
-        width: 100%;
-        display: grid;
-        grid-column-gap: 40px;
-        grid-row-gap: 40px;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto auto auto;
-        grid-template-areas: "TITLE TITLE TITLE-2 TITLE-2 IMAGE IMAGE IMAGE IMAGE"
-            "TITLE TITLE TITLE-2 TITLE-2 IMAGE-2 IMAGE-2 IMAGE-3 IMAGE-3"
-            "TITLE TITLE TITLE-2 TITLE-2 IMAGE-4 IMAGE-4 IMAGE-4 IMAGE-4";
-    }
-
-    /* ---------------------------------------------------------------------------------------*/
-
-
-
-
-    /* ---------------------------------------------------------------------------------------*/
-    #IMAGE {
-        grid-area: IMAGE;
-        width: 100%;
-        height: 600px;
-        display: grid;
-        background-color: antiquewhite;
-    }
-
-    /* ---------------------------------------------------------------------------------------*/
-
-
-
-
-    /* ---------------------------------------------------------------------------------------*/
-    #IMAGE-2 {
-        grid-area: IMAGE-2;
-        width: 100%;
-        height: 560px;
-        display: grid;
-        grid-template-columns: 15px 1fr 15px;
-        grid-template-rows: 15px auto 15px;
-        grid-template-areas: ". . ."
-            ". CENTER-AREA ."
-            ". . .";
-
-    }
-
-
-
-    #IMAGE-2-INTERNAL {
-        grid-area: CENTER-AREA;
-        width: auto;
-        height: auto;
-        display: grid;
-        border-style: solid;
-        grid-template-columns: 20px 1fr 20px;
-        grid-template-rows: 20px auto 20px;
-        border-width: 5px;
-        border-radius: 10px;
-        border-color: #EFEFEF;
-    }
-
-    /* ---------------------------------------------------------------------------------------*/
-
-
-
-
-    /* ---------------------------------------------------------------------------------------*/
-    #IMAGE-3 {
-        grid-area: IMAGE-3;
-        width: 100%;
-        height: 560px;
-        display: grid;
-        grid-template-columns: 20px 1fr 20px;
-        grid-template-rows: 20px auto 20px;
-        grid-template-areas: ". . ."
-            ".CENTER-AREA."
-            ". . .";
-    }
-
-
-    #IMAGE-3-INTERNAL {
-        grid-area: CENTER-AREA;
-        width: auto;
-        height: auto;
-        display: grid;
-        background-color: antiquewhite;
-    }
-
-    /* ---------------------------------------------------------------------------------------*/
-
-
-
-
-    /* ---------------------------------------------------------------------------------------*/
-    #IMAGE-4 {
-        grid-area: IMAGE-4;
-        width: 100%;
-        height: 600px;
-        display: grid;
-        background-color: antiquewhite;
-    }
-
-    /* ---------------------------------------------------------------------------------------*/
-
-
-
-    /* ---------------------------------------------------------------------------------------*/
-    #TITLE {
-        grid-area: TITLE;
-        position: sticky;
-        top: 50px;
-        width: 100%;
-        height: 480px;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto;
-        grid-row-gap: 30px;
-        display: grid;
-        max-height: 100%;
-        grid-template-areas: "HOME"
-            "TITLE"
-            "HERO"
-            "DESCRIPTION";
-    }
-
-
-
-
-
-
-
-
-
-    #HOME {
-        grid-area: "HOME";
-        grid-template-columns: 3fr 1fr;
-        grid-template-rows: 70px;
-        background-color: aliceblue;
-        display: grid;
-    }
-
-
-    #HOME-TAG {
-        background-image: url(..\assetts\Artboard 2.svg);
-    }
-
-    /* ---------------------------------------------------------------------------------------*/
-
-
-    /* ---------------------------------------------------------------------------------------*/
-    #TITLE-2 {
-        grid-area: TITLE-2;
-        display: grid;
-        width: 100%;
-        height: 100%;
-        display: grid;
-
-        grid-row-gap: 40px;
-        grid-template-columns: 1fr;
-        grid-template-rows: 400px 1fr 400px 400px;
-        grid-template-areas: "TOP-IMAGE"
-            "HERO"
-            "MID-IMAGE"
-            "BOTTOM-IMAGE";
-    }
-
-
-    #TOP-IMAGE {
-        grid-area: TOP-IMAGE;
-        width: 100%;
-        height: 100%;
-        background-repeat: no-repeat;
-        background-image: url(assetts/images/uni-project-1/uni-project-1-image1.PNG);
-        background-size: cover 100%;
-        background-position: -400px -300px;
-    }
-
-    #HERO {
-        grid-area: HERO;
-        width: 100%;
-        height: 100%;
-        background-color: antiquewhite;
-    }
-
-
-    #MID-IMAGE {
-        grid-area: MID-IMAGE;
-        width: 100%;
-        height: 100%;
-        background-repeat: no-repeat;
-        background-color: antiquewhite;
-
-    }
-
-    #BOTTOM-IMAGE {
-        grid-area: BOTTOM-IMAGE;
-        width: 100%;
-        height: 100%;
-        background-repeat: no-repeat;
-        background-image: url(assetts/images/tlc-2020-3.PNG);
-        background-size: cover;
-        background-position: -150px 0px;
-    }
-
-
-    #BANNER-1 {
-        position: relative;
-        grid-area: BANNER-1;
-        width: 100%;
-        height: 100%;
-        background-color: aqua;
-    }
-
-
-    #BANNER-2 {
-        position: relative;
-        grid-area: BANNER-2;
-        width: 100%;
-        height: 100%;
-        background-color: aqua;
-    }
-
-    /* ---------------------------------------------------------------------------------------*/
-
-
-
-
-
-
-
-    /* ---------------------------------------------------------------------------------------*/
-
-
-
-    #GRID-2 {
-        grid-area: MAIN-AREA;
-        width: 100%;
-        display: grid;
-        grid-column-gap: 40px;
-        grid-row-gap: 40px;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto auto;
-        grid-template-areas: "VIDEO VIDEO VIDEO VIDEO VIDEO VIDEO DESCRIPTION DESCRIPTION"
-            "PFBD PFBD PFBD PFBD PFBD-2 PFBD-2 PFBD-2 PFBD-2";
-    }
-
-
-
-    #VIDEO {
-        grid-area: VIDEO;
-        width: 100%;
-        height: 460px;
-        background-color: antiquewhite;
-    }
-
-
-    #DESCRIPTION {
-        grid-area: DESCRIPTION;
-        width: 100%;
-        height: 100%;
-        background-color: antiquewhite;
-    }
-
-    /* ---------------------------------------------------------------------------------------*/
-
-
-
-
-
-
-
-    /* ---------------------------------------------------------------------------------------*/
-    #GRID-3 {
-        grid-area: MAIN-AREA;
-        width: 100%;
-        display: grid;
-        grid-column-gap: 40px;
-        grid-row-gap: 40px;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto auto;
-        grid-template-areas: "FOLIO FOLIO FOLIO FOLIO FOLIO FOLIO FOLIO FOLIO"
-            ". . CAROUSEL CAROUSEL CAROUSEL CAROUSEL CAROUSEL CAROUSEL"
-            ". . CAROUSEL CAROUSEL CAROUSEL CAROUSEL CAROUSEL CAROUSEL";
-    }
-
-
-
-
-
-    #DESCRIPTION {
-        grid-area: DESCRIPTION;
-        width: 100%;
-        height: 100%;
-        background-color: antiquewhite;
-    }
-
-
-    #FOLIO {
-        grid-area: FOLIO;
-        width: 100%;
-        height: 150px;
-        background-color: antiquewhite;
-    }
-
-
-    #CAROUSEL {
-        grid-area: CAROUSEL;
-        width: 100%;
-        height: 700px;
-        background-color: antiquewhite;
-    }
 }
 
 /* ---------------------------------------------------------------------------------------*/
@@ -1177,14 +1030,14 @@ body {
         display: grid;
         grid-column-gap: 40px;
         grid-row-gap: 40px;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-rows: auto auto auto auto auto auto;
-        grid-template-areas: "TITLE TITLE TITLE TITLE TITLE TITLE"
-            "IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE"
-            "TITLE-2 TITLE-2 TITLE-2 TITLE-2 TITLE-2 TITLE-2"
-            "TITLE-2 TITLE-2 TITLE-2 TITLE-2 TITLE-2 TITLE-2"
-            "IMAGE-2 IMAGE-2 IMAGE-2 IMAGE-3 IMAGE-3 IMAGE-3"
-            "IMAGE-4 IMAGE-4 IMAGE-4 IMAGE-4 IMAGE-4 IMAGE-4";
+        grid-template-areas: "TITLE"
+                             "IMAGE-MAIN"
+                             "IMAGE-1"
+                             "PLAN"
+                             "DESCRIPTION"
+                             "IMAGE-2";
 
     }
 
@@ -1645,22 +1498,21 @@ body {
 
     /* ---------------------------------------------------------------------------------------*/
     /* ---------------------------------------------------------------------------------------*/
-    #GRID-1 {
-        grid-area: MAIN-AREA;
-        width: 100%;
-        display: grid;
-        grid-row-gap: 40px;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto auto auto;
-        grid-template-areas: "TITLE"
-            "IMAGE"
-            "TITLE-2"
-            "TITLE-2"
-            "IMAGE-2"
-            "IMAGE-3"
-            "IMAGE-4";
-
-    }
+        #GRID-1 {
+            grid-area: MAIN-AREA;
+            width: 100%;
+            display: grid;
+            grid-column-gap: 40px;
+            grid-row-gap: 40px;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto auto auto auto;
+            grid-template-areas: "TITLE"
+                "IMAGE-MAIN"
+                "IMAGE-1"
+                "PLAN"
+                "DESCRIPTION"
+                "IMAGE-2";  
+        }
 
     /* ---------------------------------------------------------------------------------------*/
 
