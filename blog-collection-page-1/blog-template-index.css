@@ -357,6 +357,36 @@ body {
 
 
 /* ---------------------------------------------------------------------------------------*/
+#HOME-BUTTON {
+    grid-area: HOME;
+    position: relative;
+    width: 100%;
+    height: 100%;
+   
+}
+
+
+#HOME-ABSOLUTE {
+    grid-area: HOME;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+
+#HOME-STICKY {
+    grid-area: HOME;
+    position: sticky;
+    top: 100px;
+    width: 100%;
+    height: 360px;
+    background-color: aliceblue;
+}
+
+
+
 #TITLE {
     grid-area: TEXT;
     display: grid;
