@@ -274,13 +274,13 @@ body {
     grid-row-gap: 40px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto auto auto auto auto auto auto 100px;
-    grid-template-areas:". TITLE TITLE TITLE TITLE TITLE TITLE ."
-    ". IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN ."
-        ". . DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION . ."
-        ". . IMAGE-1 IMAGE-1 IMAGE-1 IMAGE-1 . ."
-        ". . DESCRIPTION-2 DESCRIPTION-2 DESCRIPTION-2 DESCRIPTION-2 . ."            
-        ". . IMAGE-2 IMAGE-2 IMAGE-2 IMAGE-2 . ."
-        ". . DESCRIPTION-3 DESCRIPTION-3 DESCRIPTION-3 DESCRIPTION-3 . .";
+    grid-template-areas:"HOME TITLE TITLE TITLE TITLE TITLE TITLE ."
+                        "HOME IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN ."
+                        "HOME . DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION . ."
+                        "HOME . IMAGE-1 IMAGE-1 IMAGE-1 IMAGE-1 . ."
+                        "HOME . DESCRIPTION-2 DESCRIPTION-2 DESCRIPTION-2 DESCRIPTION-2 . ."            
+                        "HOME . IMAGE-2 IMAGE-2 IMAGE-2 IMAGE-2 . ."
+                        "HOME . DESCRIPTION-3 DESCRIPTION-3 DESCRIPTION-3 DESCRIPTION-3 . .";
 }
 
 /* ---------------------------------------------------------------------------------------*/
@@ -636,22 +636,22 @@ body {
 
     /* SECTION 1--------------------------------------------------------------------------*/
     /* ---------------------------------------------------------------------------------------*/
-        #GRID-1 {
-            grid-area: MAIN-AREA;
-            width: 100%;
-            display: grid;
-            grid-column-gap: 40px;
-            grid-row-gap: 40px;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-            grid-template-rows: auto auto auto auto auto auto auto 100px;
-            grid-template-areas: ". TITLE TITLE TITLE TITLE TITLE TITLE ."
-                ". IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN ."
-                ". DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION ."
-                ". IMAGE-1 IMAGE-1 IMAGE-1 IMAGE-1 IMAGE-1 IMAGE-1 ."
-                ". DESCRIPTION-2 DESCRIPTION-2 DESCRIPTION-2 DESCRIPTION-2 DESCRIPTION-2 DESCRIPTION-2 ."
-                ". IMAGE-2 IMAGE-2 IMAGE-2 IMAGE-2 IMAGE-2 IMAGE-2 ."
-                ". DESCRIPTION-3 DESCRIPTION-3 DESCRIPTION-3 DESCRIPTION-3 DESCRIPTION-3 DESCRIPTION-3 .";
-        }
+    #GRID-1 {
+        grid-area: MAIN-AREA;
+        width: 100%;
+        display: grid;
+        grid-column-gap: 40px;
+        grid-row-gap: 40px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto 100px;
+        grid-template-areas: "HOME TITLE TITLE TITLE TITLE TITLE TITLE ."
+                             "HOME IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN ."
+                             "HOME . DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION . ."
+                             "HOME . IMAGE-1 IMAGE-1 IMAGE-1 IMAGE-1 . ."
+                             "HOME . DESCRIPTION-2 DESCRIPTION-2 DESCRIPTION-2 DESCRIPTION-2 . ."
+                             "HOME . IMAGE-2 IMAGE-2 IMAGE-2 IMAGE-2 . ."
+                             "HOME . DESCRIPTION-3 DESCRIPTION-3 DESCRIPTION-3 DESCRIPTION-3 . .";
+    }
     /* ---------------------------------------------------------------------------------------*/
 
 
