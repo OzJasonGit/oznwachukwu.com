@@ -172,6 +172,57 @@ body {
 
 
 
+#RIGHT-FIXED{
+    grid-area: BANNER-2;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+
+#RIGHT-FIXED-STICKY {
+    position: sticky;
+    top: 100px;
+    display: grid;
+    width: 100%;
+    height: 90vh;
+    grid-column: 1fr;
+    grid-row-gap: 40px;
+    grid-template-rows: 360px auto auto;
+    background-color: #B3B7A5;
+}
+
+
+
+#LEFT-FIXED {
+    grid-area: BANNER-1;
+    position: relative;
+    display: grid;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
+#LEFT-FIXED-STICKY {
+    position: sticky;
+    top: 100px;
+    display: grid;
+    width: 100%;
+    height: 90vh;
+    grid-column: 1fr;
+    grid-row-gap: 40px;
+    grid-template-rows: 360px auto auto;
+    background-color: #B3B7A5;
+}
+
+
+
+
 #mobile {
     display: none;
 }
@@ -658,6 +709,29 @@ body {
             "HOME-TEXT"
             "SOCIAL";
     }
+
+
+        #RIGHT-FIXED {
+            grid-area: BANNER-2;
+            position: relative;
+            display: grid;
+            width: 100%;
+            height: 100%;
+    
+        }
+    
+    
+    
+        #RIGHT-FIXED-STICKY {
+            display: grid;
+            position: sticky;
+            top: 100px;           
+            width: 100%;
+            height: 90vh;
+            grid-row-gap: 40px;
+            grid-template-rows: 360px auto auto;
+            background-color: #B3B7A5;
+        }
 
 
 
