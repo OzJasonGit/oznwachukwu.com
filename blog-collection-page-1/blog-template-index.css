@@ -62,7 +62,8 @@ body {
 
 .grid-0-fixed {
     position: fixed;
-    width: 100%;
+    top: -100vh;
+    width: 98vw;
     height: 100vh;
     max-width: 1760px;
     background-color: #2e2e2e;
@@ -73,6 +74,7 @@ body {
     grid-template-columns: 150px 1fr 150px;
     grid-template-areas: ". . ."
         "BANNER-1 MAIN-AREA BANNER-2";
+    margin-right: 0;
 }
 
 
@@ -95,7 +97,7 @@ body {
 
 .grid-0-3 {
     position: relative;
-    top: 0px;
+    top: -100vh;
     width: 100%;
     max-width: 1760px;
     display: grid;
@@ -190,6 +192,7 @@ body {
 
 #RIGHT-FIXED{
     grid-area: BANNER-2;
+    top: 100vh;
     position: relative;
     display: flex;
     width: 100%;
@@ -200,7 +203,6 @@ body {
 
 
 #RIGHT-FIXED-STICKY {
-    position: sticky;
     top: 100px;
     display: grid;
     width: 100%;
@@ -218,6 +220,7 @@ body {
 
 #LEFT-FIXED {
     grid-area: BANNER-1;
+    top: 100vh;
     position: relative;
     display: grid;
     width: 100%;
@@ -229,7 +232,6 @@ body {
 
 #LEFT-FIXED-STICKY {
     position: absolute;
-
     display: grid;
     width: 100%;
     height: 90vh;
@@ -721,6 +723,24 @@ body {
     }
 
 
+        .grid-0-fixed {
+            position: fixed;
+            top: -100vh;
+            width: 98vw;
+            height: 100vh;
+            max-width: 1760px;
+            background-color: #2e2e2e;
+            display: grid;
+            grid-column-gap: 40px;
+            grid-row-gap: 40px;
+            grid-template-rows: 60px auto;
+            grid-template-columns: 150px 1fr 150px;
+            grid-template-areas: ". . ."
+                "BANNER-1 MAIN-AREA BANNER-2";
+            margin: 0;
+        }
+
+
     .grid-0-2 {
         width: 100%;
         max-width: 1640px;
@@ -769,6 +789,7 @@ body {
 
         #RIGHT-FIXED {
             grid-area: BANNER-2;
+            top: 100vh;
             position: relative;
             display: flex;
             width: 100%;
@@ -793,6 +814,7 @@ body {
     
         #LEFT-FIXED {
             grid-area: BANNER-1;
+            top: 100vh;
             position: relative;
             display: grid;
             width: 100%;
@@ -920,12 +942,7 @@ body {
 
 
     #HOME-STICKY {
-        grid-area: HOME;
-        position: sticky;
-        top: 100px;
-        width: 100%;
-        height: 380px;
-        background-color: aliceblue;
+        display: none;
     }
         
 
@@ -974,57 +991,57 @@ body {
     }
 
 
-
-        #ICON-SIDE-1 {
-            grid-area: SIDE-1;
-            display: grid;
-            width: 100%;
-            height: 100%;
-            grid-template-columns: 1fr;
-            grid-template-areas: "AREA";
-        }
-    
-    
-    
-        #ICON-SIDE-2 {
-            grid-area: SIDE-2;
-            display: grid;
-            width: 100%;
-            height: 100%;
-            grid-template-columns: 1fr;
-            grid-template-areas: " AREA ";
-        }
-    
-    
-    
-        #ICON-SIDE-3 {
-            grid-area: SIDE-1;
-            display: grid;
-            width: 100%;
-            height: 100%;
-            grid-template-columns: 1fr;
-            grid-template-areas: " AREA ";
-        }
-    
-    
-    
-        #ICON-SIDE-4 {
-            grid-area: SIDE-2;
-            display: grid;
-            width: 100%;
-            height: 100%;
-            grid-template-columns: 1fr;
-            grid-template-areas: "AREA";
-        }
+#ICON-SIDE-1 {
+    grid-area: SIDE-1;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 40px 1fr;
+    grid-template-areas: ". AREA";
+}
 
 
-        #ICON-PLACEHOLDER {
-            grid-area: AREA;
-            width: 100%;
-            height: 100%;
-            background-color: #B3B7A5;                   
-        }
 
+#ICON-SIDE-2 {
+    grid-area: SIDE-2;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 40px 1fr;
+    grid-template-areas: ". AREA ";
+}
+
+
+
+#ICON-SIDE-3 {
+    grid-area: SIDE-1;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr 40px;
+    grid-template-areas: "AREA .";
+}
+
+
+
+#ICON-SIDE-4 {
+    grid-area: SIDE-2;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr 40px;
+    grid-template-areas: "AREA .";
+}
+
+
+
+
+#ICON-PLACEHOLDER {
+    grid-area: AREA;
+    width: 100%;
+    height: 100%;
+    background-color: #B3B7A5;
+}
     /* ---------------------------------------------------------------------------------------*/
 
 
@@ -1154,6 +1171,13 @@ body {
         justify-content: center;
         background-color: rgb(255, 239, 66);
     }
+
+
+
+
+        .grid-0-fixed {
+            display: none;
+        }
 
 
     .grid-0 {
@@ -1318,10 +1342,13 @@ body {
         }
 
 
-                #HOME-BUTTON {
-                    display: none;
+        #HOME-BUTTON {
+            display: none;
         
-                }
+       }
+
+
+                                
  
 }
 
