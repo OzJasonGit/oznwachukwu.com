@@ -96,6 +96,7 @@ body {
 
 .grid-0-fixed {
     position: fixed;
+    
     width: 100vw;
     height: 100vh;
     max-width: 1760px;
@@ -138,7 +139,7 @@ body {
     display: grid;
     grid-column-gap: 0px;
     grid-row-gap: 40px;
-    grid-template-rows: 100px auto;
+    grid-template-rows: 60px auto;
     grid-template-columns: 150px 40px 1fr 40px 150px;
     grid-template-areas: ". . . . ."
         "BANNER-1 . MAIN-AREA . BANNER-2";
@@ -356,26 +357,16 @@ body {
 
 
 
-#RIGHT-FIXED {
-    grid-area: BANNER-2;
 
-    position: relative;
-    display: flex;
-    width: 100%;
-    height: 100%;
-
-}
 
 
 
 #RIGHT-FIXED-STICKY {
-    top: 100px;
     display: grid;
     width: 100%;
     height: 100%;
     grid-template-columns: 1fr;
-    grid-row-gap: 40px;
-    grid-template-rows: 360px 600px auto;
+    grid-row-gap: 40px; 
     grid-template-rows: 360px 600px auto;
     grid-template-areas: "SIDE-1"
         "SIDE-2"
@@ -383,21 +374,31 @@ body {
 }
 
 
-
-#LEFT-FIXED {
-    grid-area: BANNER-1;
-   
+#RIGHT-FIXED {  
     position: relative;
-    display: grid;
+    grid-area: BANNER-2;
     width: 100%;
     height: 100%;
+    grid-template-columns: 1fr 40px;
+    grid-template-areas: "AREA PADDING"
+}
 
+
+
+#LEFT-FIXED {
+    position: relative;
+    grid-area: BANNER-1; 
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 40px 1fr;
+    grid-template-areas: "PADDING AREA";
 }
 
 
 
 #LEFT-FIXED-STICKY {
     position: relative;
+    grid-area: AREA;
     display: grid;
     width: 100%;
     height: 100%;
