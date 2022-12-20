@@ -1,6 +1,10 @@
 /* UNIVERSAL------------------------------------------------------------------------------*/
 /* ---------------------------------------------------------------------------------------*/
 /* ---------------------------------------------------------------------------------------*/
+
+
+
+
 body {
     position: relative;
     width: 100vw;
@@ -18,6 +22,7 @@ body {
 .wrapper {
     width: 100vw;
     height: auto;
+    
 }
 
 
@@ -28,6 +33,7 @@ body {
 }
 
 .scroller {
+    scrollbar-width: none;
     position: absolute;
     overflow-y: scroll;
     height: 100vh;
@@ -90,7 +96,7 @@ body {
 
 .grid-0-fixed {
     position: fixed;
-    width: 99vw;
+    width: 100vw;
     height: 100vh;
     max-width: 1760px;
     background-color: #2e2e2e;
@@ -101,7 +107,7 @@ body {
     grid-template-columns: 150px 1fr 150px;
     grid-template-areas: ". . ."
         "BANNER-1 MAIN-AREA BANNER-2";
-    margin-right: 0;
+    
 }
 
 
@@ -115,7 +121,7 @@ body {
     display: grid;
     grid-column-gap: 40px;
     grid-row-gap: 40px;
-    grid-template-rows: auto;
+    grid-template-rows: 60px auto;
     grid-template-columns: 150px 1fr 150px;
     grid-template-areas: ". . ."
         "BANNER-1 MAIN-AREA BANNER-2";
@@ -130,12 +136,30 @@ body {
     max-width: 1760px;
     background-color: #2e2e2e;
     display: grid;
+    grid-column-gap: 0px;
+    grid-row-gap: 40px;
+    grid-template-rows: 100px auto;
+    grid-template-columns: 150px 40px 1fr 40px 150px;
+    grid-template-areas: ". . . . ."
+        "BANNER-1 . MAIN-AREA . BANNER-2";
+}
+
+
+
+.grid-0-2-header {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    max-width: 1760px;
+    background-color: #2e2e2e;
+    display: grid;
     grid-column-gap: 40px;
     grid-row-gap: 40px;
     grid-template-rows: auto;
     grid-template-columns: 150px 1fr 150px;
-    grid-template-areas: ". . ."
+    grid-template-areas: 
         "BANNER-1 MAIN-AREA BANNER-2";
+    z-index: 1;
 }
 
 
@@ -189,6 +213,21 @@ body {
 }
 
 
+.fixed-holder {
+    position: fixed;
+    top: 0px;
+    right: 10px;
+    width: 100%;
+    height: 100px;
+    padding-left: 10px;
+    padding-right: 10px; 
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    z-index: 1000px;
+}
+
+
 
 .fixed-reveal {
     width: 100%;
@@ -216,6 +255,10 @@ body {
     display: none;
 }
 
+
+.relative-internal{
+    width: 100%;
+}
 
 
 
@@ -1161,10 +1204,31 @@ body {
         display: grid;
         grid-column-gap: 40px;
         grid-row-gap: 40px;
-        grid-template-rows: auto;
+        grid-template-rows: 60px auto;
         grid-template-columns: 50px 1fr 50px;
         grid-template-areas: ". . ."
             "BANNER-1 MAIN-AREA BANNER-2";
+    }
+
+
+
+
+
+    .grid-0-2-header {
+        position: sticky;
+        top: 0px;
+        width: 100%;
+        height: 100px;
+        max-width: 1760px;
+        background-color: #2e2e2e;
+        display: grid;
+        grid-column-gap: 40px;
+        grid-row-gap: 40px;
+        grid-template-rows: auto;
+        grid-template-columns: 50px 1fr 50px;
+        grid-template-areas:
+                "BANNER-1 MAIN-AREA BANNER-2";
+        z-index: 1;
     }
 
 
@@ -1703,21 +1767,41 @@ body {
 
 
 
-        .grid-0-2-top {
-            width: 100%;
-            max-width: 1640px;
-            position: relative;
-            padding-left: 30px;
-            padding-right: 30px;
-            background-color: #2e2e2e;
-            display: grid;
-            grid-column-gap: 40px;
-            grid-row-gap: 40px;
-            grid-template-rows: auto;
-            grid-template-columns: 1fr;
-            grid-template-areas: "."
+    .grid-0-2-top {
+        width: 100%;
+        max-width: 1640px;
+        position: relative;
+        padding-left: 30px;
+        padding-right: 30px;
+        background-color: #2e2e2e;
+        display: grid;
+        grid-column-gap: 40px;
+        grid-row-gap: 40px;
+        grid-template-rows: 60px auto;
+        grid-template-columns: 1fr;
+        grid-template-areas: "."
                 "MAIN-AREA";
-        }
+    }
+
+
+
+
+
+.grid-0-2-header {
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    height: 100px;
+    max-width: 1760px;
+    background-color: #2e2e2e;
+    display: grid;
+    
+    grid-template-rows: auto;
+    grid-template-columns: 30px 1fr 30px;
+    grid-template-areas:
+        "BANNER-1 MAIN-AREA BANNER-2";
+    z-index: 1;
+}
 
 
     .container {
@@ -2207,6 +2291,23 @@ body {
         grid-template-columns: 1fr;
         grid-template-areas: "."
             "MAIN-AREA";
+    }
+
+
+    .grid-0-2-top {
+        position: relative;
+        width: 100%;
+        max-width: 1760px;
+        background-color: #2e2e2e;
+        display: grid;
+        grid-column-gap: 40px;
+        grid-row-gap: 40px;
+        grid-template-rows: 60px auto;
+        grid-template-columns: 1fr;
+        padding-left: 30px;
+        padding-right: 30px;
+        grid-template-areas: " . "
+                             "MAIN-AREA";
     }
 
 
