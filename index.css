@@ -6,6 +6,7 @@
 
 
 body {
+    -webkit-scrollbar display: none;
     position: relative;
     width: 100vw;
     height: 100vh;
@@ -36,6 +37,8 @@ body {
 }
 
 .scroller {
+    
+    overflow-y: hidden; /* Hide vertical scrollbar */
     scrollbar-width: none;
     position: absolute;
     overflow-y: scroll;
@@ -698,6 +701,7 @@ body {
 #HOME-TEXT {
     grid-area: HOME-TEXT;
     display: grid;
+    justify-content: left;
     width: 100%;
     height: auto;
     grid-row-gap: 30px;
@@ -3270,5 +3274,15 @@ h1 {
 
 
 #H1-HERO {
-    font-size: 13.5em;
+    position: relative;
+    right: 25px;
+    font-size: 15.5em;
+    font-family: sofia-pro,
+            sans-serif;
+    
+    font-weight: 400;    
+    font-style: normal;
 }
+
+
+
