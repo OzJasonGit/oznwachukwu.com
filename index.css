@@ -6,7 +6,7 @@
 
 
 body {
-    -webkit-scrollbar display: none;
+    
     position: relative;
     width: 100vw;
     height: 100vh;
@@ -36,9 +36,13 @@ body {
     
 }
 
-.scroller {
-    
-    overflow-y: hidden; /* Hide vertical scrollbar */
+
+.scroller::-webkit-scrollbar {
+    width: 0px;
+    height: 16px;
+}
+
+.scroller {  
     scrollbar-width: none;
     position: absolute;
     overflow-y: scroll;
