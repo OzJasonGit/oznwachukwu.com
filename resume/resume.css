@@ -137,6 +137,39 @@ body {
 }
 
 
+.grid-0-2-top {
+    position: relative;
+    width: 100%;
+    max-width: 1760px;
+    background-color: #2e2e2e;
+    display: grid;
+    grid-column-gap: 0px;
+    grid-row-gap: 40px;
+    grid-template-rows: 80px auto;
+    grid-template-columns: 150px 40px 1fr 40px 150px;
+    grid-template-areas: ". . . . ."
+        "BANNER-1 . MAIN-AREA . BANNER-2";
+}
+
+
+
+
+.grid-0-2-top {
+    position: relative;
+    width: 100%;
+    max-width: 1760px;
+    background-color: #2e2e2e;
+    display: grid;
+    grid-column-gap: 0px;
+    grid-row-gap: 40px;
+    grid-template-rows: 80px auto;
+    grid-template-columns: 150px 40px 1fr 40px 150px;
+    grid-template-areas: ". . . . ."
+        "BANNER-1 . MAIN-AREA . BANNER-2";
+}
+
+
+
 
 .grid-0-2 {
     position: relative;
@@ -372,8 +405,6 @@ body {
     -webkit-box-pack: center;
     justify-content: center;
     background-color: #2e2e2e;
-
-
 }
 
 
@@ -392,6 +423,63 @@ body {
 
 #FOLIO-TITLE {
     grid-area: HEAD;
+}
+
+
+
+#HEAD-IMAGE {
+    grid-area: MAIN-AREA;
+    display: grid;
+    width: 100%;
+    height: 740px;
+    grid-column-gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100% 100%;
+    grid-template-areas: "IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE"
+        "TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT";
+}
+
+
+#HEAD-HERO-IMAGE {
+    grid-area: IMAGE;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    background-color: azure;
+}
+
+
+#HEAD-HERO-TEXT {
+    position: relative;
+    grid-area: TEXT;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    grid-column-gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: ". . . . . . . ."
+        ". TEXT TEXT TEXT TEXT TEXT TEXT ."
+        ". TEXT TEXT TEXT TEXT TEXT TEXT ."
+        ". TEXT-2 TEXT-2 TEXT-2 TEXT-2 TEXT-2 TEXT-2 ."
+        ". TEXT-2 TEXT-2 TEXT-2 TEXT-2 TEXT-2 TEXT-2 .";
+}
+
+
+
+#HERO-TEXT-1 {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    grid-area: TEXT;
+}
+
+#HERO-TEXT-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: TEXT-2;
 }
 
 
@@ -437,13 +525,13 @@ body {
     grid-row-gap: 40px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto auto auto auto auto auto auto 100px;
-    grid-template-areas: "HOME TITLE TITLE TITLE TITLE TITLE TITLE ."
-        "HOME IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN ."
-        "HOME . DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION . ."
-        "HOME . IMAGE-1 IMAGE-1 IMAGE-1 IMAGE-1 . ."
-        "HOME . DESCRIPTION-2 DESCRIPTION-2 DESCRIPTION-2 DESCRIPTION-2 . ."
-        "HOME . IMAGE-2 IMAGE-2 IMAGE-2 IMAGE-2 . ."
-        "HOME . DESCRIPTION-3 DESCRIPTION-3 DESCRIPTION-3 DESCRIPTION-3 . .";
+    grid-template-areas: "HOME TITLE TITLE TITLE TITLE . . ."
+        "HOME IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN"
+        "HOME DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION ."
+        "HOME IMAGE-1 IMAGE-1 IMAGE-1 IMAGE-1 IMAGE-1 IMAGE-1 ."
+        "HOME DESCRIPTION-2 DESCRIPTION-2 DESCRIPTION-2 DESCRIPTION-2 DESCRIPTION-2 DESCRIPTION-2 ."
+        "HOME IMAGE-2 IMAGE-2 IMAGE-2 IMAGE-2 IMAGE-2 IMAGE-2 ."
+        "HOME DESCRIPTION-3 DESCRIPTION-3 DESCRIPTION-3 DESCRIPTION-3 DESCRIPTION-3 DESCRIPTION-3 .";
 }
 
 /* ---------------------------------------------------------------------------------------*/
@@ -454,11 +542,21 @@ body {
 /* ---------------------------------------------------------------------------------------*/
 #IMAGE-MAIN {
     grid-area: IMAGE-MAIN;
+    display: grid;
+    grid-row-gap: 40px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px auto;
     width: 100%;
     height: 100%;
-    min-height: 600px;
-    display: grid;
-    background-color: antiquewhite;
+    min-height: auto;  
+    grid-template-areas: "EDUCATION"
+                         "TEXT";
+}
+
+
+
+#EDUCATION-TITLE {
+    grid-area: EDUCATION;
 }
 
 /* ---------------------------------------------------------------------------------------*/
@@ -510,6 +608,18 @@ body {
     grid-area: DESCRIPTION-3;
     width: 100%;
 }
+
+
+#SHADOW-SECTION {
+    width: 100%;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background-color: #2e2e2e;
+}
+
+
+
 
 
 

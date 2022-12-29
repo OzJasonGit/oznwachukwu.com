@@ -311,8 +311,6 @@ body {
     -webkit-box-pack: center;
     justify-content: center;
     background-color: #2e2e2e;
-
-
 }
 
 
@@ -495,7 +493,7 @@ body {
     grid-column-gap: 40px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 100% 100%;
-    grid-template-areas: ". IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE"
+    grid-template-areas: "IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE"
                          "TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT"; 
 }
 
@@ -520,8 +518,8 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: ". . . . . . . ."
-                         "TEXT TEXT TEXT TEXT TEXT TEXT TEXT ."
-                         "TEXT TEXT TEXT TEXT TEXT TEXT TEXT ."
+                         ". TEXT TEXT TEXT TEXT TEXT TEXT TEXT"
+                         ". TEXT TEXT TEXT TEXT TEXT TEXT TEXT"
                          ". . . . TEXT-2 TEXT-2 TEXT-2 ."
                          ". . . . TEXT-2 TEXT-2 TEXT-2 .";
 }
