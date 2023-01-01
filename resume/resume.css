@@ -34,7 +34,10 @@ body {
 
 
 
-
+.scroller::-webkit-scrollbar {
+    width: 0px;
+    height: 16px;
+}
 
 .scroller {
     scrollbar-width: none;
@@ -523,15 +526,15 @@ body {
     display: grid;
     grid-column-gap: 40px;
     grid-row-gap: 150px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto auto auto auto auto auto auto 100px;
-    grid-template-areas: "HOME TITLE TITLE TITLE TITLE ANIM ANIM ANIM"
-        "HOME IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN"
-        "HOME DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION ."
-        "HOME IMAGE-1 IMAGE-1 IMAGE-1 IMAGE-1 IMAGE-1 IMAGE-1 IMAGE-1"
-        "HOME DESCRIPTION-2 DESCRIPTION-2 DESCRIPTION-2 DESCRIPTION-2 DESCRIPTION-2 DESCRIPTION-2 ."
-        "HOME IMAGE-2 IMAGE-2 IMAGE-2 IMAGE-2 IMAGE-2 IMAGE-2 ."
-        "HOME DESCRIPTION-3 DESCRIPTION-3 DESCRIPTION-3 DESCRIPTION-3 DESCRIPTION-3 DESCRIPTION-3 .";
+    grid-template-areas: "HOME TITLE TITLE TITLE TITLE TITLE ANIM ANIM ANIM"
+        "HOME IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN"
+        "HOME WORK-EX WORK-EX WORK-EX WORK-EX WORK-EX SKILLS SKILLS SKILLS"
+        "HOME IMAGE-1 IMAGE-1 IMAGE-1 IMAGE-1 IMAGE-1 SKILLS SKILLS SKILLS"
+        "HOME DESCRIPTION-2 DESCRIPTION-2 DESCRIPTION-2 DESCRIPTION-2 DESCRIPTION-2 SKILLS SKILLS SKILLS"
+        "HOME IMAGE-2 IMAGE-2 IMAGE-2 IMAGE-2 IMAGE-2 . . ."
+        "HOME DESCRIPTION-3 DESCRIPTION-3 DESCRIPTION-3 DESCRIPTION-3 DESCRIPTION-3 . . .";
 }
 
 /* ---------------------------------------------------------------------------------------*/
@@ -577,6 +580,83 @@ body {
     grid-area: BAR;
     background-color: antiquewhite;
 }
+
+
+#BAR-2 {
+    grid-area: BAR-2;
+    background-color: antiquewhite;
+}
+
+
+
+
+
+
+#WORK-EXPERIENCE {
+    grid-area: WORK-EX;
+    display: grid;
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    grid-template-columns: 80px 1fr 250px;
+    grid-template-rows: 30px auto auto auto auto 30px;
+    width: 100%;
+    height: 100%;
+    grid-template-areas: "BAR BAR BAR"
+                         "TITLE TITLE TITLE"
+                         "DATE . ."
+                         "ARROWS TEXT TEXT"
+                         "DATE-2 . ."
+                         ". . BAR-2";
+}
+
+
+
+#WORK-EXPERIENCE-TITLE {
+    grid-area: TITLE;    
+}
+
+
+#DATE-TITLE-1 {
+    grid-area: DATE;
+}
+
+#DATE-TITLE-2 {
+    grid-area: DATE-2;
+}
+
+
+
+#ARROWS {
+    grid-area: ARROWS;
+    display: grid;
+    grid-template-columns: 1fr 30px 1fr;
+    grid-template-rows: 60px auto 60px;
+    width: 100%;
+    height: 100%;
+    grid-template-areas: "ARROW . ."
+                         ". . ."
+                         "ARROW-2 . .";
+
+
+}
+
+
+#SKILLS-BOX {
+    grid-area: SKILLS;
+    display: grid;
+    grid-row-gap: 40px;
+    grid-column-gap: 40px;
+    grid-template-columns: 40px 1fr;
+    grid-template-rows: auto auto auto auto;
+    background-color: rgb(234, 113, 255);
+    grid-template-areas: ". ARCHITECTURE"
+                         ". TECHNOLOGY"
+                         ". HELLO"
+                         ". WHO";
+}
+
+
+
 
 /* ---------------------------------------------------------------------------------------*/
 
@@ -2104,5 +2184,27 @@ h1 {
 
 #DESCRIPTION-TEXT {
     grid-area: DESCRIPTION;
+    color: #EFEFEF;
+}
+
+
+#EDUCATION-TEXT {
+    grid-area: TEXT;
+    text-align: right;
+    color: #EFEFEF;
+}
+
+
+#EDUCATION-TITLE {
+    grid-area: EDUCATION;
+    text-align: right;
+    color: #EFEFEF;
+}
+
+
+
+#WORK-EX-ITEMS {
+    grid-area: TEXT;
+    text-align: left;
     color: #EFEFEF;
 }
