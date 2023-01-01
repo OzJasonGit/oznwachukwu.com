@@ -525,16 +525,13 @@ body {
     width: 100%;
     display: grid;
     grid-column-gap: 40px;
-    grid-row-gap: 150px;
+    grid-row-gap: 100px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto auto auto auto auto 100px;
+    grid-template-rows: auto auto auto auto 100px;
     grid-template-areas: "HOME TITLE TITLE TITLE TITLE TITLE ANIM ANIM ANIM"
         "HOME IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN"
         "HOME WORK-EX WORK-EX WORK-EX WORK-EX WORK-EX SKILLS SKILLS SKILLS"
-        "HOME IMAGE-1 IMAGE-1 IMAGE-1 IMAGE-1 IMAGE-1 SKILLS SKILLS SKILLS"
-        "HOME DESCRIPTION-2 DESCRIPTION-2 DESCRIPTION-2 DESCRIPTION-2 DESCRIPTION-2 SKILLS SKILLS SKILLS"
-        "HOME IMAGE-2 IMAGE-2 IMAGE-2 IMAGE-2 IMAGE-2 . . ."
-        "HOME DESCRIPTION-3 DESCRIPTION-3 DESCRIPTION-3 DESCRIPTION-3 DESCRIPTION-3 . . .";
+        "HOME WORK-EX-2 WORK-EX-2 WORK-EX-2 WORK-EX-2 WORK-EX-2 SKILLS SKILLS SKILLS";
 }
 
 /* ---------------------------------------------------------------------------------------*/
@@ -598,7 +595,7 @@ body {
     grid-row-gap: 30px;
     grid-column-gap: 30px;
     grid-template-columns: 80px 1fr 250px;
-    grid-template-rows: 30px auto auto auto auto 30px;
+    grid-template-rows: 40px auto auto auto auto 40px;
     width: 100%;
     height: 100%;
     grid-template-areas: "BAR BAR BAR"
@@ -607,6 +604,43 @@ body {
                          "ARROWS TEXT TEXT"
                          "DATE-2 . ."
                          ". . BAR-2";
+}
+
+
+
+
+#WORK-EXPERIENCE-2 {
+    grid-area: WORK-EX-2;
+    display: grid;
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    grid-template-columns: 80px 1fr 250px;
+    grid-template-rows: auto auto auto 40px;
+    width: 100%;
+    height: 100%;
+    grid-template-areas:
+        "DATE . ."
+        "ARROWS TEXT TEXT"
+        "DATE-2 . ."
+        ". . BAR-2";
+}
+
+
+
+#WORK-EXPERIENCE-3 {
+    grid-area: WORK-EX-3;
+    display: grid;
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    grid-template-columns: 80px 1fr 250px;
+    grid-template-rows: auto auto auto 30px;
+    width: 100%;
+    height: 100%;
+    grid-template-areas:
+        "DATE . ."
+        "ARROWS TEXT TEXT"
+        "DATE-2 . ."
+        ". . BAR-2";
 }
 
 
@@ -633,34 +667,38 @@ body {
     grid-template-rows: 60px auto 60px;
     width: 100%;
     height: 100%;
-    grid-template-areas: "ARROW . ."
+    grid-template-areas: "ARROW-UP . ."
                          ". . ."
-                         "ARROW-2 . .";
-
-
+                         "ARROW-DOWN . .";
 }
 
-
-#SKILLS-BOX {
-    grid-area: SKILLS;
-    display: grid;
-    grid-row-gap: 40px;
-    grid-column-gap: 40px;
-    grid-template-columns: 40px 1fr;
-    grid-template-rows: auto auto auto auto;
-    background-color: rgb(234, 113, 255);
-    grid-template-areas: ". ARCHITECTURE"
-                         ". TECHNOLOGY"
-                         ". HELLO"
-                         ". WHO";
+#UP {
+    grid-area: ARROW-UP;
 }
+
+#DOWN {
+    grid-area: ARROW-DOWN;
+}
+
 
 
 
 
 /* ---------------------------------------------------------------------------------------*/
 
-
+#SKILLS-BOX {
+    grid-area: SKILLS;
+    display: grid;
+    grid-row-gap: 40px;
+    grid-column-gap: 40px;
+    grid-template-columns: 20px 1fr;
+    grid-template-rows: auto auto auto auto;
+    background-color: rgb(234, 113, 255);
+    grid-template-areas: ". ARCHITECTURE"
+        ". TECHNOLOGY"
+        ". HELLO"
+        ". WHO";
+}
 
 
 /* ---------------------------------------------------------------------------------------*/
