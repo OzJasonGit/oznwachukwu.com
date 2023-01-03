@@ -673,11 +673,16 @@ body {
 }
 
 #UP {
+    display: flex;
+    align-items: flex-start;
     grid-area: ARROW-UP;
 }
 
 #DOWN {
+    display: flex;
+    align-items: flex-end;
     grid-area: ARROW-DOWN;
+
 }
 
 
@@ -692,16 +697,51 @@ body {
     grid-row-gap: 40px;
     grid-column-gap: 40px;
     grid-template-columns: 20px 1fr;
-    grid-template-rows: auto auto auto auto;
-    background-color: rgb(234, 113, 255);
-    grid-template-areas: ". ARCHITECTURE"
-        ". TECHNOLOGY"
-        ". HELLO"
-        ". WHO";
+    grid-template-rows: 150px auto auto auto;
+    grid-template-areas: ". TITLE"
+        ". TECHNICAL-SKILLS-CORE-COMPETENCES"
+        ". TECHNICAL-SKILLS-CORE-COMPETENCES"
+        ". LICENSES";
 }
 
 
+
+#CV-TITLE {
+    grid-area: TITLE;
+    display: grid;
+    background-color: rgb(234, 113, 255);
+}
+
+#TECHNICAL-SKILLS-CORE-COMPETENCES {
+    grid-area: TECHNICAL-SKILLS-CORE-COMPETENCES;
+    display: grid;
+    background-color: rgb(237, 255, 103);
+}
+
+#LICENSES {
+    grid-area: LICENSES;
+    display: grid;
+    background-color: #EFEFEF;
+}
+
+
+
+
 /* ---------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #TEXT-1 {
     grid-area: DESCRIPTION;
     width: 100%;
