@@ -600,6 +600,7 @@ body {
     display: grid;
     grid-template-columns: 15px 1fr 15px;
     grid-template-rows: 15px auto 15px;
+    background-color: rgb(255, 255, 87);
     grid-template-areas: ". . ."
         ". CENTER-AREA ."
         ". . .";

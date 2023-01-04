@@ -287,6 +287,20 @@ body {
 
 
 
+.cv-item {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-row-gap: 5px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "JOB-TITLE"
+                         "COMPANY-DATE"
+                         "DESCRIPTION"
+                         "ACHIEVEMENTS";
+}
+
+
+
+
 
 
 #RIGHT-FIXED {
@@ -590,16 +604,95 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+/******************************************************************************/
 #WORK-EX-ITEMS {
     grid-area: TEXT;
 }
 
-#TEXT-GRID {
+
+
+#TEXT-GRID-1 {
     width: 100%;
     display: grid;
-    grid-row-gap: 30px;   
-    grid-template-rows: auto auto auto auto auto auto 40px;
+    grid-row-gap: 40px;   
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "TECH-1"
+                         "LW-DESIGN-GROUP"
+                         "TECH-2"
+                         "PERKINS-WILL"
+                         "TECH-3";
 }
+
+
+
+#TEXT-GRID-2 {
+    width: 100%;
+    display: grid;
+    grid-row-gap: 30px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 100px 100px 100px 100px;
+    grid-template-areas: "BENOY"
+                         "CHAPMAN-TAYLOR"
+                         "DAVID-MILLER"
+                         "ZAHA-HADID"
+                         "ATKINS-DESIGN-STUDIO";
+}
+
+
+
+#TECH-1 {
+    grid-area: TECH-1;
+}
+
+#LW-DESIGN-GROUP {
+    grid-area: LW-DESIGN-GROUP;
+}
+
+
+#TECH-2 {
+    grid-area: TECH-2;
+}
+
+#PERKINS-WILL {
+    grid-area: PERKINS-WILL;
+}
+
+#TECH-3 {
+    grid-area: TECH-3;
+}
+
+#BENOY {
+    grid-area: BENOY;
+}
+
+#CHAPMAN-TAYLOR {
+    grid-area: CHAPMAN-TAYLOR;
+}
+
+#DAVID-MILLER {
+    grid-area: DAVID-MILLER;
+}
+
+#ZAHA-HADID {
+    grid-area: ZAHA-HADID;
+}
+
+#ATKINS-DESIGN-STUDIO {
+    grid-area: ATKINS-DESIGN-STUDIO;
+}
+/******************************************************************************/
+
 
 
 
@@ -611,7 +704,7 @@ body {
     display: grid;
     grid-row-gap: 30px;
     grid-column-gap: 30px;
-    grid-template-columns: 80px 1fr 250px;
+    grid-template-columns: 60px 1fr 250px;
     grid-template-rows: 40px auto auto auto auto 40px;
     width: 100%;
     height: 100%;
