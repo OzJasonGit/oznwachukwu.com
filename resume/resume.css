@@ -286,6 +286,9 @@ body {
 
 
 
+
+
+
 #RIGHT-FIXED {
     grid-area: BANNER-2;
     top: 100vh;
@@ -582,6 +585,20 @@ body {
 #BAR-2 {
     grid-area: BAR-2;
     background-color: antiquewhite;
+}
+
+
+
+
+#WORK-EX-ITEMS {
+    grid-area: TEXT;
+}
+
+#TEXT-GRID {
+    width: 100%;
+    display: grid;
+    grid-row-gap: 30px;   
+    grid-template-rows: auto auto auto auto auto auto 40px;
 }
 
 
