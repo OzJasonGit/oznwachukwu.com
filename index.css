@@ -117,7 +117,7 @@ body {
     display: grid;
     grid-column-gap: 40px;
     grid-row-gap: 40px;
-    grid-template-rows: 80px auto;
+    grid-template-rows: 110px auto;
     grid-template-columns: 150px 1fr 150px;
     grid-template-areas: ". . ."
         "BANNER-1 MAIN-AREA BANNER-2";    
@@ -151,7 +151,7 @@ body {
     display: grid;
     grid-column-gap: 0px;
     grid-row-gap: 40px;
-    grid-template-rows: 80px auto;
+    grid-template-rows: 110px auto;
     grid-template-columns: 150px 40px 1fr 40px 150px;
     grid-template-areas: ". . . . ."
         "BANNER-1 . MAIN-AREA . BANNER-2";
@@ -277,7 +277,7 @@ body {
 
 .three-holder {
     position: sticky;
-    top: 100px;
+    top: 150px;
     width: 100%;
     max-height: 100%;
     display: grid;
@@ -3873,6 +3873,112 @@ body {
 /* ---------------------------------------------------------------------------------------*/
 /* ---------------------------------------------------------------------------------------*/
 /* ---------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

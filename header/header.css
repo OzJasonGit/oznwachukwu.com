@@ -113,17 +113,16 @@ body {
 
 
 #HEADER-MENU-2 {
-    grid-area: AREA;
-    
+    grid-area: AREA;    
     display: grid;
     grid-template-rows: 12.5px auto 12.5px;
     grid-template-columns: 1fr 10px 1fr;
     grid-template-areas:
             " . . ."
             ". BURGER ."
-            ". . .";
-    
+            ". . .";   
 }
+
 
 #BURGER {
     grid-area: BURGER;
@@ -146,8 +145,7 @@ body {
 
 #DATE {
     justify-items: center;
-    grid-area: AREA;
-   
+    grid-area: AREA;   
 }
 
 
@@ -180,6 +178,7 @@ body {
             ". . .";
 }
 
+
 #PFBD-HOLDER {
     top: 3px;
     grid-area: PFBD-HOLDER;
@@ -194,16 +193,13 @@ body {
 }
 
 
-
-#PFBD {
-    
+#PFBD {   
     grid-area: AREA;
     display: flex;
     width: 100px;
     height: 100%;
     
 }
-
 
 
 #CLOCK {
