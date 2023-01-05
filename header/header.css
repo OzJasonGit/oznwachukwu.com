@@ -74,7 +74,7 @@ body {
     grid-template-rows: 20px auto 20px;
     grid-template-areas:
             ". . . . ."
-            "DATE-HOLDER CLOCK-HOLDER . EMPTY PFBD";
+            "DATE-HOLDER CLOCK-HOLDER . EMPTY PFBD-HOLDER";
 }
 
 
@@ -114,6 +114,19 @@ body {
 
 #HEADER-MENU-2 {
     grid-area: AREA;
+    
+    display: grid;
+    grid-template-rows: 12.5px auto 12.5px;
+    grid-template-columns: 1fr 10px 1fr;
+    grid-template-areas:
+            " . . ."
+            ". BURGER ."
+            ". . .";
+    
+}
+
+#BURGER {
+    grid-area: BURGER;
     background-color: aliceblue;
 }
 
@@ -123,7 +136,7 @@ body {
     display: grid;
     grid-template-rows: 15px auto 15px;
     grid-template-columns: 15px 1fr 15px;
-    background-color: aliceblue;
+    
     grid-template-areas:
             " . . ."
             ". AREA ."
@@ -134,7 +147,7 @@ body {
 #DATE {
     justify-items: center;
     grid-area: AREA;
-    background-color: aliceblue;
+   
 }
 
 
@@ -143,7 +156,6 @@ body {
     display: grid;
     grid-template-rows: 15px auto 15px;
     grid-template-columns: 15px 1fr 15px;
-    background-color: aliceblue;
     grid-template-areas:
             " . . ."
             ". AREA ."
@@ -153,15 +165,14 @@ body {
 
 #CLOCK {
     grid-area: AREA;
-    background-color: aliceblue;
 }
 
 
 #EMPTY {
     grid-area: EMPTY;
     display: grid;
-    grid-template-rows: 15px auto 15px;
-    grid-template-columns: 15px 1fr 15px;
+    grid-template-rows: 10px auto 10px;
+    grid-template-columns: 10px 1fr 10px;
     background-color: aliceblue;
     grid-template-areas:
             " . . ."
@@ -169,16 +180,52 @@ body {
             ". . .";
 }
 
-#PFBD {
-    grid-area: PFBD;
+#PFBD-HOLDER {
+    top: 3px;
+    grid-area: PFBD-HOLDER;
     display: grid;
-    grid-template-rows: 15px auto 15px;
-    grid-template-columns: 15px 1fr 15px;
-    background-color: aliceblue;
+    grid-template-rows: 10px auto 10px;
+    grid-template-columns: 10px 1fr 10px;
+   
     grid-template-areas:
             " . . ."
             ". AREA ."
             ". . .";
+}
+
+
+
+#PFBD {
+    
+    grid-area: AREA;
+    display: flex;
+    width: 100px;
+    height: 100%;
+    
+}
+
+
+
+#CLOCK {
+    font-family: sofia-pro, sans-serif;
+    padding-top: 0px;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.25rem;
+    color: #d9d9d9;
+    text-align: left;
+}
+
+
+#DATE {
+    font-family: sofia-pro, sans-serif;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.25rem;
+    color: #d9d9d9;
+    text-align: left;
 }
 /* ---------------------------------------------------------------------------------------*/
 /* ---------------------------------------------------------------------------------------*/
