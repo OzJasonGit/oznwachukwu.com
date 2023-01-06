@@ -4,7 +4,7 @@ function clock() {
     let hrs = date.getHours();
     let mins = date.getMinutes();
     let secs = date.getSeconds();
-    let millisecs = date.getMilliseconds();
+
 
     
 
@@ -12,11 +12,11 @@ function clock() {
     hrs = hrs < 10 ? `0${hrs}` : hrs;
     mins = mins < 10 ? `0${mins}` : mins;
     secs = secs < 10 ? `0${secs}` : secs;
-    millisecs = millisecs < 10 ? `0${millisecs}` : millisecs;
+    
 
     //add second intervals to clock ticker 
-    let time = `${hrs}:${mins}:${secs}:${millisecs}`;
-    setInterval(clock, 10);
+    let time = `${hrs}:${mins}:${secs}`;
+    setInterval(clock, 1000);
 
 
     //render clock in html 
