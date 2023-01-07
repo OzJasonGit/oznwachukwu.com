@@ -3268,10 +3268,11 @@ h1 {
 }
 
 
-.side-text { 
+.side-text {
     display: inline-block;
     writing-mode: vertical-rl;
     text-orientation: mixed;
+    padding-left: 50px;
     color: antiquewhite;
 }
 

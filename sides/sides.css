@@ -77,6 +77,16 @@ body {
 
 
 
+.side-text {
+    display: inline-block;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    padding-left: 50px;
+    color: antiquewhite;
+}
+
+
+
 #RIGHT-FIXED {
     top: 100vh;
     display: grid;
