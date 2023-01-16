@@ -58,20 +58,7 @@ let archFolioData = {"The Darjeeling Limited": { portfolio_title: "A year after 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    //Add movie switch button. 
+//Add movie switch button. 
     let changeMovie = document.getElementById("BUTTON")
 
     
