@@ -29,7 +29,7 @@ let archFolioData = {"The Darjeeling Limited": { portfolio_title: "A year after 
                                             software: 2007,
                                             image_1_main: 2007,
                                             image_2: 2007,
-                                            plan: 2007,
+                                            image_3: 2007,
                                             image_4: 2007
                                           }
                 };
@@ -40,16 +40,16 @@ let archFolioData = {"The Darjeeling Limited": { portfolio_title: "A year after 
 
 
 //Store the object information inside a parameter.
-    let blogTitle = `${Object.keys(blogData)[i]}`;
-    let blogDescription = `${Object.values(blogData)[i].description}`;  
-    let blogAuthor = `${Object.values(blogData)[i].author}`;
-    let blogDate = `${Object.values(blogData)[i].date}`;                 
-    let blogImage_1 = `${Object.values(blogData)[i].image_1_main}`;
-    let blogText_1 = `${Object.values(blogData)[i].text_1_main}`;
-    let blogVideo = `${Object.values(blogData)[i].video_youtube}`;
-    let blogText_2 = `${Object.values(blogData)[i].text_2_body}`;                 
+    let folioTitle = `${Object.keys(archFolioData)[i]}`;
+    let blogDescription = `${Object.values(blogData)[i].location}`;  
+    let blogAuthor = `${Object.values(blogData)[i].description}`;
+    let blogDate = `${Object.values(blogData)[i].status}`;                 
+    let blogImage_1 = `${Object.values(blogData)[i].company}`;
+    let blogText_1 = `${Object.values(blogData)[i].software}`;
+    let blogVideo = `${Object.values(blogData)[i].image_1_main}`;
+    let blogText_2 = `${Object.values(blogData)[i].image_2}`;                 
     let blogImage_3 = `${Object.values(blogData)[i].image_3}`;
-    let blogText_3 = `${Object.values(blogData)[i].text_3_conclusion}`;
+    let blogText_3 = `${Object.values(blogData)[i].image_4}`;
     let blogText_4 = `${Object.values(blogData)[i].text_4_footer}`;
 
 
