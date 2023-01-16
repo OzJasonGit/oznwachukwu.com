@@ -473,10 +473,12 @@ body {
     height: auto;
     grid-row-gap: 30px;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: "FRONT-TEXT"
-        "HERO-TEXT"
-        "DESCRIPTION";
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "BLOG-TITLE"
+                         "DESCRIPTION-1"
+                         "DESCRIPTION-2"
+                         "AUTHOR"
+                         "DATE";
 }
 
 

@@ -42,6 +42,22 @@ let blogData = {"The Darjeeling Limited": { description: "A year after their fat
 
 
 
+//Create text elements rendered in the DOM
+    document.getElementById("BLOG-TITLE").innerText = blogTitle;
+    document.getElementById("DESCRIPTION").innerText = blogDescription;
+    document.getElementById("AUTHOR").innerText = blogAuthor;
+    document.getElementById("DATE").innerText = blogDate;
+    document.getElementById("IMAGE-1-MAIN").innerText = blogImage_1;
+    document.getElementById("TEXT-1-MAIN").innerText = blogText_1;
+    document.getElementById("YT-VIDEO").innerText = blogVideo;
+    document.getElementById("TEXT-2-BODY").innerText = blogText_2;
+    document.getElementById("IMAGE-3").innerText = blogImage_3;
+    document.getElementById("TEXT-3-CONCLUSION").innerText = blogText_3;
+    document.getElementById("TEXT-4-FOOTER").innerText = blogText_4;
+
+
+
+
 
 
 
@@ -58,10 +74,4 @@ let blogData = {"The Darjeeling Limited": { description: "A year after their fat
     //Add movie switch button. 
     let changeMovie = document.getElementById("BUTTON")
 
-    //Create text elements rendered in the DOM
-    document.getElementById("FILM-TITLE").innerText = movieTitle;
-    document.getElementById("PLOT-DATA").innerText = moviePlot;
-    document.getElementById("RATING-DATA").innerText = movieRating;
-    document.getElementById("YEAR-DATA").innerText = movieYear;
-    document.getElementById("CAST-DATA").innerText = movieCast;
-    document.getElementById("RUNTIME-DATA").innerText = movieRuntime;
+    
