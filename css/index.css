@@ -362,31 +362,6 @@ body {
 
 
 
-#ICON-SIDE-1 {
-    position: relative;
-    grid-area: SIDE-1;
-    display: grid;
-    width: 100%;
-    height: 100%;
-    grid-template-columns: 1fr;
-    grid-template-areas: "AREA";
-}
-
-
-#ICON-SIDE-2 {
-    position: relative;
-    grid-area: SIDE-2;
-    display: grid;
-    width: 100%;
-    height: 100%;
-    grid-template-columns: 40px 1fr 40px;
-    grid-template-rows: 1fr 250px 1fr;
-    grid-template-areas: ". . ."
-        ". AREA ."
-        ". . .";
-}
-
-
 #PFBD-LINKS {
     position: relative;
     grid-area: SIDE-1;
@@ -477,12 +452,7 @@ body {
 }
 
 
-#ICON-PLACEHOLDER {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    grid-area: AREA;
-}
+
 
 
 #HEAD-IMAGE {
