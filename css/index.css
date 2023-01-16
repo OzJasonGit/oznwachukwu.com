@@ -6,7 +6,7 @@
 
 
 body {
-    
+
     position: relative;
     width: 100vw;
     height: 100vh;
@@ -23,7 +23,7 @@ body {
 .wrapper {
     width: 100vw;
     height: auto;
-    
+
 }
 
 
@@ -33,7 +33,7 @@ body {
     position: relative;
     width: 100%;
     height: auto;
-    
+
 }
 
 
@@ -42,7 +42,7 @@ body {
     height: 16px;
 }
 
-.scroller {  
+.scroller {
     scrollbar-width: none;
     position: absolute;
     overflow-y: scroll;
@@ -62,13 +62,13 @@ body {
     top: 0;
     left: 0;
     margin: 0;
-    
+
 }
 
 .center-holder {
     width: 100%;
     display: flex;
-    
+
     -webkit-box-pack: center;
     justify-content: center;
     background-color: #2e2e2e;
@@ -109,7 +109,7 @@ body {
 
 
 .grid-0-fixed {
-    position: fixed;   
+    position: fixed;
     width: 100vw;
     height: 100vh;
     max-width: 1760px;
@@ -120,7 +120,7 @@ body {
     grid-template-rows: 110px auto;
     grid-template-columns: 150px 1fr 150px;
     grid-template-areas: ". . ."
-        "BANNER-1 MAIN-AREA BANNER-2";    
+        "BANNER-1 MAIN-AREA BANNER-2";
 }
 
 
@@ -144,7 +144,7 @@ body {
 
 
 .grid-0-2-top {
-    position: relative;
+   position: relative;   
     width: 100%;
     max-width: 1760px;
     background-color: #2e2e2e;
@@ -166,11 +166,11 @@ body {
     max-width: 1760px;
     background-color: #2e2e2e;
     display: grid;
-   
+
     grid-row-gap: 40px;
     grid-template-rows: auto;
     grid-template-columns: 40px 110px 40px 1fr 40px 110px 40px;
-    grid-template-areas: 
+    grid-template-areas:
         ". BANNER-1  . MAIN-AREA . BANNER-2 .";
     z-index: 1;
 }
@@ -233,7 +233,7 @@ body {
     width: 100%;
     height: 100px;
     padding-left: 10px;
-    padding-right: 10px; 
+    padding-right: 10px;
     display: flex;
     -webkit-box-pack: center;
     justify-content: center;
@@ -268,7 +268,7 @@ body {
 }
 
 
-.relative-internal{
+.relative-internal {
     width: 100%;
 }
 
@@ -277,7 +277,7 @@ body {
 
 .three-holder {
     position: sticky;
-    top: 150px;
+    top: 120px;
     width: 100%;
     max-height: 100%;
     display: grid;
@@ -382,8 +382,8 @@ body {
     grid-template-columns: 40px 1fr 40px;
     grid-template-rows: 1fr 250px 1fr;
     grid-template-areas: ". . ."
-                         ". AREA ."
-                         ". . .";
+        ". AREA ."
+        ". . .";
 }
 
 
@@ -397,9 +397,9 @@ body {
     grid-row-gap: 20px;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas: "AREA"
-                         "AREA"
-                         "AREA"
-                         "PFBD";
+        "AREA"
+        "AREA"
+        "PFBD";
 }
 
 
@@ -412,8 +412,8 @@ body {
     grid-template-rows: 1fr 120px 1fr;
     grid-template-columns: 40px 1fr 40px;
     grid-template-areas: ". . ."
-                         ". AREA ."
-                         ". . .";
+        ". AREA ."
+        ". . .";
 }
 
 
@@ -433,14 +433,14 @@ body {
         "4";
 }
 
-#NAV-1{
+#NAV-1 {
     grid-area: 1;
     display: flex;
     align-items: center;
-    justify-content: center;       
+    justify-content: center;
     width: 100%;
     height: 100%;
-   
+
 }
 
 
@@ -451,7 +451,7 @@ body {
     justify-content: center;
     width: 100%;
     height: 100%;
-    
+
 }
 
 
@@ -462,7 +462,7 @@ body {
     justify-content: center;
     width: 100%;
     height: 100%;
-    
+
 }
 
 
@@ -473,15 +473,15 @@ body {
     justify-content: center;
     width: 100%;
     height: 100%;
-    
+
 }
 
 
 #ICON-PLACEHOLDER {
     position: absolute;
     width: 100%;
-    height: 100%;  
-    grid-area: AREA;    
+    height: 100%;
+    grid-area: AREA;
 }
 
 
@@ -494,7 +494,7 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 100% 100%;
     grid-template-areas: "IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE"
-                         "TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT"; 
+        "TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT";
 }
 
 
@@ -515,13 +515,13 @@ body {
     height: 100%;
     top: -100%;
     grid-column-gap: 40px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: ". . . . . . . ."
-                         ". TEXT TEXT TEXT TEXT TEXT TEXT TEXT"
-                         ". TEXT TEXT TEXT TEXT TEXT TEXT TEXT"
-                         ". . . . TEXT-2 TEXT-2 TEXT-2 ."
-                         ". . . . TEXT-2 TEXT-2 TEXT-2 .";
+        ". TEXT TEXT TEXT TEXT TEXT TEXT TEXT"
+        ". TEXT TEXT TEXT TEXT TEXT TEXT TEXT"
+        ". . . . TEXT-2 TEXT-2 TEXT-2 ."
+        ". . . . TEXT-2 TEXT-2 TEXT-2 .";
 }
 
 
@@ -568,7 +568,7 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 200px auto auto auto;
     grid-template-areas: ". . . . IMAGE IMAGE IMAGE IMAGE"
-                         "TITLE TITLE TITLE-2 TITLE-2 IMAGE IMAGE IMAGE IMAGE"
+        "TITLE TITLE TITLE-2 TITLE-2 IMAGE IMAGE IMAGE IMAGE"
         "TITLE TITLE TITLE-2 TITLE-2 IMAGE-2 IMAGE-2 IMAGE-3 IMAGE-3"
         "TITLE TITLE TITLE-2 TITLE-2 IMAGE-4 IMAGE-4 IMAGE-4 IMAGE-4";
 }
@@ -814,7 +814,8 @@ body {
     background-image: url(assetts/images/uni-project-1/uni-project-1-image1.PNG);
     background-size: cover 100%;
     background-position: -400px -300px;
-    
+    background-color: antiquewhite;
+
 }
 
 #HERO {
@@ -832,18 +833,19 @@ body {
     grid-area: MID-IMAGE;
     display: grid;
     width: 100%;
-    height: 100%;   
+    height: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: auto 400px;
     grid-row-gap: 20px;
     grid-template-areas: "TITLE"
-                         "IMAGE";
+        "IMAGE";
 }
 
 #STORIES {
-    grid-area:IMAGE;   
+    grid-area: IMAGE;
     background-color: rgb(166, 184, 190);
 }
+
 /* ----------------------------------------------*/
 
 
@@ -854,9 +856,10 @@ body {
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
-    background-image: url(assetts/images/tlc-2020-3.PNG);
+    background-image: url(assets\images\tlc-2020-3.PNG);
     background-size: cover;
     background-position: -150px 0px;
+    background-color: antiquewhite;
 }
 
 
@@ -924,8 +927,8 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto;
     grid-template-areas: "PFBD  TITLE"
-                         "PFBD INSTAGRAM"
-                         "PFBD INSTAGRAM";
+        "PFBD INSTAGRAM"
+        "PFBD INSTAGRAM";
 }
 
 
@@ -1073,59 +1076,8 @@ body {
 
 
 
-#RIGHT-FIXED-STICKY {
-    display: grid;
-    width: 100%;
-    height: 100%;
-    grid-template-columns: 1fr;
-    grid-row-gap: 40px;
-    grid-template-rows: 450px 1fr 450px;
-    grid-template-areas: "SIDE-1"
-        "NAVIGATION"
-        "SIDE-3";
-}
 
 
-#RIGHT-FIXED {
-    top: 100vh;
-    display: grid;
-    position: relative;
-    grid-area: BANNER-2;
-    width: 100%;
-    height: 100%;
-    grid-template-columns: 1fr 40px;
-    grid-template-areas: "AREA PADDING"
-}
-
-
-
-#LEFT-FIXED {
-    top: 100vh;
-    display: grid;
-    position: relative;
-    
-    grid-area: BANNER-1;
-    width: 100%;
-    height: 100%;
-    grid-template-columns: 40px 1fr;
-    grid-template-areas: "PADDING AREA";
-}
-
-
-
-#LEFT-FIXED-STICKY {
-    position: relative;
-    grid-area: AREA;
-    display: grid;
-    width: 100%;
-    height: 100%;
-    grid-template-columns: 1fr;
-    grid-row-gap: 40px;
-    grid-template-rows: 350px 1fr 350px;
-    grid-template-areas: "SIDE-1"
-        "SIDE-2"
-        "SIDE-3";
-}
 /* ---------------------------------------------------------------------------------------*/
 
 
@@ -1319,33 +1271,32 @@ body {
 
 
 
-        .grid-0-fixed {
-            position: fixed;
-    
-            width: 100vw;
-            height: 100vh;
-            max-width: 1760px;
-            background-color: #2e2e2e;
-            display: grid;
-            grid-column-gap: 40px;
-            grid-row-gap: 40px;
-            grid-template-rows: 60px auto;
-            grid-template-columns: 50px 1fr 50px;
-            grid-template-areas: ". . ."
-                "BANNER-1 MAIN-AREA BANNER-2";
-        }
+    .grid-0-fixed {
+        position: fixed;
 
-
-    .grid-0 {
-        width: 100%;
-
-        max-width: 1640px;
+        width: 100vw;
+        height: 100vh;
+        max-width: 1760px;
         background-color: #2e2e2e;
         display: grid;
         grid-column-gap: 40px;
         grid-row-gap: 40px;
         grid-template-rows: 60px auto;
         grid-template-columns: 50px 1fr 50px;
+        grid-template-areas: ". . ."
+            "BANNER-1 MAIN-AREA BANNER-2";
+    }
+
+
+    .grid-0 {
+        width: 100%;
+        max-width: 1640px;
+        background-color: #2e2e2e;
+        display: grid;
+        grid-column-gap: 20px;
+        grid-row-gap: 40px;
+        grid-template-rows: 60px auto;
+        grid-template-columns: 20px 1fr 20px;
         grid-template-areas: ". . ."
             "BANNER-1 MAIN-AREA BANNER-2";
     }
@@ -1358,10 +1309,10 @@ body {
         padding-bottom: 100px;
         background-color: #2e2e2e;
         display: grid;
-        grid-column-gap: 40px;
+        grid-column-gap: 20px;
         grid-row-gap: 40px;
         grid-template-rows: auto;
-        grid-template-columns: 50px 1fr 50px;
+        grid-template-columns: 20px 1fr 20px;
         grid-template-areas: ". . ."
             "BANNER-1 MAIN-AREA BANNER-2";
     }
@@ -1371,15 +1322,16 @@ body {
 
     .grid-0-2-top {
         position: relative;
+        padding-top: 170px;
         width: 100%;
         max-width: 1760px;
         background-color: #2e2e2e;
         display: grid;
-        grid-column-gap: 40px;
+        grid-column-gap: 20px;
         grid-row-gap: 40px;
         grid-template-rows: auto;
-        grid-template-columns: 50px 1fr 50px;
-        grid-template-areas: 
+        grid-template-columns: 20px 1fr 20px;
+        grid-template-areas:
             "BANNER-1 MAIN-AREA BANNER-2";
     }
 
@@ -1399,7 +1351,7 @@ body {
         grid-template-rows: auto;
         grid-template-columns: 50px 1fr 50px;
         grid-template-areas:
-                "BANNER-1 MAIN-AREA BANNER-2";
+            "BANNER-1 MAIN-AREA BANNER-2";
         z-index: 1;
     }
 
@@ -1421,7 +1373,7 @@ body {
 
     .three-holder {
         position: sticky;
-        top: 100px;
+        top: 120px;
         width: 100%;
         max-height: 100%;
         display: grid;
@@ -1449,18 +1401,21 @@ body {
 
     /* ---------------------------------------------------------------------------------------*/
     /* ---------------------------------------------------------------------------------------*/
-    #GRID-1 {
-        grid-area: MAIN-AREA;
-        width: 100%;
-        display: grid;
-        grid-column-gap: 40px;
-        grid-row-gap: 40px;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto auto auto;
-        grid-template-areas: "TITLE TITLE TITLE-2 TITLE-2 IMAGE IMAGE IMAGE IMAGE"
-            "TITLE TITLE TITLE-2 TITLE-2 IMAGE-2 IMAGE-2 IMAGE-3 IMAGE-3"
-            "TITLE TITLE TITLE-2 TITLE-2 IMAGE-4 IMAGE-4 IMAGE-4 IMAGE-4";
-    }
+    
+
+        #GRID-1 {
+            grid-area: MAIN-AREA;
+            width: 100%;
+            display: grid;
+            grid-column-gap: 40px;
+            grid-row-gap: 40px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 200px auto auto auto;
+            grid-template-areas: ". . . . IMAGE IMAGE IMAGE IMAGE"
+                "TITLE TITLE TITLE-2 TITLE-2 IMAGE IMAGE IMAGE IMAGE"
+                "TITLE TITLE TITLE-2 TITLE-2 IMAGE-2 IMAGE-2 IMAGE-3 IMAGE-3"
+                "TITLE TITLE TITLE-2 TITLE-2 IMAGE-4 IMAGE-4 IMAGE-4 IMAGE-4";
+        }
 
     /* ---------------------------------------------------------------------------------------*/
 
@@ -1515,7 +1470,7 @@ body {
 
 
 
-    /* ---------------------------------------------------------------------------------------*/
+       
     #IMAGE-3 {
         grid-area: IMAGE-3;
         width: 100%;
@@ -1624,6 +1579,7 @@ body {
         background-image: url(assetts/images/uni-project-1/uni-project-1-image1.PNG);
         background-size: cover 100%;
         background-position: -400px -300px;
+        background-color: antiquewhite;
     }
 
     #HERO {
@@ -1636,8 +1592,8 @@ body {
 
 
 
-    
-/****************************************************/
+
+    /****************************************************/
     #MID-IMAGE {
         grid-area: MID-IMAGE;
         display: grid;
@@ -1647,14 +1603,15 @@ body {
         grid-template-rows: auto 400px;
         grid-row-gap: 20px;
         grid-template-areas: "TITLE"
-                             "IMAGE";
+            "IMAGE";
     }
-    
+
     #STORIES {
         grid-area: IMAGE;
         background-color: rgb(166, 184, 190);
     }
-/****************************************************/
+
+    /****************************************************/
 
 
 
@@ -1662,11 +1619,12 @@ body {
     #BOTTOM-IMAGE {
         grid-area: BOTTOM-IMAGE;
         width: 100%;
-        height: 100%; 
+        height: 100%;
         background-repeat: no-repeat;
-        background-image: url(assetts/images/tlc-2020-3.PNG);
+        background-image: url(assets\images\tlc-2020-3.PNG);
         background-size: cover;
         background-position: -150px 0px;
+        background-color: antiquewhite;
     }
 
 
@@ -1686,7 +1644,6 @@ body {
         height: 100%;
         background-color: aqua;
     }
-
     /* ---------------------------------------------------------------------------------------*/
 
 
@@ -1696,9 +1653,6 @@ body {
 
 
     /* ---------------------------------------------------------------------------------------*/
-
-
-
     #GRID-2 {
         grid-area: MAIN-AREA;
         width: 100%;
@@ -1712,11 +1666,10 @@ body {
     }
 
 
-
     #VIDEO {
         grid-area: VIDEO;
         width: 100%;
-        height: 460px;
+        height: 600px;
         background-color: antiquewhite;
     }
 
@@ -1727,7 +1680,6 @@ body {
         height: 100%;
         background-color: antiquewhite;
     }
-
     /* ---------------------------------------------------------------------------------------*/
 
 
@@ -1749,9 +1701,6 @@ body {
             ". . CAROUSEL CAROUSEL CAROUSEL CAROUSEL CAROUSEL CAROUSEL"
             ". . CAROUSEL CAROUSEL CAROUSEL CAROUSEL CAROUSEL CAROUSEL";
     }
-
-
-
 
 
     #DESCRIPTION {
@@ -1778,79 +1727,18 @@ body {
     }
 
 
-
-
-        #RIGHT-FIXED-STICKY {
-            display: grid;
-            width: 100%;
-            height: 100%;
-            grid-template-columns: 1fr;
-            grid-row-gap: 40px;
-            grid-template-rows: 450px 1fr 450px;
-            grid-template-areas: "SIDE-1"
-                "NAVIGATION"
-                "SIDE-3";
-        }
-    
-    
-        #RIGHT-FIXED {
-            display: grid;
-            position: relative;
-            grid-area: BANNER-2;
-            width: 100%;
-            height: 100%;
-            grid-template-columns: 1fr ;
-            grid-template-areas: "AREA "
-        }
-    
-    
-    
-        #LEFT-FIXED {
-            display: grid;
-            position: relative;
-            grid-area: BANNER-1;
-            width: 100%;
-            height: 100%;
-            grid-template-columns: 1fr;
-            grid-template-areas: "AREA";
-        }
-    
-    
-    
-        #LEFT-FIXED-STICKY {
-            position: relative;
-            grid-area: AREA;
-            display: grid;
-            width: 100%;
-            height: 100%;
-            grid-template-columns: 1fr;
-            grid-row-gap: 40px;
-            grid-template-rows: 360px 600px auto;
-            grid-template-areas: "SIDE-1"
-                "SIDE-2"
-                "SIDE-3";
-        }
-
-
-
-            #PAGE-NAVIGATION {
-                    position: relative;
-                    grid-area: NAVIGATION;
-                    display: grid;
-                    width: 100%;
-                    height: 100%;
-                    grid-template-rows: 1fr 150px 1fr;
-                    grid-template-columns: 15px 1fr 15px;
-                    grid-template-areas: ". . ."
-                        ". AREA ."
-                        ". . .";
-                }
-
-
-
-
-
-        
+    #PAGE-NAVIGATION {
+        position: relative;
+        grid-area: NAVIGATION;
+        display: grid;
+        width: 100%;
+        height: 100%;
+        grid-template-rows: 1fr 150px 1fr;
+        grid-template-columns: 15px 1fr 15px;
+        grid-template-areas: ". . ."
+            ". AREA ."
+            ". . .";
+    }
 }
 
 /* ---------------------------------------------------------------------------------------*/
@@ -2098,6 +1986,7 @@ body {
 
     .grid-0-2-top {
         width: 100%;
+        top: 170px;
         max-width: 1640px;
         position: relative;
         padding-left: 30px;
@@ -2108,28 +1997,28 @@ body {
         grid-row-gap: 40px;
         grid-template-rows: auto;
         grid-template-columns: 1fr;
-        grid-template-areas: 
-                "MAIN-AREA";
+        grid-template-areas:
+            "MAIN-AREA";
     }
 
 
 
 
 
-.grid-0-2-header {
-    position: fixed;
-    width: 100%;
-    height: 100px;
-    max-width: 1760px;
-    background-color: #2e2e2e;
-    display: grid;
-    
-    grid-template-rows: auto;
-    grid-template-columns: 30px 1fr 30px;
-    grid-template-areas:
-        "BANNER-1 MAIN-AREA BANNER-2";
-    z-index: 1;
-}
+    .grid-0-2-header {
+        position: fixed;
+        width: 100%;
+        height: 100px;
+        max-width: 1760px;
+        background-color: #2e2e2e;
+        display: grid;
+
+        grid-template-rows: auto;
+        grid-template-columns: 30px 1fr 30px;
+        grid-template-areas:
+            "BANNER-1 MAIN-AREA BANNER-2";
+        z-index: 1;
+    }
 
 
     .container {
@@ -2214,7 +2103,7 @@ body {
     #IMAGE {
         grid-area: IMAGE;
         width: 100%;
-        height: 600px;
+        height: 740px;
         display: grid;
         background-color: antiquewhite;
     }
@@ -2323,59 +2212,59 @@ body {
 
         grid-column-gap: 40px;
         grid-row-gap: 40px;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto auto;
-        grid-template-areas: "TOP-IMAGE TOP-IMAGE HERO HERO HERO"
-            "MID-IMAGE MID-IMAGE MID-IMAGE BOTTOM-IMAGE BOTTOM-IMAGE";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto ;
+        grid-template-areas: "TOP-IMAGE" 
+                             "HERO"
+                             "MID-IMAGE" 
+                             "BOTTOM-IMAGE";
     }
 
 
     #TOP-IMAGE {
         grid-area: TOP-IMAGE;
         width: 100%;
-        height: 300px;
+        height: 320px;
         background-repeat: no-repeat;
         background-image: url(assetts/images/uni-project-1/uni-project-1-image1.PNG);
         background-size: cover 100%;
         background-position: -400px -300px;
+        background-color: antiquewhite;
     }
 
     #HERO {
         grid-area: HERO;
         width: 100%;
-        height: 300px;
+        height: 320px;
         background-color: antiquewhite;
     }
 
+    #MID-IMAGE {
+        grid-area: MID-IMAGE;
+        display: grid;
+        width: 100%;
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 320px;
+        grid-row-gap: 20px;
+        grid-template-areas: "TITLE"
+            "IMAGE";
+    }
 
-
-
-
-        #MID-IMAGE {
-            grid-area: MID-IMAGE;
-            display: grid;
-            width: 100%;
-            height: auto;
-            grid-template-columns: 1fr;
-            grid-template-rows: auto 250px;
-            grid-row-gap: 20px;
-            grid-template-areas: "TITLE"
-                "IMAGE";
-        }
-    
-        #STORIES {
-            grid-area: IMAGE;
-            background-color: rgb(166, 184, 190);
-        }
+    #STORIES {
+        grid-area: IMAGE;
+        background-color: rgb(166, 184, 190);
+    }
 
     #BOTTOM-IMAGE {
         grid-area: BOTTOM-IMAGE;
         width: 100%;
-        height: 300px;      
+        height: 320px;
         background-repeat: no-repeat;
-        background-image: url(assetts/images/tlc-2020-3.PNG);
+        background-image: url(assets\images\tlc-2020-3.PNG);
         background-size: cover;
         background-position: -150px 0px;
+        background-color: antiquewhite;
     }
 
 
@@ -2680,35 +2569,35 @@ body {
     .grid-0-2-top {
         position: relative;
         width: 100%;
-        max-width: 1760px;
+        top: 170px;
         background-color: #2e2e2e;
         display: grid;
         grid-column-gap: 40px;
         grid-row-gap: 40px;
-        grid-template-rows: 60px auto;
+        grid-template-rows: auto;
         grid-template-columns: 1fr;
         padding-left: 30px;
         padding-right: 30px;
-        grid-template-areas: " . "
-                             "MAIN-AREA";
+        grid-template-areas:
+            "MAIN-AREA";
     }
 
 
 
-        .grid-0-2-header {
-            position: fixed;
-            width: 100%;
-            height: 100px;
-            max-width: 1760px;
-            background-color: #2e2e2e;
-            display: grid;
-    
-            grid-template-rows: auto;
-            grid-template-columns: 30px 1fr 30px;
-            grid-template-areas:
-                "BANNER-1 MAIN-AREA BANNER-2";
-            z-index: 1;
-        }
+    .grid-0-2-header {
+        position: fixed;
+        width: 100%;
+        height: 100px;
+        max-width: 1760px;
+        background-color: #2e2e2e;
+        display: grid;
+
+        grid-template-rows: auto;
+        grid-template-columns: 30px 1fr 30px;
+        grid-template-areas:
+            "BANNER-1 MAIN-AREA BANNER-2";
+        z-index: 1;
+    }
 
 
     .container {
@@ -2910,7 +2799,8 @@ body {
         background-image: url(assetts/images/uni-project-1/uni-project-1-image1.PNG);
         background-size: cover 100%;
         background-position: -400px -300px;
-        
+        background-color: aqua;
+
     }
 
     #HERO {
@@ -2921,32 +2811,34 @@ body {
     }
 
 
-        #MID-IMAGE {
-            grid-area: MID-IMAGE;
-            display: grid;
-            width: 100%;
-            height:440px;
-            grid-template-columns: 1fr;
-            grid-template-rows: auto 400px;
-            grid-row-gap: 20px;
-            grid-template-areas: "TITLE"
-                "IMAGE";
-        }
-    
-        #STORIES {
-            grid-area: IMAGE;
-            background-color: rgb(166, 184, 190);
-        }
+    #MID-IMAGE {
+        grid-area: MID-IMAGE;
+        display: grid;
+        width: 100%;
+        height: 440px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 400px;
+        grid-row-gap: 20px;
+        grid-template-areas: "TITLE"
+            "IMAGE";
+        
+    }
+
+    #STORIES {
+        grid-area: IMAGE;
+        background-color: rgb(166, 184, 190);
+    }
 
     #BOTTOM-IMAGE {
         grid-area: BOTTOM-IMAGE;
         width: 100%;
         height: 400px;
         background-repeat: no-repeat;
-        background-image: url(assetts/images/tlc-2020-3.PNG);
+        background-image: url(assets\images\tlc-2020-3.PNG);
         background-size: cover 150%;
         background-position: 0px 0px;
-        
+        background-color: aqua;
+
     }
 
 
@@ -3004,6 +2896,47 @@ body {
         grid-area: DESCRIPTION;
         width: 100%;
         height: 150px;
+        background-color: antiquewhite;
+    }
+
+
+
+    #PFBD {
+        grid-area: PFBD;
+        display: grid;
+        width: 100%;
+        height: auto;
+        grid-column-gap: 40px;
+        grid-row-gap: 40px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+           grid-template-areas: 
+                    "PFBD"
+                    "TITLE"
+                    "INSTAGRAM";
+    }
+
+
+    #PLACEHOLDER {
+        grid-area: PFBD;
+        width: 100%;
+        height: 340px;
+        background-color: antiquewhite;
+    }
+    
+    
+    #TITLE-INSTA {
+        grid-area: TITLE;
+        width: 100%;
+        height: 150px;
+        background-color: antiquewhite;
+    }
+    
+    
+    #INSTA {
+        grid-area: INSTAGRAM;
+        width: 100%;
+        height: 460px;
         background-color: antiquewhite;
     }
 
@@ -3282,1016 +3215,10 @@ h1 {
     right: 25px;
     font-size: 15.5em;
     font-family: sofia-pro,
-            sans-serif;
-    
-    font-weight: 400;    
-    font-style: normal;
-}
+        sans-serif;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* FOOTER---------------------------------------------------------------------------------*/
-/* ---------------------------------------------------------------------------------------*/
-/* ---------------------------------------------------------------------------------------*/
-
-
-
-/*
- * ------------------------------------------
- *  Responsive Grid Media Queries - 1280, 1024, 768, 480
- *   1280-1024   - desktop (default grid)
- *   1024-768    - tablet landscape
- *   768-480     - tablet 
- *   480-less    - phone landscape & smaller
- * --------------------------------------------
- */
-
-
-
-
-/* ---------------------------------------------------------------------------------------*/
-body {
-
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column;
-    margin-top: 0;
-    margin-left: 0;
-}
-
-
-.wrapper {
-    width: 100vw;
-    height: auto;
-}
-
-
-.scroller::-webkit-scrollbar {
-    width: 0px;
-    height: 16px;
-}
-
-
-.scroller {
-    scrollbar-width: none;
-    position: absolute;
-    overflow-y: scroll;
-    height: 100vh;
-    width: 100%;
-}
-
-
-.center-holder {
-    width: 100%;
-    display: flex;
-
-    -webkit-box-pack: center;
-    justify-content: center;
-    background-color: #2e2e2e;
-    margin: 0;
-}
-
-
-
-.footer-holder {
-    position: relative;
-    width: 100%;
-    max-width: 1760px;
-    background-color: #2e2e2e;
-    display: grid;
-    grid-column-gap: 40px;
-    grid-row-gap: 40px;
-    grid-template-rows: 60px auto;
-    grid-template-columns: 150px 1fr 150px;
-    grid-template-areas: ". . ."
-        "BANNER-1 MAIN-AREA BANNER-2";
-}
-
-
-#SHADOW-SECTION {
-    width: 100%;
-    display: flex;
-    -webkit-box-pack: center;
-    justify-content: center;
-    background-color: #2e2e2e;
-}
-
-
-#FOOTER {
-    grid-area: MAIN-AREA;
-    width: 100%;
-    display: grid;
-    grid-column-gap: 40px;
-    grid-row-gap: 40px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-        "IPHONE IPHONE IPHONE IPHONE IPHONE OTHER OTHER OTHER";
-}
-
-
-#PFBD {
-    grid-area: PFBD;
-    display: grid;
-    width: 100%;
-    height: 670px;
-    grid-column-gap: 40px;
-    grid-row-gap: 40px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: "PFBD  TITLE"
-        "PFBD INSTAGRAM"
-        "PFBD INSTAGRAM";
-}
-
-
-#IPHONE {
-    grid-area: IPHONE;
-    width: 100%;
-    height: 500px;
-    background-color: rgb(255, 191, 106);
-}
-
-/* ---------------------------------------------------------------------------------------*/
-/* ---------------------------------------------------------------------------------------*/
-
-
-
-
-
-
-
-
-/* ---------------------------------------------------------------------------------------*/
-/* ---------------------------------------------------------------------------------------*/
-@media all and (min-width: 960px) and (max-width: 1280px) {
-    body {
-
-        position: relative;
-        width: 100vw;
-        height: 100vh;
-        overflow: hidden;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        flex-direction: column;
-        margin-top: 0;
-        margin-left: 0;
-    }
-
-
-    .wrapper {
-        width: 100vw;
-        height: auto;
-    }
-
-
-    .scroller::-webkit-scrollbar {
-        width: 0px;
-        height: 16px;
-    }
-
-
-    .scroller {
-        scrollbar-width: none;
-        position: absolute;
-        overflow-y: scroll;
-        height: 100vh;
-        width: 100%;
-    }
-
-
-    .center-holder {
-        width: 100%;
-        display: flex;
-
-        -webkit-box-pack: center;
-        justify-content: center;
-        background-color: #2e2e2e;
-        margin: 0;
-    }
-
-
-    .footer-holder {
-        position: relative;
-        width: 100%;
-        max-width: 1760px;
-        background-color: #2e2e2e;
-        display: grid;
-        grid-column-gap: 40px;
-        grid-row-gap: 40px;
-        grid-template-rows: 60px auto;
-        grid-template-columns: 50px 1fr 50px;
-        grid-template-areas: ". . ."
-            "BANNER-1 MAIN-AREA BANNER-2";
-    }
-
-
-
-
-    #SHADOW-SECTION {
-        width: 100%;
-        display: flex;
-        -webkit-box-pack: center;
-        justify-content: center;
-        background-color: #2e2e2e;
-    }
-
-
-        #FOOTER {
-            grid-area: MAIN-AREA;
-            width: 100%;
-            display: grid;
-            grid-column-gap: 40px;
-            grid-row-gap: 40px;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-            grid-template-rows: auto;
-            grid-template-areas:
-                "IPHONE IPHONE IPHONE IPHONE IPHONE OTHER OTHER OTHER";
-        }
-
-
-    #PFBD {
-        grid-area: PFBD;
-        display: grid;
-        width: 100%;
-        height: 670px;
-        grid-column-gap: 40px;
-        grid-row-gap: 40px;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto auto;
-        grid-template-areas: "PFBD  TITLE"
-            "PFBD INSTAGRAM"
-            "PFBD INSTAGRAM";
-    }
-
-
-    #IPHONE {
-        grid-area: IPHONE;
-        width: 100%;
-        height: 500px;
-        background-color: rgb(255, 191, 106);
-    }
-}
-
-/* ---------------------------------------------------------------------------------------*/
-/* ---------------------------------------------------------------------------------------*/
-
-
-
-
-
-
-
-
-
-
-/* ---------------------------------------------------------------------------------------*/
-/* ---------------------------------------------------------------------------------------*/
-@media all and (min-width: 480px) and (max-width: 960px) {
-    body {
-        position: relative;
-        width: 100vw;
-        height: 100vh;
-        overflow: hidden;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        flex-direction: column;
-        margin-top: 0;
-        margin-left: 0;
-    }
-
-
-    .wrapper {
-        width: 100vw;
-        height: auto;
-    }
-
-
-    .scroller::-webkit-scrollbar {
-        width: 0px;
-        height: 16px;
-    }
-
-
-    .scroller {
-        scrollbar-width: none;
-        position: absolute;
-        overflow-y: scroll;
-        height: 100vh;
-        width: 100%;
-    }
-
-
-    .center-holder {
-        width: 100%;
-        display: flex;
-
-        -webkit-box-pack: center;
-        justify-content: center;
-        background-color: #2e2e2e;
-        margin: 0;
-    }
-
-
-
-    .footer-holder {
-        width: 100%;
-        max-width: 1640px;
-        position: relative;
-        padding-left: 30px;
-        padding-right: 30px;
-        background-color: #2e2e2e;
-        display: grid;
-        grid-column-gap: 40px;
-        grid-row-gap: 40px;
-        grid-template-rows: 60px auto;
-        grid-template-columns: 1fr;
-        grid-template-areas: "."
-                             "MAIN-AREA";
-    }
-
-
-
-
-    #SHADOW-SECTION {
-        width: 100%;
-        display: flex;
-        -webkit-box-pack: center;
-        justify-content: center;
-        background-color: #2e2e2e;
-    }
-
-
-    #FOOTER {
-        grid-area: MAIN-AREA;
-        width: 100%;
-        display: grid;
-        grid-column-gap: 40px;
-        grid-row-gap: 40px;
-        grid-template-columns: 1fr;
-        grid-template-rows: 150px auto;
-        grid-template-areas:
-            "OTHER"
-            "IPHONE";
-    }
-
-
-    #PFBD {
-        grid-area: PFBD;
-        display: grid;
-        width: 100%;
-        height: 670px;
-        grid-column-gap: 40px;
-        grid-row-gap: 40px;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto auto;
-        grid-template-areas: "PFBD  TITLE"
-            "PFBD INSTAGRAM"
-            "PFBD INSTAGRAM";
-    }
-
-
-    #IPHONE {
-        grid-area: IPHONE;
-        width: 100%;
-        height: 500px;
-        background-color: rgb(255, 191, 106);
-    }
-}
-
-/* ---------------------------------------------------------------------------------------*/
-/* ---------------------------------------------------------------------------------------*/
-
-
-
-
-
-
-
-
-
-
-
-/* ---------------------------------------------------------------------------------------*/
-/* ---------------------------------------------------------------------------------------*/
-@media all and (min-width: 0px) and (max-width: 480px) {
-    body {
-        position: relative;
-        width: 100vw;
-        height: 100vh;
-        overflow: hidden;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        flex-direction: column;
-        margin-top: 0;
-        margin-left: 0;
-    }
-
-
-    .wrapper {
-        width: 100vw;
-        height: auto;
-    }
-
-
-    .scroller::-webkit-scrollbar {
-        width: 0px;
-        height: 16px;
-    }
-
-
-    .scroller {
-        scrollbar-width: none;
-        position: absolute;
-        overflow-y: scroll;
-        height: 100vh;
-        width: 100%;
-    }
-
-
-    .center-holder {
-        width: 100%;
-        display: flex;
-
-        -webkit-box-pack: center;
-        justify-content: center;
-        background-color: #2e2e2e;
-        margin: 0;
-    }
-
-
-
-
-    .footer-holder {
-        width: 100%;
-        max-width: 1640px;
-        position: relative;
-        padding-left: 30px;
-        padding-right: 30px;
-        background-color: #2e2e2e;
-        display: grid;
-        grid-column-gap: 40px;
-        grid-row-gap: 40px;
-        grid-template-rows: 60px auto;
-        grid-template-columns: 1fr;
-        grid-template-areas: "."
-            "MAIN-AREA";
-    }
-
-
-
-
-    #SHADOW-SECTION {
-        width: 100%;
-        display: flex;
-        -webkit-box-pack: center;
-        justify-content: center;
-        background-color: #2e2e2e;
-    }
-
-
-    #FOOTER {
-        grid-area: MAIN-AREA;
-        width: 100%;
-        display: grid;
-        grid-column-gap: 40px;
-        grid-row-gap: 40px;
-        grid-template-columns: 1fr;
-        grid-template-rows: 150px auto;
-        grid-template-areas: "OTHER"
-            "IPHONE";
-    }
-
-
-    #PFBD {
-        grid-area: PFBD;
-        display: grid;
-        width: 100%;
-        height: 670px;
-        grid-column-gap: 40px;
-        grid-row-gap: 40px;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto auto;
-        grid-template-areas: "PFBD  TITLE"
-            "PFBD INSTAGRAM"
-            "PFBD INSTAGRAM";
-    }
-
-
-    #IPHONE {
-        grid-area: IPHONE;
-        width: 100%;
-        height: 500px;
-        background-color: rgb(255, 191, 106);
-    }
-}
-
-/* ---------------------------------------------------------------------------------------*/
-
-
-
-
-
-/* ---------------------------------------------------------------------------------------*/
-/* ---------------------------------------------------------------------------------------*/
-/* ---------------------------------------------------------------------------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* HEADER------------------------------------------------------------------------------*/
-/* ---------------------------------------------------------------------------------------*/
-/* ---------------------------------------------------------------------------------------*/
-/* ---------------------------------------------------------------------------------------*/
-body {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column;
-    margin-top: 0;
-    margin-left: 0;
-}
-
-
-.center-holder {
-    width: 100%;
-    display: flex;
-
-    -webkit-box-pack: center;
-    justify-content: center;
-    background-color: #2e2e2e;
-    margin: 0;
-}
-
-
-.container {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    display: flex;
-    -webkit-box-pack: center;
-    justify-content: center;
-    border-radius: 1.5px;
-}
-
-
-.container-2 {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    display: flex;
-    justify-content: left;
-}
-
-
-.container-right {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    display: flex;
-    justify-content: right;
-    align-items: center;
-}
-
-
-.header {
-    position: fixed;
-    width: 100%;
-    height: 130px;
-    max-width: 1760px;
-    background-color: #2e2e2e;
-    display: grid;
-    grid-row-gap: 40px;
-    grid-template-rows: auto;
-    grid-template-columns: 40px 110px 40px 1fr 40px 110px 40px;
-    grid-template-areas:
-        ". BANNER-1  . MAIN-AREA . BANNER-2 .";
-    z-index: 1;
-}
-
-
-.burger-dot {
-    border-radius: 100%;
-    background-color: aliceblue;
-
-}
-
-
-#FIXED-HEADER {
-    grid-area: MAIN-AREA;
-    display: grid;
-    grid-row-gap: 20px;
-    grid-column-gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 10px auto 10px;
-    grid-template-areas:
-        ". . . . ."
-        "DATE-HOLDER CLOCK-HOLDER . DATE-CLOCK DATE-CLOCK";
-}
-
-
-#BUTTON-HOLDER-LEFT {
-    grid-area: BANNER-1;
-    display: grid;
-    grid-row-gap: 20px;
-    grid-column-gap: 20px;
-    grid-template-rows: 10px auto 10px;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-        "."
-        "AREA"
-        ".";
-}
-
-
-#BUTTON-HOLDER-RIGHT {
-    grid-area: BANNER-2;
-    display: grid;
-    grid-row-gap: 20px;
-    grid-column-gap: 20px;
-    grid-template-rows: 10px auto 10px;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-        "."
-        "AREA"
-        ".";
-}
-
-
-#HEADER-MENU-1 {
-    grid-area: AREA;
-    background-color: aliceblue;
-}
-
-
-#HEADER-MENU-2 {
-    grid-area: AREA;
-    display: grid;
-    grid-template-rows: 12.5px auto 12.5px;
-    grid-template-columns: 1fr 7.5px;
-    grid-template-areas:
-        " . ."
-        ". BURGER"
-        ". .";
-}
-
-
-
-#BURGER-CONTAINER {
-    display: grid;
-    align-items: flex-end;
-    justify-content: right;
-    width: 100%;
-    height: 100%;
-    grid-area: AREA;
-
-}
-
-
-
-#BURGER {
-    width: 5px;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-row-gap: 3px;
-    grid-template-rows: 5px 5px 5px;
-    grid-template-rows:
-        "B1"
-        "B2"
-        "B3";
-}
-
-
-
-
-#CLOCK-HOLDER {
-    grid-area: CLOCK-HOLDER;
-    display: grid;
-    grid-template-rows: 15px auto 15px;
-    grid-template-columns: 15px 1fr 15px;
-    grid-template-areas:
-        " . . ."
-        "AREA AREA ."
-        ". . .";
-}
-
-
-
-
-#EMPTY {
-    grid-area: EMPTY;
-    display: grid;
-    grid-template-rows: 10px auto 10px;
-    grid-template-columns: 10px 1fr 10px;
-    background-color: aliceblue;
-    grid-template-areas:
-        " . . ."
-        ". AREA ."
-        ". . .";
-}
-
-
-#DATE-CLOCK {
-    top: 3px;
-    grid-area: DATE-CLOCK;
-    display: grid;
-    grid-template-rows: 10px auto 10px;
-    grid-template-columns: 1fr auto 40px auto;
-
-    grid-template-areas:
-        ". . . ."
-        ". CLOCK . DATE"
-        ". . . .";
-}
-
-#PFBD-RIGHT-DATE {
-    grid-area: DATE;
-}
-
-
-#PFBD-RIGHT-CLOCK {
-    grid-area: CLOCK;
-}
-
-
-
-
-#CLOCK {
-
-    padding-top: 0px;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.2rem;
-    color: #d9d9d9;
-    text-align: left;
-}
-
-
-#DATE {
-
-    padding-top: 0px;
-    padding-bottom: 0px;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 1.2rem;
-    color: #d9d9d9;
-    text-align: left;
 }
 
 
@@ -4310,92 +3237,20 @@ body {
 
 
 
-/*BURGER------------------------------------------------------------------------------*/
-a {
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-    cursor: pointer;
-    text-decoration: none;
-}
 
-a i {
-    position: relative;
-    display: inline-block;
-    width: 18px;
-    height: 3px;
-    color: #efefef;
-    font: bold 14px/.4 Helvetica;
-    text-transform: uppercase;
-    text-indent: -55px;
-    background: #efefef;
-    transition: all .2s ease-out;
-}
 
-a i::before,
-a i::after {
-    content: '';
-    width: 18px;
-    height: 3px;
-    background: #efefef;
-    position: absolute;
-    left: 0;
-    transition: all .2s ease-out;
-}
 
-a i::before {
-    top: -7px;
-}
 
-a i::after {
-    bottom: -7px;
-}
 
-a:hover i::before {
-    top: -10px;
-}
 
-a:hover i::after {
-    bottom: -10px;
-}
 
-a.active i {
-    background: #2e2e2e;
-}
 
-a.active i::before {
-    top: 0;
-    -webkit-transform: rotateZ(45deg);
-    -moz-transform: rotateZ(45deg);
-    -ms-transform: rotateZ(45deg);
-    -o-transform: rotateZ(45deg);
-    transform: rotateZ(45deg);
-}
 
-a.active i::after {
-    bottom: 0;
-    -webkit-transform: rotateZ(-45deg);
-    -moz-transform: rotateZ(-45deg);
-    -ms-transform: rotateZ(-45deg);
-    -o-transform: rotateZ(-45deg);
-    transform: rotateZ(-45deg);
-}
 
 
 
-/* Button placement */
-a {
-    position: absolute;
-    left: 100%;
-    top: -22.5px;
-    margin-top: 50%;
-    margin-left: -9px;
 
-}
 
-/* ---------------------------------------------------------------------------------------*/
-/* ---------------------------------------------------------------------------------------*/
-/* ---------------------------------------------------------------------------------------*/
 
 
 
@@ -4429,1110 +3284,13 @@ a {
 
 
 
-/* ---------------------------------------------------------------------------------------*/
-/* ---------------------------------------------------------------------------------------*/
-/* ---------------------------------------------------------------------------------------*/
-@media all and (min-width: 960px) and (max-width: 1280px) {
 
-    body {
-        position: relative;
-        width: 100vw;
-        height: 100vh;
-        overflow: hidden;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        flex-direction: column;
-        margin-top: 0;
-        margin-left: 0;
-    }
 
 
-    .center-holder {
-        width: 100%;
-        display: flex;
 
-        -webkit-box-pack: center;
-        justify-content: center;
-        background-color: #2e2e2e;
-        margin: 0;
-    }
 
 
-    .container {
-        width: 100%;
-        height: 100%;
-        position: relative;
-        display: flex;
-        -webkit-box-pack: center;
-        justify-content: center;
-        border-radius: 1.5px;
-    }
 
 
-    .container-2 {
-        width: 100%;
-        height: 100%;
-        position: relative;
-        display: flex;
-        justify-content: left;
-    }
 
 
-    .container-right {
-        width: 100%;
-        height: 100%;
-        position: relative;
-        display: flex;
-        justify-content: right;
-        align-items: center;
-    }
-
-
-    .header {
-        position: fixed;
-        width: 100%;
-        height: 130px;
-        max-width: 1760px;
-        background-color: #2e2e2e;
-        display: grid;
-        grid-row-gap: 40px;
-        grid-template-rows: auto;
-        grid-template-columns: 40px 110px 40px 1fr 40px 110px 40px;
-        grid-template-areas:
-            ". BANNER-1  . MAIN-AREA . BANNER-2 .";
-        z-index: 1;
-    }
-
-
-    .burger-dot {
-        border-radius: 100%;
-        background-color: aliceblue;
-
-    }
-
-
-    #FIXED-HEADER {
-        grid-area: MAIN-AREA;
-        display: grid;
-        grid-row-gap: 20px;
-        grid-column-gap: 20px;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 10px auto 10px;
-        grid-template-areas:
-            ". . . . ."
-            "DATE-HOLDER CLOCK-HOLDER . DATE-CLOCK DATE-CLOCK";
-    }
-
-
-    #BUTTON-HOLDER-LEFT {
-        grid-area: BANNER-1;
-        display: grid;
-        grid-row-gap: 20px;
-        grid-column-gap: 20px;
-        grid-template-rows: 10px auto 10px;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "."
-            "AREA"
-            ".";
-    }
-
-
-    #BUTTON-HOLDER-RIGHT {
-        grid-area: BANNER-2;
-        display: grid;
-        grid-row-gap: 20px;
-        grid-column-gap: 20px;
-        grid-template-rows: 10px auto 10px;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "."
-            "AREA"
-            ".";
-    }
-
-
-    #HEADER-MENU-1 {
-        grid-area: AREA;
-        background-color: aliceblue;
-    }
-
-
-    #HEADER-MENU-2 {
-        grid-area: AREA;
-        display: grid;
-        grid-template-rows: 12.5px auto 12.5px;
-        grid-template-columns: 1fr 7.5px;
-        grid-template-areas:
-            " . ."
-            ". BURGER"
-            ". .";
-    }
-
-
-
-    #BURGER-CONTAINER {
-        display: grid;
-        align-items: flex-end;
-        justify-content: right;
-        width: 100%;
-        height: 100%;
-        grid-area: AREA;
-
-    }
-
-
-
-    #BURGER {
-        width: 5px;
-        height: 100%;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-row-gap: 3px;
-        grid-template-rows: 5px 5px 5px;
-        grid-template-rows:
-            "B1"
-            "B2"
-            "B3";
-    }
-
-
-
-
-    #CLOCK-HOLDER {
-        grid-area: CLOCK-HOLDER;
-        display: grid;
-        grid-template-rows: 15px auto 15px;
-        grid-template-columns: 15px 1fr 15px;
-        grid-template-areas:
-            " . . ."
-            "AREA AREA ."
-            ". . .";
-    }
-
-
-
-
-    #EMPTY {
-        grid-area: EMPTY;
-        display: grid;
-        grid-template-rows: 10px auto 10px;
-        grid-template-columns: 10px 1fr 10px;
-        background-color: aliceblue;
-        grid-template-areas:
-            " . . ."
-            ". AREA ."
-            ". . .";
-    }
-
-
-    #DATE-CLOCK {
-        top: 3px;
-        grid-area: DATE-CLOCK;
-        display: grid;
-        grid-template-rows: 10px auto 10px;
-        grid-template-columns: 1fr auto 40px auto;
-
-        grid-template-areas:
-            ". . . ."
-            ". CLOCK . DATE"
-            ". . . .";
-    }
-
-    #PFBD-RIGHT-DATE {
-        grid-area: DATE;
-    }
-
-
-    #PFBD-RIGHT-CLOCK {
-        grid-area: CLOCK;
-    }
-
-
-
-
-    #CLOCK {
-
-        padding-top: 0px;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 1.2rem;
-        color: #d9d9d9;
-        text-align: left;
-    }
-
-
-    #DATE {
-
-        padding-top: 0px;
-        padding-bottom: 0px;
-        font-weight: 700;
-        font-style: normal;
-        font-size: 1.2rem;
-        color: #d9d9d9;
-        text-align: left;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /*BURGER------------------------------------------------------------------------------*/
-    a {
-        display: inline-block;
-        width: 18px;
-        height: 18px;
-        cursor: pointer;
-        text-decoration: none;
-    }
-
-    a i {
-        position: relative;
-        display: inline-block;
-        width: 18px;
-        height: 3px;
-        color: #efefef;
-        font: bold 14px/.4 Helvetica;
-        text-transform: uppercase;
-        text-indent: -55px;
-        background: #efefef;
-        transition: all .2s ease-out;
-    }
-
-    a i::before,
-    a i::after {
-        content: '';
-        width: 18px;
-        height: 3px;
-        background: #efefef;
-        position: absolute;
-        left: 0;
-        transition: all .2s ease-out;
-    }
-
-    a i::before {
-        top: -7px;
-    }
-
-    a i::after {
-        bottom: -7px;
-    }
-
-    a:hover i::before {
-        top: -10px;
-    }
-
-    a:hover i::after {
-        bottom: -10px;
-    }
-
-    a.active i {
-        background: #2e2e2e;
-    }
-
-    a.active i::before {
-        top: 0;
-        -webkit-transform: rotateZ(45deg);
-        -moz-transform: rotateZ(45deg);
-        -ms-transform: rotateZ(45deg);
-        -o-transform: rotateZ(45deg);
-        transform: rotateZ(45deg);
-    }
-
-    a.active i::after {
-        bottom: 0;
-        -webkit-transform: rotateZ(-45deg);
-        -moz-transform: rotateZ(-45deg);
-        -ms-transform: rotateZ(-45deg);
-        -o-transform: rotateZ(-45deg);
-        transform: rotateZ(-45deg);
-    }
-
-
-
-    /* Button placement */
-    a {
-        position: absolute;
-        left: 100%;
-        top: -22.5px;
-        margin-top: 50%;
-        margin-left: -9px;
-
-    }
-}
-
-/* ---------------------------------------------------------------------------------------*/
-/* ---------------------------------------------------------------------------------------*/
-/* ---------------------------------------------------------------------------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ---------------------------------------------------------------------------------------*/
-/* ---------------------------------------------------------------------------------------*/
-/* ---------------------------------------------------------------------------------------*/
-@media all and (min-width: 480px) and (max-width: 960px) {
-
-    body {
-        position: relative;
-        width: 100vw;
-        height: 100vh;
-        overflow: hidden;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        flex-direction: column;
-        margin-top: 0;
-        margin-left: 0;
-    }
-
-
-    .center-holder {
-        width: 100%;
-        display: flex;
-
-        -webkit-box-pack: center;
-        justify-content: center;
-        background-color: #2e2e2e;
-        margin: 0;
-    }
-
-
-    .container {
-        width: 100%;
-        height: 100%;
-        position: relative;
-        display: flex;
-        -webkit-box-pack: center;
-        justify-content: center;
-        border-radius: 1.5px;
-    }
-
-
-    .container-2 {
-        width: 100%;
-        height: 100%;
-        position: relative;
-        display: flex;
-        justify-content: left;
-    }
-
-
-    .container-right {
-        width: 100%;
-        height: 100%;
-        position: relative;
-        display: flex;
-        justify-content: right;
-        align-items: center;
-    }
-
-
-    .header {
-        position: fixed;
-        width: 100%;
-        height: 130px;
-        max-width: 1760px;
-        background-color: #2e2e2e;
-        display: grid;
-        grid-row-gap: 40px;
-        grid-template-rows: auto;
-        grid-template-columns: 40px 110px 40px 1fr 40px 110px 40px;
-        grid-template-areas:
-            ". BANNER-1  . MAIN-AREA . BANNER-2 .";
-        z-index: 1;
-    }
-
-
-    .burger-dot {
-        border-radius: 100%;
-        background-color: aliceblue;
-
-    }
-
-
-    #FIXED-HEADER {
-        grid-area: MAIN-AREA;
-        display: grid;
-        grid-row-gap: 20px;
-        grid-column-gap: 20px;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 10px auto 10px;
-        grid-template-areas:
-            ". . . . ."
-            "DATE-HOLDER CLOCK-HOLDER . DATE-CLOCK DATE-CLOCK";
-    }
-
-
-    #BUTTON-HOLDER-LEFT {
-        grid-area: BANNER-1;
-        display: grid;
-        grid-row-gap: 20px;
-        grid-column-gap: 20px;
-        grid-template-rows: 10px auto 10px;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "."
-            "AREA"
-            ".";
-    }
-
-
-    #BUTTON-HOLDER-RIGHT {
-        grid-area: BANNER-2;
-        display: grid;
-        grid-row-gap: 20px;
-        grid-column-gap: 20px;
-        grid-template-rows: 10px auto 10px;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "."
-            "AREA"
-            ".";
-    }
-
-
-    #HEADER-MENU-1 {
-        grid-area: AREA;
-        background-color: aliceblue;
-    }
-
-
-    #HEADER-MENU-2 {
-        grid-area: AREA;
-        display: grid;
-        grid-template-rows: 12.5px auto 12.5px;
-        grid-template-columns: 1fr 7.5px;
-        grid-template-areas:
-            " . ."
-            ". BURGER"
-            ". .";
-    }
-
-
-
-    #BURGER-CONTAINER {
-        display: grid;
-        align-items: flex-end;
-        justify-content: right;
-        width: 100%;
-        height: 100%;
-        grid-area: AREA;
-
-    }
-
-
-
-    #BURGER {
-        width: 5px;
-        height: 100%;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-row-gap: 3px;
-        grid-template-rows: 5px 5px 5px;
-        grid-template-rows:
-            "B1"
-            "B2"
-            "B3";
-    }
-
-
-
-
-    #CLOCK-HOLDER {
-        grid-area: CLOCK-HOLDER;
-        display: grid;
-        grid-template-rows: 15px auto 15px;
-        grid-template-columns: 15px 1fr 15px;
-        grid-template-areas:
-            " . . ."
-            "AREA AREA ."
-            ". . .";
-    }
-
-
-
-
-    #EMPTY {
-        grid-area: EMPTY;
-        display: grid;
-        grid-template-rows: 10px auto 10px;
-        grid-template-columns: 10px 1fr 10px;
-        background-color: aliceblue;
-        grid-template-areas:
-            " . . ."
-            ". AREA ."
-            ". . .";
-    }
-
-
-    #DATE-CLOCK {
-        top: 3px;
-        grid-area: DATE-CLOCK;
-        display: grid;
-        grid-template-rows: 10px auto 10px;
-        grid-template-columns: 1fr auto 40px auto;
-
-        grid-template-areas:
-            ". . . ."
-            ". CLOCK . DATE"
-            ". . . .";
-    }
-
-    #PFBD-RIGHT-DATE {
-        grid-area: DATE;
-    }
-
-
-    #PFBD-RIGHT-CLOCK {
-        grid-area: CLOCK;
-    }
-
-
-
-
-    #CLOCK {
-
-        padding-top: 0px;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 1.2rem;
-        color: #d9d9d9;
-        text-align: left;
-    }
-
-
-    #DATE {
-
-        padding-top: 0px;
-        padding-bottom: 0px;
-        font-weight: 700;
-        font-style: normal;
-        font-size: 1.2rem;
-        color: #d9d9d9;
-        text-align: left;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /*BURGER------------------------------------------------------------------------------*/
-    a {
-        display: inline-block;
-        width: 18px;
-        height: 18px;
-        cursor: pointer;
-        text-decoration: none;
-    }
-
-    a i {
-        position: relative;
-        display: inline-block;
-        width: 18px;
-        height: 3px;
-        color: #efefef;
-        font: bold 14px/.4 Helvetica;
-        text-transform: uppercase;
-        text-indent: -55px;
-        background: #efefef;
-        transition: all .2s ease-out;
-    }
-
-    a i::before,
-    a i::after {
-        content: '';
-        width: 18px;
-        height: 3px;
-        background: #efefef;
-        position: absolute;
-        left: 0;
-        transition: all .2s ease-out;
-    }
-
-    a i::before {
-        top: -7px;
-    }
-
-    a i::after {
-        bottom: -7px;
-    }
-
-    a:hover i::before {
-        top: -10px;
-    }
-
-    a:hover i::after {
-        bottom: -10px;
-    }
-
-    a.active i {
-        background: #2e2e2e;
-    }
-
-    a.active i::before {
-        top: 0;
-        -webkit-transform: rotateZ(45deg);
-        -moz-transform: rotateZ(45deg);
-        -ms-transform: rotateZ(45deg);
-        -o-transform: rotateZ(45deg);
-        transform: rotateZ(45deg);
-    }
-
-    a.active i::after {
-        bottom: 0;
-        -webkit-transform: rotateZ(-45deg);
-        -moz-transform: rotateZ(-45deg);
-        -ms-transform: rotateZ(-45deg);
-        -o-transform: rotateZ(-45deg);
-        transform: rotateZ(-45deg);
-    }
-
-
-
-    /* Button placement */
-    a {
-        position: absolute;
-        left: 100%;
-        top: -22.5px;
-        margin-top: 50%;
-        margin-left: -9px;
-
-    }
-}
-
-/* ---------------------------------------------------------------------------------------*/
-/* ---------------------------------------------------------------------------------------*/
-/* ---------------------------------------------------------------------------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ---------------------------------------------------------------------------------------*/
-/* ---------------------------------------------------------------------------------------*/
-/* ---------------------------------------------------------------------------------------*/
-@media all and (min-width: 0px) and (max-width: 480px) {
-
-    body {
-        position: relative;
-        width: 100vw;
-        height: 100vh;
-        overflow: hidden;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        flex-direction: column;
-        margin-top: 0;
-        margin-left: 0;
-    }
-
-
-    .center-holder {
-        width: 100%;
-        display: flex;
-
-        -webkit-box-pack: center;
-        justify-content: center;
-        background-color: #2e2e2e;
-        margin: 0;
-    }
-
-
-    .container {
-        width: 100%;
-        height: 100%;
-        position: relative;
-        display: flex;
-        -webkit-box-pack: center;
-        justify-content: center;
-        border-radius: 1.5px;
-    }
-
-
-    .container-2 {
-        width: 100%;
-        height: 100%;
-        position: relative;
-        display: flex;
-        justify-content: left;
-    }
-
-
-    .container-right {
-        width: 100%;
-        height: 100%;
-        position: relative;
-        display: flex;
-        justify-content: right;
-        align-items: center;
-    }
-
-
-    .header {
-        position: fixed;
-        width: 100%;
-        height: 130px;
-        max-width: 1760px;
-        background-color: #2e2e2e;
-        display: grid;
-        grid-row-gap: 40px;
-        grid-template-rows: auto;
-        grid-template-columns: 40px 110px 40px 1fr 40px 110px 40px;
-        grid-template-areas:
-            ". BANNER-1  . MAIN-AREA . BANNER-2 .";
-        z-index: 1;
-    }
-
-
-    .burger-dot {
-        border-radius: 100%;
-        background-color: aliceblue;
-
-    }
-
-
-    #FIXED-HEADER {
-        grid-area: MAIN-AREA;
-        display: grid;
-        grid-row-gap: 20px;
-        grid-column-gap: 20px;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 10px auto 10px;
-        grid-template-areas:
-            ". . . . ."
-            "DATE-HOLDER CLOCK-HOLDER . DATE-CLOCK DATE-CLOCK";
-    }
-
-
-    #BUTTON-HOLDER-LEFT {
-        grid-area: BANNER-1;
-        display: grid;
-        grid-row-gap: 20px;
-        grid-column-gap: 20px;
-        grid-template-rows: 10px auto 10px;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "."
-            "AREA"
-            ".";
-    }
-
-
-    #BUTTON-HOLDER-RIGHT {
-        grid-area: BANNER-2;
-        display: grid;
-        grid-row-gap: 20px;
-        grid-column-gap: 20px;
-        grid-template-rows: 10px auto 10px;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "."
-            "AREA"
-            ".";
-    }
-
-
-    #HEADER-MENU-1 {
-        grid-area: AREA;
-        background-color: aliceblue;
-    }
-
-
-    #HEADER-MENU-2 {
-        grid-area: AREA;
-        display: grid;
-        grid-template-rows: 12.5px auto 12.5px;
-        grid-template-columns: 1fr 7.5px;
-        grid-template-areas:
-            " . ."
-            ". BURGER"
-            ". .";
-    }
-
-
-
-    #BURGER-CONTAINER {
-        display: grid;
-        align-items: flex-end;
-        justify-content: right;
-        width: 100%;
-        height: 100%;
-        grid-area: AREA;
-
-    }
-
-
-
-    #BURGER {
-        width: 5px;
-        height: 100%;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-row-gap: 3px;
-        grid-template-rows: 5px 5px 5px;
-        grid-template-rows:
-            "B1"
-            "B2"
-            "B3";
-    }
-
-
-
-
-    #CLOCK-HOLDER {
-        grid-area: CLOCK-HOLDER;
-        display: grid;
-        grid-template-rows: 15px auto 15px;
-        grid-template-columns: 15px 1fr 15px;
-        grid-template-areas:
-            " . . ."
-            "AREA AREA ."
-            ". . .";
-    }
-
-
-
-
-    #EMPTY {
-        grid-area: EMPTY;
-        display: grid;
-        grid-template-rows: 10px auto 10px;
-        grid-template-columns: 10px 1fr 10px;
-        background-color: aliceblue;
-        grid-template-areas:
-            " . . ."
-            ". AREA ."
-            ". . .";
-    }
-
-
-    #DATE-CLOCK {
-        top: 3px;
-        grid-area: DATE-CLOCK;
-        display: grid;
-        grid-template-rows: 10px auto 10px;
-        grid-template-columns: 1fr auto 40px auto;
-
-        grid-template-areas:
-            ". . . ."
-            ". CLOCK . DATE"
-            ". . . .";
-    }
-
-    #PFBD-RIGHT-DATE {
-        grid-area: DATE;
-    }
-
-
-    #PFBD-RIGHT-CLOCK {
-        grid-area: CLOCK;
-    }
-
-
-
-
-    #CLOCK {
-
-        padding-top: 0px;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 1.2rem;
-        color: #d9d9d9;
-        text-align: left;
-    }
-
-
-    #DATE {
-
-        padding-top: 0px;
-        padding-bottom: 0px;
-        font-weight: 700;
-        font-style: normal;
-        font-size: 1.2rem;
-        color: #d9d9d9;
-        text-align: left;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /*BURGER------------------------------------------------------------------------------*/
-    a {
-        display: inline-block;
-        width: 18px;
-        height: 18px;
-        cursor: pointer;
-        text-decoration: none;
-    }
-
-    a i {
-        position: relative;
-        display: inline-block;
-        width: 18px;
-        height: 3px;
-        color: #efefef;
-        font: bold 14px/.4 Helvetica;
-        text-transform: uppercase;
-        text-indent: -55px;
-        background: #efefef;
-        transition: all .2s ease-out;
-    }
-
-    a i::before,
-    a i::after {
-        content: '';
-        width: 18px;
-        height: 3px;
-        background: #efefef;
-        position: absolute;
-        left: 0;
-        transition: all .2s ease-out;
-    }
-
-    a i::before {
-        top: -7px;
-    }
-
-    a i::after {
-        bottom: -7px;
-    }
-
-    a:hover i::before {
-        top: -10px;
-    }
-
-    a:hover i::after {
-        bottom: -10px;
-    }
-
-    a.active i {
-        background: #2e2e2e;
-    }
-
-    a.active i::before {
-        top: 0;
-        -webkit-transform: rotateZ(45deg);
-        -moz-transform: rotateZ(45deg);
-        -ms-transform: rotateZ(45deg);
-        -o-transform: rotateZ(45deg);
-        transform: rotateZ(45deg);
-    }
-
-    a.active i::after {
-        bottom: 0;
-        -webkit-transform: rotateZ(-45deg);
-        -moz-transform: rotateZ(-45deg);
-        -ms-transform: rotateZ(-45deg);
-        -o-transform: rotateZ(-45deg);
-        transform: rotateZ(-45deg);
-    }hbohfuiasfh8ewa9o
-
-
-
-    /* Button placement */
-    a {
-        position: absolute;
-        left: 100%;
-        top: -22.5px;
-        margin-top: 50%;
-        margin-left: -9px;
-
-    }
-
-}
-
-/* ---------------------------------------------------------------------------------------*/
-/* ---------------------------------------------------------------------------------------*/
-/* ---------------------------------------------------------------------------------------*/

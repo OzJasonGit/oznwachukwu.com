@@ -1,0 +1,834 @@
+body {
+
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.wrapper-2 {
+    z-index: 1000;
+    top: -100vh;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.fixed-center {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background-color: #2e2e2e;
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+
+.grid-0-fixed {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    max-width: 1760px;
+    background-color: #2e2e2e;
+    display: grid;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    grid-template-rows: 100px auto;
+    grid-template-columns: 150px 1fr 150px;
+    grid-template-areas: ". . ."
+        "BANNER-1 MAIN-AREA BANNER-2";
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    border-radius: 1.5px;
+}
+
+.side-text {
+    display: inline-block;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    padding-left: 50px;
+    color: antiquewhite;
+}
+
+#RIGHT-FIXED {
+    top: 100vh;
+    display: grid;
+    position: relative;
+    grid-area: BANNER-2;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr 40px;
+    grid-template-areas: "AREA PADDING"
+}
+
+#LEFT-FIXED {
+    top: 100vh;
+    display: grid;
+    position: relative;
+    grid-area: BANNER-1;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 40px 1fr;
+    grid-template-areas: "PADDING AREA";
+}
+
+#LEFT-FIXED-STICKY {
+    position: relative;
+    grid-area: AREA;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-row-gap: 40px;
+    grid-template-rows: 350px 1fr 350px;
+    grid-template-areas: "SIDE-1"
+        "SIDE-2"
+        "SIDE-3";
+}
+
+#RIGHT-FIXED-STICKY {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-row-gap: 40px;
+    grid-template-rows: 450px 1fr 450px;
+    grid-template-areas: "SIDE-1"
+        "NAVIGATION"
+        "SIDE-3";
+}
+
+#PFBD-LINKS {
+    position: relative;
+    grid-area: SIDE-1;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "AREA"
+        "AREA"
+        "AREA"
+        "PFBD";
+}
+
+#PAGE-NAVIGATION {
+    position: relative;
+    grid-area: NAVIGATION;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: 1fr 120px 1fr;
+    grid-template-columns: 40px 1fr 40px;
+    grid-template-areas: ". . ."
+        ". AREA ."
+        ". . .";
+}
+
+#ICON-SIDE-1 {
+    position: relative;
+    grid-area: SIDE-1;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-areas: "AREA";
+}
+
+#ICON-SIDE-2 {
+    position: relative;
+    grid-area: SIDE-2;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 40px 1fr 40px;
+    grid-template-rows: 1fr 250px 1fr;
+    grid-template-areas: ". . ."
+        ". AREA ."
+        ". . .";
+}
+
+#ICON-PLACEHOLDER {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    grid-area: AREA;
+}
+
+#VERTICAL-NAVIGATION {
+    position: relative;
+    grid-area: AREA;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "1"
+        "2"
+        "3"
+        "4";
+}
+
+#NAV-1 {
+    grid-area: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+#NAV-2 {
+    grid-area: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+#NAV-3 {
+    grid-area: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+#NAV-4 {
+    grid-area: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (min-width: 960px) and (max-width: 1280px){
+    body {   
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            flex-direction: column;
+            margin-top: 0;
+            margin-left: 0;
+        }
+    
+        .wrapper-2 {
+            z-index: 1000;
+            top: -100vh;
+            position: relative;
+            width: 100%;
+            height: auto;
+        }
+    
+        .fixed-center {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            -webkit-box-pack: center;
+            justify-content: center;
+            background-color: #2e2e2e;
+            top: 0;
+            left: 0;
+            margin: 0;
+        }
+    
+        .grid-0-fixed {
+            display: none;
+        }
+    
+        .container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            display: flex;
+            -webkit-box-pack: center;
+            justify-content: center;
+            border-radius: 1.5px;
+        }
+    
+        .side-text {
+            display: none;
+        }
+    
+        #RIGHT-FIXED {
+            display: none;
+        }
+        
+        #LEFT-FIXED {
+            display: none;
+        }
+    
+        #LEFT-FIXED-STICKY {
+            display: none;
+        }
+    
+        #RIGHT-FIXED-STICKY {
+            display: none;
+        }
+    
+        #PFBD-LINKS {
+            display: none;
+        }
+    
+        #PAGE-NAVIGATION {
+            display: none;
+        }
+    
+        #ICON-SIDE-1 {
+            display: none;
+        }
+    
+        #ICON-SIDE-2 {
+            display: none;
+        }
+    
+        #ICON-PLACEHOLDER {
+            display: none;
+        }
+    
+        #VERTICAL-NAVIGATION {
+            display: none;
+        }
+    
+        #NAV-1 {
+            display: none;
+        }
+    
+        #NAV-2 {
+            display: none;
+        }
+    
+        #NAV-3 {
+            display: none;
+        }
+    
+        #NAV-4 {
+            display: none;
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (min-width: 480px) and (max-width: 960px){
+    body {  
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            flex-direction: column;
+            margin-top: 0;
+            margin-left: 0;
+        }
+    
+        .wrapper-2 {
+            z-index: 1000;
+            top: -100vh;
+            position: relative;
+            width: 100%;
+            height: auto;
+        }
+    
+        .fixed-center {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            -webkit-box-pack: center;
+            justify-content: center;
+            background-color: #2e2e2e;
+            top: 0;
+            left: 0;
+            margin: 0;
+        }
+    
+        .grid-0-fixed {
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            max-width: 1760px;
+            background-color: #2e2e2e;
+            display: grid;
+            grid-column-gap: 40px;
+            grid-row-gap: 40px;
+            grid-template-rows: 150px auto;
+            grid-template-columns: 150px 1fr 150px;
+            grid-template-areas: ". . ."
+                "BANNER-1 MAIN-AREA BANNER-2";
+        }
+    
+        .container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            display: flex;
+            -webkit-box-pack: center;
+            justify-content: center;
+            border-radius: 1.5px;
+        }
+    
+        .side-text {
+            display: inline-block;
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            padding-left: 70px;
+            color: antiquewhite;
+        }
+    
+        
+    
+        #LEFT-FIXED-STICKY {
+            position: relative;
+            grid-area: AREA;
+            display: grid;
+            width: 100%;
+            height: 100%;
+            grid-template-columns: 1fr;
+            grid-row-gap: 40px;
+            grid-template-rows: 350px 1fr 350px;
+            grid-template-areas: "SIDE-1"
+                "SIDE-2"
+                "SIDE-3";
+        }
+    
+        #RIGHT-FIXED-STICKY {
+            display: grid;
+            width: 100%;
+            height: 100%;
+            grid-template-columns: 1fr;
+            grid-row-gap: 40px;
+            grid-template-rows: 450px 1fr 450px;
+            grid-template-areas: "SIDE-1"
+                "NAVIGATION"
+                "SIDE-3";
+        }
+    
+        #PFBD-LINKS {
+            position: relative;
+            grid-area: SIDE-1;
+            display: grid;
+            width: 100%;
+            height: 100%;
+            grid-template-columns: 1fr;
+            grid-row-gap: 20px;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-areas: "AREA"
+                "AREA"
+                "AREA"
+                "PFBD";
+        }
+    
+        #PAGE-NAVIGATION {
+            position: relative;
+            grid-area: NAVIGATION;
+            display: grid;
+            width: 100%;
+            height: 100%;
+            grid-template-rows: 1fr 120px 1fr;
+            grid-template-columns: 40px 1fr 40px;
+            grid-template-areas: ". . ."
+                ". AREA ."
+                ". . .";
+        }
+    
+        #ICON-SIDE-1 {
+            position: relative;
+            grid-area: SIDE-1;
+            display: grid;
+            width: 100%;
+            height: 100%;
+            grid-template-columns: 1fr;
+            grid-template-areas: "AREA";
+        }
+    
+        #ICON-SIDE-2 {
+            position: relative;
+            grid-area: SIDE-2;
+            display: grid;
+            width: 100%;
+            height: 100%;
+            grid-template-columns: 40px 1fr 40px;
+            grid-template-rows: 1fr 250px 1fr;
+            grid-template-areas: ". . ."
+                ". AREA ."
+                ". . .";
+        }
+    
+        #ICON-PLACEHOLDER {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            grid-area: AREA;
+        }
+    
+        #VERTICAL-NAVIGATION {
+            position: relative;
+            grid-area: AREA;
+            display: grid;
+            width: 100%;
+            height: 100%;
+            grid-template-columns: 1fr;
+            grid-row-gap: 10px;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-areas: "1"
+                "2"
+                "3"
+                "4";
+        }
+    
+        #NAV-1 {
+            grid-area: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+    
+        #NAV-2 {
+            grid-area: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+    
+        #NAV-3 {
+            grid-area: 3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+    
+        #NAV-4 {
+            grid-area: 4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (min-width: 0px) and (max-width: 480px){
+    body {
+    
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            flex-direction: column;
+            margin-top: 0;
+            margin-left: 0;
+        }
+    
+        .wrapper-2 {
+            z-index: 1000;
+            top: -100vh;
+            position: relative;
+            width: 100%;
+            height: auto;
+        }
+    
+        .fixed-center {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            -webkit-box-pack: center;
+            justify-content: center;
+            background-color: #2e2e2e;
+            top: 0;
+            left: 0;
+            margin: 0;
+        }
+    
+        .grid-0-fixed {
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            max-width: 1760px;
+            background-color: #2e2e2e;
+            display: grid;
+            grid-column-gap: 40px;
+            grid-row-gap: 40px;
+            grid-template-rows: 100px auto;
+            grid-template-columns: 150px 1fr 150px;
+            grid-template-areas: ". . ."
+                "BANNER-1 MAIN-AREA BANNER-2";
+        }
+    
+        .container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            display: flex;
+            -webkit-box-pack: center;
+            justify-content: center;
+            border-radius: 1.5px;
+        }
+    
+        .side-text {
+            display: inline-block;
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            padding-left: 0px;
+            color: antiquewhite;
+        }
+    
+        #RIGHT-FIXED {
+            display: none;
+        }
+    
+        #LEFT-FIXED {
+            display: none;
+        }
+    
+        #LEFT-FIXED-STICKY {
+            position: relative;
+            grid-area: AREA;
+            display: grid;
+            width: 100%;
+            height: 100%;
+            grid-template-columns: 1fr;
+            grid-row-gap: 40px;
+            grid-template-rows: 350px 1fr 350px;
+            grid-template-areas: "SIDE-1"
+                "SIDE-2"
+                "SIDE-3";
+        }
+    
+        #RIGHT-FIXED-STICKY {
+            display: grid;
+            width: 100%;
+            height: 100%;
+            grid-template-columns: 1fr;
+            grid-row-gap: 40px;
+            grid-template-rows: 450px 1fr 450px;
+            grid-template-areas: "SIDE-1"
+                "NAVIGATION"
+                "SIDE-3";
+        }
+    
+        #PFBD-LINKS {
+            position: relative;
+            grid-area: SIDE-1;
+            display: grid;
+            width: 100%;
+            height: 100%;
+            grid-template-columns: 1fr;
+            grid-row-gap: 20px;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-areas: "AREA"
+                "AREA"
+                "AREA"
+                "PFBD";
+        }
+    
+        #PAGE-NAVIGATION {
+            position: relative;
+            grid-area: NAVIGATION;
+            display: grid;
+            width: 100%;
+            height: 100%;
+            grid-template-rows: 1fr 120px 1fr;
+            grid-template-columns: 40px 1fr 40px;
+            grid-template-areas: ". . ."
+                ". AREA ."
+                ". . .";
+        }
+    
+        #ICON-SIDE-1 {
+            position: relative;
+            grid-area: SIDE-1;
+            display: grid;
+            width: 100%;
+            height: 100%;
+            grid-template-columns: 1fr;
+            grid-template-areas: "AREA";
+        }
+    
+        #ICON-SIDE-2 {
+            position: relative;
+            grid-area: SIDE-2;
+            display: grid;
+            width: 100%;
+            height: 100%;
+            grid-template-columns: 40px 1fr 40px;
+            grid-template-rows: 1fr 250px 1fr;
+            grid-template-areas: ". . ."
+                ". AREA ."
+                ". . .";
+        }
+    
+        #ICON-PLACEHOLDER {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            grid-area: AREA;
+        }
+    
+        #VERTICAL-NAVIGATION {
+            position: relative;
+            grid-area: AREA;
+            display: grid;
+            width: 100%;
+            height: 100%;
+            grid-template-columns: 1fr;
+            grid-row-gap: 10px;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-areas: "1"
+                "2"
+                "3"
+                "4";
+        }
+    
+        #NAV-1 {
+            grid-area: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+    
+        #NAV-2 {
+            grid-area: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+    
+        #NAV-3 {
+            grid-area: 3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+    
+        #NAV-4 {
+            grid-area: 4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+}

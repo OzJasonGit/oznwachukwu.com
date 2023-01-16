@@ -21,7 +21,7 @@ body {
 
 .wrapper {
     width: 100vw;
- 
+
 }
 
 
@@ -241,122 +241,11 @@ body {
 
 
 
-.icon {
-    display: flex;
-    -webkit-box-pack: center;
-    justify-content: left;
-    align-items: center;
-}
-
-
-
-#RIGHT-FIXED{
-    grid-area: BANNER-2;
-    top: 100vh;
-    position: relative;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    
-}
-
-
-
-#RIGHT-FIXED-STICKY {
-    top: 100px;
-    display: grid;
-    width: 100%;
-    height: 90vh;
-    grid-template-columns: 1fr;
-    grid-row-gap: 40px;
-    grid-template-rows: 360px 600px auto;
-    grid-template-rows: 360px 600px auto;
-        grid-template-areas: "SIDE-1"
-            "SIDE-2"
-            "SIDE-3";
-}
-
-
-
-#LEFT-FIXED {
-    grid-area: BANNER-1;
-    top: 100vh;
-    position: relative;
-    display: grid;
-    width: 100%;
-    height: 100%;
-
-}
-
-
-
-#LEFT-FIXED-STICKY {
-    position: absolute;
-    display: grid;
-    width: 100%;
-    height: 90vh;
-    grid-template-columns: 1fr;
-    grid-row-gap: 40px;
-    grid-template-rows: 360px 600px auto;
-    grid-template-areas: "SIDE-1"
-                         "SIDE-2"
-                         "SIDE-3";
-}
 
 
 
 
-#ICON-SIDE-1 {
-    grid-area: SIDE-1;
-    display: grid;
-    width: 100%;
-    height: 100%;
-    grid-template-columns: 40px 1fr;
-    grid-template-areas: ". AREA";
-}
 
-
-
-#ICON-SIDE-2 {
-    grid-area: SIDE-2;
-    display: grid;
-    width: 100%;
-    height: 100%;
-    grid-template-columns: 40px 1fr;
-    grid-template-areas: ". AREA ";
-}
-
-
-
-#ICON-SIDE-3 {
-    grid-area: SIDE-1;
-    display: grid;
-    width: 100%;
-    height: 100%;
-    grid-template-columns: 1fr 40px;
-    grid-template-areas: "AREA .";
-}
-
-
-
-#ICON-SIDE-4 {
-    grid-area: SIDE-2;
-    display: grid;
-    width: 100%;
-    height: 100%;
-    grid-template-columns: 1fr 40px;
-    grid-template-areas: "AREA .";
-}
-
-
-
-
-#ICON-PLACEHOLDER {
-    grid-area: AREA;
-    width: 100%;
-    height: 100%;
-    background-color: #B3B7A5;
-}
 
 
 
@@ -437,13 +326,13 @@ body {
     grid-row-gap: 40px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto auto auto auto auto auto auto 60px;
-    grid-template-areas:"HOME TITLE TITLE TITLE TITLE TITLE TITLE ."
-                        "HOME IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN ."
-                        "HOME . DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION . ."
-                        "HOME . IMAGE-1 IMAGE-1 IMAGE-1 IMAGE-1 . ."
-                        "HOME . DESCRIPTION-2 DESCRIPTION-2 DESCRIPTION-2 DESCRIPTION-2 . ."            
-                        "HOME . IMAGE-2 IMAGE-2 IMAGE-2 IMAGE-2 . ."
-                        "HOME . DESCRIPTION-3 DESCRIPTION-3 DESCRIPTION-3 DESCRIPTION-3 . .";
+    grid-template-areas: "HOME TITLE TITLE TITLE TITLE TITLE TITLE ."
+        "HOME IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN ."
+        "HOME . DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION . ."
+        "HOME . IMAGE-1 IMAGE-1 IMAGE-1 IMAGE-1 . ."
+        "HOME . DESCRIPTION-2 DESCRIPTION-2 DESCRIPTION-2 DESCRIPTION-2 . ."
+        "HOME . IMAGE-2 IMAGE-2 IMAGE-2 IMAGE-2 . ."
+        "HOME . DESCRIPTION-3 DESCRIPTION-3 DESCRIPTION-3 DESCRIPTION-3 . .";
 }
 
 /* ---------------------------------------------------------------------------------------*/
@@ -525,7 +414,7 @@ body {
     position: relative;
     width: 100%;
     height: 100%;
-   
+
 }
 
 
@@ -534,7 +423,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    
+
 }
 
 
@@ -783,22 +672,22 @@ body {
     }
 
 
-        .grid-0-fixed {
-            position: fixed;
-            top: -100vh;
-            width: 98vw;
-            height: 100vh;
-            max-width: 1760px;
-            background-color: #2e2e2e;
-            display: grid;
-            grid-column-gap: 40px;
-            grid-row-gap: 40px;
-            grid-template-rows: 60px auto;
-            grid-template-columns: 150px 1fr 150px;
-            grid-template-areas: ". . ."
-                "BANNER-1 MAIN-AREA BANNER-2";
-            margin: 0;
-        }
+    .grid-0-fixed {
+        position: fixed;
+        top: -100vh;
+        width: 98vw;
+        height: 100vh;
+        max-width: 1760px;
+        background-color: #2e2e2e;
+        display: grid;
+        grid-column-gap: 40px;
+        grid-row-gap: 40px;
+        grid-template-rows: 60px auto;
+        grid-template-columns: 150px 1fr 150px;
+        grid-template-areas: ". . ."
+            "BANNER-1 MAIN-AREA BANNER-2";
+        margin: 0;
+    }
 
 
     .grid-0-2 {
@@ -817,20 +706,20 @@ body {
     }
 
 
-        .grid-0-2-header {
-            position: fixed;
-            width: 100%;
-            height: 100px;
-            max-width: 1760px;
-            background-color: #2e2e2e;
-            display: grid;
-            grid-row-gap: 40px;
-            grid-template-rows: auto;
-            grid-template-columns: 50px 1fr 50px;
-            grid-template-areas:
-                "BANNER-1 MAIN-AREA BANNER-2";
-            z-index: 1;
-        }
+    .grid-0-2-header {
+        position: fixed;
+        width: 100%;
+        height: 100px;
+        max-width: 1760px;
+        background-color: #2e2e2e;
+        display: grid;
+        grid-row-gap: 40px;
+        grid-template-rows: auto;
+        grid-template-columns: 50px 1fr 50px;
+        grid-template-areas:
+            "BANNER-1 MAIN-AREA BANNER-2";
+        z-index: 1;
+    }
 
 
     .container {
@@ -863,58 +752,58 @@ body {
 
 
 
-        #RIGHT-FIXED {
-            grid-area: BANNER-2;
-            top: 100vh;
-            position: relative;
-            display: flex;
-            width: 100%;
-            height: 100%;
-    
-        }
-    
-    
-    
-        #RIGHT-FIXED-STICKY {
-            position: sticky;
-            top: 100px;
-            display: grid;
-            width: 100%;
-            height: 90vh;
-            grid-template-columns: 1fr;
-            grid-row-gap: 40px;
-            grid-template-rows: 380px 600px auto;
-        }
-    
-    
-    
-        #LEFT-FIXED {
-            grid-area: BANNER-1;
-            top: 100vh;
-            position: relative;
-            display: grid;
-            width: 100%;
-            height: 100%;
-    
-        }
-    
-    
-    
-        #LEFT-FIXED-STICKY {
-            position: sticky;
-            top: 100px;
-            display: grid;
-            width: 100%;
-            height: 90vh;
-            grid-template-columns: 1fr;
-            grid-row-gap: 40px;
-            grid-template-rows: 380px 600px auto;
-        }
+    #RIGHT-FIXED {
+        grid-area: BANNER-2;
+        top: 100vh;
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 100%;
 
-        
+    }
 
 
-       
+
+    #RIGHT-FIXED-STICKY {
+        position: sticky;
+        top: 100px;
+        display: grid;
+        width: 100%;
+        height: 90vh;
+        grid-template-columns: 1fr;
+        grid-row-gap: 40px;
+        grid-template-rows: 380px 600px auto;
+    }
+
+
+
+    #LEFT-FIXED {
+        grid-area: BANNER-1;
+        top: 100vh;
+        position: relative;
+        display: grid;
+        width: 100%;
+        height: 100%;
+
+    }
+
+
+
+    #LEFT-FIXED-STICKY {
+        position: sticky;
+        top: 100px;
+        display: grid;
+        width: 100%;
+        height: 90vh;
+        grid-template-columns: 1fr;
+        grid-row-gap: 40px;
+        grid-template-rows: 380px 600px auto;
+    }
+
+
+
+
+
 
 
 
@@ -931,13 +820,14 @@ body {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: auto auto auto auto auto auto auto 100px;
         grid-template-areas: "HOME TITLE TITLE TITLE TITLE TITLE TITLE ."
-                             "HOME IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN ."
-                             "HOME DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION ."
-                             "HOME IMAGE-1 IMAGE-1 IMAGE-1 IMAGE-1 IMAGE-1 IMAGE-1 ."
-                             "HOME DESCRIPTION-2 DESCRIPTION-2 DESCRIPTION-2 DESCRIPTION-2 DESCRIPTION-2 DESCRIPTION-2 ."
-                             "HOME IMAGE-2 IMAGE-2 IMAGE-2 IMAGE-2 IMAGE-2 IMAGE-2 ."
-                             "HOME DESCRIPTION-3 DESCRIPTION-3 DESCRIPTION-3 DESCRIPTION-3 DESCRIPTION-3 DESCRIPTION-3 .";
+            "HOME IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN ."
+            "HOME DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION ."
+            "HOME IMAGE-1 IMAGE-1 IMAGE-1 IMAGE-1 IMAGE-1 IMAGE-1 ."
+            "HOME DESCRIPTION-2 DESCRIPTION-2 DESCRIPTION-2 DESCRIPTION-2 DESCRIPTION-2 DESCRIPTION-2 ."
+            "HOME IMAGE-2 IMAGE-2 IMAGE-2 IMAGE-2 IMAGE-2 IMAGE-2 ."
+            "HOME DESCRIPTION-3 DESCRIPTION-3 DESCRIPTION-3 DESCRIPTION-3 DESCRIPTION-3 DESCRIPTION-3 .";
     }
+
     /* ---------------------------------------------------------------------------------------*/
 
 
@@ -1020,16 +910,16 @@ body {
     #HOME-STICKY {
         display: none;
     }
-        
-
-    /* ---------------------------------------------------------------------------------------*/
-
-
-
 
 
     /* ---------------------------------------------------------------------------------------*/
-   
+
+
+
+
+
+    /* ---------------------------------------------------------------------------------------*/
+
 
     #SOCIAL {
         grid-area: SOCIAL;
@@ -1067,57 +957,58 @@ body {
     }
 
 
-#ICON-SIDE-1 {
-    grid-area: SIDE-1;
-    display: grid;
-    width: 100%;
-    height: 100%;
-    grid-template-columns: 40px 1fr;
-    grid-template-areas: ". AREA";
-}
+    #ICON-SIDE-1 {
+        grid-area: SIDE-1;
+        display: grid;
+        width: 100%;
+        height: 100%;
+        grid-template-columns: 40px 1fr;
+        grid-template-areas: ". AREA";
+    }
 
 
 
-#ICON-SIDE-2 {
-    grid-area: SIDE-2;
-    display: grid;
-    width: 100%;
-    height: 100%;
-    grid-template-columns: 40px 1fr;
-    grid-template-areas: ". AREA ";
-}
+    #ICON-SIDE-2 {
+        grid-area: SIDE-2;
+        display: grid;
+        width: 100%;
+        height: 100%;
+        grid-template-columns: 40px 1fr;
+        grid-template-areas: ". AREA ";
+    }
 
 
 
-#ICON-SIDE-3 {
-    grid-area: SIDE-1;
-    display: grid;
-    width: 100%;
-    height: 100%;
-    grid-template-columns: 1fr 40px;
-    grid-template-areas: "AREA .";
-}
+    #ICON-SIDE-3 {
+        grid-area: SIDE-1;
+        display: grid;
+        width: 100%;
+        height: 100%;
+        grid-template-columns: 1fr 40px;
+        grid-template-areas: "AREA .";
+    }
 
 
 
-#ICON-SIDE-4 {
-    grid-area: SIDE-2;
-    display: grid;
-    width: 100%;
-    height: 100%;
-    grid-template-columns: 1fr 40px;
-    grid-template-areas: "AREA .";
-}
+    #ICON-SIDE-4 {
+        grid-area: SIDE-2;
+        display: grid;
+        width: 100%;
+        height: 100%;
+        grid-template-columns: 1fr 40px;
+        grid-template-areas: "AREA .";
+    }
 
 
 
 
-#ICON-PLACEHOLDER {
-    grid-area: AREA;
-    width: 100%;
-    height: 100%;
-    background-color: #B3B7A5;
-}
+    #ICON-PLACEHOLDER {
+        grid-area: AREA;
+        width: 100%;
+        height: 100%;
+        background-color: #B3B7A5;
+    }
+
     /* ---------------------------------------------------------------------------------------*/
 
 
@@ -1251,9 +1142,9 @@ body {
 
 
 
-        .grid-0-fixed {
-            display: none;
-        }
+    .grid-0-fixed {
+        display: none;
+    }
 
 
     .grid-0 {
@@ -1270,21 +1161,21 @@ body {
     }
 
 
-        .grid-0-2-header {
-            position: fixed;
-            width: 100%;
-            height: 100px;
-            max-width: 1760px;
-            background-color: #2e2e2e;
-            display: grid;
-            grid-column-gap: 0px;
-            grid-row-gap: 40px;
-            grid-template-rows: auto;
-            grid-template-columns: 30px 1fr 30px;
-            grid-template-areas:
-                "BANNER-1 MAIN-AREA BANNER-2";
-            z-index: 1;
-        }
+    .grid-0-2-header {
+        position: fixed;
+        width: 100%;
+        height: 100px;
+        max-width: 1760px;
+        background-color: #2e2e2e;
+        display: grid;
+        grid-column-gap: 0px;
+        grid-row-gap: 40px;
+        grid-template-rows: auto;
+        grid-template-columns: 30px 1fr 30px;
+        grid-template-areas:
+            "BANNER-1 MAIN-AREA BANNER-2";
+        z-index: 1;
+    }
 
 
     .grid-0-2 {
@@ -1358,22 +1249,22 @@ body {
 
     /* ---------------------------------------------------------------------------------------*/
     /* ---------------------------------------------------------------------------------------*/
-        #GRID-1 {
-            grid-area: MAIN-AREA;
-            width: 100%;
-            display: grid;
-            grid-column-gap: 40px;
-            grid-row-gap: 40px;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-            grid-template-rows: auto auto auto auto auto auto auto 100px;
-            grid-template-areas: "TITLE TITLE TITLE TITLE TITLE TITLE TITLE TITLE"
-                "IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN"
-                "DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION"
-                "IMAGE-1 IMAGE-1 IMAGE-1 IMAGE-1 IMAGE-1 IMAGE-1 IMAGE-1 IMAGE-1"
-                "DESCRIPTION-2 DESCRIPTION-2 DESCRIPTION-2 DESCRIPTION-2 DESCRIPTION-2 DESCRIPTION-2 DESCRIPTION-2 DESCRIPTION-2"
-                "IMAGE-2 IMAGE-2 IMAGE-2 IMAGE-2 IMAGE-2 IMAGE-2 IMAGE-2 IMAGE-2"
-                "DESCRIPTION-3 DESCRIPTION-3 DESCRIPTION-3 DESCRIPTION-3 DESCRIPTION-3 DESCRIPTION-3 DESCRIPTION-3 DESCRIPTION-3";
-        }
+    #GRID-1 {
+        grid-area: MAIN-AREA;
+        width: 100%;
+        display: grid;
+        grid-column-gap: 40px;
+        grid-row-gap: 40px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto 100px;
+        grid-template-areas: "TITLE TITLE TITLE TITLE TITLE TITLE TITLE TITLE"
+            "IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN"
+            "DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION"
+            "IMAGE-1 IMAGE-1 IMAGE-1 IMAGE-1 IMAGE-1 IMAGE-1 IMAGE-1 IMAGE-1"
+            "DESCRIPTION-2 DESCRIPTION-2 DESCRIPTION-2 DESCRIPTION-2 DESCRIPTION-2 DESCRIPTION-2 DESCRIPTION-2 DESCRIPTION-2"
+            "IMAGE-2 IMAGE-2 IMAGE-2 IMAGE-2 IMAGE-2 IMAGE-2 IMAGE-2 IMAGE-2"
+            "DESCRIPTION-3 DESCRIPTION-3 DESCRIPTION-3 DESCRIPTION-3 DESCRIPTION-3 DESCRIPTION-3 DESCRIPTION-3 DESCRIPTION-3";
+    }
 
     /* ---------------------------------------------------------------------------------------*/
 
@@ -1410,38 +1301,38 @@ body {
 
 
 
-        #RIGHT-FIXED {
-            display: none;
-    
-        }
-    
-    
-    
-        #RIGHT-FIXED-STICKY {
-            display: none;
-        }
-    
-    
-    
-        #LEFT-FIXED {
-            display: none;
-        }
-    
-    
-    
-        #LEFT-FIXED-STICKY {
-            display: none;
-        }
+    #RIGHT-FIXED {
+        display: none;
+
+    }
 
 
-        #HOME-BUTTON {
-            display: none;
-        
-       }
+
+    #RIGHT-FIXED-STICKY {
+        display: none;
+    }
 
 
-                                
- 
+
+    #LEFT-FIXED {
+        display: none;
+    }
+
+
+
+    #LEFT-FIXED-STICKY {
+        display: none;
+    }
+
+
+    #HOME-BUTTON {
+        display: none;
+
+    }
+
+
+
+
 }
 
 /* ---------------------------------------------------------------------------------------*/
@@ -1616,12 +1507,12 @@ body {
         height: 100px;
         max-width: 1760px;
         background-color: #2e2e2e;
-        display: grid;   
+        display: grid;
         grid-column-gap: 0px;
         grid-template-rows: auto;
         grid-template-columns: 30px 1fr 30px;
         grid-template-areas:
-                "BANNER-1 MAIN-AREA BANNER-2";
+            "BANNER-1 MAIN-AREA BANNER-2";
         z-index: 1;
     }
 
@@ -1637,7 +1528,7 @@ body {
 
 
 
-        
+
 
 
 
@@ -1672,23 +1563,23 @@ body {
 
     #RIGHT-FIXED {
         display: none;
-    
+
     }
-    
-    
-    
+
+
+
     #RIGHT-FIXED-STICKY {
         display: none;
     }
-    
-    
-    
+
+
+
     #LEFT-FIXED {
         display: none;
     }
-    
-    
-    
+
+
+
     #LEFT-FIXED-STICKY {
         display: none;
     }
@@ -1713,22 +1604,22 @@ body {
 
     /* ---------------------------------------------------------------------------------------*/
     /* ---------------------------------------------------------------------------------------*/
-        #GRID-1 {
-            grid-area: MAIN-AREA;
-            width: 100%;
-            display: grid;
-            grid-column-gap: 40px;
-            grid-row-gap: 40px;
-            grid-template-columns: 1fr;
-            grid-template-rows: auto auto auto auto auto auto auto 100px;
-            grid-template-areas: "TITLE"
-                                 "IMAGE-MAIN"
-                                 "DESCRIPTION"
-                                 "IMAGE-1"
-                                 "DESCRIPTION-2"
-                                 "IMAGE-2"
-                                 "DESCRIPTION-3";
-        }
+    #GRID-1 {
+        grid-area: MAIN-AREA;
+        width: 100%;
+        display: grid;
+        grid-column-gap: 40px;
+        grid-row-gap: 40px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto 100px;
+        grid-template-areas: "TITLE"
+            "IMAGE-MAIN"
+            "DESCRIPTION"
+            "IMAGE-1"
+            "DESCRIPTION-2"
+            "IMAGE-2"
+            "DESCRIPTION-3";
+    }
 
     /* ---------------------------------------------------------------------------------------*/
 
@@ -1766,13 +1657,13 @@ body {
 
     /* ---------------------------------------------------------------------------------------*/
 
-    
+
 
     /* ---------------------------------------------------------------------------------------*/
 
 
-   
-   
+
+
 }
 
 /* ---------------------------------------------------------------------------------------*/
@@ -2056,519 +1947,3 @@ h1 {
 
 
 
-
-
-
-/* FOOTER---------------------------------------------------------------------------------*/
-/* ---------------------------------------------------------------------------------------*/
-/* ---------------------------------------------------------------------------------------*/
-
-
-
-/*
- * ------------------------------------------
- *  Responsive Grid Media Queries - 1280, 1024, 768, 480
- *   1280-1024   - desktop (default grid)
- *   1024-768    - tablet landscape
- *   768-480     - tablet 
- *   480-less    - phone landscape & smaller
- * --------------------------------------------
- */
-
-
-
-
-/* ---------------------------------------------------------------------------------------*/
-body {
-
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column;
-    margin-top: 0;
-    margin-left: 0;
-}
-
-
-.wrapper {
-    width: 100vw;
-    height: auto;
-}
-
-
-.scroller::-webkit-scrollbar {
-    width: 0px;
-    height: 16px;
-}
-
-
-.scroller {
-    scrollbar-width: none;
-    position: absolute;
-    overflow-y: scroll;
-    height: 100vh;
-    width: 100%;
-}
-
-
-.center-holder {
-    width: 100%;
-    display: flex;
-
-    -webkit-box-pack: center;
-    justify-content: center;
-    background-color: #2e2e2e;
-    margin: 0;
-}
-
-
-
-.footer-holder {
-    position: relative;
-    width: 100%;
-    max-width: 1760px;
-    background-color: #2e2e2e;
-    display: grid;
-    grid-column-gap: 40px;
-    grid-row-gap: 40px;
-    grid-template-rows: 60px auto;
-    grid-template-columns: 150px 1fr 150px;
-    grid-template-areas: ". . ."
-        "BANNER-1 MAIN-AREA BANNER-2";
-}
-
-
-#SHADOW-SECTION {
-    width: 100%;
-    display: flex;
-    -webkit-box-pack: center;
-    justify-content: center;
-    background-color: #2e2e2e;
-}
-
-
-#FOOTER {
-    grid-area: MAIN-AREA;
-    width: 100%;
-    display: grid;
-    grid-column-gap: 40px;
-    grid-row-gap: 40px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-        "IPHONE IPHONE IPHONE IPHONE IPHONE OTHER OTHER OTHER";
-}
-
-
-#PFBD {
-    grid-area: PFBD;
-    display: grid;
-    width: 100%;
-    height: 670px;
-    grid-column-gap: 40px;
-    grid-row-gap: 40px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: "PFBD  TITLE"
-        "PFBD INSTAGRAM"
-        "PFBD INSTAGRAM";
-}
-
-
-#IPHONE {
-    grid-area: IPHONE;
-    width: 100%;
-    height: 500px;
-    background-color: rgb(255, 191, 106);
-}
-
-/* ---------------------------------------------------------------------------------------*/
-/* ---------------------------------------------------------------------------------------*/
-
-
-
-
-
-
-
-
-/* ---------------------------------------------------------------------------------------*/
-/* ---------------------------------------------------------------------------------------*/
-@media all and (min-width: 960px) and (max-width: 1280px) {
-    body {
-
-        position: relative;
-        width: 100vw;
-        height: 100vh;
-        overflow: hidden;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        flex-direction: column;
-        margin-top: 0;
-        margin-left: 0;
-    }
-
-
-    .wrapper {
-        width: 100vw;
-        height: auto;
-    }
-
-
-    .scroller::-webkit-scrollbar {
-        width: 0px;
-        height: 16px;
-    }
-
-
-    .scroller {
-        scrollbar-width: none;
-        position: absolute;
-        overflow-y: scroll;
-        height: 100vh;
-        width: 100%;
-    }
-
-
-    .center-holder {
-        width: 100%;
-        display: flex;
-
-        -webkit-box-pack: center;
-        justify-content: center;
-        background-color: #2e2e2e;
-        margin: 0;
-    }
-
-
-    .footer-holder {
-        position: relative;
-        width: 100%;
-        max-width: 1760px;
-        background-color: #2e2e2e;
-        display: grid;
-        grid-column-gap: 40px;
-        grid-row-gap: 40px;
-        grid-template-rows: 60px auto;
-        grid-template-columns: 50px 1fr 50px;
-        grid-template-areas: ". . ."
-            "BANNER-1 MAIN-AREA BANNER-2";
-    }
-
-
-
-
-    #SHADOW-SECTION {
-        width: 100%;
-        display: flex;
-        -webkit-box-pack: center;
-        justify-content: center;
-        background-color: #2e2e2e;
-    }
-
-
-    #FOOTER {
-        grid-area: MAIN-AREA;
-        width: 100%;
-        display: grid;
-        grid-column-gap: 40px;
-        grid-row-gap: 40px;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto;
-        grid-template-areas:
-            "IPHONE IPHONE IPHONE IPHONE IPHONE OTHER OTHER OTHER";
-    }
-
-
-    #PFBD {
-        grid-area: PFBD;
-        display: grid;
-        width: 100%;
-        height: 670px;
-        grid-column-gap: 40px;
-        grid-row-gap: 40px;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto auto;
-        grid-template-areas: "PFBD  TITLE"
-            "PFBD INSTAGRAM"
-            "PFBD INSTAGRAM";
-    }
-
-
-    #IPHONE {
-        grid-area: IPHONE;
-        width: 100%;
-        height: 500px;
-        background-color: rgb(255, 191, 106);
-    }
-}
-
-/* ---------------------------------------------------------------------------------------*/
-/* ---------------------------------------------------------------------------------------*/
-
-
-
-
-
-
-
-
-
-
-/* ---------------------------------------------------------------------------------------*/
-/* ---------------------------------------------------------------------------------------*/
-@media all and (min-width: 480px) and (max-width: 960px) {
-    body {
-        position: relative;
-        width: 100vw;
-        height: 100vh;
-        overflow: hidden;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        flex-direction: column;
-        margin-top: 0;
-        margin-left: 0;
-    }
-
-
-    .wrapper {
-        width: 100vw;
-        height: auto;
-    }
-
-
-    .scroller::-webkit-scrollbar {
-        width: 0px;
-        height: 16px;
-    }
-
-
-    .scroller {
-        scrollbar-width: none;
-        position: absolute;
-        overflow-y: scroll;
-        height: 100vh;
-        width: 100%;
-    }
-
-
-    .center-holder {
-        width: 100%;
-        display: flex;
-
-        -webkit-box-pack: center;
-        justify-content: center;
-        background-color: #2e2e2e;
-        margin: 0;
-    }
-
-
-
-    .footer-holder {
-        width: 100%;
-        max-width: 1640px;
-        position: relative;
-        padding-left: 30px;
-        padding-right: 30px;
-        background-color: #2e2e2e;
-        display: grid;
-        grid-column-gap: 40px;
-        grid-row-gap: 40px;
-        grid-template-rows: 60px auto;
-        grid-template-columns: 1fr;
-        grid-template-areas: "."
-            "MAIN-AREA";
-    }
-
-
-
-
-    #SHADOW-SECTION {
-        width: 100%;
-        display: flex;
-        -webkit-box-pack: center;
-        justify-content: center;
-        background-color: #2e2e2e;
-    }
-
-
-    #FOOTER {
-        grid-area: MAIN-AREA;
-        width: 100%;
-        display: grid;
-        grid-column-gap: 40px;
-        grid-row-gap: 40px;
-        grid-template-columns: 1fr;
-        grid-template-rows: 150px auto;
-        grid-template-areas:
-            "OTHER"
-            "IPHONE";
-    }
-
-
-    #PFBD {
-        grid-area: PFBD;
-        display: grid;
-        width: 100%;
-        height: 670px;
-        grid-column-gap: 40px;
-        grid-row-gap: 40px;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto auto;
-        grid-template-areas: "PFBD  TITLE"
-            "PFBD INSTAGRAM"
-            "PFBD INSTAGRAM";
-    }
-
-
-    #IPHONE {
-        grid-area: IPHONE;
-        width: 100%;
-        height: 500px;
-        background-color: rgb(255, 191, 106);
-    }
-}
-
-/* ---------------------------------------------------------------------------------------*/
-/* ---------------------------------------------------------------------------------------*/
-
-
-
-
-
-
-
-
-
-
-
-/* ---------------------------------------------------------------------------------------*/
-/* ---------------------------------------------------------------------------------------*/
-@media all and (min-width: 0px) and (max-width: 480px) {
-    body {
-        position: relative;
-        width: 100vw;
-        height: 100vh;
-        overflow: hidden;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        flex-direction: column;
-        margin-top: 0;
-        margin-left: 0;
-    }
-
-
-    .wrapper {
-        width: 100vw;
-        height: auto;
-    }
-
-
-    .scroller::-webkit-scrollbar {
-        width: 0px;
-        height: 16px;
-    }
-
-
-    .scroller {
-        scrollbar-width: none;
-        position: absolute;
-        overflow-y: scroll;
-        height: 100vh;
-        width: 100%;
-    }
-
-
-    .center-holder {
-        width: 100%;
-        display: flex;
-
-        -webkit-box-pack: center;
-        justify-content: center;
-        background-color: #2e2e2e;
-        margin: 0;
-    }
-
-
-
-
-    .footer-holder {
-        width: 100%;
-        max-width: 1640px;
-        position: relative;
-        padding-left: 30px;
-        padding-right: 30px;
-        background-color: #2e2e2e;
-        display: grid;
-        grid-column-gap: 40px;
-        grid-row-gap: 40px;
-        grid-template-rows: 60px auto;
-        grid-template-columns: 1fr;
-        grid-template-areas: "."
-            "MAIN-AREA";
-    }
-
-
-
-
-    #SHADOW-SECTION {
-        width: 100%;
-        display: flex;
-        -webkit-box-pack: center;
-        justify-content: center;
-        background-color: #2e2e2e;
-    }
-
-
-    #FOOTER {
-        grid-area: MAIN-AREA;
-        width: 100%;
-        display: grid;
-        grid-column-gap: 40px;
-        grid-row-gap: 40px;
-        grid-template-columns: 1fr;
-        grid-template-rows: 150px auto;
-        grid-template-areas: "OTHER"
-            "IPHONE";
-    }
-
-
-    #PFBD {
-        grid-area: PFBD;
-        display: grid;
-        width: 100%;
-        height: 670px;
-        grid-column-gap: 40px;
-        grid-row-gap: 40px;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto auto;
-        grid-template-areas: "PFBD  TITLE"
-            "PFBD INSTAGRAM"
-            "PFBD INSTAGRAM";
-    }
-
-
-    #IPHONE {
-        grid-area: IPHONE;
-        width: 100%;
-        height: 500px;
-        background-color: rgb(255, 191, 106);
-    }
-}
-
-/* ---------------------------------------------------------------------------------------*/
-
-
-
-
-
-/* ---------------------------------------------------------------------------------------*/
-/* ---------------------------------------------------------------------------------------*/
-/* ---------------------------------------------------------------------------------------*/
