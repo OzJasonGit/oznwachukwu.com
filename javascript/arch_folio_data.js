@@ -6,33 +6,19 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 let archFolioData = {"The Darjeeling Limited": { portfolio_title: "A year after their father's funeral, three brothers travel across India by train in an attempt to bond with each other.",
                                             location: [" Jason Schwartzman ", " Owen Wilson ", " Adrien Brody "],
                                             description: 151,
                                             status: 7.2,
                                             company: 2007,
                                             software: 2007,
-                                            image_1_main: 2007,
+                                            image_main: 2007,
+                                            image_1:2334,
                                             image_2: 2007,
                                             image_3: 2007,
                                             image_4: 2007
                                           }
-                };
+                    };
 
 
 
@@ -41,32 +27,33 @@ let archFolioData = {"The Darjeeling Limited": { portfolio_title: "A year after 
 
 //Store the object information inside a parameter.
     let folioTitle = `${Object.keys(archFolioData)[i]}`;
-    let blogDescription = `${Object.values(blogData)[i].location}`;  
-    let blogAuthor = `${Object.values(blogData)[i].description}`;
-    let blogDate = `${Object.values(blogData)[i].status}`;                 
-    let blogImage_1 = `${Object.values(blogData)[i].company}`;
-    let blogText_1 = `${Object.values(blogData)[i].software}`;
-    let blogVideo = `${Object.values(blogData)[i].image_1_main}`;
-    let blogText_2 = `${Object.values(blogData)[i].image_2}`;                 
-    let blogImage_3 = `${Object.values(blogData)[i].image_3}`;
-    let blogText_3 = `${Object.values(blogData)[i].image_4}`;
-    let blogText_4 = `${Object.values(blogData)[i].text_4_footer}`;
-
+    let projectLocation = `${Object.values(archFolioData)[i].location}`;  
+    let projectDescription = `${Object.values(archFolioData)[i].description}`;
+    let projectStatus = `${Object.values(archFolioData)[i].status}`;                 
+    let projectCompany = `${Object.values(archFolioData)[i].company}`;
+    let projectSoftware = `${Object.values(archFolioData)[i].software}`;
+    let projectImage_Main = `${Object.values(archFolioData)[i].image_main}`;
+    let projectImage_1 = `${Object.values(archFolioData)[i].image_1}`;
+    let projectImage_2 = `${Object.values(archFolioData)[i].image_2}`;                 
+    let projectImage_3 = `${Object.values(archFolioData)[i].image_3}`;
+    let projectImage_4 = `${Object.values(archFolioData)[i].image_4}`;
+   
 
 
 
 //Create text elements rendered in the DOM
-    document.getElementById("BLOG-TITLE").innerText = blogTitle;
-    document.getElementById("DESCRIPTION").innerText = blogDescription;
-    document.getElementById("AUTHOR").innerText = blogAuthor;
-    document.getElementById("DATE").innerText = blogDate;
-    document.getElementById("IMAGE-1-MAIN").innerText = blogImage_1;
-    document.getElementById("TEXT-1-MAIN").innerText = blogText_1;
-    document.getElementById("YT-VIDEO").innerText = blogVideo;
-    document.getElementById("TEXT-2-BODY").innerText = blogText_2;
-    document.getElementById("IMAGE-3").innerText = blogImage_3;
-    document.getElementById("TEXT-3-CONCLUSION").innerText = blogText_3;
-    document.getElementById("TEXT-4-FOOTER").innerText = blogText_4;
+    document.getElementById("TITLE").innerText = folioTitle;
+    document.getElementById("LOCATION").innerText = projectLocation;
+    document.getElementById("DESCRIPTION").innerText = projectDescription;
+    document.getElementById("STATUS").innerText = projectStatus;
+    document.getElementById("COMPANY").innerText = projectCompany;
+    document.getElementById("SOFTWARE").innerText = projectSoftware;
+    document.getElementById("IMAGE-MAIN").innerText = projectImage_Main;
+    document.getElementById("IMAGE-1").innerText = projectImage_1;
+    document.getElementById("IMAGE-2").innerText = projectImage_2;
+    document.getElementById("IMAGE-3").innerText = projectImage_3;
+    document.getElementById("IMAGE-4").innerText = projectImage_4;
+    
 
 
 
