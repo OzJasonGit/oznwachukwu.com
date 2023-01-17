@@ -24,6 +24,26 @@ let blogData = {"The Darjeeling Limited": { description: "A year after their fat
 
 
 
+//Create array to store the blogData objects. 
+let blogArr = [];
+
+
+//push blogData objects into blogArr.
+blogArr.push(blogData["The Darjeeling Limited"])
+
+
+console.log(blogArr) //Check to see if objects are pushed into blogArr.
+
+
+//Extract values from blogArr 
+let blogProps = Object.values(blogArr)
+console.log(blogProps); //Check if values were extracted. 
+
+
+//loop through our array of objects. 
+for (let i=0; i<blogProps.length; i+=1){
+    console.log(blogProps[i])
+
 
 
 //Store the object information inside a parameter.
@@ -54,24 +74,8 @@ let blogData = {"The Darjeeling Limited": { description: "A year after their fat
     document.getElementById("IMAGE-3").innerText = blogImage_3;
     document.getElementById("TEXT-3-CONCLUSION").innerText = blogText_3;
     document.getElementById("TEXT-4-FOOTER").innerText = blogText_4;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    //Add movie switch button. 
-    let changeMovie = document.getElementById("BUTTON")
 
     

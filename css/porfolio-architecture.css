@@ -323,7 +323,7 @@ body {
     grid-row-gap: 40px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto auto auto auto 60px auto;
-    grid-template-areas: "TITLE TITLE IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN"
+    grid-template-areas: "IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN"
                          "IMAGE-1 IMAGE-1 IMAGE-1 IMAGE-1 IMAGE-1 IMAGE-3 IMAGE-3 IMAGE-3"
                          "IMAGE-2 IMAGE-2 IMAGE-2 IMAGE-2 IMAGE-2 . . ."
                          "IMAGE-4 IMAGE-4 IMAGE-4 IMAGE-4 IMAGE-4 . . ."
@@ -340,10 +340,40 @@ body {
 #IMAGE-MAIN {
     grid-area: IMAGE-MAIN;
     width: 100%;
-    height: 100%;
-    min-height: 600px;
-    display: grid;
+    height: 680px;   
+    display: flex;
     background-color: antiquewhite;
+}
+
+#IMAGE-MAIN-GRID {   
+    width: 100%;
+    height: 100%;   
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100% 100%;
+    grid-template-areas: "IMAGE"
+                         "TEXT";
+    
+}
+
+#IMAGE-MAIN-I {
+    grid-area: IMAGE;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-column-gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100%;
+}
+
+#IMAGE-MAIN-T {
+    grid-area: TEXT;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-column-gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100%;
 }
 
 /* ---------------------------------------------------------------------------------------*/
