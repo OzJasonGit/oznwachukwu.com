@@ -1,17 +1,40 @@
 
 
-let archFolioData = {"The Darjeeling Limited": { portfolio_title: "A year after their father's funeral, three brothers travel across India by train in an attempt to bond with each other.",
-                                            location: [" Jason Schwartzman ", " Owen Wilson ", " Adrien Brody "],
-                                            description: 151,
-                                            status: 7.2,
-                                            company: 2007,
-                                            software: 2007,
-                                            image_main: 200000,
-                                            image_1:2334,
-                                            image_2: 2007,
-                                            image_3: 2007,
-                                            image_4: 2007,
-                                          },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let archFolioData = {"THE LION CLUB": { portfolio_title: "A year after their father's funeral, three brothers travel across India by train in an attempt to bond with each other.",
+                                        location: "Pitfield Street,Hoxton, London, N1",
+                                        description: "A mixed use commercial and residential facility Building consisting of a boxing gym in the basement and on the ground floor, with 19 residential units from the first floor up to the sixth floor.",
+                                        status: "Complete",
+                                        company: "David Miller Architects",
+                                        software: "Revit, AutoCAD, Navisworks, 3DsMAX",
+                                        image_main: 200000,
+                                        image_1:2334,
+                                        image_2: 2007,
+                                        image_3: 2007,
+                                        image_4: 2007,
+                                      },
                     
                     "The Darjeeling Limited": { portfolio_title: "A year after their father's funeral, three brothers travel across India by train in an attempt to bond with each other.",
                                             location: [" Jason Schwartzman ", " Owen Wilson ", " Adrien Brody "],
@@ -81,6 +104,7 @@ for (let i=0; i<archFolioProps.length; i+=1){
     document.getElementById("IMAGE-4").innerText = projectImage_4;   
 }
     
+
 
 
 
