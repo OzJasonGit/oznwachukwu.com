@@ -1,27 +1,5 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+import dashboard from "../views/dashboard.js";
 
 
 const navigateTo = url => {
@@ -31,9 +9,9 @@ const navigateTo = url => {
 
 const router = async () => {
     const routes = [
-        { path: "/", view: () => console.log("Viewing Dashboard")},
-        { path: "/the-lion-club", view: () => console.log("Viewing The Lion Club")},
-        { path: "/", view: () => console.log("Viewing Dashboard")},
+        { path: "/", view: dashboard },
+        //{ path: "/the-lion-club", view: () => console.log("Viewing The Lion Club")},
+        //{ path: "/", view: () => console.log("Viewing Dashboard")},
     ];
 
     // Test each route for a potential match 
@@ -51,7 +29,11 @@ const router = async () => {
             route: routes[0],
             isMatch: true
         };
-    };
+    }
+
+    const view = new match.route.view();
+
+    document.querySelector("#app").innerHTML = await view.getHtml();
 
     console.log (match.route.view());
 };
