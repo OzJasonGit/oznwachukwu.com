@@ -1,5 +1,5 @@
 
-import dashboard from "../views/dashboard.js";
+import dashboard from "./views/dashboard.js";
 
 
 const navigateTo = url => {
@@ -33,7 +33,7 @@ const router = async () => {
 
     const view = new match.route.view();
 
-    document.querySelector("#app").innerHTML = await view.getHtml();
+    document.querySelector("#ARCHAPP").innerHTML = await view.getHtml();
 
     console.log (match.route.view());
 };

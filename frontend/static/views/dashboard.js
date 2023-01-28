@@ -2,6 +2,7 @@ import abstract_view from "./abstract_view";
 
 export default class extends abstract_view {
     constructor() {
+        super();
         this.setTitle("Dashboard");
     }
 
