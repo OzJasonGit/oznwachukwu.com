@@ -291,18 +291,22 @@ body {
             height: 100%;
             overflow: hidden;
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-areas: "MENU-DROPDOWN MENU-DROPDOWN . .";
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-template-areas: "MENU-DROPDOWN"
+                                 ".";
         }
     
         .menu-dropdown {
             grid-area: MENU-DROPDOWN;
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr;
             grid-template-rows: 90px 30px auto;
-            grid-template-areas: ". . . ."
-                ". . . ."
-                ". . MENU MENU";
+            grid-template-areas: "."
+                "."
+                "MENU";
+            padding-left: 30px;
+            padding-right: 30px;
             background-color: aqua;
         }
     
@@ -401,18 +405,22 @@ body {
             height: 100%;
             overflow: hidden;
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-areas: "MENU-DROPDOWN MENU-DROPDOWN . .";
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-template-areas: "MENU-DROPDOWN"
+                ".";
         }
     
         .menu-dropdown {
             grid-area: MENU-DROPDOWN;
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr;
             grid-template-rows: 90px 30px auto;
-            grid-template-areas: ". . . ."
-                ". . . ."
-                ". . MENU MENU";
+            grid-template-areas: "."
+                "."
+                "MENU";
+            padding-left: 30px;
+            padding-right: 30px;
             background-color: aqua;
         }
     
