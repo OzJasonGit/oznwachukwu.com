@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="..\frontend\css\sides.css">
     <link rel="stylesheet" href="..\frontend\css\porfolio-architecture.css">
     <link rel="stylesheet" href="..\frontend\css\fonts.css">
+    <link rel="stylesheet" href="..\frontend\css\menu-dropdown.css">
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous">
         </script>
@@ -31,6 +32,29 @@
 
 
 <body>
+
+    <!----------DROPDOWN------------------->
+    <div class="fixed-dropdown-holder">
+    
+        <div class="menu-dropdown">
+            <div id="MENU">
+                <div id="STORIES" class="container-2">
+                    <a href="..\frontend\blog-template.html"><span>STORIES</span></a>
+                </div>
+                <div id="TECH" class="container-2">
+                    <a href="..\frontend\portfolio-design-tech.html"><span>TECH</span></a>
+                </div>
+                <div id="ARCHITECTURE" class="container-2">
+                    <a href="..\frontend\portfolio-architecture.html"><span>ARCHITECTURE</span></a>
+                </div>
+                <div id="RESUME" class="container-2">
+                    <a href="..\frontend\resume.html"><span>RESUME</span></a>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    <!----------DROPDOWN------------------->
 
     <div class="hidebar"></div>
     <div class="wrapper-2">
@@ -250,6 +274,7 @@
     </div>
     <script src="javascript\clock.js" async defer></script>
     <script src="javascript\arch_folio_data.js" async defer></script>
+    <script src="frontend\javascript\menu-dropdown.js" async defer></script>
     <script type="module" src="/static/js/portfolio-architecture.js"></script>
     
     
