@@ -55,8 +55,8 @@ body {
     height: 100%;
     
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "MENU-DROPDOWN MENU-DROPDOWN . .";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "MENU-DROPDOWN MENU-DROPDOWN . . .";
 }
 
 .menu-dropdown {
@@ -182,8 +182,8 @@ body {
             width: 100%;
             height: 100%; 
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-areas: "MENU-DROPDOWN MENU-DROPDOWN . .";
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas: "MENU-DROPDOWN MENU-DROPDOWN . . .";
         }
     
         .menu-dropdown {
