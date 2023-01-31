@@ -59,7 +59,7 @@ body {
     grid-template-areas: "MENU-DROPDOWN MENU-DROPDOWN . . .";
 }
 
-.menu-dropdown {
+#MENU-DROPDOWN {
     position: relative;
     top: 100vh;
     grid-area: MENU-DROPDOWN;

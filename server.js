@@ -9,6 +9,6 @@ app.get("/*", (req, res) => {
     res.sendFile(path.resolve("frontend", "portfolio-architecture.html"));
 });
 
-app.listen(process.env.PORT || 5060, () => console.log("server running just like that"));
+app.listen(process.env.PORT || 5000, () => console.log("server running just like that"));
 
 
