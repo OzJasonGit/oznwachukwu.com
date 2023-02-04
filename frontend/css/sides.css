@@ -453,139 +453,60 @@ body {
     
         
     
+        #RIGHT-FIXED {
+            display: none;
+        }
+        
+        #LEFT-FIXED {
+            display: none;
+        }
+        
         #LEFT-FIXED-STICKY {
-            position: relative;
-            grid-area: AREA;
-            display: grid;
-            width: 100%;
-            height: 100%;
-            grid-template-columns: 1fr;
-            grid-row-gap: 40px;
-            grid-template-rows: 350px 1fr 350px;
-            grid-template-areas: "SIDE-1"
-                "SIDE-2"
-                "SIDE-3";
+            display: none;
         }
-    
+        
         #RIGHT-FIXED-STICKY {
-            display: grid;
-            width: 100%;
-            height: 100%;
-            grid-template-columns: 1fr;
-            grid-row-gap: 40px;
-            grid-template-rows: 450px 1fr 450px;
-            grid-template-areas: "SIDE-1"
-                "NAVIGATION"
-                "SIDE-3";
+            display: none;
         }
-    
+        
         #PFBD-LINKS {
-            position: relative;
-            grid-area: SIDE-1;
-            display: grid;
-            width: 100%;
-            height: 100%;
-            grid-template-columns: 1fr;
-            grid-row-gap: 20px;
-            grid-template-rows: 1fr 1fr 1fr 1fr;
-            grid-template-areas: "AREA"
-                "AREA"
-                "AREA"
-                "PFBD";
+            display: none;
         }
-    
+        
         #PAGE-NAVIGATION {
-            position: relative;
-            grid-area: NAVIGATION;
-            display: grid;
-            width: 100%;
-            height: 100%;
-            grid-template-rows: 1fr 120px 1fr;
-            grid-template-columns: 40px 1fr 40px;
-            grid-template-areas: ". . ."
-                ". AREA ."
-                ". . .";
+            display: none;
         }
-    
+        
         #ICON-SIDE-1 {
-            position: relative;
-            grid-area: SIDE-1;
-            display: grid;
-            width: 100%;
-            height: 100%;
-            grid-template-columns: 1fr;
-            grid-template-areas: "AREA";
+            display: none;
         }
-    
+        
         #ICON-SIDE-2 {
-            position: relative;
-            grid-area: SIDE-2;
-            display: grid;
-            width: 100%;
-            height: 100%;
-            grid-template-columns: 40px 1fr 40px;
-            grid-template-rows: 1fr 250px 1fr;
-            grid-template-areas: ". . ."
-                ". AREA ."
-                ". . .";
+            display: none;
         }
-    
+        
         #ICON-PLACEHOLDER {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            grid-area: AREA;
+            display: none;
         }
-    
+        
         #VERTICAL-NAVIGATION {
-            position: relative;
-            grid-area: AREA;
-            display: grid;
-            width: 100%;
-            height: 100%;
-            grid-template-columns: 1fr;
-            grid-row-gap: 10px;
-            grid-template-rows: 1fr 1fr 1fr 1fr;
-            grid-template-areas: "1"
-                "2"
-                "3"
-                "4";
+            display: none;
         }
-    
+        
         #NAV-1 {
-            grid-area: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            height: 100%;
+            display: none;
         }
-    
+        
         #NAV-2 {
-            grid-area: 2;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            height: 100%;
+            display: none;
         }
-    
+        
         #NAV-3 {
-            grid-area: 3;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            height: 100%;
+            display: none;
         }
-    
+        
         #NAV-4 {
-            grid-area: 4;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            height: 100%;
+            display: none;
         }
 }
 
@@ -698,137 +619,50 @@ body {
         }
     
         #LEFT-FIXED-STICKY {
-            position: relative;
-            grid-area: AREA;
-            display: grid;
-            width: 100%;
-            height: 100%;
-            grid-template-columns: 1fr;
-            grid-row-gap: 40px;
-            grid-template-rows: 350px 1fr 350px;
-            grid-template-areas: "SIDE-1"
-                "SIDE-2"
-                "SIDE-3";
+            display: none;
         }
     
         #RIGHT-FIXED-STICKY {
-            display: grid;
-            width: 100%;
-            height: 100%;
-            grid-template-columns: 1fr;
-            grid-row-gap: 40px;
-            grid-template-rows: 450px 1fr 450px;
-            grid-template-areas: "SIDE-1"
-                "NAVIGATION"
-                "SIDE-3";
+            display: none;
         }
     
         #PFBD-LINKS {
-            position: relative;
-            grid-area: SIDE-1;
-            display: grid;
-            width: 100%;
-            height: 100%;
-            grid-template-columns: 1fr;
-            grid-row-gap: 20px;
-            grid-template-rows: 1fr 1fr 1fr 1fr;
-            grid-template-areas: "AREA"
-                "AREA"
-                "AREA"
-                "PFBD";
+            display: none;
         }
     
         #PAGE-NAVIGATION {
-            position: relative;
-            grid-area: NAVIGATION;
-            display: grid;
-            width: 100%;
-            height: 100%;
-            grid-template-rows: 1fr 120px 1fr;
-            grid-template-columns: 40px 1fr 40px;
-            grid-template-areas: ". . ."
-                ". AREA ."
-                ". . .";
+            display: none;
         }
     
         #ICON-SIDE-1 {
-            position: relative;
-            grid-area: SIDE-1;
-            display: grid;
-            width: 100%;
-            height: 100%;
-            grid-template-columns: 1fr;
-            grid-template-areas: "AREA";
+            display: none;
         }
     
         #ICON-SIDE-2 {
-            position: relative;
-            grid-area: SIDE-2;
-            display: grid;
-            width: 100%;
-            height: 100%;
-            grid-template-columns: 40px 1fr 40px;
-            grid-template-rows: 1fr 250px 1fr;
-            grid-template-areas: ". . ."
-                ". AREA ."
-                ". . .";
+            display: none;
         }
     
         #ICON-PLACEHOLDER {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            grid-area: AREA;
+            display: none;
         }
     
         #VERTICAL-NAVIGATION {
-            position: relative;
-            grid-area: AREA;
-            display: grid;
-            width: 100%;
-            height: 100%;
-            grid-template-columns: 1fr;
-            grid-row-gap: 10px;
-            grid-template-rows: 1fr 1fr 1fr 1fr;
-            grid-template-areas: "1"
-                "2"
-                "3"
-                "4";
+            display: none;
         }
     
         #NAV-1 {
-            grid-area: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            height: 100%;
+            display: none;
         }
     
         #NAV-2 {
-            grid-area: 2;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            height: 100%;
+            display: none;
         }
     
         #NAV-3 {
-            grid-area: 3;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            height: 100%;
+            display: none;
         }
     
         #NAV-4 {
-            grid-area: 4;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            height: 100%;
+            display: none;
         }
 }
