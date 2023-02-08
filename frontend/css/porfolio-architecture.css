@@ -907,7 +907,7 @@ body {
 
 
 
-    #HOME {
+    #HOME-ICON {
         grid-area: HOME-ICON;
         width: 100%;
         grid-template-columns: 5fr 1fr;
