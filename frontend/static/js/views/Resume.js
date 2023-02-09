@@ -1,0 +1,385 @@
+import AbstractView from "./AbstractView.js";
+
+export default class extends AbstractView {
+    constructor(params) {
+        super(params);
+        this.setTitle("Resume");
+    }
+
+    async getHtml() {
+        return `
+
+    <link rel="stylesheet" href="../static/css/resume.css">
+
+    <div class="hidebar"></div>
+   
+
+
+    <div class="wrapper">
+        <div class="scroller">
+            <!--------------------------------------------------------------------------------->
+
+
+            <section id="SHADOW-SECTION" class="center-holder">
+                <div class="grid-0-2-top">
+                    <div id="HEAD-IMAGE">
+                        <div id="HEAD-HERO-IMAGE"></div>
+                        <div id="HEAD-HERO-TEXT">
+            
+                            <div id="HERO-TEXT-1">
+                                <span id="H1-HERO">Resume</span>
+                            </div>
+            
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            
+            <section class="center-holder">
+            
+                <div class="grid-0">
+            
+                    <section class="fixed">
+                    </section>
+            
+                    <div id="GRID-1">
+            
+                        <div id="HOME-BUTTON">
+                            <div id="HOME-ABSOLUTE">
+                                <div id="HOME-STICKY">
+                                    <a href=""></a>
+                                </div>
+                            </div>
+                        </div>
+            
+            
+            
+                        <div class="title-holder-desktop">
+                            <div class="three-holder">
+            
+                                <div id="HOME">
+                                    <a id="HOME-TAG" href=""></a>
+                                </div>
+            
+            
+                                <div id="HOME-TEXT" class="container">
+                                    <span id="FRONT-TEXT" class="h1-title-text">oznwachukwu.com</span>
+                                    <span id="HERO-TEXT" class="h2-hero-text">SOFTWARE ENGINEER | ARB RIBA ARCHITECT |
+                                        DESIGNER | BIM ENGINEER</span>
+                                    <span id="DESCRIPTION-TEXT" class="p-body-text">My work navigates the spaces between
+                                        design, technology
+                                        and engineering.
+                                        My professional background is architecture, but my mind has always been
+                                        exploratory.
+                                        Eventually, it was always going to lead me to tech, where I continue to
+                                        explore.</br>
+                                        </br>
+                                        I'm an experienced BIM Engineer with a keen focus on sustainability.</br>
+            
+                                    </span>
+                                </div>
+            
+            
+            
+                                <div id="SOCIAL">
+                                    <div id="GITHUB" class="icon"><a href="https://github.com/OzJasonGit" target="_blank"><i
+                                                class="fa-brands fa-github" style="font-size: 1.25rem; color: #efefef;"></i></a>
+                                    </div>
+                                    <div id="DRIBBLE" class="icon"><a href="https://github.com/OzJasonGit" target="_blank"><i
+                                                class="fa-brands fa-dribbble" style="font-size: 1.25rem; color: #efefef;"></i></a>
+                                    </div>
+                                    <div id="YOUTUBE" class="icon"><a href="https://github.com/OzJasonGit" target="_blank"><i
+                                                class="fa-brands fa-youtube" style="font-size: 1.25rem; color: #efefef;"></i></a>
+                                    </div>
+                                    <div id="LINKEDIN" class="icon"><a
+                                            href="https://www.linkedin.com/in/oz-nwachukwu-arb-riba-aa897121/" target="_blank"><i
+                                                class="fa-brands fa-linkedin" style="font-size: 1.25rem; color: #efefef;"></i></a>
+                                    </div>
+                                </div>
+            
+                            </div>
+                        </div>
+            
+            
+                        <div id="ANIM" class="container">
+            
+                        </div>
+            
+            
+            
+            
+                        <div id="IMAGE-MAIN" class="container">
+            
+                            <span id="EDUCATION-TITLE" class="p-body-text">
+                                EDUCATION </br>
+                                </br>
+                            </span>
+            
+            
+                            <span id="EDUCATION-TEXT" class="p-body-text">
+                                My work navigates the spaces between
+                                design, technology
+                                and engineering.
+                                My professional background is architecture, but my mind has always been
+                                exploratory.
+                                Eventually, it was always going to lead me to tech, where I continue to
+                                explore.</br>
+                                </br>
+                                I'm an experienced BIM Engineer with a keen focus on sustainability.</br>
+                                </br>
+                                My career has largely been spent identifying wasteful or repetitive
+                                practices within design, construction and manufacturing.</br>
+                                </br>
+                                I always aim to apply strategic automations through technology.</br>
+                                </br>
+                                Let's meet at Starbucks for a coffee. I'm the guy with headphones on listening
+                                to Gangsta Rap.
+                            </span>
+            
+            
+                            <div id="BAR" class="container">
+                            </div>
+            
+                        </div>
+            
+            
+            
+            
+                        <div id="WORK-EXPERIENCE" class="container">
+            
+            
+                            <div id="BAR" class="container">
+                            </div>
+            
+                            <div id="BAR-2" class="container">
+                            </div>
+            
+            
+                            <span id="WORK-EXPERIENCE-TITLE" class="p-body-text">
+                                WORK EXPERIENCE </br>
+                                </br>
+                            </span>
+            
+            
+                            <span id="DATE-TITLE-1" class="p-body-text">
+                                2023 </br>
+                                </br>
+                            </span>
+            
+            
+                            <div id="WORK-EX-ITEMS">
+                                <div id="TEXT-GRID-1" class="container">
+            
+                                    <div id="TECH-1" class="cv-item">
+                                        <span>SOFTWARE ENGINEER</span>
+                                        <span>LW DESIGN GROUP _ AUG 2021 - APRIL 2022_ DUBAI, UAE</span>
+                                        <span>Interior and architectural design firm based in the Dubai, UAE</span>
+                                        <div>
+            
+                                        </div>
+                                    </div>
+            
+                                    <div id="LW-DESIGN-GROUP" class="cv-item">
+                                        <span>TECHNICAL ARCHITECT / BIM (CONTRACT)</span>
+                                        <span>LW DESIGN GROUP _ AUG 2021 - APRIL 2022_ DUBAI, UAE</span>
+                                        <span>Interior and architectural design firm based in the Dubai, UAE</span>
+                                        <div>
+            
+                                        </div>
+                                    </div>
+            
+                                    <div id="TECH-2" class="cv-item">
+                                        <span>SOFTWARE ENGINEER</span>
+                                        <span>LW DESIGN GROUP _ AUG 2021 - APRIL 2022_ DUBAI, UAE</span>
+                                        <span>Interior and architectural design firm based in the Dubai, UAE</span>
+                                        <div>
+            
+                                        </div>
+                                    </div>
+            
+                                    <div id="PERKINS-WILL" class="cv-item">
+                                        <span>TECHNICAL ARCHITECT / BIM MANAGER</span>
+                                        <span>PERKINS AND WILL _ NOV 2018 - JULY 2021 _ LONDON, UK</span>
+                                        <span>A global, innovative, high-tech design firm focused on healthcare,
+                                            commercial strategy, commercial interiors and
+                                            sustainability.</span>
+                                        <div>
+            
+                                        </div>
+                                    </div>
+            
+                                    <div id="TECH-3" class="cv-item">
+                                        <span>SOFTWARE ENGINEER</span>
+                                        <span>LW DESIGN GROUP _ AUG 2021 - APRIL 2022_ DUBAI, UAE</span>
+                                        <span>Interior and architectural design firm based in the Dubai, UAE</span>
+                                        <div>
+            
+                                        </div>
+                                    </div>
+            
+                                </div>
+                            </div>
+            
+            
+                            <span id="DATE-TITLE-2" class="p-body-text">
+                                2019 </br>
+                                </br>
+                            </span>
+            
+            
+            
+                            <div id="ARROWS" class="container">
+                                <div id="UP">
+                                    <i class="fa-light fa-arrow-up-long">
+                                    </i>
+                                </div>
+            
+            
+                                <div id="DOWN">
+                                    <i class="fa-light fa-arrow-down-long">
+                                    </i>
+                                </div>
+                            </div>
+            
+                        </div>
+            
+            
+            
+            
+            
+            
+            
+            
+                        <div id="WORK-EXPERIENCE-2" class="container">
+            
+                            <div id="BAR-2" class="container">
+                            </div>
+            
+            
+            
+            
+            
+                            <span id="DATE-TITLE-1" class="p-body-text">
+                                2018 </br>
+                                </br>
+                            </span>
+            
+            
+                            <div id="WORK-EX-ITEMS">
+            
+                                <div id="TEXT-GRID-2" class="container">
+            
+                                    <div id="BENOY" class="cv-item">
+                                        <span>TECHNICAL ARCHITECT (PTIII)</span>
+                                        <span>BENOY _ NOV 2016 - NOV 2018 _ LONDON, UK</span>
+                                        <span>Interior and architectural design firm based in the Dubai, UAE</span>
+                                        <div>
+            
+                                        </div>
+                                    </div>
+            
+                                    <div id="CHAPMAN-TAYLOR" class="cv-item">
+                                        <span>ARCHITECTURAL TECHNICIAN (PTII)</span>
+                                        <span>CHAPMAN TAYLOR ARCHITECTS _ NOV 2015 - NOV 2016 _ LONDON, UK</span>
+                                        <span>A global practice focused on high profile commercial initiatives.</span>
+                                        <div>
+            
+                                        </div>
+                                    </div>
+            
+                                    <div id="DAVID-MILLER" class="cv-item">
+                                        <span>ARCHITECTURAL ASSISTANT (PTII)</span>
+                                        <span>DAVID MILLER ARCHITECTS (DMA) _ NOV 2013 - NOV 2015 _ LONDON, UK</span>
+                                        <span>A technical-led practice with a strong reputation for BIM focused
+                                            solutions.</span>
+                                        <div>
+            
+                                        </div>
+                                    </div>
+            
+                                    <div id="ZAHA-HADID" class="cv-item">
+                                        <span>ARCHITECTURAL ASSISTANT</span>
+                                        <span>ZAHA HADID ARCHITECTS _ OCT 2010 - SEP 2011 _ LONDON, UK</span>
+                                        <span>A global design practice known for progressive architecture</span>
+                                        <div>
+            
+                                        </div>
+                                    </div>
+            
+                                    <div id="ATKINS-DESIGN-STUDIO" class="cv-item">
+                                        <span>ARCHITECTURAL ASSISTANT</span>
+                                        <span>ATKINS DESIGN STUDIO _ AUG 2009 - SEP 2010 _ LONDON, UK</span>
+                                        <span>A well-respected multidisciplinary engineering firm known for
+                                            Crossrail</span>
+                                        <div>
+            
+                                        </div>
+                                    </div>
+            
+                                </div>
+            
+                            </div>
+            
+            
+                            <span id="DATE-TITLE-2" class="p-body-text">
+                                2009 </br>
+                                </br>
+                            </span>
+            
+            
+            
+                            <div id="ARROWS" class="container">
+                                <div id="UP">
+                                    <i class="fa-light fa-arrow-up-long">
+                                    </i>
+                                </div>
+            
+            
+                                <div id="DOWN">
+                                    <i class="fa-light fa-arrow-down-long">
+                                    </i>
+                                </div>
+                            </div>
+            
+                        </div>
+            
+            
+            
+            
+            
+            
+                        <div id="SKILLS-BOX" class="container">
+            
+                            <div id="CV-TITLE" class="container">
+                            </div>
+            
+                            <div id="TECHNICAL-SKILLS-CORE-COMPETENCES" class="container">
+                            </div>
+            
+                            <div id="LICENSES" class="container">
+                            </div>
+            
+                        </div>
+            
+            
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="SHADOW-SECTION" class="center-holder">
+        
+                    <div class="footer-holder">
+                        <footer id="FOOTER">
+                            <div id="IPHONE" class="container">
+                            </div>
+                        </footer>
+                    </div>
+        
+            </section>
+
+            
+        `;
+    }
+}

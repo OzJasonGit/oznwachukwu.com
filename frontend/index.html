@@ -1,119 +1,136 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
-
-
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Welcome To The Good Life Test</title>
-    <meta name="oznwachukwu.com" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://use.typekit.net/gjy6qgm.css">
-    <link rel="stylesheet" href="..\frontend\css\header.css">
-    <link rel="stylesheet" href="..\frontend\css\footer.css">
-    <link rel="stylesheet" href="..\frontend\css\sides.css">
-    <link rel="stylesheet" href="..\frontend\css\index.css">
-    <link rel="stylesheet" href="..\frontend\css\fonts.css">
-    <link rel="stylesheet" href="..\frontend\css\menu-dropdown.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Page App</title>
+    <link rel="stylesheet" href="../static/css/header.css">
+    <link rel="stylesheet" href="../static/css/footer.css">
+    <link rel="stylesheet" href="../static/css/fonts.css">
+    <link rel="stylesheet" href="../static/css/menu-dropdown.css">
+    <link rel="stylesheet" href="../static/css/sides.css">
+    <link rel="stylesheet" href="../static/css/portfolio-nav.css">
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous">
         </script>
-    <script src="https://kit.fontawesome.com/52d3a0a7c6.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/52d3a0a7c6.js" crossorigin="anonymous"></script>   
 </head>
-
-
-
-
-
-
 <body>
+
+
+    <!-----------HEADER-------------------->
+    <div class="hidebar"></div>
+    <section id="SHADOW-SECTION" class="center-holder">
+    
+        <div class="header">
+    
+            <div id="BUTTON-HOLDER-LEFT" class="container-2">
+                <div id="HEADER-MENU-1"></div>
+            </div>
+    
+            <header id="FIXED-HEADER">
+    
+                <div id="DATE-CLOCK" class="container">
+                    <div id="PFBD-RIGHT-DATE" class="container-right">
+                        <div id="DATE"></div>
+                    </div>
+    
+                    <div id="PFBD-RIGHT-CLOCK" class="container-right">
+                        <div id="CLOCK"></div>
+                    </div>
+                </div>
+    
+            </header>
+    
+            <div id="BUTTON-HOLDER-RIGHT" class="container">
+                <div id="HEADER-MENU-2">
+    
+                    <div id="BURGER-HOLDER" class="container-right">
+                        <a id="BURGER" href="#"><i id="BURGER-2">Menu</i></a>
+                    </div>
+    
+                </div>
+            </div>
+    
+        </div>
+    </section>
+    <!-----------HEADER-------------------->
+
+
+
+
 
     <!----------DROPDOWN------------------->
     <div class="fixed-dropdown-holder">
     
         <div id="MENU-DROPDOWN">
             <div id="MENU">
-                <div id="STORIES" class="container-2">
-                    <a href="..\frontend\blog-template.html"><span>STORIES</span></a>
+
+                <div id="HOME" class="container-2">
+                    <a href="/home" class="nav__link" data-link>HOME</a>
                 </div>
                 <div id="TECH" class="container-2">
-                    <a href="..\frontend\portfolio-design-tech.html"><span>TECH</span></a>
+                    <a href="/tech" class="nav__link" data-link>TECH</a>
                 </div>
                 <div id="ARCHITECTURE" class="container-2">
-                    <a href="..\frontend\portfolio-architecture.html"><span>ARCHITECTURE</span></a>
+                    <a href="/architecture" class="nav__link" data-link>ARCHITECTURE</a>
                 </div>
                 <div id="RESUME" class="container-2">
-                    <a href="..\frontend\resume.html"><span>RESUME</span></a>
+                    <a href="/resume" class="nav__link" data-link>RESUME</a>
                 </div>
+                <div id="BLOG" class="container-2">
+                    <a href="/blog" class="nav__link" data-link>BLOG</a>
+                </div>
+
             </div>
         </div>
     
     </div>
     <!----------DROPDOWN------------------->
 
-    <div class="hidebar"></div>
+
+    <!----------SIDE-BARS------------------->
     <div class="wrapper-2">
-
-        <!--------------------------------------------------------------------------------->
-        <section id="SHADOW-SECTION" class="center-holder">
-
-            <div class="header">
-
-                <div id="BUTTON-HOLDER-LEFT" class="container-2">
-                    <div id="HEADER-MENU-1"></div>
-                </div>
-
-                <header id="FIXED-HEADER">
-
-                    <div id="DATE-CLOCK" class="container">
-                        <div id="PFBD-RIGHT-DATE" class="container-right">
-                            <div id="DATE"></div>
-                        </div>
-
-                        <div id="PFBD-RIGHT-CLOCK" class="container-right">
-                            <div id="CLOCK"></div>
-                        </div>
-                    </div>
-
-                </header>
-
-                <div id="BUTTON-HOLDER-RIGHT" class="container">
-                    <div id="HEADER-MENU-2">
-
-                        <div id="BURGER" class="container-right">
-                            <a id="burger-test-1" href="#"><i id="burger-test-2">Menu</i></a>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <!----------------------------->
-
-
-        <!----------------------------->
         <div class="fixed-center">
             <div class="grid-0-fixed">
-
+    
                 <div id="LEFT-FIXED">
                     <div id="LEFT-FIXED-STICKY">
                         <div id="ICON-SIDE-1">
                             <div id="ICON-PLACEHOLDER" class="container"></div>
                         </div>
-
+    
                         <div id="ICON-SIDE-2">
-                            <div id="ICON-PLACEHOLDER" class="container"></div>
+                            <div id="ICON-GRID" class="container">
+
+                                <div id="PFBD" class="icon">
+                                    <a href="https://github.com/OzJasonGit" target="_blank">
+                                        <i class="fa-brands fa-github" style="font-size: 1.25rem; color: #efefef;">
+                                        </i>
+                                    </a>
+                                </div>
+
+                                <div id="DESIGN-LAB" class="icon">
+                                    <a href="https://github.com/OzJasonGit" target="_blank">
+                                        <i class="fa-brands fa-dribbble" style="font-size: 1.25rem; color: #efefef;">
+                                        </i>
+                                    </a>
+                                </div>
+
+                                <div id="BIM-COPILOT" class="icon">
+                                    <a href="https://github.com/OzJasonGit" target="_blank">
+                                        <i class="fa-brands fa-youtube" style="font-size: 1.25rem; color: #efefef;">
+                                        </i>                                 
+                                    </a>
+                                </div>
+                                
+
+                            </div>
                         </div>
                     </div>
                 </div>
-
-
+    
+    
                 <div id="RIGHT-FIXED">
                     <div id="RIGHT-FIXED-STICKY">
                         <div id="PFBD-LINKS">
@@ -122,11 +139,9 @@
                                     of energy, frequency and vibration.”
                                     </br> </br> Nikola Tesla
                                 </span>
-
-
                             </div>
                         </div>
-
+    
                         <div id="PAGE-NAVIGATION">
                             <div id="VERTICAL-NAVIGATION" class="container">
                                 <div id="NAV-1">
@@ -145,248 +160,50 @@
                         </div>
                     </div>
                 </div>
-
+    
             </div>
         </div>
     </div>
-    <!--------------------------------------------------------------------------------->
-
-    <div class="wrapper">
-        <div class="scroller">
-
-            <section id="SHADOW-SECTION" class="center-holder">
-                <div class="grid-0-2-top">
-                    <div id="HEAD-IMAGE">
-                        <div id="HEAD-HERO-IMAGE"></div>
-                        <div id="HEAD-HERO-TEXT">
-
-                            <div id="HERO-TEXT-1">
-                                <span id="H1-HERO">Live Bold</span>
-                            </div>
-                            <div id="HERO-TEXT-2">
-                                <span>Delve deep and see how concepts can be developed.</span>
-
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-            <section class="center-holder">
-
-                <div class="grid-0">
-                    <div id="GRID-1">
-
-                        <div id="IMAGE" class="container">
-                        </div>
-
-                        <div id="IMAGE-2" class="container">
-                            <div id="IMAGE-2-INTERNAL">
-                                <div id="SKILLS-GRID">
-                                    <span class="">SKILLS</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="IMAGE-3" class="container">
-                            <div id="IMAGE-3-INTERNAL"></div>
-                        </div>
-
-                        <div id="IMAGE-4" class="container">
-                        </div>
-
-                        <div class="title-holder-desktop">
-                            <div class="three-holder">
-
-                                <div id="HOME">
-                                    <a id="HOME-TAG" href=""></a>
-                                </div>
-
-
-
-                                <div id="HOME-TEXT" class="container">
-                                    <span id="FRONT-TEXT" class="h1-title-text">oznwachukwu.com</span>
-                                    <span id="HERO-TEXT" class="h2-hero-text">SOFTWARE ENGINEER | ARB RIBA ARCHITECT |
-                                        DESIGNER | BIM
-                                        ENGINEER</span>
-                                    <span id="DESCRIPTION-TEXT" class="p-body-text">My work navigates the spaces between
-                                        design, technology
-                                        and engineering.
-                                        My professional background is architecture, but my mind has always been
-                                        exploratory.
-                                        Eventually, it was always going to lead me to tech, where I continue to
-                                        explore.</br>
-                                        </br>
-                                        I'm an experienced BIM Engineer with a keen focus on sustainability.</br>
-                                        </br>
-                                        My career has largely been spent identifying wasteful or repetitive
-                                        practices within design, construction and manufacturing.</br>
-                                        </br>
-                                        I always aim to apply strategic automations through technology.</br>
-                                        </br>
-                                        Let's meet at Starbucks for a coffee. I'm the guy with headphones on listening
-                                        to Gangsta Rap.
-                                    </span>
-                                </div>
-
-
-
-                                <div id="SOCIAL">
-                                    <div id="GITHUB" class="icon"><a href="https://github.com/OzJasonGit"
-                                            target="_blank"><i class="fa-brands fa-github"
-                                                style="font-size: 1.25rem; color: #efefef;"></i></a>
-                                    </div>
-                                    <div id="DRIBBLE" class="icon"><a href="https://github.com/OzJasonGit"
-                                            target="_blank"><i class="fa-brands fa-dribbble"
-                                                style="font-size: 1.25rem; color: #efefef;"></i></a>
-                                    </div>
-                                    <div id="YOUTUBE" class="icon"><a href="https://github.com/OzJasonGit"
-                                            target="_blank"><i class="fa-brands fa-youtube"
-                                                style="font-size: 1.25rem; color: #efefef;"></i></a>
-                                    </div>
-                                    <div id="LINKEDIN" class="icon"><a
-                                            href="https://www.linkedin.com/in/oz-nwachukwu-arb-riba-aa897121/"
-                                            target="_blank"><i class="fa-brands fa-linkedin"
-                                                style="font-size: 1.25rem; color: #efefef;"></i></a>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-
-
-
-                        <div id="mobile">
-
-                            <div id="HOME">
-                                <a id="HOME-TAG" href=""></a>
-                            </div>
-
-
-
-                            <div id="HOME-TEXT" class="container">
-                                <span id="FRONT-TEXT" class="h1-title-text">oznwachukwu.com</span>
-                                <span id="HERO-TEXT" class="h2-hero-text">SOFTWARE ENGINEER | ARB RIBA ARCHITECT |
-                                    DESIGNER | BIM
-                                    ENGINEER</span>
-                                <span id="DESCRIPTION-TEXT" class="p-body-text">My work navigates the spaces between
-                                    design, technology and
-                                    engineering.
-                                    My professional background is architecture, but my mind has always been exploratory.
-                                    Eventually, it was always going to lead me to tech, where I continue to
-                                    explore.</br>
-                                    </br>
-                                    I'm an experienced BIM Engineer with a keen focus on sustainability.</br>
-                                    </br>
-                                    My career has largely been spent identifying wasteful or repetitive
-                                    practices within design, construction and manufacturing.</br>
-                                    </br>
-                                    I always aim to apply strategic automations through technology.</br>
-                                    </br>
-                                    Let's meet at Starbucks for a coffee. I'm the guy with headphones on listening to
-                                    Gangsta Rap.
-                                </span>
-                            </div>
-
-                        </div>
-
-                        <div id="TITLE-2" class="container">
-                            <div id="TOP-IMAGE" class="container"></div>
-                            <div id="HERO" class="container">
-                                <video autoplay muted loop playsinline id="HERO-VID">
-                                    <source src="assets\videos\pexels-c-technical-6153734.mp4" type="video/mp4">
-                                </video>
-                            </div>
-
-                            <div id="MID-IMAGE" class="container">
-
-                                <div class="container">
-                                    <div class="container-2">
-                                        <span>Latest Stories</span>
-                                    </div>
-
-                                </div>
-
-                                <div class="container">
-                                    <div id="STORIES" class="container">
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div id="BOTTOM-IMAGE" class="container">
-
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-
-
-            <section id="SHADOW-SECTION" class="center-holder">
-                <div class="grid-0-2">
-                    <div id="GRID-2">
-                        <div id="VIDEO" class="container">
-                        </div>
-
-                        <div id="PFBD" class="container">
-                            <div id="PLACEHOLDER" class="container"></div>
-                            <div id="TITLE-INSTA" class="container"></div>
-                            <div id="INSTA" class="container"></div>
-                        </div>
-
-                        <div id="PFBD-2" class="container">
-                        </div>
-
-                        <div id="DESCRIPTION" class="container">
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-            <section id="SHADOW-SECTION" class="center-holder">
-
-                <div class="footer-holder">
-                    <footer id="FOOTER">
-                        <div id="IPHONE" class="container">
-                        </div>
-                    </footer>
-                </div>
-
-            </section>
-
-
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-    <!--------------------------------------------------------------------------------->
-
-
-
-    <script src="javascript\clock.js" async defer></script>
-    <script src="frontend\javascript\menu-dropdown.js" type="text/javascript" async defer></script>
+    <!----------SIDE-BARS------------------->
+      
     
 
+
+
+    
+    <section class="center-holder">
+        <div class="portfolio-nav">
+            <div class="portfolio-nav-holder">
+                <div class="portfolio-nav-grid-1">
+                    <a href="/" class="nav__link" data-link>Home</a>
+                    <a href="/home" class="nav__link" data-link>Home</a>
+                    <a href="/blog" class="nav__link" data-link>Blog</a>
+                    <a href="/architecture" class="nav__link" data-link>Architecture</a>
+                    <a href="/tech" class="nav__link" data-link>Tech</a>
+                    <a href="/resume" class="nav__link" data-link>Resume</a>      
+                    <a href="/dropdown" class="nav__link" data-link>Dropdown</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div id="app"></div>
+
+
+
+    
+
+
+
+    <script type="module" src="/static/js/index.js"></script>
+    <script type="module" src="./static/js/javascript/clock.js"></script>
+    <script type="module" src="./static/js/javascript/date.js"></script>
+    <script type="module" src="./static/js/javascript/menu-dropdown.js"></script>
+
+
+    
+
+    
 </body>
-
-
-
 </html>
