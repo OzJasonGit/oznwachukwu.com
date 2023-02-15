@@ -72,6 +72,39 @@ export default class extends AbstractView {
                                     </div>
                                 </div> 
 
+
+                                <div id="IMAGE-MAIN-T_MOBILE" class="container"> 
+                                    <div id="T-1" class="container">
+
+                                        <div id="T-2" class="container-2">
+                                            <h2 id="TITLE"></h2>
+                                        </div>
+                                        <div id="T-3" class="container">
+                                            <div id="T-3-LOCATION" class="container-2">
+                                                <span id="LOCATION"></span>
+                                            </div>
+
+                                            <div id="T-3-DESCRIPTION" class="container-2">
+                                                <span id="DESCRIPTION"></span>
+                                            </div>
+                                            <div id="T-3-STATUS" class="container-2">
+                                                <span id="STATUS"></span>
+                                            </div>
+                                            <div id="T-3-COMPANY" class="container-2">
+                                                <span id="COMPANY"></span>
+                                            </div>
+
+                                            <div id="T-3-SOFTWARE" class="container">
+                                                
+                                                
+                                            </div>
+                                                                              
+                                            
+                                        </div> 
+                                              
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
             
