@@ -62,6 +62,7 @@ body {
 #MENU-DROPDOWN {
     position: relative;
     top: 100vh;
+    left: -100%;
     grid-area: MENU-DROPDOWN;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -194,17 +195,18 @@ body {
             grid-template-areas: "MENU-DROPDOWN MENU-DROPDOWN . . .";
         }
     
-    #MENU-DROPDOWN {
+        #MENU-DROPDOWN {
             position: relative;
             top: 100vh;
+            left: -100%;
             grid-area: MENU-DROPDOWN;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-rows: 90px 30px auto;
+            grid-template-rows: 120px 30px auto;
             grid-template-areas: ". . . ."
                 ". . . ."
                 ". . MENU MENU";
-            background-color: aqua;       
+            background-color: aqua;
         }
     
     #MENU {

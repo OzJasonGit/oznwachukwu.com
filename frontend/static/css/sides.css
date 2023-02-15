@@ -157,6 +157,7 @@ body {
 
 #ICON-SIDE-2 {
     position: relative;
+    top: 10px;
     grid-area: SIDE-2;
     display: grid;
     width: 100%;
@@ -182,7 +183,7 @@ body {
     display: grid;
     width: 100%;
     height: 100%;
-    grid-row-gap: 20px;
+    grid-row-gap: 10px;
     grid-template-rows: 1fr 76.5px 76.5px 76.5px;
     grid-template-columns: 1fr;
     grid-template-areas: "."
@@ -191,32 +192,66 @@ body {
         "BIM-COPILOT";
 }
 
-#PFBD {
-    grid-area: PFBD;
-    
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
+
+.icon {
+   display: grid;
+   position: relative;
+   width: 100%;
+   height: 100%; 
+   grid-row-gap: 0px;
+   grid-template-rows: 20px 1fr 0px;
+   grid-template-columns: 10px 1fr 10px;   
+   grid-template-areas: ". . ."
+                        ". ICON ."
+                        ". . .";
 }
 
-#DESIGN-LAB {
+#PFBD-ICON {
+    display: grid;
+    grid-area: PFBD;  
+    align-items: center;
+    justify-content: center;   
+}
+
+#DESIGN-LAB-ICON {
     grid-area: DESIGN-LAB;
-    display: flex;
+    display: grid;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 100%;
 }
 
-#BIM-COPILOT {
+#BIM-COPILOT-ICON {
     grid-area: BIM-COPILOT;
-    display: flex;
+    display: grid;
     align-items: center;
     justify-content: center;
+}
+
+
+
+#PFBD-LINK {
+    grid-area: ICON;       
     width: 100%;
     height: 100%;
+    background-color: antiquewhite;
 }
+
+
+#DESIGN-LAB-LINK {
+    grid-area: ICON;
+    width: 100%;
+    height: 100%;
+    background-color: antiquewhite;
+}
+
+
+#BIM-COPILOT-LINK {
+    grid-area: ICON;
+    width: 100%;
+    height: 100%;
+    background-color: antiquewhite;
+}
+
 
 #VERTICAL-NAVIGATION {
     position: relative;
