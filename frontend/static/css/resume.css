@@ -394,23 +394,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* SECTION 1--------------------------------------------------------------------------*/
 /* ---------------------------------------------------------------------------------------*/
 #GRID-1 {
@@ -1011,394 +994,881 @@ body {
 @media all and (min-width: 960px) and (max-width: 1280px) {
 
     body {
-        position: absolute;
-        width: 100vw;
-        height: 100vw;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        flex-direction: column;
-        margin-top: 0;
-        margin-left: 0;
-        margin-right: 0;
-        margin-bottom: 0;
-    }
-
-
-    .center-holder {
-        width: 100%;
-        display: flex;
-        -webkit-box-pack: center;
-        justify-content: center;
-    }
-
-
-    .bc-yellow {
-        width: 100%;
-        display: flex;
-        -webkit-box-pack: center;
-        justify-content: center;
-        background-color: rgb(255, 239, 66);
-    }
-
-
-    .grid-0 {
-        width: 100%;
-
-        max-width: 1640px;
-        background-color: #2e2e2e;
-        display: grid;
-        grid-column-gap: 40px;
-        grid-row-gap: 40px;
-        grid-template-rows: 60px auto;
-        grid-template-columns: 50px 1fr 50px;
-        grid-template-areas: ". . ."
-            "BANNER-1 MAIN-AREA BANNER-2";
-    }
-
-
-    .grid-0-fixed {
-        position: fixed;
-        top: -100vh;
-        width: 98vw;
-        height: 100vh;
-        max-width: 1760px;
-        background-color: #2e2e2e;
-        display: grid;
-        grid-column-gap: 40px;
-        grid-row-gap: 40px;
-        grid-template-rows: 60px auto;
-        grid-template-columns: 150px 1fr 150px;
-        grid-template-areas: ". . ."
-            "BANNER-1 MAIN-AREA BANNER-2";
-        margin: 0;
-    }
-
-
-    .grid-0-2 {
-        width: 100%;
-        max-width: 1640px;
-        position: relative;
-        padding-bottom: 100px;
-        background-color: #2e2e2e;
-        display: grid;
-        grid-column-gap: 40px;
-        grid-row-gap: 40px;
-        grid-template-rows: auto;
-        grid-template-columns: 50px 1fr 50px;
-        grid-template-areas: ". . ."
-            "BANNER-1 MAIN-AREA BANNER-2";
-    }
-
-
-    .grid-0-2-header {
-        position: fixed;
-        width: 100%;
-        height: 100px;
-        max-width: 1760px;
-        background-color: #2e2e2e;
-        display: grid;
-        grid-row-gap: 40px;
-        grid-template-rows: auto;
-        grid-template-columns: 50px 1fr 50px;
-        grid-template-areas:
-            "BANNER-1 MAIN-AREA BANNER-2";
-        z-index: 1;
-    }
-
-
-    .container {
-        width: 100%;
-        height: 100%;
-        position: relative;
-        display: flex;
-        -webkit-box-pack: center;
-        justify-content: center;
-    }
-
-
-    #mobile {
-        display: none;
-    }
-
-
-    .three-holder {
-        position: sticky;
-        top: 100px;
-        width: 100%;
-        max-height: 100%;
-        display: grid;
-        grid-template-rows: 80px auto 30px;
-        grid-row-gap: 40px;
-        grid-template-areas: "HOME-ICON"
-            "HOME-TEXT"
-            "SOCIAL";
-    }
-
-
-
-    #RIGHT-FIXED {
-        grid-area: BANNER-2;
-        top: 100vh;
-        position: relative;
-        display: flex;
-        width: 100%;
-        height: 100%;
-
-    }
-
-
-
-    #RIGHT-FIXED-STICKY {
-        position: sticky;
-        top: 100px;
-        display: grid;
-        width: 100%;
-        height: 90vh;
-        grid-template-columns: 1fr;
-        grid-row-gap: 40px;
-        grid-template-rows: 380px 600px auto;
-    }
-
-
-
-    #LEFT-FIXED {
-        grid-area: BANNER-1;
-        top: 100vh;
-        position: relative;
-        display: grid;
-        width: 100%;
-        height: 100%;
-
-    }
-
-
-
-    #LEFT-FIXED-STICKY {
-        position: sticky;
-        top: 100px;
-        display: grid;
-        width: 100%;
-        height: 90vh;
-        grid-template-columns: 1fr;
-        grid-row-gap: 40px;
-        grid-template-rows: 380px 600px auto;
-    }
-
-
-
-
-
-
-
-
-
-
-    /* SECTION 1--------------------------------------------------------------------------*/
-    /* ---------------------------------------------------------------------------------------*/
-    #GRID-1 {
-        grid-area: MAIN-AREA;
-        width: 100%;
-        display: grid;
-        grid-column-gap: 40px;
-        grid-row-gap: 40px;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto auto auto auto auto auto auto 100px;
-        grid-template-areas: "HOME TITLE TITLE TITLE TITLE TITLE TITLE ."
-            "HOME IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN ."
-            "HOME DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION ."
-            "HOME IMAGE-1 IMAGE-1 IMAGE-1 IMAGE-1 IMAGE-1 IMAGE-1 ."
-            "HOME DESCRIPTION-2 DESCRIPTION-2 DESCRIPTION-2 DESCRIPTION-2 DESCRIPTION-2 DESCRIPTION-2 ."
-            "HOME IMAGE-2 IMAGE-2 IMAGE-2 IMAGE-2 IMAGE-2 IMAGE-2 ."
-            "HOME DESCRIPTION-3 DESCRIPTION-3 DESCRIPTION-3 DESCRIPTION-3 DESCRIPTION-3 DESCRIPTION-3 .";
-    }
-
-    /* ---------------------------------------------------------------------------------------*/
-
-
-
-
-    /* ---------------------------------------------------------------------------------------*/
-    #IMAGE-MAIN {
-        grid-area: IMAGE-MAIN;
-        width: 100%;
-        height: 100%;
-        min-height: 600px;
-        display: grid;
-        background-color: antiquewhite;
-    }
-
-    /* ---------------------------------------------------------------------------------------*/
-
-
-
-
-    /* ---------------------------------------------------------------------------------------*/
-    #IMAGE-1 {
-        grid-area: IMAGE-1;
-        width: 100%;
-        height: 460px;
-        display: grid;
-        grid-template-columns: 15px 1fr 15px;
-        grid-template-rows: 15px auto 15px;
-        grid-template-areas: ". . ."
-            ". CENTER-AREA ."
-            ". . .";
-        background-color: antiquewhite;
-    }
-
-
-
-    #PLAN {
-        grid-area: PLAN;
-        width: 100%;
-        height: 460px;
-        display: grid;
-        background-color: antiquewhite;
-    }
-
-
-
-    #TEXT {
-        grid-area: DESCRIPTION;
-        width: 100%;
-    }
-
-
-
-    #IMAGE-2 {
-        grid-area: IMAGE-2;
-        width: 100%;
-        height: 460px;
-        display: grid;
-        background-color: antiquewhite;
-    }
-
-
-
-
-
-    #SKILLS-GRID {
-        grid-area: SKILLS-CENTER;
-        width: 100%;
-        height: auto;
-        max-height: 0;
-        display: grid;
-        grid-row-gap: 20px;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto;
-    }
-
-
-
-
-    #HOME-STICKY {
-        display: none;
-    }
-
-
-    /* ---------------------------------------------------------------------------------------*/
-
-
-
-
-
-    /* ---------------------------------------------------------------------------------------*/
-
-
-    #SOCIAL {
-        grid-area: SOCIAL;
-        display: grid;
-        width: 100%;
-        height: 100%;
-        grid-column-gap: 20px;
-        grid-template-columns: 30px 30px 30px 30PX;
-        grid-template-areas: "GITHUB DRIBBLE YOUTUBE LINKEDIN";
-
-    }
-
-    #GITHUB {
-        grid-area: GITHUB;
-        width: 100%;
-        height: 100%;
-    }
-
-    #DRIBBLE {
-        grid-area: DRIBBLE;
-        width: 100%;
-        height: 100%;
-    }
-
-    #LINKEDIN {
-        grid-area: LINKEDIN;
-        width: 100%;
-        height: 100%;
-    }
-
-    #YOUTUBE {
-        grid-area: YOUTUBE;
-        width: 100%;
-        height: 100%;
-    }
-
-
-    #ICON-SIDE-1 {
-        grid-area: SIDE-1;
-        display: grid;
-        width: 100%;
-        height: 100%;
-        grid-template-columns: 40px 1fr;
-        grid-template-areas: ". AREA";
-    }
-
-
-
-    #ICON-SIDE-2 {
-        grid-area: SIDE-2;
-        display: grid;
-        width: 100%;
-        height: 100%;
-        grid-template-columns: 40px 1fr;
-        grid-template-areas: ". AREA ";
-    }
-
-
-
-    #ICON-SIDE-3 {
-        grid-area: SIDE-1;
-        display: grid;
-        width: 100%;
-        height: 100%;
-        grid-template-columns: 1fr 40px;
-        grid-template-areas: "AREA .";
-    }
-
-
-
-    #ICON-SIDE-4 {
-        grid-area: SIDE-2;
-        display: grid;
-        width: 100%;
-        height: 100%;
-        grid-template-columns: 1fr 40px;
-        grid-template-areas: "AREA .";
-    }
-
-
-
-
-    #ICON-PLACEHOLDER {
-        grid-area: AREA;
-        width: 100%;
-        height: 100%;
-        background-color: #B3B7A5;
-    }
-
-    /* ---------------------------------------------------------------------------------------*/
-
-
-
-
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            flex-direction: column;
+            margin-top: 0;
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: 0;
+        }
+    
+    
+    
+    
+        .wrapper {
+            width: 100vw;
+    
+        }
+    
+    
+    
+        .wrapper-2 {
+            position: relative;
+            width: 100%;
+            height: auto;
+        }
+    
+    
+    
+        .scroller::-webkit-scrollbar {
+            width: 0px;
+            height: 16px;
+        }
+    
+        .scroller {
+            scrollbar-width: none;
+            position: absolute;
+            overflow-y: scroll;
+            height: 100vh;
+            width: 100%;
+    
+    
+        }
+    
+    
+    
+        .fixed-center {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: 100px;
+            display: flex;
+            -webkit-box-pack: center;
+            justify-content: center;
+            background-color: #2e2e2e;
+            top: 0;
+            left: 0;
+            margin: 0;
+    
+        }
+    
+    
+    
+        .center-holder {
+            width: 100%;
+            display: flex;
+            -webkit-box-pack: center;
+            justify-content: center;
+            background-color: #2e2e2e;
+        }
+    
+    
+    
+    
+    
+        .bc-yellow {
+            position: relative;
+            width: 100%;
+            display: flex;
+            -webkit-box-pack: center;
+            justify-content: center;
+            background-color: rgb(255, 239, 66);
+        }
+    
+    
+        .grid-0 {
+            width: 100%;
+            max-width: 1760px;
+            background-color: #2e2e2e;
+            display: grid;
+            grid-column-gap: 40px;
+            grid-row-gap: 40px;
+            grid-template-rows: 60px auto;
+            grid-template-columns: 0px 1fr 0px;
+            grid-template-areas: ". . ."
+                "BANNER-1 MAIN-AREA BANNER-2";
+        }
+    
+    
+    
+        .grid-0-2-header {
+            position: fixed;
+            width: 100%;
+            height: 100px;
+            max-width: 1760px;
+            background-color: #2e2e2e;
+            display: grid;
+            grid-column-gap: 40px;
+            grid-row-gap: 40px;
+            grid-template-rows: auto;
+            grid-template-columns: 150px 1fr 150px;
+            grid-template-areas:
+                "BANNER-1 MAIN-AREA BANNER-2";
+            z-index: 1;
+        }
+    
+    
+        .grid-0-2-top {
+            position: relative;
+            width: 100%;
+            max-width: 1760px;
+            background-color: #2e2e2e;
+            display: grid;
+            grid-column-gap: 0px;
+            grid-row-gap: 40px;
+            grid-template-rows: 100px auto;
+            grid-template-columns: 0px 40px 1fr 40px 0px;
+            grid-template-areas: ". . . . ."
+                "BANNER-1 . MAIN-AREA . BANNER-2";
+        }
+    
+    
+    
+    
+        .grid-0-2-top {
+            position: relative;
+            width: 100%;
+            max-width: 1760px;
+            background-color: #2e2e2e;
+            display: grid;
+            grid-column-gap: 0px;
+            grid-row-gap: 40px;
+            grid-template-rows: 100px auto;
+            grid-template-columns: 0px 40px 1fr 40px 0px;
+            grid-template-areas: ". . . . ."
+                "BANNER-1 . MAIN-AREA . BANNER-2";
+        }
+    
+    
+    
+    
+        .grid-0-2 {
+            position: relative;
+            padding-bottom: 100px;
+            width: 100%;
+            max-width: 1760px;
+            background-color: #2e2e2e;
+            display: grid;
+            grid-column-gap: 40px;
+            grid-row-gap: 40px;
+            grid-template-rows: auto;
+            grid-template-columns: 150px 1fr 150px;
+            grid-template-areas: ". . ."
+                "BANNER-1 MAIN-AREA BANNER-2";
+        }
+    
+    
+    
+        .grid-0-3 {
+            position: relative;
+            top: -100vh;
+            width: 100%;
+            max-width: 1760px;
+            display: grid;
+            grid-column-gap: 40px;
+            grid-row-gap: 40px;
+            grid-template-rows: 1fr;
+            grid-template-columns: 150px 1fr 150px;
+            grid-template-areas: ". . ."
+                "BANNER-1 MAIN-AREA BANNER-2";
+        }
+    
+    
+        .container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            display: flex;
+            -webkit-box-pack: center;
+            justify-content: center;
+        }
+    
+    
+    
+    
+        .fixed {
+            width: 100%;
+            height: 90vh;
+            position: fixed;
+            display: flex;
+            -webkit-box-pack: center;
+            justify-content: center;
+            bottom: 0;
+            z-index: -1000;
+            background-color: #B3B7A5;
+        }
+    
+    
+    
+        .fixed-reveal {
+            width: 100%;
+            height: 80vh;
+            position: relative;
+            display: flex;
+            -webkit-box-pack: center;
+            justify-content: center;
+            bottom: 0;
+    
+        }
+    
+    
+    
+        .title-holder-desktop {
+            grid-area: TITLE;
+            width: 100%;
+            height: 100%;
+        }
+    
+    
+    
+    
+        .title-holder-mobile {
+            display: none;
+        }
+    
+    
+    
+    
+    
+        .three-holder {
+            position: sticky;
+            top: 100px;
+            width: 100%;
+            max-height: 100%;
+            display: grid;
+            grid-template-rows: 80px auto 30px;
+            grid-row-gap: 40px;
+            grid-template-areas: "HOME-ICON"
+                "HOME-TEXT"
+                "SOCIAL";
+        }
+    
+    
+    
+        .icon {
+            display: flex;
+            -webkit-box-pack: center;
+            justify-content: left;
+            align-items: center;
+        }
+    
+    
+    
+    
+        .cv-item {
+            display: grid;
+            grid-template-rows: auto auto auto auto;
+            grid-row-gap: 5px;
+            grid-template-columns: 1fr;
+            grid-template-areas: "JOB-TITLE"
+                "COMPANY-DATE"
+                "DESCRIPTION"
+                "ACHIEVEMENTS";
+        }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        #mobile {
+            display: none;
+        }
+    
+    
+    
+        #SHADOW-SECTION {
+            width: 100%;
+            display: flex;
+            -webkit-box-pack: center;
+            justify-content: center;
+            background-color: #2e2e2e;
+        }
+    
+    
+        #PROJECTS {
+            grid-area: MAIN-AREA;
+            width: 100%;
+            height: 400PX;
+            display: grid;
+            grid-row-gap: 40px;
+            grid-template-rows: auto auto;
+            grid-template-areas: "HEAD"
+                "PROJECTS";
+        }
+    
+    
+    
+        #FOLIO-TITLE {
+            grid-area: HEAD;
+        }
+    
+    
+    
+        #HEAD-IMAGE {
+            grid-area: MAIN-AREA;
+            display: grid;
+            width: 100%;
+            height: 740px;
+            grid-column-gap: 40px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 100% 100%;
+            grid-template-areas: "IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE"
+                "TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT";
+        }
+    
+    
+        #HEAD-HERO-IMAGE {
+            grid-area: IMAGE;
+            display: grid;
+            width: 100%;
+            height: 100%;
+            background-color: azure;
+        }
+    
+    
+        #HEAD-HERO-TEXT {
+            position: relative;
+            grid-area: TEXT;
+            display: grid;
+            width: 100%;
+            height: 100%;
+            top: -100%;
+            grid-column-gap: 40px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas: ". . . . . . . ."
+                ". TEXT TEXT TEXT TEXT TEXT TEXT ."
+                ". TEXT TEXT TEXT TEXT TEXT TEXT ."
+                ". TEXT-2 TEXT-2 TEXT-2 TEXT-2 TEXT-2 TEXT-2 ."
+                ". TEXT-2 TEXT-2 TEXT-2 TEXT-2 TEXT-2 TEXT-2 .";
+        }
+    
+    
+    
+        #HERO-TEXT-1 {
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            grid-area: TEXT;
+        }
+    
+        #HERO-TEXT-2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            grid-area: TEXT-2;
+        }
+    
+    
+    
+    
+    
+    
+        /* ---------------------------------------------------------------------------------------*/
+        /* ---------------------------------------------------------------------------------------*/
+        /* ---------------------------------------------------------------------------------------*/
+    
+    
+    
+    
+    
+    
+    
+    
+        /* SECTION 1--------------------------------------------------------------------------*/
+        /* ---------------------------------------------------------------------------------------*/
+        #GRID-1 {
+            grid-area: MAIN-AREA;
+            width: 100%;
+            display: grid;
+            grid-column-gap: 40px;
+            grid-row-gap: 100px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: auto auto auto auto 20px;
+            grid-template-areas: "HOME TITLE TITLE TITLE TITLE TITLE ANIM ANIM ANIM"
+                "HOME IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN"
+                "HOME WORK-EX WORK-EX WORK-EX WORK-EX WORK-EX SKILLS SKILLS SKILLS"
+                "HOME WORK-EX-2 WORK-EX-2 WORK-EX-2 WORK-EX-2 WORK-EX-2 SKILLS SKILLS SKILLS";
+        }
+    
+        /* ---------------------------------------------------------------------------------------*/
+    
+    
+    
+    
+        /* ---------------------------------------------------------------------------------------*/
+        #IMAGE-MAIN {
+            grid-area: IMAGE-MAIN;
+            display: grid;
+            grid-row-gap: 40px;
+            grid-column-gap: 40px;
+            grid-template-columns: 1fr 40px;
+            grid-template-rows: 40px auto;
+            width: 100%;
+            height: 100%;
+            min-height: auto;
+            grid-template-areas: "EDUCATION BAR"
+                "TEXT BAR";
+        }
+    
+    
+    
+        #EDUCATION-TITLE {
+            grid-area: EDUCATION;
+        }
+    
+    
+        #EDUCATION-TEXT {
+            grid-area: TEXT;
+    
+        }
+    
+    
+        #ANIM {
+            grid-area: ANIM;
+            background-color: antiquewhite;
+        }
+    
+    
+        #BAR {
+            grid-area: BAR;
+            background-color: antiquewhite;
+        }
+    
+    
+        #BAR-2 {
+            grid-area: BAR-2;
+            background-color: antiquewhite;
+        }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        /******************************************************************************/
+        #WORK-EX-ITEMS {
+            grid-area: TEXT;
+        }
+    
+    
+    
+        #TEXT-GRID-1 {
+            width: 100%;
+            display: grid;
+            grid-row-gap: 40px;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto auto auto;
+            grid-template-areas: "TECH-1"
+                "LW-DESIGN-GROUP"
+                "TECH-2"
+                "PERKINS-WILL"
+                "TECH-3";
+        }
+    
+    
+    
+        #TEXT-GRID-2 {
+            width: 100%;
+            display: grid;
+            grid-row-gap: 30px;
+            grid-template-columns: 1fr;
+            grid-template-rows: 100px 100px 100px 100px 100px;
+            grid-template-areas: "BENOY"
+                "CHAPMAN-TAYLOR"
+                "DAVID-MILLER"
+                "ZAHA-HADID"
+                "ATKINS-DESIGN-STUDIO";
+        }
+    
+    
+    
+        #TECH-1 {
+            grid-area: TECH-1;
+        }
+    
+        #LW-DESIGN-GROUP {
+            grid-area: LW-DESIGN-GROUP;
+        }
+    
+    
+        #TECH-2 {
+            grid-area: TECH-2;
+        }
+    
+        #PERKINS-WILL {
+            grid-area: PERKINS-WILL;
+        }
+    
+        #TECH-3 {
+            grid-area: TECH-3;
+        }
+    
+        #BENOY {
+            grid-area: BENOY;
+        }
+    
+        #CHAPMAN-TAYLOR {
+            grid-area: CHAPMAN-TAYLOR;
+        }
+    
+        #DAVID-MILLER {
+            grid-area: DAVID-MILLER;
+        }
+    
+        #ZAHA-HADID {
+            grid-area: ZAHA-HADID;
+        }
+    
+        #ATKINS-DESIGN-STUDIO {
+            grid-area: ATKINS-DESIGN-STUDIO;
+        }
+    
+        /******************************************************************************/
+    
+    
+    
+    
+    
+    
+    
+        #WORK-EXPERIENCE {
+            grid-area: WORK-EX;
+            display: grid;
+            grid-row-gap: 30px;
+            grid-column-gap: 30px;
+            grid-template-columns: 60px 1fr 250px;
+            grid-template-rows: 40px auto auto auto auto 40px;
+            width: 100%;
+            height: 100%;
+            grid-template-areas: "BAR BAR BAR"
+                "TITLE TITLE TITLE"
+                "DATE . ."
+                "ARROWS TEXT TEXT"
+                "DATE-2 . ."
+                ". . BAR-2";
+        }
+    
+    
+    
+    
+        #WORK-EXPERIENCE-2 {
+            grid-area: WORK-EX-2;
+            display: grid;
+            grid-row-gap: 30px;
+            grid-column-gap: 30px;
+            grid-template-columns: 80px 1fr 250px;
+            grid-template-rows: auto auto auto 40px;
+            width: 100%;
+            height: 100%;
+            grid-template-areas:
+                "DATE . ."
+                "ARROWS TEXT TEXT"
+                "DATE-2 . ."
+                ". . BAR-2";
+        }
+    
+    
+    
+        #WORK-EXPERIENCE-3 {
+            grid-area: WORK-EX-3;
+            display: grid;
+            grid-row-gap: 30px;
+            grid-column-gap: 30px;
+            grid-template-columns: 80px 1fr 250px;
+            grid-template-rows: auto auto auto 30px;
+            width: 100%;
+            height: 100%;
+            grid-template-areas:
+                "DATE . ."
+                "ARROWS TEXT TEXT"
+                "DATE-2 . ."
+                ". . BAR-2";
+        }
+    
+    
+    
+        #WORK-EXPERIENCE-TITLE {
+            grid-area: TITLE;
+        }
+    
+    
+        #DATE-TITLE-1 {
+            grid-area: DATE;
+        }
+    
+        #DATE-TITLE-2 {
+            grid-area: DATE-2;
+        }
+    
+    
+    
+        #ARROWS {
+            grid-area: ARROWS;
+            display: grid;
+            grid-template-columns: 1fr 30px 1fr;
+            grid-template-rows: 60px auto 60px;
+            width: 100%;
+            height: 100%;
+            grid-template-areas: "ARROW-UP . ."
+                ". . ."
+                "ARROW-DOWN . .";
+        }
+    
+        #UP {
+            display: flex;
+            align-items: flex-start;
+            grid-area: ARROW-UP;
+        }
+    
+        #DOWN {
+            display: flex;
+            align-items: flex-end;
+            grid-area: ARROW-DOWN;
+    
+        }
+    
+    
+    
+    
+    
+        /* ---------------------------------------------------------------------------------------*/
+    
+        #SKILLS-BOX {
+            grid-area: SKILLS;
+            display: grid;
+            grid-row-gap: 40px;
+            grid-column-gap: 40px;
+            grid-template-columns: 20px 1fr;
+            grid-template-rows: 150px auto auto auto;
+            grid-template-areas: ". TITLE"
+                ". TECHNICAL-SKILLS-CORE-COMPETENCES"
+                ". TECHNICAL-SKILLS-CORE-COMPETENCES"
+                ". LICENSES";
+        }
+    
+    
+    
+        #CV-TITLE {
+            grid-area: TITLE;
+            display: grid;
+            background-color: rgb(234, 113, 255);
+        }
+    
+        #TECHNICAL-SKILLS-CORE-COMPETENCES {
+            grid-area: TECHNICAL-SKILLS-CORE-COMPETENCES;
+            display: grid;
+            background-color: rgb(237, 255, 103);
+        }
+    
+        #LICENSES {
+            grid-area: LICENSES;
+            display: grid;
+            background-color: #EFEFEF;
+        }
+    
+    
+    
+    
+        /* ---------------------------------------------------------------------------------------*/
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        #TEXT-1 {
+            grid-area: DESCRIPTION;
+            width: 100%;
+        }
+    
+    
+    
+        #IMAGE-1 {
+            grid-area: IMAGE-1;
+            width: 100%;
+            height: 460px;
+            display: grid;
+            grid-template-columns: 15px 1fr 15px;
+            grid-template-rows: 15px auto 15px;
+            grid-template-areas: ". . ."
+                ". CENTER-AREA ."
+                ". . .";
+            background-color: antiquewhite;
+        }
+    
+    
+    
+        #TEXT-2 {
+            grid-area: DESCRIPTION-2;
+            width: 100%;
+        }
+    
+    
+    
+        #IMAGE-2 {
+            grid-area: IMAGE-2;
+            width: 100%;
+            height: 460px;
+            display: grid;
+            background-color: antiquewhite;
+        }
+    
+    
+    
+        #TEXT-3 {
+            grid-area: DESCRIPTION-3;
+            width: 100%;
+        }
+    
+    
+        #SHADOW-SECTION {
+            width: 100%;
+            display: flex;
+            -webkit-box-pack: center;
+            justify-content: center;
+            background-color: #2e2e2e;
+        }
+    
+    
+    
+    
+    
+    
+        /* ---------------------------------------------------------------------------------------*/
+    
+    
+    
+    
+    
+        /* ---------------------------------------------------------------------------------------*/
+        #HOME-BUTTON {
+            display:none;   
+        }
+    
+    
+        #HOME-ABSOLUTE {
+            grid-area: HOME;
+            position: absolute;
+            width: 100%;
+            height: 100%;  
+        }
+    
+    
+    
+        #HOME-STICKY {
+            grid-area: HOME;
+            position: sticky;
+            top: 100px;
+            width: 100%;
+            height: 360px;
+            background-color: aliceblue;
+        }
+    
+    
+    
+        #TITLE {
+            grid-area: TEXT;
+            display: grid;
+            width: 100%;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-template-areas: "MAIN";
+        }
+    
+    
+    
+        #HOME-ICON {
+            grid-area: HOME-ICON;
+            width: 100%;
+            grid-template-columns: 5fr 1fr;
+            grid-template-rows: 70px;
+            background-color: aliceblue;
+            display: grid;
+        }
+    
+    
+        #HOME-TAG {
+            background-image: url(..\assetts\Artboard 2.svg);
+        }
+    
+    
+    
+        #HOME-TEXT {
+            grid-area: HOME-TEXT;
+            display: grid;
+            width: 100%;
+            height: auto;
+            grid-row-gap: 30px;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto;
+            grid-template-areas: "FRONT-TEXT"
+                "HERO-TEXT"
+                "DESCRIPTION";
+        }
+    
+    
+        #SOCIAL {
+            grid-area: SOCIAL;
+            display: grid;
+            width: 100%;
+            height: 100%;
+            grid-column-gap: 20px;
+            grid-template-columns: 30px 30px 30px 30PX;
+            grid-template-areas: "GITHUB DRIBBLE YOUTUBE LINKEDIN";
+    
+        }
+    
+        #GITHUB {
+            grid-area: GITHUB;
+            width: 100%;
+            height: 100%;
+        }
+    
+        #DRIBBLE {
+            grid-area: DRIBBLE;
+            width: 100%;
+            height: 100%;
+        }
+    
+        #LINKEDIN {
+            grid-area: LINKEDIN;
+            width: 100%;
+            height: 100%;
+        }
+    
+        #YOUTUBE {
+            grid-area: YOUTUBE;
+            width: 100%;
+            height: 100%;
+        }
 
 }
 
