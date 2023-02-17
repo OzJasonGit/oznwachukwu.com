@@ -44,21 +44,11 @@ export default class extends AbstractView {
                     </section>
             
                     <div id="GRID-1">
-            
-                        <div id="HOME-BUTTON">
-                            <div id="HOME-ABSOLUTE">
-                                <div id="HOME-STICKY">
-                                    <a href=""></a>
-                                </div>
-                            </div>
-                        </div>
-            
-            
-            
+                     
                         <div class="title-holder-desktop">
                             <div class="three-holder">
             
-                                <div id="HOME">
+                                <div id="HOME-RESUME">
                                     <a id="HOME-TAG" href=""></a>
                                 </div>
             
