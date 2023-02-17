@@ -402,12 +402,12 @@ body {
     display: grid;
     grid-column-gap: 40px;
     grid-row-gap: 100px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto auto auto auto 20px;
-    grid-template-areas: "TITLE TITLE TITLE TITLE TITLE . ANIM ANIM ANIM"
-        ". . . IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN"
-        "WORK-EX WORK-EX WORK-EX WORK-EX WORK-EX . SKILLS SKILLS SKILLS"
-        "WORK-EX-2 WORK-EX-2 WORK-EX-2 WORK-EX-2 WORK-EX-2 . SKILLS SKILLS SKILLS";
+    grid-template-areas: "TITLE TITLE TITLE TITLE TITLE ANIM ANIM ANIM"
+        ". . . IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN"
+        "WORK-EX WORK-EX WORK-EX WORK-EX WORK-EX SKILLS SKILLS SKILLS"
+        "WORK-EX-2 WORK-EX-2 WORK-EX-2 WORK-EX-2 WORK-EX-2 SKILLS SKILLS SKILLS";
 }
 
 /* ---------------------------------------------------------------------------------------*/
@@ -1477,12 +1477,12 @@ body {
             display: grid;
             grid-column-gap: 40px;
             grid-row-gap: 100px;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
             grid-template-rows: auto auto auto auto 20px;
-            grid-template-areas: "TITLE TITLE TITLE TITLE TITLE TITLE ANIM ANIM ANIM"
-                "IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN"
-                "WORK-EX WORK-EX WORK-EX WORK-EX WORK-EX . SKILLS SKILLS SKILLS"
-                "WORK-EX-2 WORK-EX-2 WORK-EX-2 WORK-EX-2 WORK-EX-2 . SKILLS SKILLS SKILLS";
+            grid-template-areas: "TITLE TITLE TITLE TITLE TITLE ANIM ANIM ANIM"
+                ". . . IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN"
+                "WORK-EX WORK-EX WORK-EX WORK-EX WORK-EX SKILLS SKILLS SKILLS"
+                "WORK-EX-2 WORK-EX-2 WORK-EX-2 WORK-EX-2 WORK-EX-2 SKILLS SKILLS SKILLS";
         }
     
         /* ---------------------------------------------------------------------------------------*/
@@ -1579,9 +1579,9 @@ body {
         #TEXT-GRID-2 {
             width: 100%;
             display: grid;
-            grid-row-gap: 30px;
+            grid-row-gap: 40px;
             grid-template-columns: 1fr;
-            grid-template-rows: 100px 100px 100px 100px 100px;
+            grid-template-rows: auto auto auto auto auto;
             grid-template-areas: "BENOY"
                 "CHAPMAN-TAYLOR"
                 "DAVID-MILLER"
@@ -2625,9 +2625,9 @@ body {
         #TEXT-GRID-2 {
             width: 100%;
             display: grid;
-            grid-row-gap: 30px;
+            grid-row-gap: 40px;
             grid-template-columns: 1fr;
-            grid-template-rows: 100px 100px 100px 100px 100px;
+            grid-template-rows: auto auto auto auto auto;
             grid-template-areas: "BENOY"
                 "CHAPMAN-TAYLOR"
                 "DAVID-MILLER"
@@ -3698,9 +3698,9 @@ body {
         #TEXT-GRID-2 {
             width: 100%;
             display: grid;
-            grid-row-gap: 30px;
+            grid-row-gap: 40px;
             grid-template-columns: 1fr;
-            grid-template-rows: 100px 100px 100px 100px 100px;
+            grid-template-rows: auto auto auto auto auto;
             grid-template-areas: "BENOY"
                 "CHAPMAN-TAYLOR"
                 "DAVID-MILLER"

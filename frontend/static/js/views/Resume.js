@@ -163,49 +163,54 @@ export default class extends AbstractView {
             
                                     <div id="TECH-1" class="cv-item">
                                         <span>SOFTWARE ENGINEER</span>
-                                        <span>LW DESIGN GROUP _ AUG 2021 - APRIL 2022_ DUBAI, UAE</span>
-                                        <span>Interior and architectural design firm based in the Dubai, UAE</span>
-                                        <div>
-            
-                                        </div>
+                                        <ul>
+                                            <span>LW DESIGN GROUP _ AUG 2021 - APRIL 2022_ DUBAI, UAE</span>
+                                            <span>Interior and architectural design firm based in the Dubai, UAE</span>
+                                            <div>
+                                            </div>
+                                        </ul>                                       
                                     </div>
             
                                     <div id="LW-DESIGN-GROUP" class="cv-item">
                                         <span>TECHNICAL ARCHITECT / BIM (CONTRACT)</span>
-                                        <span>LW DESIGN GROUP _ AUG 2021 - APRIL 2022_ DUBAI, UAE</span>
-                                        <span>Interior and architectural design firm based in the Dubai, UAE</span>
-                                        <div>
-            
-                                        </div>
+                                        <ul>
+                                            <span>LW DESIGN GROUP _ AUG 2021 - APRIL 2022_ DUBAI, UAE</span>
+                                            <span>Interior and architectural design firm based in the Dubai, UAE</span>
+                                            <div>
+                                            </div>
+                                        </ul>                                        
                                     </div>
             
                                     <div id="TECH-2" class="cv-item">
                                         <span>SOFTWARE ENGINEER</span>
-                                        <span>LW DESIGN GROUP _ AUG 2021 - APRIL 2022_ DUBAI, UAE</span>
-                                        <span>Interior and architectural design firm based in the Dubai, UAE</span>
-                                        <div>
-            
-                                        </div>
+                                        <ul>
+                                            <span>LW DESIGN GROUP _ AUG 2021 - APRIL 2022_ DUBAI, UAE</span>
+                                            <span>Interior and architectural design firm based in the Dubai, UAE</span>
+                                            <div>            
+                                            </div>
+                                        </ul>                                      
                                     </div>
             
                                     <div id="PERKINS-WILL" class="cv-item">
                                         <span>TECHNICAL ARCHITECT / BIM MANAGER</span>
-                                        <span>PERKINS AND WILL _ NOV 2018 - JULY 2021 _ LONDON, UK</span>
-                                        <span>A global, innovative, high-tech design firm focused on healthcare,
+                                        <ul>
+                                            <span>PERKINS AND WILL _ NOV 2018 - JULY 2021 _ LONDON, UK</span>
+                                            <span>A global, innovative, high-tech design firm focused on healthcare,
                                             commercial strategy, commercial interiors and
                                             sustainability.</span>
-                                        <div>
-            
-                                        </div>
+                                            <div>           
+                                            </div>
+                                        </ul>                                     
                                     </div>
             
                                     <div id="TECH-3" class="cv-item">
                                         <span>SOFTWARE ENGINEER</span>
-                                        <span>LW DESIGN GROUP _ AUG 2021 - APRIL 2022_ DUBAI, UAE</span>
-                                        <span>Interior and architectural design firm based in the Dubai, UAE</span>
-                                        <div>
-            
-                                        </div>
+                                        <ul>
+                                            <span>LW DESIGN GROUP _ AUG 2021 - APRIL 2022_ DUBAI, UAE</span>
+                                            <span>Interior and architectural design firm based in the Dubai, UAE</span>
+                                            <div>          
+                                            </div>
+                                        </ul>                                      
                                     </div>
             
                                 </div>
@@ -262,49 +267,54 @@ export default class extends AbstractView {
             
                                     <div id="BENOY" class="cv-item">
                                         <span>TECHNICAL ARCHITECT (PTIII)</span>
-                                        <span>BENOY _ NOV 2016 - NOV 2018 _ LONDON, UK</span>
-                                        <span>Interior and architectural design firm based in the Dubai, UAE</span>
-                                        <div>
-            
-                                        </div>
+                                        <ul>
+                                            <span>BENOY _ NOV 2016 - NOV 2018 _ LONDON, UK</span>
+                                            <span>Interior and architectural design firm based in the Dubai, UAE</span>
+                                            <div>            
+                                            </div>
+                                        </ul>                                        
                                     </div>
             
                                     <div id="CHAPMAN-TAYLOR" class="cv-item">
                                         <span>ARCHITECTURAL TECHNICIAN (PTII)</span>
-                                        <span>CHAPMAN TAYLOR ARCHITECTS _ NOV 2015 - NOV 2016 _ LONDON, UK</span>
-                                        <span>A global practice focused on high profile commercial initiatives.</span>
-                                        <div>
-            
-                                        </div>
+                                        <ul>
+                                            <span>CHAPMAN TAYLOR ARCHITECTS _ NOV 2015 - NOV 2016 _ LONDON, UK</span>
+                                            <span>A global practice focused on high profile commercial initiatives.</span>
+                                            <div>           
+                                            </div>
+                                        </ul>                                       
                                     </div>
             
                                     <div id="DAVID-MILLER" class="cv-item">
                                         <span>ARCHITECTURAL ASSISTANT (PTII)</span>
-                                        <span>DAVID MILLER ARCHITECTS (DMA) _ NOV 2013 - NOV 2015 _ LONDON, UK</span>
-                                        <span>A technical-led practice with a strong reputation for BIM focused
+                                        <ul>
+                                            <span>DAVID MILLER ARCHITECTS (DMA) _ NOV 2013 - NOV 2015 _ LONDON, UK</span>
+                                            <span>A technical-led practice with a strong reputation for BIM focused
                                             solutions.</span>
-                                        <div>
-            
-                                        </div>
+                                            <div>           
+                                            </div>
+                                        </ul>                                      
                                     </div>
             
                                     <div id="ZAHA-HADID" class="cv-item">
                                         <span>ARCHITECTURAL ASSISTANT</span>
-                                        <span>ZAHA HADID ARCHITECTS _ OCT 2010 - SEP 2011 _ LONDON, UK</span>
-                                        <span>A global design practice known for progressive architecture</span>
-                                        <div>
-            
-                                        </div>
+                                        <ul>
+                                            <span>ZAHA HADID ARCHITECTS _ OCT 2010 - SEP 2011 _ LONDON, UK</span>
+                                            <span>A global design practice known for progressive architecture</span>
+                                            <div>            
+                                            </div>
+                                        </ul>                                      
                                     </div>
             
                                     <div id="ATKINS-DESIGN-STUDIO" class="cv-item">
                                         <span>ARCHITECTURAL ASSISTANT</span>
-                                        <span>ATKINS DESIGN STUDIO _ AUG 2009 - SEP 2010 _ LONDON, UK</span>
-                                        <span>A well-respected multidisciplinary engineering firm known for
+                                        <ul>
+                                            <span>ATKINS DESIGN STUDIO _ AUG 2009 - SEP 2010 _ LONDON, UK</span>
+                                            <span>A well-respected multidisciplinary engineering firm known for
                                             Crossrail</span>
-                                        <div>
-            
-                                        </div>
+                                            <div>           
+                                            </div>
+                                        </ul>                                       
                                     </div>
             
                                 </div>
