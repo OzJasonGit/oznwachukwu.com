@@ -1,0 +1,85 @@
+h1 {
+    position: relative;
+    font-family: neusa-next-std-wide, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 8em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    right: 10px;
+    top: -25px;
+    color: #EFEFEF;
+}
+
+
+.side-text {
+    display: inline-block;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    padding-left: 50px;
+    color: antiquewhite;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.icons-holder{
+    height: 100%;
+    width: 100%;
+}
+
+#GH{
+    height: 100%;
+    width: 100%;
+}
+
+#LI{
+    height: 100%;
+    width: 100%;
+}
+
+#YT{
+    height: 100%;
+    width: 100%;
+}
+
+#DR{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+.fa-brands fa-github {
+    font-size: 1.5rem;
+}
+
+
+.fa-brands fa-dribbble {
+    font-size: 1.5rem;
+
+}
+
+
+.fa-brands fa-youtube {
+    font-size: 1.5rem;
+
+}
+
+
+.fa-brands fa-linkedin {
+    font-size: 1.5rem;
+}

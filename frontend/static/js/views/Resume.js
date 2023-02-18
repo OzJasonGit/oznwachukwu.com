@@ -22,15 +22,8 @@ export default class extends AbstractView {
 
             <section id="SHADOW-SECTION" class="center-holder">
                 <div class="grid-0-2-top">
-                    <div id="HEAD-IMAGE">
-                        <div id="HEAD-HERO-IMAGE"></div>
-                        <div id="HEAD-HERO-TEXT">
-            
-                            <div id="HERO-TEXT-1">
-                                <span id="H1-HERO">Resume</span>
-                            </div>
-            
-                        </div>
+                    <div id="RESUME-TITLE">
+                        <h1>RESUME</h1>
                     </div>
                 </div>
             </section>
@@ -73,19 +66,42 @@ export default class extends AbstractView {
             
             
                                 <div id="SOCIAL">
-                                    <div id="GITHUB" class="icon"><a href="https://github.com/OzJasonGit" target="_blank"><i
-                                                class="fa-brands fa-github" style="font-size: 1.25rem; color: #efefef;"></i></a>
+
+                                    <div id="GITHUB" class="icon">
+                                        <a class = "icons-holder"
+                                            href="https://github.com/OzJasonGit" target="_blank">
+                                            <i class="fa-brands fa-github" id="GH">
+                                            </i>
+                                        </a>
                                     </div>
-                                    <div id="DRIBBLE" class="icon"><a href="https://github.com/OzJasonGit" target="_blank"><i
-                                                class="fa-brands fa-dribbble" style="font-size: 1.25rem; color: #efefef;"></i></a>
+
+
+                                    <div id="DRIBBLE" class="icon">
+                                        <a class = "icons-holder"
+                                            href="https://github.com/OzJasonGit" target="_blank">
+                                            <i class="fa-brands fa-dribbble" id="DR">
+                                            </i>
+                                        </a>
                                     </div>
-                                    <div id="YOUTUBE" class="icon"><a href="https://github.com/OzJasonGit" target="_blank"><i
-                                                class="fa-brands fa-youtube" style="font-size: 1.25rem; color: #efefef;"></i></a>
+
+
+                                    <div id="YOUTUBE" class="icon">
+                                        <a class = "icons-holder" 
+                                            href="https://github.com/OzJasonGit" target="_blank">
+                                            <i class="fa-brands fa-youtube" id="YT">
+                                            </i>
+                                        </a>                     
                                     </div>
-                                    <div id="LINKEDIN" class="icon"><a
-                                            href="https://www.linkedin.com/in/oz-nwachukwu-arb-riba-aa897121/" target="_blank"><i
-                                                class="fa-brands fa-linkedin" style="font-size: 1.25rem; color: #efefef;"></i></a>
+
+
+                                    <div id="LINKEDIN" class="icon">
+                                        <a class = "icons-holder"
+                                            href="https://www.linkedin.com/in/oz-nwachukwu-arb-riba-aa897121/" target="_blank">
+                                            <i class="fa-brands fa-linkedin" id="LI">
+                                            </i>
+                                        </a>
                                     </div>
+                                    
                                 </div>
             
                             </div>

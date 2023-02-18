@@ -3143,13 +3143,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 
 /*FONTS--------------------------------------------------------------------------------------*/
 
-h1 {
-    font-family: neusa-next-std-wide, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 10em;
-    padding-bottom: 0px;
-}
+
 
 
 #FRONT-TEXT {
@@ -3171,13 +3165,7 @@ h1 {
 }
 
 
-.side-text {
-    display: inline-block;
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    padding-left: 50px;
-    color: antiquewhite;
-}
+
 
 
 #H1-HERO {

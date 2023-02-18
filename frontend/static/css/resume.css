@@ -250,11 +250,10 @@ body {
     width: 100%;
     max-height: 100%;
     display: grid;
-    grid-template-rows: 80px auto 30px;
+    grid-template-rows: auto 30px;
     grid-row-gap: 40px;
-    grid-template-areas: "HOME-ICON"
-        "HOME-TEXT"
-        "SOCIAL";
+    grid-template-areas: "HOME-TEXT"
+                         "SOCIAL";
 }
 
 
@@ -323,16 +322,10 @@ body {
 
 
 
-#HEAD-IMAGE {
+#RESUME-TITLE {
     grid-area: MAIN-AREA;
-    display: grid;
     width: 100%;
-    height: 740px;
-    grid-column-gap: 40px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 100% 100%;
-    grid-template-areas: "IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE"
-        "TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT";
+    height: auto;   
 }
 
 
@@ -403,7 +396,7 @@ body {
     grid-column-gap: 40px;
     grid-row-gap: 100px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto auto 20px;
+    grid-template-rows: auto auto auto auto;
     grid-template-areas: "TITLE TITLE TITLE TITLE TITLE ANIM ANIM ANIM"
         ". . . IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN"
         "WORK-EX WORK-EX WORK-EX WORK-EX WORK-EX SKILLS SKILLS SKILLS"
@@ -883,11 +876,6 @@ body {
     height: 100%;
 }
 
-
-
-
-
-
 /* ---------------------------------------------------------------------------------------*/
 
 
@@ -1325,11 +1313,10 @@ body {
             width: 100%;
             max-height: 100%;
             display: grid;
-            grid-template-rows: 80px auto 30px;
+            grid-template-rows: auto 30px;
             grid-row-gap: 40px;
-            grid-template-areas: "HOME-ICON"
-                "HOME-TEXT"
-                "SOCIAL";
+            grid-template-areas: "HOME-TEXT"
+                                 "SOCIAL";
         }
     
     
@@ -1395,22 +1382,15 @@ body {
         #FOLIO-TITLE {
             grid-area: HEAD;
         }
-    
-    
-    
-        #HEAD-IMAGE {
+
+
+        #RESUME-TITLE {
             grid-area: MAIN-AREA;
-            display: grid;
             width: 100%;
-            height: 740px;
-            grid-column-gap: 40px;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-            grid-template-rows: 100% 100%;
-            grid-template-areas: "IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE"
-                "TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT";
+            height: auto;   
         }
     
-    
+      
         #HEAD-HERO-IMAGE {
             grid-area: IMAGE;
             display: grid;
@@ -1478,7 +1458,7 @@ body {
             grid-column-gap: 40px;
             grid-row-gap: 100px;
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-            grid-template-rows: auto auto auto auto 20px;
+            grid-template-rows: auto auto auto auto;
             grid-template-areas: "TITLE TITLE TITLE TITLE TITLE ANIM ANIM ANIM"
                 ". . . IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN IMAGE-MAIN"
                 "WORK-EX WORK-EX WORK-EX WORK-EX WORK-EX SKILLS SKILLS SKILLS"
@@ -2375,11 +2355,10 @@ body {
             width: 100%;
             max-height: 100%;
             display: grid;
-            grid-template-rows: 80px auto 30px;
+            grid-template-rows: auto 30px;
             grid-row-gap: 40px;
-            grid-template-areas: "HOME-ICON"
-                "HOME-TEXT"
-                "SOCIAL";
+            grid-template-areas: "HOME-TEXT"
+                                 "SOCIAL";
         }
     
     
@@ -2448,18 +2427,12 @@ body {
     
     
     
-        #HEAD-IMAGE {
+        #RESUME-TITLE {
             grid-area: MAIN-AREA;
-            display: grid;
             width: 100%;
-            height: 740px;
-            grid-column-gap: 40px;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-            grid-template-rows: 100% 100%;
-            grid-template-areas: "IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE"
-                "TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT";
+            height: auto;
         }
-    
+
     
         #HEAD-HERO-IMAGE {
             grid-area: IMAGE;
@@ -2528,7 +2501,7 @@ body {
             grid-column-gap: 40px;
             grid-row-gap: 60px;
             grid-template-columns: 1fr;
-            grid-template-rows: auto auto auto auto auto auto 20px;
+            grid-template-rows: auto auto auto auto auto auto;
             grid-template-areas: "TITLE"
                                  "ANIM"
                                  "IMAGE-MAIN"
@@ -3521,16 +3494,10 @@ body {
     
     
     
-        #HEAD-IMAGE {
+        #RESUME-TITLE {
             grid-area: MAIN-AREA;
-            display: grid;
             width: 100%;
-            height: 740px;
-            grid-column-gap: 40px;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-            grid-template-rows: 100% 100%;
-            grid-template-areas: "IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE"
-                "TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT";
+            height: auto;
         }
     
     
@@ -3601,7 +3568,7 @@ body {
             grid-column-gap: 40px;
             grid-row-gap: 60px;
             grid-template-columns: 1fr;
-            grid-template-rows: auto auto auto auto auto auto 20px;
+            grid-template-rows: auto auto auto auto auto auto;
             grid-template-areas: "TITLE"
                 "ANIM"
                 "IMAGE-MAIN"
@@ -4248,13 +4215,7 @@ only screen and (min-device-pixel-ratio: 1.5) {}
 
 /*FONTS--------------------------------------------------------------------------------------*/
 
-h1 {
-    font-family: neusa-next-std-wide, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 10em;
-    padding-bottom: 0px;
-}
+
 
 
 #FRONT-TEXT {

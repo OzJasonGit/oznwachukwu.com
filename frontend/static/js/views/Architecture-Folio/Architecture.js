@@ -9,24 +9,29 @@ export default class extends AbstractView {
     async getHtml() {
         return `
              <!--------------------------------------------------------------------------------------------------------------------->
-    
-    
-        
-
-       
-        
-        
-        <div class="wrapper">
-            <div class="scroller">
-                <!--------------------------------------------------------------------------------------------------------->
-
 
 
     <div class="wrapper">
         <div class="scroller">
             <!--------------------------------------------------------------------------------->
 
-            
+            <!---------SPA-NAV------------------->
+                <section class="center-holder">
+                    <div class="portfolio-nav">
+                        <div class="portfolio-nav-holder">
+                            <div class="portfolio-nav-grid-1">
+                                <a href="/" class="nav__link" data-link>Home</a>
+                                <a href="/home" class="nav__link" data-link>Home</a>
+                                <a href="/blog" class="nav__link" data-link>Blog</a>
+                                <a href="/architecture" class="nav__link" data-link>Architecture</a>
+                                <a href="/tech" class="nav__link" data-link>Tech</a>
+                                <a href="/resume" class="nav__link" data-link>Resume</a>      
+                                <a href="/dropdown" class="nav__link" data-link>Dropdown</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            <!----------SPA-NAV------------------->
 
             <section class="center-holder">
                 <div class="grid-0">
@@ -144,13 +149,7 @@ export default class extends AbstractView {
 
                         <div id="IMAGE-4" class="container">
                         </div>
-
-
-
-                        
-
-                                            
-                        
+                      
             
                     </div>
                 </div>
