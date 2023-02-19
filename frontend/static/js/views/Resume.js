@@ -10,6 +10,9 @@ export default class extends AbstractView {
         return `
 
     <link rel="stylesheet" href="../static/css/resume.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous">
+    </script>
 
     <div class="hidebar"></div>
    
@@ -70,7 +73,7 @@ export default class extends AbstractView {
                                     <div id="GITHUB" class="icon">
                                         <a class = "icons-holder"
                                             href="https://github.com/OzJasonGit" target="_blank">
-                                            <i class="fa-brands fa-github" id="GH">
+                                            <i class="fa-brands fa-github" id="GH" style="font-size: 1.5rem;">
                                             </i>
                                         </a>
                                     </div>
@@ -79,7 +82,7 @@ export default class extends AbstractView {
                                     <div id="DRIBBLE" class="icon">
                                         <a class = "icons-holder"
                                             href="https://github.com/OzJasonGit" target="_blank">
-                                            <i class="fa-brands fa-dribbble" id="DR">
+                                            <i class="fa-brands fa-dribbble" id="DR"  style="font-size: 1.5rem;">
                                             </i>
                                         </a>
                                     </div>
@@ -88,7 +91,7 @@ export default class extends AbstractView {
                                     <div id="YOUTUBE" class="icon">
                                         <a class = "icons-holder" 
                                             href="https://github.com/OzJasonGit" target="_blank">
-                                            <i class="fa-brands fa-youtube" id="YT">
+                                            <i class="fa-brands fa-youtube" id="YT" style="font-size: 1.5rem;">
                                             </i>
                                         </a>                     
                                     </div>
@@ -97,7 +100,7 @@ export default class extends AbstractView {
                                     <div id="LINKEDIN" class="icon">
                                         <a class = "icons-holder"
                                             href="https://www.linkedin.com/in/oz-nwachukwu-arb-riba-aa897121/" target="_blank">
-                                            <i class="fa-brands fa-linkedin" id="LI">
+                                            <i class="fa-brands fa-linkedin" id="LI"  style="font-size: 1.5rem;">
                                             </i>
                                         </a>
                                     </div>
@@ -117,10 +120,10 @@ export default class extends AbstractView {
             
                         <div id="IMAGE-MAIN" class="container">
             
-                            <span id="EDUCATION-TITLE" class="p-body-text">
+                            <h3 id="EDUCATION-TITLE" class="p-body-text">
                                 EDUCATION </br>
                                 </br>
-                            </span>
+                            </h3>
             
             
                             <span id="EDUCATION-TEXT" class="p-body-text">
@@ -162,10 +165,10 @@ export default class extends AbstractView {
                             </div>
             
             
-                            <span id="WORK-EXPERIENCE-TITLE" class="p-body-text">
+                            <h3 id="WORK-EXPERIENCE-TITLE" class="p-body-text">
                                 WORK EXPERIENCE </br>
                                 </br>
-                            </span>
+                            </h3>
             
             
                             <span id="DATE-TITLE-1" class="p-body-text">
@@ -178,10 +181,10 @@ export default class extends AbstractView {
                                 <div id="TEXT-GRID-1" class="container">
             
                                     <div id="TECH-1" class="cv-item">
-                                        <span>SOFTWARE ENGINEER</span>
-                                        <ul>
-                                            <span>LW DESIGN GROUP _ AUG 2021 - APRIL 2022_ DUBAI, UAE</span>
-                                            <span>Interior and architectural design firm based in the Dubai, UAE</span>
+                                        <span class="link">SOFTWARE ENGINEER</span>
+                                        <ul class="submenu">
+                                            <li>LW DESIGN GROUP _ AUG 2021 - APRIL 2022_ DUBAI, UAE</li>
+                                            <li>Interior and architectural design firm based in the Dubai, UAE</li>
                                             <div>
                                             </div>
                                         </ul>                                       
@@ -190,8 +193,8 @@ export default class extends AbstractView {
                                     <div id="LW-DESIGN-GROUP" class="cv-item">
                                         <span>TECHNICAL ARCHITECT / BIM (CONTRACT)</span>
                                         <ul>
-                                            <span>LW DESIGN GROUP _ AUG 2021 - APRIL 2022_ DUBAI, UAE</span>
-                                            <span>Interior and architectural design firm based in the Dubai, UAE</span>
+                                            <li>LW DESIGN GROUP _ AUG 2021 - APRIL 2022_ DUBAI, UAE</li>
+                                            <li>Interior and architectural design firm based in the Dubai, UAE</li>
                                             <div>
                                             </div>
                                         </ul>                                        
@@ -200,8 +203,8 @@ export default class extends AbstractView {
                                     <div id="TECH-2" class="cv-item">
                                         <span>SOFTWARE ENGINEER</span>
                                         <ul>
-                                            <span>LW DESIGN GROUP _ AUG 2021 - APRIL 2022_ DUBAI, UAE</span>
-                                            <span>Interior and architectural design firm based in the Dubai, UAE</span>
+                                            <li>LW DESIGN GROUP _ AUG 2021 - APRIL 2022_ DUBAI, UAE</li>
+                                            <li>Interior and architectural design firm based in the Dubai, UAE</li>
                                             <div>            
                                             </div>
                                         </ul>                                      
@@ -210,10 +213,8 @@ export default class extends AbstractView {
                                     <div id="PERKINS-WILL" class="cv-item">
                                         <span>TECHNICAL ARCHITECT / BIM MANAGER</span>
                                         <ul>
-                                            <span>PERKINS AND WILL _ NOV 2018 - JULY 2021 _ LONDON, UK</span>
-                                            <span>A global, innovative, high-tech design firm focused on healthcare,
-                                            commercial strategy, commercial interiors and
-                                            sustainability.</span>
+                                            <li>PERKINS AND WILL _ NOV 2018 - JULY 2021 _ LONDON, UK</li>
+                                            <li>A global, innovative, high-tech design firm focused on healthcare, commercial strategy, commercial interiors and sustainability.</li>
                                             <div>           
                                             </div>
                                         </ul>                                     
@@ -222,8 +223,8 @@ export default class extends AbstractView {
                                     <div id="TECH-3" class="cv-item">
                                         <span>SOFTWARE ENGINEER</span>
                                         <ul>
-                                            <span>LW DESIGN GROUP _ AUG 2021 - APRIL 2022_ DUBAI, UAE</span>
-                                            <span>Interior and architectural design firm based in the Dubai, UAE</span>
+                                            <li>LW DESIGN GROUP _ AUG 2021 - APRIL 2022_ DUBAI, UAE</li>
+                                            <li>Interior and architectural design firm based in the Dubai, UAE</li>
                                             <div>          
                                             </div>
                                         </ul>                                      
@@ -284,8 +285,8 @@ export default class extends AbstractView {
                                     <div id="BENOY" class="cv-item">
                                         <span>TECHNICAL ARCHITECT (PTIII)</span>
                                         <ul>
-                                            <span>BENOY _ NOV 2016 - NOV 2018 _ LONDON, UK</span>
-                                            <span>Interior and architectural design firm based in the Dubai, UAE</span>
+                                            <li>BENOY _ NOV 2016 - NOV 2018 _ LONDON, UK</li>
+                                            <li>Interior and architectural design firm based in the Dubai, UAE</li>
                                             <div>            
                                             </div>
                                         </ul>                                        
@@ -294,8 +295,8 @@ export default class extends AbstractView {
                                     <div id="CHAPMAN-TAYLOR" class="cv-item">
                                         <span>ARCHITECTURAL TECHNICIAN (PTII)</span>
                                         <ul>
-                                            <span>CHAPMAN TAYLOR ARCHITECTS _ NOV 2015 - NOV 2016 _ LONDON, UK</span>
-                                            <span>A global practice focused on high profile commercial initiatives.</span>
+                                            <li>CHAPMAN TAYLOR ARCHITECTS _ NOV 2015 - NOV 2016 _ LONDON, UK</li>
+                                            <li>A global practice focused on high profile commercial initiatives.</li>
                                             <div>           
                                             </div>
                                         </ul>                                       
@@ -304,9 +305,8 @@ export default class extends AbstractView {
                                     <div id="DAVID-MILLER" class="cv-item">
                                         <span>ARCHITECTURAL ASSISTANT (PTII)</span>
                                         <ul>
-                                            <span>DAVID MILLER ARCHITECTS (DMA) _ NOV 2013 - NOV 2015 _ LONDON, UK</span>
-                                            <span>A technical-led practice with a strong reputation for BIM focused
-                                            solutions.</span>
+                                            <li>DAVID MILLER ARCHITECTS (DMA) _ NOV 2013 - NOV 2015 _ LONDON, UK</li>
+                                            <li>A technical-led practice with a strong reputation for BIM focused solutions.</li>
                                             <div>           
                                             </div>
                                         </ul>                                      
@@ -315,8 +315,8 @@ export default class extends AbstractView {
                                     <div id="ZAHA-HADID" class="cv-item">
                                         <span>ARCHITECTURAL ASSISTANT</span>
                                         <ul>
-                                            <span>ZAHA HADID ARCHITECTS _ OCT 2010 - SEP 2011 _ LONDON, UK</span>
-                                            <span>A global design practice known for progressive architecture</span>
+                                            <li>ZAHA HADID ARCHITECTS _ OCT 2010 - SEP 2011 _ LONDON, UK</li>
+                                            <li>A global design practice known for progressive architecture</li>
                                             <div>            
                                             </div>
                                         </ul>                                      
@@ -325,9 +325,8 @@ export default class extends AbstractView {
                                     <div id="ATKINS-DESIGN-STUDIO" class="cv-item">
                                         <span>ARCHITECTURAL ASSISTANT</span>
                                         <ul>
-                                            <span>ATKINS DESIGN STUDIO _ AUG 2009 - SEP 2010 _ LONDON, UK</span>
-                                            <span>A well-respected multidisciplinary engineering firm known for
-                                            Crossrail</span>
+                                            <li>ATKINS DESIGN STUDIO _ AUG 2009 - SEP 2010 _ LONDON, UK</li>
+                                            <li>A well-respected multidisciplinary engineering firm known for Crossrail</li>
                                             <div>           
                                             </div>
                                         </ul>                                       
@@ -394,6 +393,8 @@ export default class extends AbstractView {
                     </div>
         
             </section>
+
+            
 
             
         `;

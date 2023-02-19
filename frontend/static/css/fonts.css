@@ -12,6 +12,19 @@ h1 {
 }
 
 
+h3 {
+    position: relative;
+    font-family: neusa-next-std-wide, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    top: -5px;
+    color: #EFEFEF;
+}
+
+
 .side-text {
     display: inline-block;
     writing-mode: vertical-rl;
