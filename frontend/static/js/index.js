@@ -4,7 +4,9 @@ import Resume from "./views/Resume.js";
 import Tech from "./views/Tech-Folio/Tech.js";
 import Blog from "./views/Blogs/Blog.js";
 import Dropdown from "./views/Dropdown.js";
-import "./javascript/accordion.js";
+
+import accordionEx from "./views/Resume.js";
+
 
 
 
@@ -30,7 +32,7 @@ const router = async () => {
         { path: "/", view: Home}, 
         { path: "/home", view: Home},    
         { path: "/architecture", view: Architecture },
-        { path: "/resume", view: Resume },
+        { path: "/resume", view: accordionEx, Resume },
         { path: "/tech", view: Tech },  
         { path: "/blog", view: Blog },   
         { path: "/dropdown", view: Dropdown },         

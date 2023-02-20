@@ -1,5 +1,7 @@
 
 import  AbstractView from "./AbstractView.js";
+
+
 export default class extends AbstractView {
     constructor(params) {
         super(params);
@@ -10,6 +12,7 @@ export default class extends AbstractView {
         return `
 
     <link rel="stylesheet" href="../static/css/resume.css">
+    <link rel="stylesheet" href="../static/css/accordion.css">
     
 
     <div class="hidebar"></div>
@@ -71,7 +74,7 @@ export default class extends AbstractView {
                                     <div id="GITHUB" class="icon">
                                         <a class = "icons-holder"
                                             href="https://github.com/OzJasonGit" target="_blank">
-                                            <i class="fa-brands fa-github" id="GH" style="font-size: 1.5rem;">
+                                            <i class="fa-brands fa-github" id="GH" style="font-size: 1.5rem;", "margin-right: 0px" >
                                             </i>
                                         </a>
                                     </div>
@@ -180,12 +183,23 @@ export default class extends AbstractView {
             
                                     <div id="TECH-1" class="cv-item">
                                         <span class="link">SOFTWARE ENGINEER</span>
-                                        <ul class="submenu">
-                                            <li>LW DESIGN GROUP _ AUG 2021 - APRIL 2022_ DUBAI, UAE</li>
-                                            <li>Interior and architectural design firm based in the Dubai, UAE</li>
-                                            <div>
+                                        <li class="default open">
+                                            <div class="link">
+                                                </i>
+                                                <div>
+                                                    <span>TECHNICAL ARCHITECT / BIM (CONTRACT)</span>
+                                                    <br>
+                                                    <span>LW DESIGN GROUP _ AUG 2021 - APRIL 2022_ DUBAI, UAE</span>
+                                                    <br>
+                                                    <span>Interior and architectural design firm based in the Dubai, UAE</span>
+                                                </div>
+                                                <i class="fa fa-chevron-down"></i>
                                             </div>
-                                        </ul>                                       
+                                            <ul class="submenu">
+                                                <li><a>Photoshop</a></li>
+                                                <li><a>Photoshop</a></li>
+                                            </ul>
+                                        </li>                                      
                                     </div>
             
                                     <div id="LW-DESIGN-GROUP" class="cv-item">
@@ -391,6 +405,8 @@ export default class extends AbstractView {
                     </div>
         
             </section>
+
+           
 
             
 
