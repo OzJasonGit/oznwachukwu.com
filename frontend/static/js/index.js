@@ -4,6 +4,8 @@ import Resume from "./views/Resume.js";
 import Tech from "./views/Tech-Folio/Tech.js";
 import Blog from "./views/Blogs/Blog.js";
 import Dropdown from "./views/Dropdown.js";
+import "./javascript/accordion.js";
+
 
 
 

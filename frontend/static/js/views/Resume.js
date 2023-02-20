@@ -1,5 +1,5 @@
-import AbstractView from "./AbstractView.js";
 
+import  AbstractView from "./AbstractView.js";
 export default class extends AbstractView {
     constructor(params) {
         super(params);
@@ -10,9 +10,7 @@ export default class extends AbstractView {
         return `
 
     <link rel="stylesheet" href="../static/css/resume.css">
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
-        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous">
-    </script>
+    
 
     <div class="hidebar"></div>
    
