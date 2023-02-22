@@ -13,6 +13,8 @@ export default class extends AbstractView {
 
     <link rel="stylesheet" href="../static/css/resume.css">
     <link rel="stylesheet" href="../static/css/accordion.css">
+    import  accordionEx from "./javascript/accordion.js";
+
     
 
     <div class="hidebar"></div>

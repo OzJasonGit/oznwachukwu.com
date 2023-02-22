@@ -76,23 +76,11 @@ h3 {
 
 
 
-.fa-brands fa-github {
-    font-size: 1.5rem;
+.fa-brands {
+    font-size: 3.25rem;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0px;
+    padding: 0px;
 }
 
-
-.fa-brands fa-dribbble {
-    font-size: 1.5rem;
-
-}
-
-
-.fa-brands fa-youtube {
-    font-size: 1.5rem;
-
-}
-
-
-.fa-brands fa-linkedin {
-    font-size: 1.5rem;
-}

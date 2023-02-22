@@ -208,7 +208,7 @@ export default class extends AbstractView {
                         </div>
 
                         <div id="TITLE-2" class="container">
-                            <div id="TOP-IMAGE" class="container"></div>
+                            
                             <div id="HERO" class="container">
                                 <video autoplay muted loop playsinline id="HERO-VID">
                                     <source src="assets\videos\pexels-c-technical-6153734.mp4" type="video/mp4">

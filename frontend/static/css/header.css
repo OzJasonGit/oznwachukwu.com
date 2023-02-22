@@ -259,7 +259,7 @@ body {
 
 
 /*BURGER------------------------------------------------------------------------------*/
-a {
+#BURGER {
     display: inline-block;
     width: 18px;
     height: 18px;
@@ -267,7 +267,7 @@ a {
     text-decoration: none;
 }
 
-a i {
+#BURGER #BURGER-2 {
     position: relative;
     display: inline-block;
     width: 18px;
@@ -280,8 +280,8 @@ a i {
     transition: all .2s ease-out;
 }
 
-a i::before,
-a i::after {
+#BURGER #BURGER-2::before,
+#BURGER #BURGER-2::after {
     content: '';
     width: 18px;
     height: 3px;

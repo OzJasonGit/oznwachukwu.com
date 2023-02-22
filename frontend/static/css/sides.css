@@ -230,26 +230,47 @@ body {
 
 
 #PFBD-LINK {
-    grid-area: ICON;       
+    grid-area: ICON; 
+    display: grid;
     width: 100%;
     height: 100%;
-    background-color: antiquewhite;
+    grid-template-columns: 5px 1fr 5px;
+    grid-template-rows: 5px 1fr 5px;
+    grid-template-areas: ". . ."
+                         ". CENTER ."
+                         ". . .";
 }
 
 
 #DESIGN-LAB-LINK {
     grid-area: ICON;
+    display: grid;
     width: 100%;
     height: 100%;
-    background-color: antiquewhite;
+    grid-template-columns: 5px 1fr 5px;
+    grid-template-rows: 5px 1fr 5px;
+    grid-template-areas: ". . ."
+                         ". CENTER ."
+                         ". . .";
+}
+
+#CENTER {
+    grid-area: CENTER;
+    width: 100%;
+    height: 100%;
 }
 
 
 #BIM-COPILOT-LINK {
     grid-area: ICON;
+    display: grid;
     width: 100%;
     height: 100%;
-    background-color: antiquewhite;
+    grid-template-columns: 5px 1fr 5px;
+    grid-template-rows: 5px 1fr 5px;
+    grid-template-areas: ". . ."
+                         ". CENTER ."
+                         ". . .";
 }
 
 
