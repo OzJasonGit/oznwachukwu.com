@@ -745,7 +745,7 @@ body {
 
     grid-row-gap: 40px;
     grid-template-columns: 1fr;
-    grid-template-rows: 400px 1fr 440px 400px;
+    grid-template-rows: 400px 1fr 480px 400px;
     grid-template-areas: "HERO"
         "HERO"
         "MID-IMAGE"
