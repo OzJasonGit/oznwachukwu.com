@@ -212,7 +212,12 @@ export default class extends AbstractView {
                             <div id="HERO" class="container">
                                 <div class="container-absolute">
                                     <div id="SCROLL-DIV"> 
-                                        <div> </div>
+                                        <div id="SCROLL-CONTENT"> 
+                                            <div class="container" id="AREA-1"> </div>
+                                            <div class="container" id="AREA-2"> </div>
+                                            <div class="container" id="AREA-3"> </div>
+                                            <div class="container" id="AREA-4"> </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
