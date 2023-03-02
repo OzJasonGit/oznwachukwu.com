@@ -210,6 +210,17 @@ export default class extends AbstractView {
                     </div>
                 </div>
             </section>
+
+            <section id="SHADOW-SECTION" class="center-holder">
+        
+                    <div class="footer-holder">
+                        <footer id="FOOTER">
+                            <div id="IPHONE" class="container">
+                            </div>
+                        </footer>
+                    </div>
+        
+            </section>
         `;
     }
 }
