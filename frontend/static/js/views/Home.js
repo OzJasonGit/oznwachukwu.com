@@ -96,11 +96,7 @@ export default class extends AbstractView {
                         </div>
 
                         <div id="IMAGE-2" class="container">
-                            <div id="IMAGE-2-INTERNAL">
-                                <div id="SKILLS-GRID">
-                                    <span class="">SKILLS</span>
-                                </div>
-                            </div>
+                            <h3>SKILLS</h3>
                         </div>
 
                         <div id="IMAGE-3" class="container">
