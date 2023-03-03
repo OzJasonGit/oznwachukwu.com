@@ -71,17 +71,16 @@ export default class extends AbstractView {
             <section id="SHADOW-SECTION" class="center-holder">
                 <div class="grid-0-2-top">
                     <div id="HEAD-IMAGE">
-                        <div id="HEAD-HERO-IMAGE"></div>
-                        <div id="HEAD-HERO-TEXT">
-
-                            <div id="HERO-TEXT-1">
-                                <span id="H1-HERO">Live Bold</span>
-                            </div>
-                            <div id="HERO-TEXT-2">
-                                <span>Delve deep and see how concepts can be developed.</span>
-
-                            </div>
-
+                        <div id="HEAD-HERO">
+                            <div id="MAIN-HERO-IMAGE" class="container">
+                            </div> 
+                            <div id="MAIN-HERO-TEXT">
+                                <div id="TEXT-ACTUAL">
+                                    <h1>LIVE BOLD</h1>
+                                    <h3>WORK HARD</h3>
+                                    <h3>PLAY EVEN HARDER</h3>
+                                </div>
+                            </div> 
                         </div>
                     </div>
                 </div>
@@ -150,20 +149,20 @@ export default class extends AbstractView {
                                 <div id="SOCIAL">
                                     <div id="GITHUB" class="icon"><a href="https://github.com/OzJasonGit"
                                             target="_blank"><i class="fa-brands fa-github"
-                                                style="font-size: 1.25rem; color: #efefef;"></i></a>
+                                                style="font-size: 1.5rem; color: #efefef;"></i></a>
                                     </div>
                                     <div id="DRIBBLE" class="icon"><a href="https://github.com/OzJasonGit"
                                             target="_blank"><i class="fa-brands fa-dribbble"
-                                                style="font-size: 1.25rem; color: #efefef;"></i></a>
+                                                style="font-size: 1.5rem; color: #efefef;"></i></a>
                                     </div>
                                     <div id="YOUTUBE" class="icon"><a href="https://github.com/OzJasonGit"
                                             target="_blank"><i class="fa-brands fa-youtube"
-                                                style="font-size: 1.25rem; color: #efefef;"></i></a>
+                                                style="font-size: 1.5rem; color: #efefef;"></i></a>
                                     </div>
                                     <div id="LINKEDIN" class="icon"><a
                                             href="https://www.linkedin.com/in/oz-nwachukwu-arb-riba-aa897121/"
                                             target="_blank"><i class="fa-brands fa-linkedin"
-                                                style="font-size: 1.25rem; color: #efefef;"></i></a>
+                                                style="font-size: 1.5rem; color: #efefef;"></i></a>
                                     </div>
                                 </div>
 
@@ -277,6 +276,27 @@ export default class extends AbstractView {
                     <div class="footer-holder">
                         <footer id="FOOTER">
                             <div id="IPHONE" class="container">
+                            </div>
+                            <div id="OTHER" class="container">
+                                <div id="SOCIAL">
+                                    <div id="GITHUB" class="icon"><a href="https://github.com/OzJasonGit"
+                                            target="_blank"><i class="fa-brands fa-github"
+                                                style="font-size: 1.5rem; color: #efefef;"></i></a>
+                                    </div>
+                                    <div id="DRIBBLE" class="icon"><a href="https://github.com/OzJasonGit"
+                                            target="_blank"><i class="fa-brands fa-dribbble"
+                                                style="font-size: 1.5rem; color: #efefef;"></i></a>
+                                    </div>
+                                    <div id="YOUTUBE" class="icon"><a href="https://github.com/OzJasonGit"
+                                            target="_blank"><i class="fa-brands fa-youtube"
+                                                style="font-size: 1.5rem; color: #efefef;"></i></a>
+                                    </div>
+                                    <div id="LINKEDIN" class="icon"><a
+                                            href="https://www.linkedin.com/in/oz-nwachukwu-arb-riba-aa897121/"
+                                            target="_blank"><i class="fa-brands fa-linkedin"
+                                                style="font-size: 1.5rem; color: #efefef;"></i></a>
+                                    </div>
+                                </div>
                             </div>
                         </footer>
                     </div>

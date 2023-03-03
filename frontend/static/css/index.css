@@ -473,53 +473,55 @@ body {
     height: 740px;
     grid-column-gap: 40px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 100% 100%;
-    grid-template-areas: "IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE"
-        "TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT";
+    grid-template-rows: 100%;
+    grid-template-areas: "CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT";
 }
 
 
-#HEAD-HERO-IMAGE {
-    grid-area: IMAGE;
+#HEAD-HERO {
+    grid-area: CONTENT;
     display: grid;
     width: 100%;
     height: 100%;
-    background-color: azure;
-}
-
-
-#HEAD-HERO-TEXT {
-    position: relative;
-    grid-area: TEXT;
-    display: grid;
-    width: 100%;
-    height: 100%;
-    top: -100%;
     grid-column-gap: 40px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: ". . . . . . . ."
-        ". TEXT TEXT TEXT TEXT TEXT TEXT TEXT"
-        ". TEXT TEXT TEXT TEXT TEXT TEXT TEXT"
-        ". . . . TEXT-2 TEXT-2 TEXT-2 ."
-        ". . . . TEXT-2 TEXT-2 TEXT-2 .";
+    grid-template-areas: "TEXT TEXT TEXT IMAGE IMAGE IMAGE IMAGE IMAGE"
+                         "TEXT TEXT TEXT IMAGE IMAGE IMAGE IMAGE IMAGE"
+                         "TEXT TEXT TEXT IMAGE IMAGE IMAGE IMAGE IMAGE"
+                         "TEXT TEXT TEXT IMAGE IMAGE IMAGE IMAGE IMAGE"
+                         "TEXT TEXT TEXT IMAGE IMAGE IMAGE IMAGE IMAGE";
+    
 }
 
 
-#HERO-TEXT-1 {
+
+
+
+#MAIN-HERO-IMAGE {
+    grid-area: IMAGE;
     display: flex;
-    align-items: center;
-    justify-content: left;
+    background-color: azure;
+    
+}
+
+#MAIN-HERO-TEXT {
+    grid-area: TEXT;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-row-gap: 40px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 1fr 1fr;
+    grid-template-areas: "."
+                         "TEXT"
+                         "TEXT";                         
+}
+
+
+#TEXT-ACTUAL {
     grid-area: TEXT;
 }
-
-#HERO-TEXT-2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    grid-area: TEXT-2;
-}
-
 /* ---------------------------------------------------------------------------------------*/
 /* ---------------------------------------------------------------------------------------*/
 /* ---------------------------------------------------------------------------------------*/
@@ -706,7 +708,7 @@ body {
     width: 100%;
     height: 100%;
     grid-column-gap: 20px;
-    grid-template-columns: 30px 30px 30px 30PX;
+    grid-template-columns: 30px 30px 30px 30px;
     grid-template-areas: "GITHUB DRIBBLE YOUTUBE LINKEDIN";
 
 }

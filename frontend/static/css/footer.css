@@ -126,6 +126,19 @@ body {
     background-color: rgb(255, 191, 106);
 }
 
+
+#OTHER {
+    grid-area: OTHER;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-row-gap: 40px;
+    grid-template-rows: auto 40px 0px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: ". . . ."
+            ". SOCIAL SOCIAL SOCIAL";
+}
+
 /* ---------------------------------------------------------------------------------------*/
 /* ---------------------------------------------------------------------------------------*/
 
@@ -247,6 +260,20 @@ body {
         height: 500px;
         background-color: rgb(255, 191, 106);
     }
+
+
+    #OTHER {
+        grid-area: OTHER;
+        display: grid;
+        width: 100%;
+        height: 100%;
+        grid-row-gap: 40px;
+        grid-template-rows: auto 40px 0px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: ". . . ."
+                ". SOCIAL SOCIAL SOCIAL";
+    }
+    
 }
 
 /* ---------------------------------------------------------------------------------------*/
@@ -375,6 +402,20 @@ body {
         height: 500px;
         background-color: rgb(255, 191, 106);
     }
+
+
+    #OTHER {
+        grid-area: OTHER;
+        display: grid;
+        width: 100%;
+        height: 100%;
+        grid-row-gap: 40px;
+        grid-template-rows: auto 40px 0px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: ". . . ."
+         ". SOCIAL SOCIAL SOCIAL";
+    }
+
 }
 
 /* ---------------------------------------------------------------------------------------*/
@@ -503,6 +544,18 @@ body {
         width: 100%;
         height: 500px;
         background-color: rgb(255, 191, 106);
+    }
+
+    #OTHER {
+        grid-area: OTHER;
+        display: grid;
+        width: 100%;
+        height: 100%;
+        grid-row-gap: 40px;
+        grid-template-rows: auto 40px 0px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: ". . . ."
+                ". SOCIAL SOCIAL SOCIAL";
     }
 }
 

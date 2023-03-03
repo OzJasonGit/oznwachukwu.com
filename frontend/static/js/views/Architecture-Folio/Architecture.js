@@ -166,6 +166,8 @@ export default class extends AbstractView {
                         <footer id="FOOTER">
                             <div id="IPHONE" class="container">
                             </div>
+                            <div id="OTHER" class="container">
+                            </div>
                         </footer>
                     </div>
         
