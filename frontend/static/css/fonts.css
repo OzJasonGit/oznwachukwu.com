@@ -82,7 +82,7 @@ h5 {
     font-weight: 400;
     font-style: normal;
     margin: 0px;
-    font-size: clamp(.75em, 2.75vw, 1.075em);
+    font-size: clamp(1em, 2.75vw, 1.075em);
     line-height: 25px;
     top: -5px;
     color: #EFEFEF;
