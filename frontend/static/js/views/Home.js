@@ -76,9 +76,18 @@ export default class extends AbstractView {
                             </div> 
                             <div id="MAIN-HERO-TEXT">
                                 <div id="TEXT-ACTUAL">
-                                    <h1>LIVE BOLD</h1>
-                                    <h3>WORK HARD</h3>
-                                    <h3>PLAY EVEN HARDER</h3>
+                                    <div class = "container-2">
+                                        <h5>Hi I'm,</h5>
+                                    </div>
+                                    <div class= "container-2">
+                                        <h1 id=HERO-TITLE-TEXT>OZ</h1>
+                                    </div>
+                                    <div class= "container-2">
+                                        <h1 id=HERO-TITLE-TEXT>NWACHUKWU</h1>
+                                    </div>
+                                    
+                                    
+                                   
                                 </div>
                             </div> 
                         </div>
