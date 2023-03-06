@@ -561,7 +561,7 @@ body {
     grid-row-gap: 40px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 200px auto auto auto;
-    grid-template-areas: ". . . . IMAGE IMAGE IMAGE IMAGE"
+    grid-template-areas: "SUBTITLE SUBTITLE SUBTITLE SUBTITLE IMAGE IMAGE IMAGE IMAGE"
         "TITLE TITLE TITLE-2 TITLE-2 IMAGE IMAGE IMAGE IMAGE"
         "TITLE TITLE TITLE-2 TITLE-2 IMAGE-2 IMAGE-2 IMAGE-3 IMAGE-3"
         "TITLE TITLE TITLE-2 TITLE-2 IMAGE-4 IMAGE-4 IMAGE-4 IMAGE-4";
@@ -570,6 +570,14 @@ body {
 /* ---------------------------------------------------------------------------------------*/
 
 
+
+#SUBTITLE-CONTAINER {
+    grid-area: IMAGE;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    background-color: antiquewhite;
+}
 
 
 /* ---------------------------------------------------------------------------------------*/

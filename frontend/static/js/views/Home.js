@@ -80,11 +80,14 @@ export default class extends AbstractView {
                                         <h5>Hi I'm,</h5>
                                     </div>
                                     <div class= "container-2">
-                                        <h1 id=HERO-TITLE-TEXT>OZ</h1>
+                                        <h1 id=HERO-TITLE-TEXT>Oz<br/>Nwachukwu.</h1>                    
                                     </div>
-                                    <div class= "container-2">
-                                        <h1 id=HERO-TITLE-TEXT>NWACHUKWU</h1>
+                                    <div class = "container-2">
+                                        <h3> I build things, inside </br> and outside of the web.</h3>
                                     </div>
+
+                                    
+                                    
                                     
                                     
                                    
@@ -100,6 +103,10 @@ export default class extends AbstractView {
 
                 <div class="grid-0">
                     <div id="GRID-1">
+
+                        <div id="SUBTITLE" class = "container-2">
+                            <h5>I'm a software engineer with a long history in architecture and design</h5>
+                        </div>
 
                         <div id="IMAGE" class="container">
                         </div>
