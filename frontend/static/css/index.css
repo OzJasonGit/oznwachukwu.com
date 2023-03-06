@@ -1469,7 +1469,7 @@ body {
             grid-row-gap: 40px;
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
             grid-template-rows: 200px auto auto auto;
-            grid-template-areas: ". . . . IMAGE IMAGE IMAGE IMAGE"
+            grid-template-areas: "SUBTITLE SUBTITLE SUBTITLE SUBTITLE IMAGE IMAGE IMAGE IMAGE"
                 "TITLE TITLE TITLE-2 TITLE-2 IMAGE IMAGE IMAGE IMAGE"
                 "TITLE TITLE TITLE-2 TITLE-2 IMAGE-2 IMAGE-2 IMAGE-3 IMAGE-3"
                 "TITLE TITLE TITLE-2 TITLE-2 IMAGE-4 IMAGE-4 IMAGE-4 IMAGE-4";
@@ -2015,7 +2015,7 @@ body {
         padding-left: 30px;
         padding-right: 30px;
         grid-row-gap: 40px;
-        grid-template-rows: 60px auto;
+        grid-template-rows: 170px auto;
         grid-template-columns: 1fr;
         grid-template-areas: "  .  "
             " MAIN-AREA ";
@@ -2046,6 +2046,7 @@ body {
     .grid-0-2-top {
         width: 100%;
         top: 170px;
+        height: auto;
         max-width: 1640px;
         position: relative;
         padding-left: 30px;
@@ -2143,13 +2144,14 @@ body {
         grid-column-gap: 40px;
         grid-row-gap: 40px;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto auto auto auto auto auto;
-        grid-template-areas: "TITLE TITLE TITLE TITLE TITLE TITLE"
-            "IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE"
-            "TITLE-2 TITLE-2 TITLE-2 TITLE-2 TITLE-2 TITLE-2"
-            "TITLE-2 TITLE-2 TITLE-2 TITLE-2 TITLE-2 TITLE-2"
-            "IMAGE-2 IMAGE-2 IMAGE-2 IMAGE-3 IMAGE-3 IMAGE-3"
-            "IMAGE-4 IMAGE-4 IMAGE-4 IMAGE-4 IMAGE-4 IMAGE-4";
+        grid-template-rows: auto auto auto auto auto auto auto;
+        grid-template-areas: "SUBTITLE SUBTITLE SUBTITLE SUBTITLE SUBTITLE SUBTITLE"
+                             "TITLE TITLE TITLE TITLE TITLE TITLE"
+                             "IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE"
+                             "TITLE-2 TITLE-2 TITLE-2 TITLE-2 TITLE-2 TITLE-2"
+                             "TITLE-2 TITLE-2 TITLE-2 TITLE-2 TITLE-2 TITLE-2"
+                             "IMAGE-2 IMAGE-2 IMAGE-2 IMAGE-3 IMAGE-3 IMAGE-3"
+                             "IMAGE-4 IMAGE-4 IMAGE-4 IMAGE-4 IMAGE-4 IMAGE-4";
 
     }
 
@@ -2443,65 +2445,71 @@ body {
 
 
 
-        #HEAD-IMAGE {
-            grid-area: MAIN-AREA;
-            display: grid;
-            width: 100%;
-            height: 740px;
-            grid-column-gap: 40px;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-            grid-template-rows: 100%;
-            grid-template-areas: "CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT";
-        }
-    
-    
-        #HEAD-HERO {
-            grid-area: CONTENT;
-            display: grid;
-            width: 100%;
-            height: 100%;
-            grid-column-gap: 40px;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-            grid-template-areas: "TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT"
-                                 "TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT"
-                                 "TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT"
-                                 "IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE"
-                                 "IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE";  
-        }
-    
-    
-    
-    
-    
-        #MAIN-HERO-IMAGE {
-            grid-area: IMAGE;
-            display: flex;
-            background-color: azure;
-    
-        }
-    
-        #MAIN-HERO-TEXT {
-            grid-area: TEXT;
-            display: grid;
-            width: 100%;
-            height: 100%;
-            grid-row-gap: 40px;
-            grid-template-columns: 1fr;
-            grid-template-rows: 150px 1fr 1fr;
-            grid-template-areas: "."
-                "TEXT"
-                "TEXT";
-        }
-    
-    
-        #TEXT-ACTUAL {
-            grid-area: TEXT;
-            display: grid;
-            grid-row-gap: 20px;
-            grid-template-rows: auto auto auto;
-            max-height: 0;
-        }
+   #HEAD-IMAGE {
+       grid-area: MAIN-AREA;
+       display: grid;
+       width: 100%;
+       height: auto;
+       grid-column-gap: 40px;
+       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+       grid-template-rows: 100%;
+       grid-template-areas: "CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT";
+   }
+
+
+   #HEAD-HERO {
+       grid-area: CONTENT;
+       display: grid;
+       width: 100%;
+       height: 100%;
+       grid-row-gap: 40px;
+       grid-template-columns: 1fr;
+       grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+       grid-template-areas: "TEXT" 
+                            "TEXT"
+                            "IMAGE"
+                            "IMAGE"
+                            "IMAGE"
+                            "IMAGE";
+
+   }
+
+
+   #MAIN-HERO-IMAGE {
+       grid-area: IMAGE;
+       width: 100%;
+       height: 640px;
+       display: flex;
+       background-color: azure;
+
+   }
+
+   #MAIN-HERO-TEXT {
+       grid-area: TEXT;
+       display: grid;
+       width: 100%;
+       grid-row-gap: 40px;
+       grid-template-columns: 1fr;
+       grid-template-rows:  1fr 1fr;
+       grid-template-areas: "TEXT"
+                            "TEXT";
+   }
+
+
+   #TEXT-ACTUAL {
+       grid-area: TEXT;
+       width: 100%;
+       height: 100%;
+       display: grid;
+       grid-row-gap: 30px;
+       grid-template-columns: 1fr;
+       grid-template-rows: auto auto auto 100px;
+       grid-template-areas: "TEXT-T1"
+           "TEXT-2"
+           "TEXT-3"
+           "TEXT-4";
+       max-height: 0;
+   }
 }
 
 /* ---------------------------------------------------------------------------------------*/
@@ -2665,7 +2673,7 @@ body {
         padding-left: 30px;
         padding-right: 30px;
         grid-row-gap: 40px;
-        grid-template-rows: 60px auto;
+        grid-template-rows: 170px auto;
         grid-template-columns: 1fr;
         grid-template-areas: " . "
             "MAIN-AREA";
@@ -2786,8 +2794,9 @@ body {
         display: grid;
         grid-row-gap: 40px;
         grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto auto auto;
-        grid-template-areas: "TITLE"
+        grid-template-rows: auto auto auto auto auto auto auto;
+        grid-template-areas: "SUBTITLE"
+            "TITLE"
             "IMAGE"
             "TITLE-2"
             "TITLE-2"
@@ -3122,67 +3131,70 @@ body {
     }
 
 
+#HEAD-IMAGE {
+    grid-area: MAIN-AREA;
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-column-gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100%;
+    grid-template-areas: "CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT";
+}
 
 
-        #HEAD-IMAGE {
-            grid-area: MAIN-AREA;
-            display: grid;
-            width: 100%;
-            height: 740px;
-            grid-column-gap: 40px;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-            grid-template-rows: 100%;
-            grid-template-areas: "CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT";
-        }
-    
-    
-        #HEAD-HERO {
-            grid-area: CONTENT;
-            display: grid;
-            width: 100%;
-            height: 100%;
-            grid-column-gap: 40px;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-            grid-template-areas: "TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT"
-                "TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT"
-                "TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT"
-                "IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE"
-                "IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE";
-        }
-    
-    
-    
-    
-    
-        #MAIN-HERO-IMAGE {
-            grid-area: IMAGE;
-            display: flex;
-            background-color: azure;
-    
-        }
-    
-        #MAIN-HERO-TEXT {
-            grid-area: TEXT;
-            display: grid;
-            width: 100%;
-            height: 100%;
-            grid-row-gap: 40px;
-            grid-template-columns: 1fr;
-            grid-template-rows: 150px 1fr 1fr;
-            grid-template-areas: "."
-                "TEXT"
-                "TEXT";
-        }
-    
-    
-        #TEXT-ACTUAL {
-            grid-area: TEXT;
-            display: grid;
-            grid-row-gap: 20px;
-            grid-template-rows: auto auto auto;
-            max-height: 0;
-        }
+#HEAD-HERO {
+    grid-area: CONTENT;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-row-gap: 40px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "TEXT"
+        "TEXT"
+        "IMAGE"
+        "IMAGE"
+        "IMAGE"
+        "IMAGE";
+
+}
+
+
+#MAIN-HERO-IMAGE {
+    grid-area: IMAGE;
+    width: 100%;
+    height: 640px;
+    display: flex;
+    background-color: azure;
+
+}
+
+#MAIN-HERO-TEXT {
+    grid-area: TEXT;
+    display: grid;
+    width: 100%;
+    grid-row-gap: 40px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "TEXT"
+        "TEXT";
+}
+
+
+#TEXT-ACTUAL {
+    grid-area: TEXT;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-row-gap: 30px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "TEXT-T1"
+        "TEXT-2"
+        "TEXT-3";
+    max-height: 0;
+}
 }
 
 /* ---------------------------------------------------------------------------------------*/

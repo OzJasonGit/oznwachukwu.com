@@ -72,6 +72,10 @@ export default class extends AbstractView {
                 <div class="grid-0-2-top">
                     <div id="HEAD-IMAGE">
                         <div id="HEAD-HERO">
+
+                            <div id="MAIN-HERO-IMAGE" class="container">
+                            </div> 
+
                             <div id="MAIN-HERO-IMAGE" class="container">
                             </div> 
                             <div id="MAIN-HERO-TEXT">
@@ -93,6 +97,7 @@ export default class extends AbstractView {
                                    
                                 </div>
                             </div> 
+                            
                         </div>
                     </div>
                 </div>
@@ -106,7 +111,9 @@ export default class extends AbstractView {
 
                         <div id = SUBTITLE-CONTAINER>
                             <div id="SUBTITLE" class = "container-2">
-                                <h5>I'm a software engineer with a long history in architecture and design</h5>
+                                <h5>I'm a software engineer with a history as an architect, designer and BIM engineer. </br>
+                                Today, I also use these skills and background to build exceptional, human </br> 
+                                centered digital experiences. </h5>
                             </div>
                         </div> 
 
