@@ -572,11 +572,18 @@ body {
 
 
 #SUBTITLE-CONTAINER {
-    grid-area: IMAGE;
-    width: 100%;
-    height: 100%;
+    grid-area: SUBTITLE;
+    
     display: grid;
-    background-color: antiquewhite;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20px auto;
+    grid-row-gap: 40px;
+    grid-template-areas:"." 
+                        "SUBTITLE";
+}
+
+#SUBTITLE {
+    grid-area: SUBTITLE;
 }
 
 

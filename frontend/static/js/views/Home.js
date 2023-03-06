@@ -104,9 +104,13 @@ export default class extends AbstractView {
                 <div class="grid-0">
                     <div id="GRID-1">
 
-                        <div id="SUBTITLE" class = "container-2">
-                            <h5>I'm a software engineer with a long history in architecture and design</h5>
-                        </div>
+                        <div id = SUBTITLE-CONTAINER>
+                            <div id="SUBTITLE" class = "container-2">
+                                <h5>I'm a software engineer with a long history in architecture and design</h5>
+                            </div>
+                        </div> 
+
+                        
 
                         <div id="IMAGE" class="container">
                         </div>
