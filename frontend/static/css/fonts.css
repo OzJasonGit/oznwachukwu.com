@@ -30,8 +30,9 @@ h1 {
     font-style: normal;
     margin: 0px;
     font-size: clamp(3em, 2.95vw, 6em);
-    right: 3px;
-    top: -5px;
+    line-height: 1em;
+    right: 0.5px;
+    top: -12.5px;
 
     color: #EFEFEF;
 }
@@ -54,7 +55,7 @@ h3 {
     font-family: neusa-next-std-wide, sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 1.5em;
+    font-size: clamp(1.5em, 1.5vw, 3em);
     margin-top: 0px;
     margin-bottom: 0px;
     top: -5px;

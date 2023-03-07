@@ -87,7 +87,7 @@ export default class extends AbstractView {
                                         <h1 id=HERO-TITLE-TEXT>Oz<br/>Nwachukwu.</h1>                    
                                     </div>
                                     <div class = "container-2">
-                                        <h3> I build things, inside </br> and outside of the web.</h3>
+                                        <h3> I build things </br>inside, and outside </br> of the web.</h3>
                                     </div>
 
                                     
@@ -97,7 +97,7 @@ export default class extends AbstractView {
                                    
                                 </div>
                             </div> 
-                            
+
                         </div>
                     </div>
                 </div>
@@ -112,7 +112,7 @@ export default class extends AbstractView {
                         <div id = SUBTITLE-CONTAINER>
                             <div id="SUBTITLE" class = "container-2">
                                 <h5>I'm a software engineer with a history as an architect, designer and BIM engineer. </br>
-                                Today, I also use these skills and background to build exceptional, human </br> 
+                                Today, I also use these skills (along with other ones) to kraft exceptional, human </br> 
                                 centered digital experiences. </h5>
                             </div>
                         </div> 
