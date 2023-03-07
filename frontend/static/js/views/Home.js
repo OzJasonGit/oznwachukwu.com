@@ -123,7 +123,10 @@ export default class extends AbstractView {
                         </div>
 
                         <div id="IMAGE-2" class="container">
-                            <h3>SKILLS</h3>
+                            <div class="container-2">
+                                <h3>SKILLS</h3>
+                            </div>
+                            
                         </div>
 
                         <div id="IMAGE-3" class="container">
@@ -143,11 +146,11 @@ export default class extends AbstractView {
 
 
                                 <div id="HOME-TEXT" class="container">
-                                    <span id="FRONT-TEXT" class="h1-title-text">oznwachukwu.com</span>
-                                    <span id="HERO-TEXT" class="h2-hero-text">SOFTWARE ENGINEER | ARB RIBA ARCHITECT |
+                                    <p id="FRONT-TEXT" class="h1-title-text">oznwachukwu.com</p>
+                                    <p id="HERO-TEXT" class="h2-hero-text">SOFTWARE ENGINEER | ARB RIBA ARCHITECT |
                                         DESIGNER | BIM
-                                        ENGINEER</span>
-                                    <span id="DESCRIPTION-TEXT" class="p-body-text">My work navigates the spaces between
+                                        ENGINEER</p>
+                                    <p id="DESCRIPTION-TEXT" class="p-body-text">My work navigates the spaces between
                                         design, technology
                                         and engineering.
                                         My professional background is architecture, but my mind has always been
@@ -164,7 +167,7 @@ export default class extends AbstractView {
                                         </br>
                                         Let's meet at Starbucks for a coffee. I'm the guy with headphones on listening
                                         to Gangsta Rap.
-                                    </span>
+                                    </p>
                                 </div>
 
 

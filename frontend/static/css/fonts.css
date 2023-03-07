@@ -80,11 +80,28 @@ h4 {
 h5 {
     position: relative;
     font-family: neusa-next-std-wide, sans-serif;
-    font-weight: 400;
+    font-weight: 200;
     font-style: normal;
     margin: 0px;
-    font-size: clamp(1em, 2.75vw, 1.075em);
-    line-height: 25px;
+    font-size: clamp(0.25em, 1.25vw, 1.020em);
+    line-height: 21.5px;
+    top: -5px;
+    color: #EFEFEF;
+}
+
+
+
+
+
+
+p {
+    position: relative;
+    font-family: neusa-next-std-wide, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    margin: 0px;
+    font-size: clamp(0.25em, 1.25vw, 1.020em);
+    line-height: 21.5px;
     top: -5px;
     color: #EFEFEF;
 }
@@ -143,3 +160,80 @@ h5 {
     padding: 0px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+@media all and (min-width: 480px) and (max-width: 960px) {
+    h5 {
+            position: relative;
+            font-family: neusa-next-std-wide, sans-serif;
+            font-weight: 200;
+            font-style: normal;
+            margin: 0px;
+            font-size: clamp(1em, 1.25vw, 1.020em);
+            line-height: 21.5px;
+            top: -5px;
+            color: #EFEFEF;
+        }
+    
+    
+    
+    
+    
+    
+        p {
+            position: relative;
+            font-family: neusa-next-std-wide, sans-serif;
+            font-weight: 200;
+            font-style: normal;
+            margin: 0px;
+            font-size: clamp(1em, 1.25vw, 1.020em);
+            line-height: 21.5px;
+            top: -5px;
+            color: #EFEFEF;
+        }
+
+}
+
+
+
+
+@media all and (min-width: 0px) and (max-width: 480px) {
+    h5 {
+            position: relative;
+            font-family: neusa-next-std-wide, sans-serif;
+            font-weight: 200;
+            font-style: normal;
+            margin: 0px;
+            font-size: clamp(.85em, 1.25vw, 1.020em);
+            line-height: 21.5px;
+            top: -5px;
+            color: #EFEFEF;
+        }
+    
+    
+    
+    
+    
+    
+        p {
+            position: relative;
+            font-family: neusa-next-std-wide, sans-serif;
+            font-weight: 200;
+            font-style: normal;
+            margin: 0px;
+            font-size: clamp(.85em, 1.25vw, 1.020em);
+            line-height: 21.5px;
+            top: -5px;
+            color: #EFEFEF;
+        }
+
+}
