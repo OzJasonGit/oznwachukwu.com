@@ -126,6 +126,12 @@ export default class extends AbstractView {
                             <div class="container-2">
                                 <h3>SKILLS</h3>
                             </div>
+
+                            <div id="SKILLS-CONTAINER"class="container-2">
+                                <div class"inner-scroll">
+                                    <div id="TEST"> </div> 
+                                </div>
+                            </div>
                             
                         </div>
 
