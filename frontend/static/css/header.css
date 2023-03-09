@@ -233,23 +233,24 @@ body {
 
 #CLOCK {
 
-    padding-top: 0px;
-    font-weight: 400;
+    padding: 0px;
+    font-family: mundial, sans-serif;
+    font-weight: 300;
     font-style: normal;
-    font-size: 1rem;
-    color: #d9d9d9;
+    font-size: clamp(0.30em, 1.25vw, 0.90em);
+    color: #efefef;
     text-align: left;
 }
 
 
 #DATE {
 
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding: 0px;
+    font-family: mundial, sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 1rem;
-    color: #d9d9d9;
+    font-size: clamp(0.30em, 1.25vw, 0.90em);
+    color: #efefef;
     text-align: left;
 }
 

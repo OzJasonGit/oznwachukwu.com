@@ -124,7 +124,7 @@ export default class extends AbstractView {
 
                         <div id="IMAGE-2" class="container">
                             <div class="container-2">
-                                <h3>SKILLS</h3>
+                                <h1 id="HERO-TITLE-TEXT">Skills</h1>
                             </div>
 
                             <div id="SKILLS-CONTAINER"class="container-2">
