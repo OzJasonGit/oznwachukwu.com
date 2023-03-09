@@ -127,7 +127,7 @@ export default class extends AbstractView {
                                 <h1 id="HERO-TITLE-TEXT">Skills</h1>
                             </div>
 
-                            <div id="SKILLS-CONTAINER"class="container-2">
+                            <div id="SKILLS-CONTAINER"class="container-absolute-scroll">
                                 <div class"inner-scroll">
                                     <div id="TEST"> </div> 
                                 </div>
@@ -241,14 +241,9 @@ export default class extends AbstractView {
                         <div id="TITLE-2" class="container">
                             
                             <div id="HERO" class="container">
-                                <div class="container-absolute">
-                                    <div id="SCROLL-DIV"> 
-                                        <div id="SCROLL-CONTENT"> 
-                                            <div class="container" id="AREA-1"> </div>
-                                            <div class="container" id="AREA-2"> </div>
-                                            <div class="container" id="AREA-3"> </div>
-                                            <div class="container" id="AREA-4"> </div>
-                                        </div>
+                                <div class="container-absolute-scroll">
+                                    <div id="SCROLL-DIV">
+                    
                                     </div>
                                 </div>
                             </div>
