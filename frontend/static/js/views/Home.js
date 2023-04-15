@@ -147,7 +147,8 @@ export default class extends AbstractView {
                         </div>
 
                         <div id="IMAGE-4" class="container">
-                            <div class="hover-popup"></div>
+                            <div class="hover-popup">
+                            </div>
                         </div>
 
                         <div class="title-holder-desktop">
