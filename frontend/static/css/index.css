@@ -307,6 +307,22 @@ body {
 }
 
 
+.hover-popup {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    z-index: 10;
+    border-radius: 50.5px;
+}
+
+
+.container-absolute-scroll ::-webkit-scrollbar {
+    width: 7.5px;
+    height: 16px;
+}
+
+
 
 #mobile {
     display: none;
@@ -604,8 +620,7 @@ body {
     grid-area: IMAGE-2;
     width: 100%;
     height: 560px;
-    display: grid;
-    
+    display: grid;   
     grid-template-columns: 1fr;
     grid-row-gap: 30px;
     grid-template-rows: 40px auto;
@@ -618,11 +633,17 @@ body {
 
 #SKILLS-CONTAINER {
     grid-area: CENTER-AREA;
+    display: grid;
     position: relative;
     width: 100%;
     height: 490px;
     display: flex;
     background-color: rgb(252, 255, 67);
+    
+}
+
+
+#SKILLS-CONTAINER_2 {
     
 }
 
@@ -1078,7 +1099,6 @@ body {
 .container-absolute-scroll {
     scrollbar-width: 30px;
     position: absolute;
-
     overflow-y: scroll;
     height: 100%;
     width: 100%;
@@ -1099,7 +1119,7 @@ body {
     height: 2400px;
     scrollbar-width: thin;
     grid-template-rows: 30px 1fr 30px;
-    grid-template-columns: 15px 1fr 15px;
+    grid-template-columns: 12.5px 1fr 12.5px;
     grid-template-areas: ". . ."
         ". MAIN-AREA ."
         ". . .";
@@ -1107,12 +1127,21 @@ body {
 }
 
 
-
-.container-absolute-scroll ::-webkit-scrollbar {
-    width: 7.5px;
-    height: 16px;
-
+#SKILLS-SCROLL-DIV {
+    display: grid;
+    width: 100%;
+    height: 1400px;
+    scrollbar-width: thin;
+    grid-template-rows: 30px 1fr 30px;
+    grid-template-columns: 12.5px 1fr 12.5px;
+    grid-template-areas: ". . ."
+        ". MAIN-AREA ."
+        ". . .";
+    background-color: rgb(255, 252, 92);
 }
+
+
+
 
 
 
