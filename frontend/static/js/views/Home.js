@@ -121,6 +121,10 @@ export default class extends AbstractView {
 
                         <div id="IMAGE" class="container">
                             <div class="hover-popup">
+                                <div class="hover-popup_text"> 
+                                    <div class="popup_content">
+                                    </div>                              
+                                </div>
                             </div>
                         </div>
 
@@ -142,12 +146,17 @@ export default class extends AbstractView {
 
                         <div id="IMAGE-3" class="container">
 
-                            <div class="hover-popup"></div>
+                            <div class="hover-popup">
+                                <div class="hover-popup_text">                               
+                                </div>
+                            </div>
                             <div id="IMAGE-3-INTERNAL"></div>
                         </div>
 
                         <div id="IMAGE-4" class="container">
                             <div class="hover-popup">
+                                <div class="hover-popup_text">                               
+                                </div>
                             </div>
                         </div>
 
@@ -251,6 +260,8 @@ export default class extends AbstractView {
                             
                             <div id="HERO" class="container">
                                 <div class="hover-popup">
+                                    <div class="hover-popup_text">                               
+                                    </div>
                                 </div> 
                                 <div class="container-absolute-scroll"> 
                                     <div id="SCROLL-DIV">                                                        
@@ -270,6 +281,8 @@ export default class extends AbstractView {
                                 <div class="container">
                                     <div id="STORIES" class="container">
                                         <div class="hover-popup">
+                                            <div class="hover-popup_text">                               
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -278,6 +291,8 @@ export default class extends AbstractView {
 
                             <div id="BOTTOM-IMAGE" class="container">
                                 <div class="hover-popup">
+                                    <div class="hover-popup_text">                               
+                                    </div>
                                 </div>
                             </div>
 
@@ -297,7 +312,10 @@ export default class extends AbstractView {
 
                         <div id="PFBD" class="container">
                             <div id="PLACEHOLDER" class="container">
-                                <div class="hover-popup"></div>
+                                <div class="hover-popup">
+                                    <div class="hover-popup_text">                               
+                                    </div>
+                                </div>
                             </div>
                             <div id="TITLE-INSTA" class="container"></div>
                             <div id="INSTA" class="container"></div>
@@ -305,12 +323,12 @@ export default class extends AbstractView {
 
                         <div id="PFBD-2" class="container">
                             <div class="hover-popup">
+                                <div class="hover-popup_text">                               
+                                </div>
                             </div>
                         </div>
 
                         <div id="DESCRIPTION" class="container">
-                            <div class="hover-popup">
-                            </div>
                         </div>
                     </div>
                 </div>
