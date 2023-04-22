@@ -1,26 +1,25 @@
-//////////////////////////HOVER_IN-OUT/////////////////////////////////
-
-const hoverPopup = document.getElementsByClassName('hover-popup');
-
-let hover = false;
-let opacity = 0;
 
 
 
-hoverPopup.addEventListener('hover', function () {
-    hover = !hover;
 
-    if(hover){
-        hoverPopup.style.opacity = '100';
-        opacity += -100;
-        hoverPopup.style.opacity = opacity + "%";
-        
 
-    } else {
-        hoverPopup.style.opacity = '0';
-        opacity -= -100;
-        hoverPopup.style.opacity = opacity + "%";
-    };
+
+
+//////////////////////////NAVIGATION HOVER/////////////////////
+const hoverPopup = document.getElementById('hover-popup')
+
+//change icon colour and add shadow on mouseover 
+
+hoverPopup.addEventListener('mouseover', function handleMouseOver(){
+  hoverPopup.style.background = 'magenta';
 });
 
-//////////////////////////HOVER_IN-OUT/////////////////////////////////
+
+
+hoverPopup.addEventListener('mouseout', function handleMouseOver(){
+    hoverPopup.style.background = '#2e2e2e';
+});
+//////////////////////////NAVIGATION HOVER/////////////////////
+
+
+

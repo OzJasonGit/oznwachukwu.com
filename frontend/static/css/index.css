@@ -307,7 +307,7 @@ body {
 }
 
 
-.hover-popup {
+#hover-popup {
     position:absolute;
     display: grid;
     width: 100%;
