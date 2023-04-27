@@ -8,8 +8,8 @@ const uri = "mongodb+srv://oznwachukwu-portfolio:£$WEB078502sling$@oznwachukwu-
 async function connect() {
     try {
         await mongoose.connect(uri);
-        console.log("Connected to MongoDB");
-    }   catch (error) {
+        console.log("Connected to MongoDB... All good in the hood");
+    } catch (error) {
         console.error(error);
     }
 }
