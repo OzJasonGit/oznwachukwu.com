@@ -55,7 +55,7 @@ h3 {
     font-family: mundial, sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: clamp(1.5em, 1.5vw, 3em);
+    font-size: clamp(1.45em, 1.5vw, 2.95em);
     margin-top: 0px;
     margin-bottom: 0px;
     top: -5px;
