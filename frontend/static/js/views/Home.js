@@ -63,13 +63,7 @@ export default class extends AbstractView {
                                     </div>
                                     <div class = "container-2">
                                         <h3> I build things </br>inside and outside </br> of the web.</h3>
-                                    </div>
-
-                                    
-                                    
-                                    
-                                    
-                                   
+                                    </div>                                                                   
                                 </div>
                             </div> 
 
