@@ -410,6 +410,15 @@ export default class extends AbstractView {
         
             </section>
 
+
+            <script type="module" src="/static/js/index.js"></script>
+            <script type="module" src="./static/js/javascript/clock.js"></script>
+            <script type="module" src="./static/js/javascript/date.js"></script>
+            <script type="module" src="./static/js/javascript/menu-dropdown.js"></script>
+            <script type="module" src="./static/js/javascript/accordion.js"></script>
+            <script type="module" src="./static/js/javascript/hover_in-out.js"></script>
+
+
            
 
             

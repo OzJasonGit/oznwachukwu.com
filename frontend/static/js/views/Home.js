@@ -31,33 +31,7 @@ export default class extends AbstractView {
 
                 <div id="RIGHT-FIXED">
                     <div id="RIGHT-FIXED-STICKY">
-                        <div id="PFBD-LINKS">
-                            <div id="ICON-PLACEHOLDER" class="container">
-                                <span class="side-text">“If you want to find the secrets of the universe, think in terms
-                                    of energy, frequency and vibration.”
-                                    </br> </br> Nikola Tesla
-                                </span>
-
-
-                            </div>
-                        </div>
-
-                        <div id="PAGE-NAVIGATION">
-                            <div id="VERTICAL-NAVIGATION" class="container">
-                                <div id="NAV-1">
-                                    <div class="nav-button"></div>
-                                </div>
-                                <div id="NAV-2">
-                                    <div class="nav-button"></div>
-                                </div>
-                                <div id="NAV-3">
-                                    <div class="nav-button"></div>
-                                </div>
-                                <div id="NAV-4">
-                                    <div class="nav-button"></div>
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
 
