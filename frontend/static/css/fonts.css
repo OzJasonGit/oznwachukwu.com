@@ -29,7 +29,7 @@ h1 {
     font-weight: 600;
     font-style: normal;
     margin: 0px;
-    font-size: clamp(3em, 3.15vw, 7.5em);
+    font-size: clamp(3em, 3.15vw, 6.95em);
     line-height: 1em;
     right: 0.5px;
     top: -12.5px;
@@ -55,7 +55,7 @@ h3 {
     font-family: mundial, sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: clamp(1.45em, 1.5vw, 2.95em);
+    font-size: clamp(1.4em, 1.5vw, 2.9em);
     margin-top: 0px;
     margin-bottom: 0px;
     top: -5px;
