@@ -81,7 +81,7 @@ export default class extends AbstractView {
                         <div id = SUBTITLE-CONTAINER>
                             <div id="SUBTITLE" class = "container-2">
                                 <h5>I'm a software engineer. I'm also a registered architect, designer and BIM engineer. Most </br>
-                                of my career has been spent designing exceptional spaces within the built environment. </br> 
+                                of my career has been spent designing space within the built environment. </br> 
                                 Today, I also use these skills (along with other ones) to kraft exceptional, human centered digital experiences. </h5>
                             </div>
                         </div> 
