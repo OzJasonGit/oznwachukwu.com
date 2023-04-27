@@ -385,8 +385,8 @@ body {
     grid-template-rows: 60px auto auto auto;
     grid-template-areas: ". . . ."
         "TITLE TITLE TITLE TITLE"
-        "DATA DATA . ."
-        "DATA DATA . .";
+        "DATA DATA DATA ."
+        "DATA DATA DATA .";
 }
 
 
