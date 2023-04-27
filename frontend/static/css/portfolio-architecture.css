@@ -349,7 +349,7 @@ body {
     grid-column-gap: 40px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 100%;
-    grid-template-areas: ". . IMAGE IMAGE IMAGE IMAGE IMAGE IMAGE";
+    grid-template-areas: ". . . IMAGE IMAGE IMAGE IMAGE IMAGE";
 }
 
 #IMAGE-MAIN-T {
